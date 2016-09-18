@@ -1,0 +1,10 @@
+#content{
+    margin: 50px;
+}
+.row > p{
+    text-indent: 32px;
+}
+table th,
+table td{
+    text-align: center;
+}
