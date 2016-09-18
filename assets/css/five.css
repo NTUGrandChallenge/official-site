@@ -1,0 +1,209 @@
+body{
+    padding-top: 10vh;
+}
+/*full width five column*/
+.col-xs-5ths,
+.col-sm-5ths,
+.col-md-5ths,
+.col-lg-5ths {
+    position: relative;
+    min-height: 1px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.col-xs-5ths {
+    width: 20%;
+    float: left;
+}
+@media (min-width: 768px) {
+    .col-sm-5ths {
+        width: 20%;
+        float: left;
+    }
+}
+@media (min-width: 992px) {
+    .col-md-5ths {
+        width: 20%;
+        float: left;
+    }
+}
+@media (min-width: 1200px) {
+    .col-lg-5ths {
+        width: 20%;
+        float: left;
+    }
+}
+
+/*
+.parallelogram{
+    position: absolute;
+    z-index: -1;
+    height: 70%;
+    width: 100%;
+    top: 15%;
+    transform: skew(-20deg);
+}
+*/
+.triangle{
+    display: inline-block;
+/*    position: absolute;*/
+    right: 0;
+    bottom: 0;
+    width: 0;
+    border-width: 15px 0px 15px 15px;
+    border-style: solid;
+    border-color: transparent transparent transparent #ffa3b5;
+}
+
+#five-field-toggle .sweeper{
+    height: 300px;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+.sweeper .inside,
+.sweeper .outside,
+.sweeper .outside-wrapper{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    transition: transform .5s cubic-bezier(.69,.42,.01,.59);
+}
+.sweeper .outside{
+    background-color: #FFF;
+    z-index: 2;
+}
+.sweeper .outside-wrapper{
+    overflow: hidden;
+    z-index: 3;
+}
+.sweeper .inside{
+    z-index: 1;
+}
+.sweeper:hover .outside-wrapper,
+a.active .sweeper .outside-wrapper{
+    transform: translateY(-300px);
+}
+.sweeper:hover .outside,
+a.active .sweeper .outside{
+    transform: translateY(300px);
+}
+.sweeper img{
+    height: 120px;
+    margin-top: 50px;
+}
+.sweeper .outside h2{
+    color: black;
+}
+.sweeper .inside h2{
+    color: white;
+}
+
+@media screen and (min-width: 768px){
+    #content .container{
+        padding: 0px 80px;
+    }
+}
+
+#slogan{
+    margin: 20vh 0;
+    color: #FFF;
+}
+
+#field-name{
+    height: 300px;
+    width: 100%;
+}
+#field-description{
+    height: 300px;
+}
+#field-name h1{
+    margin-top: 10px;
+    color: #FFF;
+    text-align: center;
+}
+#field-description{
+    background-color: #FFF;
+    padding: 50px;
+}
+
+#teachers{
+    background-color: #FFF; 
+    padding: 50px 50px 20px; 
+    margin: 30px 0px;
+}
+.color-block{
+    background-color: #50d0c8;
+    min-height: 200px;
+    width: 100%;
+}
+.circular-img{
+    width: 100%;
+    border-radius: 50%;
+}
+.teacher-name{
+    font-weight: bolder;
+}
+.teacher-name span{
+    font-size: 16px;
+}
+
+.one-teacher{
+    background-color: #999;
+    min-height: 200px;
+    margin-bottom: 30px;
+    color: #FFF;
+    position: relative;
+}
+.one-teacher .ribbon-wrapper{
+    width: 120px;
+    height: 120px;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.one-teacher .ribbon-wrapper .ribbon{
+    text-align: center;
+    transform: rotate(45deg);
+    position: relative;
+    top: 30px;
+    padding: 5px 0;
+    width: 160px;
+    background-color: #50d0c8;
+}
+.one-teacher .content{
+    margin-bottom: 10px;
+}
+.one-teacher .content p{
+    margin: 0;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+#challenge{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+#challenge .block{
+    height: 200px;
+    margin-bottom: 30px;
+}
+.challenge-name{
+/*    padding: 5px;*/
+/*    border: 2px #666 solid;*/
+/*    background-color: #FFF;*/
+}
+.challenge-name a{
+    color: #000;
+    text-decoration: none;
+}
+.challenge-name h3{
+    text-align: center;
+    color: #FFF;
+}
+.challenge-description{
+    padding: 5px;
+    background-color: rgba(255, 255, 255, 0.8);
+}

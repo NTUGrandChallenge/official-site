@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    
+    <style>
+        .triangle-up,
+        .triangle-down{
+            width: 0px;
+            height: 0px;
+            border-style: inset;
+            border-width: 0 100px 173.2px 100px;
+            border-color: transparent transparent #007bff transparent;
+            float: left;
+        }
+        .triangle-up{
+            transform:rotate(360deg);
+            -ms-transform:rotate(360deg);
+            -moz-transform:rotate(360deg);
+            -webkit-transform:rotate(360deg);
+            -o-transform:rotate(360deg);
+        }
+        .triangle-down{
+                transform:rotate(180deg);
+            -ms-transform:rotate(180deg);
+            -moz-transform:rotate(180deg);
+            -webkit-transform:rotate(180deg);
+            -o-transform:rotate(180deg);
+        }
+
+        .triangle-up p,
+        .triangle-down p{
+            text-align: center;
+            top: 80px;
+            left: -47px;
+            position: relative;
+            width: 93px;
+            height: 93px;
+            margin: 0px;
+        }
+
+        .triangle-down p{
+            transform: rotate(180deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="triangle-up">
+        <p>some information text goes here<p>
+    </div>
+    <div class="triangle-down">
+        <p>some information text goes here<p>
+    </div>
+</body>
+</html>

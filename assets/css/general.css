@@ -1,0 +1,210 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosanstc.css);
+@font-face{
+    font-family: Jaapokki-Regular;
+    src: url('../font/Jaapokki-Regular.otf');
+}
+@font-face{
+    font-family: Coves-Bold;
+    src: url('../font/Coves Bold.otf');
+}
+
+html *{
+    font-family: 'Coves-Bold', 'Noto Sans TC', sans-serif;
+}
+body{
+/*    background-color: #EEE;*/
+}
+p{
+    font-size: 16px;
+}
+.eng-title{
+    font-family: 'Jaapokki-Regular';
+}
+
+.full-height{
+    height: 100%;
+}
+.flexbox-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.block-title{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.block-title .eng-title{
+    color: #D9CF72;
+    margin-bottom: 0px;
+}
+.block-title h2{
+    margin: 0px;
+}
+
+/*navbar*/
+#navbar{
+    z-index: 90;
+    width: 100%;
+    min-height: 5vh;
+    height: auto;
+    background-color: #FFF;
+}
+#navbar.fixed{
+    position: fixed;
+    top: 0;
+    border-bottom: 1px solid #EEE;
+}
+#navbar .navbar-brand{
+    padding: 2px;
+}
+#navbar .navbar-brand img{
+    height: 50px;
+}
+#navbar .navbar-nav a{
+    color: #000;
+    z-index: 2;
+}
+#navbar .dropdown-toggle:hover ~ .dropdown-menu,
+#navbar .dropdown-toggle ~ .dropdown-menu:hover{
+    display: block;
+}
+#navbar .navbar-right .triangle{
+    position: absolute;
+    z-index: 1;
+    left: 20%;
+    top: 30px;
+    width: 0px;
+    height: 0px;
+    border-style: inset;
+    border-width: 0px 30px 20px 30px;
+    border-color: transparent transparent #ffeb32 transparent;
+    opacity: 0;
+    transition: all .3s ease-in;
+    
+}
+#navbar .navbar-right li a:hover,
+#navbar .navbar-right li a:focus{
+    background-color: transparent;
+}
+#navbar .navbar-right li a:hover ~ .triangle,
+#navbar .navbar-right li a:focus ~ .triangle{
+    top: 15px;
+    opacity: 0.5;
+}
+#navbar .navbar-right .dropdown-menu{
+    padding: 0px;
+}
+#navbar .navbar-right .dropdown-menu li{
+    padding: 5px 20px;
+}
+#navbar .navbar-right .dropdown-menu li:hover{
+    border-bottom: 1px solid #666;
+}
+/*
+#navbar .navbar-right .dropdown-collapse{
+    position: absolute;
+    padding: 10px 20px;
+    width: 100px;
+    list-style-type: none;
+    border: 1px solid #EEE;
+    background-color: #FFF;
+    
+}
+*/
+#header{
+    background: url('../img/header.png');
+    background-size: cover;
+    height: 300px;
+    background-position: center;
+/*    margin-bottom: 50px;*/
+}
+
+/*footer*/
+footer{
+    position: relative;
+    padding-bottom: 25px;
+    background-color: #666;
+    color: #FFF;
+    overflow-x: hidden;
+}
+footer .triangle{
+    display: block;
+/*    position: absolute;*/
+    left: 0;
+    top: 0;
+    width: 0;
+    border-width: 30px 30px 50px 100vw;
+    border-style: solid;
+    border-color: #ffeb32 transparent transparent #ffeb32;
+}
+footer .footer-title{
+    color: #FFF;
+    text-decoration: none;
+    margin-bottom: 20px;
+}
+footer a,
+footer a:hover{
+    color: #FFF;
+    text-decoration: none;
+}
+footer .footer-menu{
+    list-style: none;
+    padding-left: 0px;
+}
+
+/*fb messenger*/
+#messenger{
+    position: fixed;
+    bottom: 20px;
+    right: 15px;
+    height: 30px;
+    z-index: 90;
+    margin-top: 30px;
+}
+#messenger .button {
+  -webkit-transition: width .3s;
+  transition: width .3s;
+  overflow: hidden;
+  cursor: pointer;
+}
+#messenger .button-fb {
+  background-color: #305097;
+  color: #ffe;
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  text-align: center;
+  font-size: 130%;
+  line-height: 50px;
+  box-shadow: rgba(16, 25, 36, 0.65098) 3px 3px 8px 0px;
+  -webkit-box-shadow: rgba(16, 25, 36, 0.65098) 3px 3px 8px 0px;
+  -moz-box-shadow: rgba(16, 25, 36, 0.65098) 3px 3px 8px 0px;
+}
+#messenger .button-fb:hover{
+    background-color: #3861bc;
+}
+#messenger.selected .button-fb {
+  width: 150px;
+}
+#messenger.selected .button-fb i:after {
+  margin-left: 10px;
+  content: "message";
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 1px;
+}
+#messenger_pop {
+    background-color:#FFFFFF;
+    border:1px solid #999999;
+    cursor:default;
+    display:none;
+    margin-top: 15px;
+    position:fixed;
+    width:394px;
+    z-index:50;
+    padding: 25px 25px 20px;
+    bottom: 50px;
+    right: 10px;
+}
+

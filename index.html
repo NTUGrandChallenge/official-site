@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/plugins/diamond.js/diamond.css">
+    <link rel="stylesheet" href="assets/css/general.css">
+    <link rel="stylesheet" href="assets/css/index.css">
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/plugins/parallax.js/parallax.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <script src="assets/plugins/couter-up/jquery.counterup.min.js"></script>
+    
+</head>
+<body class="loading">
+    <div id="loading" style="color: #FFF;">
+        <div class="flexbox-center">
+            <div class="img-container">
+                <img src="assets/img/loading_1.png" class="playing" />
+                <img src="assets/img/loading_2.png" class="playing" />
+                <img src="assets/img/loading_3.png" class="playing" />
+            </div>
+        </div>
+    </div>
+<!--
+    <script>
+        var loading_img = $('#loading img');
+        loading_img.on("animationend", function(e){
+            $(this).removeClass('playing');
+            if($(this).next().length == 0){
+                $('#loading img:first-child').addClass('playing');
+            }
+            else{
+                $(this).next('img').addClass('playing');
+            }
+        });
+    </script>
+-->
+    <div class="container-fluid" id="top">
+        <div class="slideshow-container">
+            <div class="slides-container">
+                <div class="slides">
+                    <div class="full-height">
+                        <a class="parallelogram-button yellow" href="#">
+                            <span class="skew-fix">立即報名</span>
+                        </a>
+                        <img src="assets/img/CIS_top_1.png" class="full-height" />
+                    </div>
+                </div>
+                <div class="slides">
+                    <div class="full-height">
+                        <a class="parallelogram-button black" href="#">
+                            <span class="skew-fix">立即報名</span>
+                        </a>
+                        <img src="assets/img/CIS_top_2.png" class="full-height" />
+                    </div>
+                </div>
+                <div class="slides">
+                    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#videoModal">Open Modal</button>
+                    <!-- Modal -->
+                </div>
+            </div>
+            <a class="prev" onclick="top_slideshow.plusSlides(-1)"></a>
+            <a class="next" onclick="top_slideshow.plusSlides(1)"></a>
+            <div class="indicator-container text-center">
+                <span class="indicator" onclick="top_slideshow.currentSlide(0)"></span>
+                <span class="indicator" onclick="top_slideshow.currentSlide(1)"></span>
+                <span class="indicator" onclick="top_slideshow.currentSlide(2)"></span>
+            </div>
+        </div>
+        
+        <div id="videoModal" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+            <div class="modal-content">
+                <iframe  src="https://www.youtube.com/embed/q6EoRBvdVPQ?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+        
+        <div id="scroll_to_navbar">
+            <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            <i class="fa fa-chevron-down" aria-hidden="true"></i>
+        </div>
+        
+    </div>
+    
+    <nav id="navbar">
+        
+    </nav>
+    
+    <div class="container margin-25" id="slogan">
+        <div class="row">
+<!--            <span class="triangle-right hidden-xs"></span>-->
+            <h1 class="text-center scroll-fade-in">「你要了解這些學習，是為了解決什麼問題。」</h1>
+            <p class="text-center scroll-fade-in"><strong>— 國立台灣大學校長 楊泮池</strong></p>
+<!--
+            <br />
+            <p class="text-center scroll-fade-in">「我們可以做出創新、突破的改變：建立新的學習方式、經營模式或醫療保健模式、社會公益模式；我們可以解決人們面對的問題，改變社會不滿的現況。<br />學習必須有目的性，是為了解決這些問題，包括經濟問題、環境問題、社會問題、氣候問題、能源問題、社會公益問題等等，<br />學習是為了解決這些問題並貢獻這個社會，讓社會可以更和諧更美好。」<br /><strong>— 國立台灣大學校長 楊泮池</strong></p>
+-->
+        </div>
+    </div>
+    
+<!--
+    <div class="container margin-25">
+        <div class="row" id="five-field-toggle">
+            <div class="col-md-5ths col-xs-4 sweeper">
+                <div class="inside" style="background-color: #FFA3B5;">
+                    <div class="content">
+                        <ul>
+                            <li>如何如何如何如何如何如何?</li>
+                            <li>如何如何如何如何如何如何?</li>
+                        </ul>
+                        <a href="#smartLife">
+                            <button class="more">瞭解更多</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="outside">
+                    <img src="assets/img/smart_grey.png"/>
+                    <h2>智慧生活</h2>
+                </div>
+            </div>
+            <div class="col-md-5ths col-xs-4 sweeper">
+                <div class="inside" style="background-color: #EE2737;">
+                    <div class="content">
+                        <ul>
+                            <li>如何如何如何如何如何如何?</li>
+                            <li>如何如何如何如何如何如何?</li>
+                        </ul>
+                        <a href="#smartLife">
+                            <button class="more">瞭解更多</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="outside">
+                    <img src="assets/img/health_grey.png"/>
+                    <h2>健康醫療</h2>
+                </div>
+            </div>
+            <div class="col-md-5ths col-xs-4 sweeper">
+                <div class="inside" style="background-color: #00B140;">
+                    <div class="content">
+                        <ul>
+                            <li>如何如何如何如何如何如何?</li>
+                            <li>如何如何如何如何如何如何?</li>
+                        </ul>
+                        <a href="#smartLife">
+                            <button class="more">瞭解更多</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="outside">
+                    <img src="assets/img/enviroment_grey.png"/>
+                    <h2>永續環境</h2>
+                </div>
+            </div>
+            <div class="col-md-5ths col-xs-4 sweeper">
+                <div class="inside" style="background-color: #005EB8;">
+                    <div class="content">
+                        <ul>
+                            <li>如何如何如何如何如何如何?</li>
+                            <li>如何如何如何如何如何如何?</li>
+                        </ul>
+                        <a href="#smartLife">
+                            <button class="more">瞭解更多</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="outside">
+                    <img src="assets/img/society_grey.png"/>
+                    <h2>社會文化</h2>
+                </div>
+            </div>
+            <div class="col-md-5ths col-xs-4 sweeper ">
+                <div class="inside" style="background-color: #B77729;">
+                    <div class="content">
+                        <ul>
+                            <li>如何如何如何如何如何如何?</li>
+                            <li>如何如何如何如何如何如何?</li>
+                        </ul>
+                        <a href="#smartLife">
+                            <button class="more">瞭解更多</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="outside">
+                    <img src="assets/img/agriculture_grey.png"/>
+                    <h2>食品與農業</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+-->
+    
+    
+<!--
+    <div class="container-fluid margin-25" style="background-color: #ebebeb;">
+        <div class="row">
+            <div class="slideshow-container">
+                <div class="slides-container">
+                    <div class="slides">
+                        <h1>11111111</h1>
+                    </div>
+                    <div class="slides">
+                        <h1>lalallala</h1>
+                    </div>
+                    <div class="slides">
+                        <h1>lalallala</h1>
+                    </div>
+                    <div class="slides">
+                        <div class="diamondswrap">
+                            <img src="assets/img/chanky.jpg" class="item"/>
+                            <img src="assets/img/chanky.jpg" class="item"/>
+                            <img src="assets/img/chanky.jpg" class="item"/>
+                            <img src="assets/img/chanky.jpg" class="item"/>
+                            <img src="assets/img/chanky.jpg" class="item"/>
+                            <img src="assets/img/chanky.jpg" class="item"/>
+                            <img src="assets/img/chanky.jpg" class="item"/>
+                            <img src="assets/img/chanky.jpg" class="item"/>
+                            <img src="assets/img/chanky.jpg" class="item"/>
+                            <img src="assets/img/chanky.jpg" class="item"/>
+                            <img src="assets/img/chanky.jpg" class="item"/>
+                            <img src="assets/img/chanky.jpg" class="item"/>
+                        </div>
+                    </div>
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="indicator-container text-center">
+                <span class="indicator" onclick="currentSlide(0)"><i class="fa fa-eye fa-5x" aria-hidden="true"></i><h4>五大領域</h4></span>
+                <span class="indicator" onclick="currentSlide(1)"><i class="fa fa-tree fa-5x" aria-hidden="true"></i><h4>三大訓練營</h4></span>
+                <span class="indicator" onclick="currentSlide(2)"><i class="fa fa-lightbulb-o fa-5x" aria-hidden="true"></i><h4>驗證金</h4></span>
+                <span class="indicator" onclick="currentSlide(3)"><i class="fa fa-graduation-cap fa-5x" aria-hidden="true"></i><h4>導師與業師</h4></span>
+            </div>
+        </div>
+    </div>
+-->
+    <div class="fluid-container" id="overview">
+        <div class="slideshow-container">
+            <div class="slides-container">
+                <div class="slides">
+                    <div>
+<!--
+                        <a class="parallelogram-button yellow" href="#">
+                            <span class="skew-fix">立即報名</span>
+                        </a>
+-->
+                        <img src="assets/img/overview_1.png"/>
+                    </div>
+                </div>
+                <div class="slides">
+                    <div class="full-height">
+<!--
+                        <a class="parallelogram-button black" href="#">
+                            <span class="skew-fix">立即報名</span>
+                        </a>
+-->
+                        <img src="assets/img/overview_2.png"/>
+                    </div>
+                </div>
+                <div class="slides">
+                    <h1>fuck</h1>
+                </div>
+            </div>
+            <a class="prev" onclick="ov_slideshow.plusSlides(-1)"></a>
+            <a class="next" onclick="ov_slideshow.plusSlides(1)"></a>
+            <div class="indicator-container text-center">
+                <span class="indicator" onclick="ov_slideshow.currentSlide(0)"></span>
+                <span class="indicator" onclick="ov_slideshow.currentSlide(1)"></span>
+                <span class="indicator" onclick="ov_slideshow.currentSlide(2)"></span>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container-fluid" id="talk">
+            <h2 class="text-center scroll-fade-in">
+                「創新創業，是解決真實社會中複雜困難挑戰的重要手段。」
+            </h2>
+            <p class="text-center scroll-fade-in"><strong>— 台大創新設計學院 執行長 郭大維</strong></p>
+    </div>
+    
+    <div id="challengers">
+    <div class="container">
+        <div class="row">
+            <div class="block-title">
+                <p class="eng-title">Challengers</p>
+                <h2>挑戰者</h2>
+            </div>
+            <div class="col-md-6">
+                <p>挑戰者，是整個 NTU Challenge 的核心角色 <br /> — 勇敢挺身而出、面對社會挑戰的先鋒人物。</p>
+                <h4><span class="triangle-right"></span>射月思維</h4>
+                <p>他們有著遠大的願景，改變世界的雄心，認為沒有什麼是不可能的。</p>
+                <h4><span class="triangle-right"></span>創意自信</h4>
+                <p>他們樂於參與對話，積極表達別具洞見的觀點，以及獨特創意的點子。</p>
+                <h4><span class="triangle-right"></span>行動至上</h4>
+                <p>他們重視立即具體的行動，劍及履及、踐履篤實。</p>
+                <h4><span class="triangle-right"></span>社會實踐</h4>
+                <p>他們組成小團隊，用靈活、快速、精準的行動，解決複雜難解的問題！<br />我們期待，挑戰者們一齊扛起這個世代，你是否願意站出來？</p>
+            </div>
+            <div class="col-md-6" style="background-color: #b2b2b2;">
+                <img src="assets/img/avatar5.png" style="width: 100%;"/>
+            </div>
+        </div>
+    </div>
+    </div>
+        
+<!--
+            <div class="col-md-3 col-xs-6">
+                <div class="speech">
+                    <div class="speech-bubble">
+                        以天下為己任，看到社會問題就去解決。
+                    </div>
+                    <div class="speecher">
+                        <img src="assets/img/avatar.png" />
+                        <p class="text-center">社會實踐</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-xs-6">
+                <div class="speech">
+                    <div class="speech-bubble">
+                        面對挑戰的膽識。瞄準月亮，至少能射中老鷹。
+                    </div>
+                    <div class="speecher">
+                        <img src="assets/img/avatar.png" />
+                        <p class="text-center">射月思維</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-xs-6">
+                <div class="speech">
+                    <div class="speech-bubble">
+                        敢於提出自己獨到的見解。
+                    </div>
+                    <div class="speecher">
+                        <img src="assets/img/avatar.png" />
+                        <p class="text-center">創意自信</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-xs-6">
+                <div class="speech">
+                    <div class="speech-bubble">
+                        做了再說，動手試錯。
+                    </div>
+                    <div class="speecher">
+                        <img src="assets/img/avatar.png" />
+                        <p class="text-center">行動至上</p>
+                    </div>
+                </div>
+            </div>
+-->
+        
+    
+    <div class="container" id="feature">
+        <div class="row">
+            <div class="block-title">
+                <p class="eng-title">Feature</p>
+                <h2>挑戰賽特色</h2>
+            </div>
+            <div class="col-md-4 col-xs-6 one">
+                <div class="title parallelogram">
+                    <div class="skew-fix">
+                        <h4>實際幫助社會</h4>
+                    </div>
+                </div>
+                <div class="content">
+                    <p>
+                        與領域專家、導師和挑戰者們深入探索、辯論三個月，找出領域內的癥結點，而非盲目投入心力在不成熟的問題。
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-4 col-xs-6 one">
+                <div class="title parallelogram">
+                    <div class="skew-fix">
+                        <h4>落地執行計畫</h4>
+                    </div>
+                </div>
+                <div class="content">
+                    <p>
+                        10萬產品驗證金，20萬商業模型驗證金，80萬創業獎金加上軟體、硬體、設計與製造導師群的通盤教育以及IBM，Samsung的技術、平台、設備支援，而不是交了企劃書就走人，無法延續計畫。
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-4 col-xs-6 one">
+                <div class="title parallelogram">
+                    <div class="skew-fix">
+                        <h4>縝密有邏輯性的實作流程</h4>
+                    </div>
+                </div>
+                <div class="content">
+                    <p>
+                        以創創、Dschool設計的創新實踐流程，深入研究使用者，用最低的成本試錯與雛形迭代，降低失敗風險。
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-4 col-xs-6 one">
+                <div class="title parallelogram">
+                    <div class="skew-fix">
+                        <h4>學以致用</h4>
+                    </div>
+                </div>
+                <div class="content">
+                    <p>
+                        成品沒有框架、技術、形式的限制，把理論帶到現實，發揮自己的所學和專長，將個科系所學的專業領域帶入實作應用當中，發揮價值。
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-4 col-xs-6 one">
+                <div class="title parallelogram">
+                    <div class="skew-fix">
+                        <h4>全方位的產學資源</h4>
+                    </div>
+                </div>
+                <div class="content">
+                    <p>
+                        透過領域導師、使用者研究導師、實作導師、創業導師的帶領，加上一對一創業導師與商業模型驗證諮詢、募資媒合和海外加速器對接，完整的導師陣容使得團隊獲得充分的協助，而不會孤軍奮鬥，事事需要自己去摸索，浪費不必要的時間精力。
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-4 col-xs-6 one">
+                <div class="title parallelogram">
+                    <div class="skew-fix">
+                        <h4>被看見的舞台</h4>
+                    </div>
+                </div>
+                <div class="content">
+                    <p>
+                        黃金圈行銷協助團隊持續得到關注，在Prototype Demo Show、Final Summit等舞台呈現團隊的計畫，讓大眾、領域專家、媒體與新創團隊看見團隊，將理念推廣，汲取更多業界和大眾的資源，讓創業構想不再只是學生的理想原型，而能真正影響社會。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+<!--
+    <div class="container margin-25" id="why">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="hover-fade text-center">
+                    <div class="inside">
+                        <i class="fa fa-key fa-5x" aria-hidden="true"></i>
+                        <h4>真槍實彈的創新挑戰</h4>
+                    </div>
+                    <div class="outside">
+                        <p>領域導師、使用者研究導師、實作導師、創業導師，完整的導師陣容使得團隊獲得完整協助，不必單打獨鬥。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+-->
+    
+    
+    <div class="container-fluid margin-25">
+        <div class="row" id="faq">
+            <div class="col-md-3 col-xs-6">
+                <div class="avatar">
+                    <img src="assets/img/avatar.png" />
+                </div>
+            </div>
+            <div class="col-md-3 col-xs-6">
+                <div class="speech-bubble-question">
+                    為什麼是這次？
+                </div>
+                <div class="speech-bubble-question">
+                    為什麼是我？
+                </div>
+                <div class="speech-bubble-question">
+                    為什麼要付出這麼多時間？
+                </div>
+                <div class="speech-bubble-question">
+                    為什麼是創業？
+                </div>
+                <div class="speech-bubble-question">
+                    團隊可以報名參賽嗎？
+                </div>
+            </div>
+            <div class="col-md-3 col-xs-6" style="position: relative;">
+                <div class="speech-bubble-answer">
+                    NTU Challenge 不同於一般以商業利益為導向的創新競賽、競賽競賽，而是以偏向解決社會各領域挑戰為導向的創新活動。NTU Challenge 將提供全方位支援，如完整的導師支援、構想驗證金、三場創創營，協助師生校友實際將想法付諸行動，對於改變社會、解決問題有滿腔熱忱的你，千萬不能錯過！
+                </div>
+                <div class="speech-bubble-answer">
+                    大學時代是人生中最沒有包袱、最有本錢失敗的時期之一。過去的你，或許為了升學考試而喘不過氣，無法恣意揮灑各種想法。現在的你，接觸了新的知識與思想，視野變得更加開闊，開始認真思考起自己的未來，思考起自己在社會中扮演的角色，以及希望如何影響這個社會。是一個充滿無限可能性、最具創造性、最有熱忱的年紀，因此，改變社會，該由你開始。
+                </div>
+                <div class="speech-bubble-answer">
+                    理想的實踐本非兒戲。根據大賽階段的安排，團隊在不斷發想、評估、改進的實作過程中，雖然花費了大量的時間，但同時卻也能獲得更全面的議題觀點、更豐富的實戰經驗、創新設計的心法以及創業轉化的知識。
+                </div>
+                <div class="speech-bubble-answer">
+                    在人生的選項中，創業絕非一條容易的路，但卻是能最有效掌控自己未來、實踐自己理想的做法，讓自己站在第一線去面對挑戰。在由自己訂定計畫，著手執行的過程中，你將有一個可以自由揮灑的舞台，一路上看著自己的夢想逐漸生根壯大，逐漸展現影響力。
+                </div>
+                <div class="speech-bubble-answer">
+                    參賽者可以事先找好自己的團隊報名，但團隊也可以在整個大賽過程中陸續加入新的成員，或者參賽者也可以個人為單位，在註冊後創立新的團隊，或加入已經存在的團隊。
+                </div>
+            </div>
+            <div class="col-md-3 col-xs-6">
+                <div class="avatar">
+                    <img src="assets/img/avatar.png" />
+                </div>
+            </div>
+        </div>
+    </div>
+        
+        
+        
+<!--
+        <div class="row" id="need">
+            <div class="col-md-4 col-xs-6">
+                <div class="curtain">
+                    <div class="curtain_wrapper">
+                        <div class="curtain_panel panel-left" align="right">
+                            為做
+                        </div>
+                        <div class="curtain_panel panel-right" align="left">
+                            而做?
+                        </div>
+                        <div class="inside full-height" align="center">
+                        <div class="flexbox-center">
+                            <div>
+                                <p>真正找出問題所在：與領域專家和挑戰者們深入探索、辯論一個半月，找出領域內的癥結點，而非盲目投入心力在不成熟的問題。</p>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-xs-6">
+                <div class="curtain">
+                    <div class="curtain_wrapper">
+                        <div class="curtain_panel panel-left" align="right">
+                            純打
+                        </div>
+                        <div class="curtain_panel panel-right" align="left">
+                            嘴砲?
+                        </div>
+                        <div class="inside full-height" align="center">
+                        <div class="flexbox-center">
+                            <div>
+                                <p>真正做出成品：10萬產品驗證金，加上軟體、硬體、設計與製造導師群的通盤教育與IBM的技術教育、平台支援，而不是交了企劃書就走人。</p>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-xs-6">
+                <div class="curtain">
+                    <div class="curtain_wrapper">
+                        <div class="curtain_panel panel-left" align="right">
+                            只靠
+                        </div>
+                        <div class="curtain_panel panel-right" align="left">
+                            運氣?
+                        </div>
+                        <div class="inside full-height" align="center">
+                        <div class="flexbox-center">
+                            <div>
+                                <p> 縝密、邏輯性的發想實做：以創創、Dschool設計的創新實踐流程，深入研究使用者，用最低的成本試錯與雛形迭代，降低失敗風險。</p>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-xs-6">
+                <div class="curtain">
+                    <div class="curtain_wrapper">
+                        <div class="curtain_panel panel-left" align="right">
+                            學而
+                        </div>
+                        <div class="curtain_panel panel-right" align="left">
+                            無用?
+                        </div>
+                        <div class="inside full-height" align="center">
+                        <div class="flexbox-center">
+                            <div>
+                                <p>發揮自己所學去實做：成品沒有框架、技術、形式的限制，把理論帶到現實，發揮自己的所學和專長。</p>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-xs-6">
+                <div class="curtain">
+                    <div class="curtain_wrapper">
+                        <div class="curtain_panel panel-left" align="right">
+                            人脈
+                        </div>
+                        <div class="curtain_panel panel-right" align="left">
+                            淺薄?
+                        </div>
+                        <div class="inside full-height" align="center">
+                        <div class="flexbox-center">
+                            <div>
+                                <p>產學人脈一次打通：在Final Summit舞台上呈現自己的成品給大眾、領域專家、媒體與新創團隊看，並利用豐富的產學人脈溢注，將自己的理念推廣，汲取更多資源。</p>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-xs-6">
+                <div class="curtain">
+                    <div class="curtain_wrapper">
+                        <div class="curtain_panel panel-left" align="right">
+                            難以
+                        </div>
+                        <div class="curtain_panel panel-right" align="left">
+                            接軌?
+                        </div>
+                        <div class="inside full-height" align="center">
+                        <div class="flexbox-center">
+                            <div>
+                                <p>全方位的實踐資源：20萬商業模型驗證金、80萬創業獎金，加上一對一創業導師與商業模型驗證諮詢、募資媒合和海外加速器對接，讓結果不再只是學生的扮家家酒，真正影響社會。</p>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+-->
+    
+<!--    <div class="parallax-window" data-parallax="scroll" data-image-src="assets/img/city.png"></div>-->
+    
+<!--
+    <div id="data">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3 col-xs-6 text-center">
+                <i class="fa fa-money fa-5x" aria-hidden="true"></i>
+                <div>
+                    <span class="counter">8000000</span>
+                    <h4>總獎金</h4>
+                </div>
+            </div>
+            <div class="col-md-3 col-xs-6 text-center">
+                <i class="fa fa-users fa-5x" aria-hidden="true"></i>
+                <div>
+                    <span class="counter">15</span><span>位</span>
+                    <h4>領域專家</h4>
+                </div>
+            </div>
+            <div class="col-md-3 col-xs-6 text-center">
+                <i class="fa fa-graduation-cap fa-5x" aria-hidden="true"></i>
+                <div>
+                    <span class="counter">30</span><span>位</span>
+                    <h4>專業導師</h4>
+                </div>
+            </div>
+            <div class="col-md-3 col-xs-6 text-center">
+                <i class="fa fa-info fa-5x" aria-hidden="true"></i>
+                <div>
+                    <span class="counter">10</span><span>位</span>
+                    <h4>手把手創業小老師</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+-->
+    
+    
+    
+    
+    
+    <div class="container">
+        <div class="row encourage">
+            <div class="col-xs-offset-1 col-xs-2 full-height">
+                <div class="flexbox-center">
+                    <img class="circular-img" src="assets/img/people/lee.jpg" />
+                </div>
+            </div>
+            <div class="col-xs-6 full-height">
+                <div class="flexbox-center">
+                    <h3>外面地下有秩序，學校當然也有。</h3>
+                </div>
+            </div>
+        </div>
+        <div class="row encourage">
+            <div class="col-xs-offset-3 col-xs-6 full-height">
+                <div class="flexbox-center">
+                    <h3>外面地下有秩序，學校當然也有。</h3>
+                </div>
+            </div>
+            <div class="col-xs-2 full-height">
+                <div class="flexbox-center">
+                    <img class="circular-img" src="assets/img/people/chanky.jpg" />
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="row">
+            <div class="block-title">
+                <p class="eng-title">How to</p>
+                <h2>如何參與</h2>
+            </div>
+            <div style="height: 400px;">
+                
+            </div>
+        </div>
+    </div>
+    
+<!--
+    <div id="divider" style="background-color: #000; height: 200px;">
+        <h1 class="text-center">-----命運ㄉ分隔線-----</h1>
+    </div>
+    
+    <div id="ball-container">
+        <div class="ball"></div>
+        <div class="ball"></div>
+        <div class="ball"></div>
+        <div class="ball"></div>
+        <div class="ball"></div>
+        <div class="ball"></div>
+        <div class="ball"></div>
+        <div class="ball"></div>
+        <div class="ball"></div>
+        <div class="ball"></div>
+    </div>
+-->
+    <div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h4><span class="triangle-right"></span>主辦單位</h4>
+                <p>國立臺灣大學</p>
+            </div>
+            <div class="col-md-4">
+                <h4><span class="triangle-right"></span>承辦單位</h4>
+                <p>臺大創新設計學院</p>
+                <p>臺大創新創業中心</p>
+            </div>
+            <div class="col-md-4">
+                <h4><span class="triangle-right"></span>贊助單位</h4>
+                <p>臺大鑽石種子基金</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <h4><span class="triangle-right"></span>協力夥伴</h4>
+                <div class="partner">
+                    <span>
+                        <img src="assets/img/logo/acer.png" />
+                    </span>
+                    <span>
+                        <img src="assets/img/logo/advantech.png" />
+                    </span>
+                    <span>
+                        <img src="assets/img/logo/ibm.png" />
+                    </span>
+                    <span>
+                        <img src="assets/img/logo/intel.png" />
+                    </span>
+                    <span>
+                        <img src="assets/img/logo/microsoft.png" />
+                    </span>
+                    <span>
+                        <img src="assets/img/logo/samsung.png" />
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    
+    <footer>
+        
+    </footer>
+    
+    <div id="messenger">
+        
+    </div>
+    
+    <script src="assets/plugins/diamond.js/diamond.js"></script>
+    <script src="assets/js/general.js" type="text/javascript"></script>
+    <script src="assets/js/index.js" type="text/javascript"></script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+.slideshow-container{
+    position: relative;
+    height: 200px;
+    overflow-x: hidden;
+}
+
+.slides-container{
+    transition: transform .3s ease-out;
+    position: absolute;
+    width: 1000vw;
+}
+
+.slides{
+    width: 100vw;
+    display: inline-block;
+}
+
+.prev,
+.next{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+}
+
+.prev{
+    left: 0;
+}
+
+.next{
+    right: 0;
+}
+
+.indicator{
+    cursor: pointer;
+    display: inline-block;
+}

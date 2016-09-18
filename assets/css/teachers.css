@@ -1,0 +1,21 @@
+body{
+    padding-top: 10vh;
+}
+.circular-img{
+    border-radius: 50%;
+    width: 100%;
+}
+.teacher-block{
+    padding: 15px;
+    border: 2px solid #b2b2b2;
+}
+.teacher-block .triangle{
+    display: block;
+    position: absolute;
+    right: 15px;
+    bottom: 0;
+    width: 0;
+    border-width: 15px 15px 15px 15px;
+    border-style: solid;
+    border-color: transparent #ffeb32 #ffeb32 transparent;
+}

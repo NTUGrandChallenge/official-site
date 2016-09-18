@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="slide.css">
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="slideshow-container">
+                <div class="slides-container">
+                    <div class="slides">
+                        <h1>guaguagua</h1>
+                    </div>
+                    <div class="slides">
+                        <h1>lalallala</h1>
+                    </div>
+                    <div class="slides">
+                        <h1>lalallala</h1>
+                    </div>
+                    <div class="slides">
+                        <h1>lalallala</h1>
+                    </div>
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="indicator-container">
+                <span class="indicator" onclick="currentSlide(0)">1</span>
+                <span class="indicator" onclick="currentSlide(1)">2</span>
+                <span class="indicator" onclick="currentSlide(2)">3</span>
+                <span class="indicator" onclick="currentSlide(3)">4</span>
+            </div>
+        </div>
+    </div>
+    
+    <script src="slide.js"></script>
+</body>
+</html>
