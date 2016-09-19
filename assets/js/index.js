@@ -3,6 +3,8 @@ $(window).load(function(){
     $('#loading').fadeOut(800).remove();
 })
 
+//$('#overview').css('height', $('#overview .slides img').height())
+
 
 //scrolling events
 var navbar_position = $('#navbar').offset();

@@ -66,9 +66,11 @@ p{
     color: #000;
     z-index: 2;
 }
-#navbar .dropdown-toggle:hover ~ .dropdown-menu,
-#navbar .dropdown-toggle ~ .dropdown-menu:hover{
-    display: block;
+@media screen and (min-width: 768px){
+    #navbar .dropdown-toggle:hover ~ .dropdown-menu,
+    #navbar .dropdown-toggle ~ .dropdown-menu:hover{
+        display: block;
+    }
 }
 #navbar .navbar-right .triangle{
     position: absolute;

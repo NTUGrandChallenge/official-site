@@ -6,9 +6,12 @@ div{
 
 body{
     background-color: #EEE;
-    padding-top: 10vh;
 }
 
+
+#news-top{
+    margin-top: 30px;
+}
 #news-top a{
     text-decoration: none;
 }

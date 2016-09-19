@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Timeline</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/general.css">
+    <link rel="stylesheet" href="assets/css/timeline.css">
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+
+<!--    <script src="https://use.fontawesome.com/5e311cc103.js"></script>-->
+</head>
+<body>
+    <nav id="navbar" class="fixed">
+        
+    </nav>
+    <div id="div-anchor">
+        <ul>
+            <li class="anchor" id="anchor-stage1"><div id="anchor-desc-stage1">問題探索階段</div></li>
+            <li class="anchor" id="anchor-stage2"><div id="anchor-desc-stage2">團隊建立階段</div></li>
+            <li class="anchor" id="anchor-stage3"><div id="anchor-desc-stage3">構想精煉階段</div></li>
+            <li class="anchor" id="anchor-stage4"><div id="anchor-desc-stage4">實作驗證階段</div></li>
+            <li class="anchor" id="anchor-stage5"><div id="anchor-desc-stage5">轉化實踐階段</div></li>
+            <li id="to-top"><i class="fa fa-angle-up"></i></li>
+        </ul>
+    </div>
+    <div data-start="background-color: rgba(187, 187, 187, 1);" data-end="background-color: rgba(100, 100, 100, 1);" class="stage" id="stage1">
+        <div data-start="bottom: 30%;" data-end="bottom: -130%;" class="events">
+            <p class="event-stage">問題探索階段</p>
+            <div class="event">
+                <a href="#"><p class="event-name">開幕記者會</p></a>
+                <p class="event-date">0921</p>
+            </div>
+            <div class="event">
+                <a href="#"><p class="event-name">五大領域論壇</p></a>
+                <p class="event-date">0921</p>
+            </div>
+            <div class="event">
+                <a href="#"><p class="event-name">招集挑戰者</p></a>
+                <p class="event-date">0921</p>
+            </div>
+        </div>
+        <img class="bg" src="assets/img/stage1_bg.svg">
+        <img data-start="bottom: 10%;" data-end="bottom: -120%;" class="icon" src="assets/img/stage1_icon.png">
+    </div>
+    <div data-start="background-color: rgba(187, 187, 187, 1);" data-end="background-color: rgba(230, 0, 69, 1);" class="stage" id="stage2">
+        <div data-start="bottom: 50%;" data-end="bottom: -90%;" class="events">
+            <p class="event-stage">團隊建立階段</p>
+            <div class="event">
+                <a href="#"><p class="event-name">Meet Up No.1</p></a>
+                <p class="event-date">0921</p>
+            </div>
+            <div class="event">
+                <a href="#"><p class="event-name">Meet Up No.2</p></a>
+                <p class="event-date">0921</p>
+            </div>
+            <div class="event">
+                <a href="#"><p class="event-name">線上書審</p></a>
+                <p class="event-date">0921</p>
+            </div>
+        </div>
+        <img class="bg" src="assets/img/stage2_bg.svg">
+        <img data-start="bottom: 20%;" data-end="bottom: -60%;" class="icon" src="assets/img/stage2_icon.png">
+    </div>
+    <div data-start="background-color: rgba(187, 187, 187, 1);" data-end="background-color: rgba(255, 236, 50, 0.7);" class="stage" id="stage3">
+        <div data-start="bottom: 75%;" data-end="bottom: -55%;" class="events">
+            <p class="event-stage">構想精煉階段</p>
+            <div class="event">
+                <a href="#"><p class="event-name">構想營</p></a>
+                <p class="event-date">0921</p>
+            </div>
+            <div class="event">
+                <a href="#"><p class="event-name">Idea Show</p></a>
+                <p class="event-date">0921</p>
+            </div>
+        </div>
+        <img class="bg" src="assets/img/stage3_bg.svg">
+        <img data-start="bottom: 20%;" data-end="bottom: -60%;" class="icon" src="assets/img/stage3_icon.png">
+    </div>
+    <div data-start="background-color: rgba(187, 187, 187, 1);" data-end="background-color: rgba(87, 87, 87, 1);" class="stage" id="stage4">
+        <div data-start="bottom: 70%;" data-end="bottom: -20%;" class="events">
+            <p class="event-stage">實作驗證階段</p>
+            <div class="event">
+                <a href="#"><p class="event-name">實作營</p></a>
+                <p class="event-date">0921</p>
+            </div>
+        </div>
+        <img class="bg" src="assets/img/stage4_bg.png">
+        <img data-start="top: -10%;" data-end="top: 50%;" class="icon" src="assets/img/stage4_icon.png">
+    </div>
+    <div data-start="background-color: rgba(187, 187, 187, 1);" data-end="background-color: rgba(20, 37, 153, 1);" class="stage" id="stage5">
+        <div data-start="bottom: 90%;" data-end="bottom: 30%;" class="events">
+            <p class="event-stage">轉化實踐階段</p>
+            <div class="event">
+                <a href="#"><p class="event-name">轉化營</p></a>
+                <p class="event-date">0921</p>
+            </div>
+        </div>
+        <img class="bg" src="assets/img/stage5_bg.svg">
+        <img data-start="top: 0%;" data-end="top: 40%;" class="icon" src="assets/img/stage5_icon.png">
+    </div>
+    <!--
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewbox="0 0 1440 3777" preserveAspectRatio="xMidYMin slice" id="route">
+        <path d="M650 0 Q450 375, 650 749 T650 1460 Q480 1742, 650 2073 v330 l120 120 l-120 120 v400 q80 100, 180 0 l110 -88" stroke="#777" stroke-width="12" fill="none" />
+        <path stroke-dasharray="3595" stroke-dashoffset="3595" d="M650 0 Q450 375, 650 749 T650 1460 Q480 1742, 650 2073 v330 l120 120 l-120 120 v400 q80 100, 180 0 l110 -88" stroke="#FFEB32" stroke-width="12" fill="none" id="flow" />
+    </svg>
+    -->
+    <footer>
+    
+    </footer>
+    <div id="messenger">
+        
+    </div>
+    
+    <script type="text/javascript" src="assets/js/general.js"></script>
+    <script src="assets/plugins/skrollr.js/skrollr.min.js"></script>
+    <script src="assets/js/timeline.js"></script>
+</body>
+</html>

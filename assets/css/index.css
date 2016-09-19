@@ -147,13 +147,13 @@ body.loading{
     height: 100%;
 }
 #loading img.playing{
-    animation: loading 1s linear;
+    animation: loading 1.2s linear;
 }
-#loading img:mth-child(2).playing{
-    animation-delay: .4s;
+#loading img:nth-child(2).playing{
+    animation-delay: .5s;
 }
 #loading img:nth-child(3).playing{
-    animation-delay: .8s;
+    animation-delay: 1s;
 }
 @keyframes loading{
     0%{
@@ -254,7 +254,7 @@ body.loading{
 
 /*overview*/
 #overview{
-    height: 100vh;
+    height: 49vw;
     background-color: #b2b2b2;
     padding: 0;
     background-size: cover;
@@ -353,17 +353,31 @@ body.loading{
     background-color: #b2b2b2;
     padding: 5vh 0;
 }
+#faq .avatar{
+    height: 350px;
+}
+#faq .avatar img{
+    height: 100%;
+}
+.bubble-wrapper{
+    position: relative;
+    height: 350px;
+}
 .speech-bubble-question,
 .speech-bubble-answer{
     background-color: #ffeb32;
     padding: 15px;
     margin-bottom: 5px;
     border-radius: 5px;
-    width: 100%;
     transition: all .1s linear;
 }
 .speech-bubble-question{
+    width: 80%;
     position: relative;
+    margin-bottom: 10px;
+}
+.speech-bubble-question:nth-child(2n){
+    margin-left: 20px;
 }
 .speech-bubble-question:before{
     content: "";
@@ -379,6 +393,7 @@ body.loading{
     opacity: 0;
 }
 .speech-bubble-answer{
+    width: 100%;
     position: absolute;
     opacity: 0;
 }
@@ -395,9 +410,6 @@ body.loading{
 }
 .speech-bubble-answer.active{
     opacity: 1;
-}
-.avatar{
-    margin-top: 20px;
 }
 
 
@@ -645,6 +657,13 @@ body.loading{
     border-radius: 50%;
 }
 
+#how{
+    background-color: #b2b2b2;
+}
+
+#about{
+    padding: 5vh 0;
+}
 #about .partner > span{
     display: inline-block;
     width: 16%;
