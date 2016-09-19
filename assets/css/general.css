@@ -15,7 +15,7 @@ body{
 /*    background-color: #EEE;*/
 }
 p{
-    font-size: 16px;
+    font-size: 18px;
 }
 .eng-title{
     font-family: 'Jaapokki-Regular';
@@ -65,10 +65,7 @@ p{
 #navbar .navbar-nav a{
     color: #000;
     z-index: 2;
-<<<<<<< HEAD
     text-align: center;
-=======
->>>>>>> dd1456fde5dc50041ae1daa096bd9309d0dee7b9
 }
 @media screen and (min-width: 768px){
     #navbar .dropdown-toggle:hover ~ .dropdown-menu,
@@ -101,7 +98,6 @@ p{
 }
 #navbar .navbar-right .dropdown-menu{
     padding: 0px;
-<<<<<<< HEAD
     -webkit-border: none;
     -moz-border: none;
     -o-border: none;
@@ -121,14 +117,6 @@ p{
 }
 #navbar .navbar-right .dropdown-menu li:hover a {
     color: #fff;
-=======
-}
-#navbar .navbar-right .dropdown-menu li{
-    padding: 5px 20px;
-}
-#navbar .navbar-right .dropdown-menu li:hover{
-    border-bottom: 1px solid #666;
->>>>>>> dd1456fde5dc50041ae1daa096bd9309d0dee7b9
 }
 /*
 #navbar .navbar-right .dropdown-collapse{
@@ -141,10 +129,6 @@ p{
     
 }
 */
-<<<<<<< HEAD
-
-=======
->>>>>>> dd1456fde5dc50041ae1daa096bd9309d0dee7b9
 #header{
     background: url('../img/header.png');
     background-size: cover;

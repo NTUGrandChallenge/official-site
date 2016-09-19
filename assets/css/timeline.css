@@ -1,3 +1,6 @@
+body{
+    overflow-x: hidden;
+}
 svg {
 	position: absolute;
 	top: 0;
@@ -9,11 +12,7 @@ svg {
   position: fixed;
   top: 120px;
   right: 0;
-<<<<<<< HEAD
   z-index: 10;
-=======
-  z-index: 1000;
->>>>>>> dd1456fde5dc50041ae1daa096bd9309d0dee7b9
   text-align: center;
 }
 #div-anchor ul {
@@ -29,11 +28,7 @@ svg {
   -moz-border-radius: 6px;
   -o-border-radius: 6px;
   list-style-type: none;
-<<<<<<< HEAD
   z-index: 11;
-=======
-  z-index: 1001;
->>>>>>> dd1456fde5dc50041ae1daa096bd9309d0dee7b9
   cursor: pointer;
 }
 #to-top {

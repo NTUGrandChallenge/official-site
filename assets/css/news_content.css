@@ -1,0 +1,9 @@
+.circular-img{
+	border-radius: 50%;
+	width:100%;
+}
+.textCenter{
+	text-align: center;
+	font-size:15px;
+}
+

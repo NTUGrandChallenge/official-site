@@ -1,7 +1,7 @@
 //load template
-$('#navbar').load('_navbar.html');
-$('footer').load('_footer.html');
-$('#messenger').load('_messenger.html');
+$('#navbar').load('/official-site/_navbar.html');
+$('footer').load('/official-site/_footer.html');
+$('#messenger').load('/official-site/_messenger.html');
 if($('#navbar').hasClass('fixed')){
     $('body').css('padding-top', $('#navbar').height());
 }

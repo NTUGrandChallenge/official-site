@@ -8,7 +8,6 @@ body{
     background-color: #EEE;
 }
 
-
 #news-top{
     margin-top: 30px;
 }
@@ -81,6 +80,9 @@ img.tall {
 #news-list .one-news .cover-img{
     padding: 0px;
 }
+#news-list .one-news .news-title{
+    color: #333;
+}
 #news-list .one-news .news-date{
     position: absolute;
     right: 0;
@@ -91,6 +93,7 @@ img.tall {
 #news-list .one-news .news-content{
     margin-top: 25px;
     width: 80%;
+    color: #333;
 }
 
 .cover-img{

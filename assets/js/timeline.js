@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 /* Skrollr init */
 // var s = skrollr.init();
 // skrollr.get().refresh();
@@ -9,8 +8,6 @@ $(document).ready(function(){
 	};
 });
 
-=======
->>>>>>> dd1456fde5dc50041ae1daa096bd9309d0dee7b9
 /* Anchors */
 var originalColor = '#ffffff',
 	selectedColor = '#ffeb32';
@@ -66,7 +63,6 @@ var fromOffset = flow.attr('stroke-dashoffset');
 var maxHeight = $('#flow')[0].getBoundingClientRect().height - $(window).height();
 */
 
-<<<<<<< HEAD
 var $window = $(window),
 	stage1 = $('#stage1'),
 	stage2 = $('#stage2'),
@@ -79,8 +75,6 @@ var $window = $(window),
 	events4 = $('#stage4 > .events'),
 	events5 = $('#stage5 > .events');
 
-=======
->>>>>>> dd1456fde5dc50041ae1daa096bd9309d0dee7b9
 $(window).scroll(function() {
 	/*
 	var currentProgress = ($(window).scrollTop() < maxHeight) ? fromOffset * (1 - $(window).scrollTop() / maxHeight) : 0;
@@ -89,7 +83,6 @@ $(window).scroll(function() {
 	*/
 
 	/* Content Div Animation */
-<<<<<<< HEAD
 	if($window.scrollTop() >= stage1.offset().top &&
 		$window.scrollTop() < stage2.offset().top) {
 		anchorColorChange('#anchor-stage1');
@@ -115,32 +108,3 @@ $(window).scroll(function() {
 		events5.addClass('right-animated-2');
 	}
 });
-=======
-	if($(window).scrollTop() >= $('#stage1').offset().top &&
-		$(window).scrollTop() < $('#stage2').offset().top) {
-		anchorColorChange('#anchor-stage1');
-		$('#stage1 > .events').addClass('left-animated');
-	}
-	if($(window).scrollTop() >= $('#stage2').offset().top &&
-		$(window).scrollTop() < $('#stage3').offset().top) {
-		anchorColorChange('#anchor-stage2');
-		$('#stage2 > .events').addClass('right-animated-1');
-	}
-	if($(window).scrollTop() >= $('#stage3').offset().top &&
-		$(window).scrollTop() < $('#stage4').offset().top) {
-		anchorColorChange('#anchor-stage3');
-		$('#stage3 > .events').addClass('left-animated');
-	}
-	if($(window).scrollTop() >= $('#stage4').offset().top &&
-		$(window).scrollTop() < $('#stage5').offset().top) {
-		anchorColorChange('#anchor-stage4');
-		$('#stage4 > .events').addClass('right-animated-1');
-	}
-	if($(window).scrollTop() >= $('#stage5').offset().top) {
-		anchorColorChange('#anchor-stage5');
-		$('#stage5 > .events').addClass('right-animated-2');
-	}
-});
-
-var skrollr = skrollr.init();
->>>>>>> dd1456fde5dc50041ae1daa096bd9309d0dee7b9
