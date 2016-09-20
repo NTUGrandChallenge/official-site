@@ -1,3 +1,43 @@
-.content{
-    height: 80vh;
+#fullpage .section{
+    background-color: #b2b2b2;
+}
+#fullpage .section h2,
+#fullpage .section h3{
+    margin-top: 50px;
+}
+
+.full-width{
+    width: 100%;
+}
+
+a,
+a:hover{
+    color: #333;
+    text-decoration: none;
+}
+
+.fp-controlArrow {
+    display: none;
+}
+
+h2 .triangle-right{
+    display: inline-block;
+    width: 0;
+    border-width: 15px 5px 15px 25px;
+    border-style: solid;
+    border-color: transparent transparent transparent #ffeb32;
+}
+
+h2 .triangle-left{
+    display: inline-block;
+    width: 0;
+    border-width: 15px 25px 15px 0px;
+    border-style: solid;
+    border-color: transparent #fff transparent transparent;
+}
+
+.number{
+    color: #ffeb32;
+    font-weight: 900;
+    font-size: 40px;
 }

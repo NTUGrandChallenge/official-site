@@ -29,12 +29,12 @@ $(window).scroll(function(){
             $('#slogan p').fadeTo(600, 1);
         }, 600);
     }
-    if($(window).scrollTop() > (talk_position.top - 500)){
-        $('#talk h2').fadeTo(600, 1);
-        setTimeout(function(){
-            $('#talk p').fadeTo(600, 1);
-        }, 600);
-    }
+//    if($(window).scrollTop() > (talk_position.top - 500)){
+//        $('#talk h2').fadeTo(600, 1);
+//        setTimeout(function(){
+//            $('#talk p').fadeTo(600, 1);
+//        }, 600);
+//    }
     
 //    easing background
 //    if($(window).scrollTop() > divider_position.top){
@@ -91,7 +91,7 @@ var Slideshow = {
         return slideshow;
     }
 }
-var top_slideshow = Slideshow.createNew('#top');
+//var top_slideshow = Slideshow.createNew('#top');
 var ov_slideshow = Slideshow.createNew('#overview');
 
 $(".diamondswrap").diamonds({

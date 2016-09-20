@@ -49,12 +49,14 @@ p{
     width: 100%;
     min-height: 5vh;
     height: auto;
-    background-color: #FFF;
+    background-color: #b2b2b2;
+    transition: background .2s ease-out;
 }
 #navbar.fixed{
     position: fixed;
     top: 0;
     border-bottom: 1px solid #EEE;
+    background-color: #FFF;
 }
 #navbar .navbar-brand{
     padding: 2px;
