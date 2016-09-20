@@ -11,6 +11,8 @@ var navbar_position = $('#navbar').offset();
 //var divider_position = $('#divider').offset();
 var slogan_position = $('#slogan').offset();
 var talk_position = $('#talk').offset();
+
+setInterval(function(){
 $(window).scroll(function(){
 //    fixed navbar
     if($(window).scrollTop() > navbar_position.top){
@@ -23,12 +25,12 @@ $(window).scroll(function(){
     }
     
 //    fade in
-    if($(window).scrollTop() > (slogan_position.top - 500)){
-        $('#slogan h1').fadeTo(600, 1);
-        setTimeout(function(){
-            $('#slogan p').fadeTo(600, 1);
-        }, 600);
-    }
+//    if($(window).scrollTop() > (slogan_position.top - 500)){
+//        $('#slogan h1').fadeTo(600, 1);
+//        setTimeout(function(){
+//            $('#slogan p').fadeTo(600, 1);
+//        }, 600);
+//    }
 //    if($(window).scrollTop() > (talk_position.top - 500)){
 //        $('#talk h2').fadeTo(600, 1);
 //        setTimeout(function(){
@@ -45,6 +47,7 @@ $(window).scroll(function(){
 //        $('body').css('background-color', '#FFF');
 //    }
 });
+}, 100);
 
 //slide down button
 $('#scroll_to_navbar').click(function(){
@@ -93,6 +96,7 @@ var Slideshow = {
 }
 //var top_slideshow = Slideshow.createNew('#top');
 var ov_slideshow = Slideshow.createNew('#overview');
+$('#overview').css("height", $('#overview img').height());
 
 $(".diamondswrap").diamonds({
     size: 150, // Size of the squares
@@ -118,8 +122,8 @@ $('.speecher').hover(function(){
 })
 
 //number count up
-$('#data .counter').counterUp({
-    delay: 10,
-    time: 500
-});
+//$('#data .counter').counterUp({
+//    delay: 10,
+//    time: 500
+//});
 

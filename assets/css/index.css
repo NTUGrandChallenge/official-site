@@ -53,8 +53,7 @@ h4 .triangle-right{
     position:relative;
     width: 10%;
     display: inline-block;
-    height: 100%;
-    text-align: center;
+    top: 0;
 }
 .slideshow-container .prev,
 .slideshow-container .next{
@@ -151,7 +150,7 @@ body.loading{
     height: 100%;
 }
 #loading img.playing{
-    animation: loading 1.2s linear;
+    animation: loading 1.2s linear infinite;
 }
 #loading img:nth-child(2).playing{
     animation-delay: .5s;
@@ -182,7 +181,78 @@ body.loading{
     background-size: cover;
     background-position: center;
     position: relative;
+    overflow: hidden;
 }
+#top .little-triangle{
+    position: absolute;
+    bottom: -10vh;
+    border-style: solid;
+    border-width: 20px 0px 20px 40px;
+    border-color: transparent transparent transparent rgba(255, 235, 50, 0.6);
+    transform: rotate(-45deg);
+    animation-name: right_top; 
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+#top .little-triangle:nth-child(1){
+    animation-duration: 5s;
+    animation-delay: 0s;
+    left: 0px;
+}
+#top .little-triangle:nth-child(2){
+    animation-duration: 4s;
+    animation-delay: .2s;
+    left: 50px;
+}
+#top .little-triangle:nth-child(3){
+    animation-duration: 5.3s;
+    animation-delay: .4s;
+    left: 110px;
+}
+#top .little-triangle:nth-child(4){
+    animation-duration: 3.6s;
+    animation-delay: 0s;
+    left: 190px;
+}
+#top .little-triangle:nth-child(5){
+    animation-duration: 4.7s;
+    animation-delay: 0s;
+    left: 270px;
+}
+#top .little-triangle:nth-child(6){
+    animation-duration: 4.7s;
+    animation-delay: 0s;
+    left: 270px;
+}
+#top .little-triangle:nth-child(7){
+    animation-duration: 4.7s;
+    animation-delay: 0s;
+    left: 270px;
+}
+#top .little-triangle:nth-child(8){
+    animation-duration: 4.7s;
+    animation-delay: 0s;
+    left: 270px;
+}
+#top .little-triangle:nth-child(9){
+    animation-duration: 4.7s;
+    animation-delay: 0s;
+    left: 270px;
+}
+#top .little-triangle:nth-child(10){
+    animation-duration: 4.7s;
+    animation-delay: 0s;
+    left: 270px;
+}
+@keyframes right_top{
+    from{
+        transform: translate(-10vw, 0vh) rotate(-45deg);
+    }
+    to{
+        transform: translate(90vw, -100vh) rotate(-45deg);
+    }
+}
+
 #top .parallelogram-button{
     position: absolute;
     top: 45%;
@@ -259,7 +329,7 @@ body.loading{
 
 /*overview*/
 #overview{
-    height: 80vh;
+    min-height: 80vh;
     background-color: #b2b2b2;
     padding: 0;
     background-size: cover;
@@ -327,6 +397,10 @@ body.loading{
     margin-top: 50px;
     margin-bottom: 50px;
 }
+#feature img{
+    width: 100%;
+}
+
 #feature .one{
     margin-bottom: 20px;
 }
