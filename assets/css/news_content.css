@@ -7,3 +7,29 @@
 	font-size:15px;
 }
 
+/*parallelogram-button*/
+.parallelogram-button {
+    transform: skew(-10deg);
+    padding: 3px 10px;
+    font-size: 34px;
+    font-weight: bold;
+    text-decoration: none;
+    position: absolute;
+}
+.parallelogram-button.yellow{
+    background-color: #ffeb32;
+    color: #000;
+}
+.parallelogram-button.black{
+    background-color: #000;
+    color: #ffeb32;
+}
+.parallelogram-button:hover{
+    color: #FFF;
+    background-color: #142598;
+    animation: none;
+}
+.skew-fix{
+    display:inline-block;
+    transform: skew(10deg);
+}

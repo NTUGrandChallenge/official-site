@@ -11,7 +11,8 @@
 }
 
 a,
-a:hover{
+a:hover,
+a:focus{
     color: #333;
     text-decoration: none;
 }
