@@ -1,7 +1,7 @@
 /*@import url(https://fonts.googleapis.com/css?family=Raleway:400,900);*/
 
 body{
-/*    background-color: #b2b2b2;*/
+    background-color: #b2b2b2;
 }
 
 .margin-25{
@@ -448,6 +448,97 @@ body.loading{
     #feature .content{
         height: 250px;
     }
+}
+
+#five{
+    position: relative;
+}
+#five .floating{
+    position: absolute;
+}
+#five .floating.grain{
+    width: 2vw;
+    animation-name: spin;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+}
+#five .floating.grain:nth-child(1){
+    top: 42%;
+    left: 25%;
+}
+#five .floating.grain:nth-child(2){
+    top: 38%;
+    left: 42%;
+    animation-delay: .5s;
+}
+#five .floating.grain:nth-child(3){
+    top: 40%;
+    left: 58%;
+    animation-delay: .2s;
+}
+#five .floating.grain:nth-child(4){
+    top: 39%;
+    left: 75%;
+    animation-delay: .4s;
+}
+@keyframes spin{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+#five .floating.five{
+    width: 5vw;
+    animation-name: float;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+}
+#five .floating.five:nth-child(5){
+    top: 60%;
+    left: 23%;
+    animation-delay: .5s;
+}
+#five .floating.five:nth-child(6){
+    top: 58%;
+    left: 35%;
+    animation-delay: .5s;
+}
+#five .floating.five:nth-child(7){
+    top: 62%;
+    left: 48%;
+    animation-delay: .5s;
+}
+#five .floating.five:nth-child(8){
+    top: 61%;
+    left: 61%;
+    animation-delay: .5s;
+}
+#five .floating.five:nth-child(9){
+    top: 59%;
+    left: 75%;
+    animation-delay: .5s;
+}
+@keyframes float{
+    0%{
+        transform: rotate(0deg) translate(30px, 20px);
+    }
+    25%{
+        transform: rotate(-25deg) translate(50px, 70px);
+    }
+    50%{
+        transform: rotate(0deg) translate(50px, 70px);
+    }
+    75%{
+        transform: rotate(0deg) translate(50px, 70px);
+    }
+    100%{
+        transform: rotate(0deg) translate(50px, 70px);
+    }
+    
 }
 
 /*faq*/

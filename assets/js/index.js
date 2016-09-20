@@ -53,7 +53,6 @@ $('#top .blink').on('animationend webkitAnimationEnd oAnimationEnd', function ()
     }
     else{
         $('#top .blink').first().addClass('active');
-        console.log("FUCK");
     }
     $(this).removeClass('active');
 });
