@@ -177,79 +177,102 @@ body.loading{
     height: 90vh;
     background-color: #b2b2b2;
     padding: 0px;
-    background-image: url('../img/top.png');
+/*    background-image: url('../img/top.png');*/
     background-size: cover;
     background-position: center;
     position: relative;
     overflow: hidden;
 }
+#top img{
+    position: absolute;
+    height: 100%;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+#top img.blink{
+    opacity: 0;
+}
+#top img.blink.active{
+    animation-name: blink;
+    animation-duration: 2s;
+}
+@keyframes blink{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100${
+        opacity: 0;
+    }
+}
 #top .little-triangle{
     position: absolute;
-    bottom: -10vh;
     border-style: solid;
-    border-width: 20px 0px 20px 40px;
+    border-width: 15px 0px 15px 25px;
     border-color: transparent transparent transparent rgba(255, 235, 50, 0.6);
-    transform: rotate(-45deg);
-    animation-name: right_top; 
+    animation-name: right; 
     animation-timing-function: linear;
     animation-iteration-count: infinite;
 }
 #top .little-triangle:nth-child(1){
     animation-duration: 5s;
     animation-delay: 0s;
-    left: 0px;
+    top: 0vh;
 }
 #top .little-triangle:nth-child(2){
     animation-duration: 4s;
     animation-delay: .2s;
-    left: 50px;
+    top: 10vh;
 }
 #top .little-triangle:nth-child(3){
     animation-duration: 5.3s;
     animation-delay: .4s;
-    left: 110px;
+    top: 18vh;
 }
 #top .little-triangle:nth-child(4){
     animation-duration: 3.6s;
     animation-delay: 0s;
-    left: 190px;
+    top: 26vh;
 }
 #top .little-triangle:nth-child(5){
     animation-duration: 4.7s;
     animation-delay: 0s;
-    left: 270px;
+    top: 40vh;
 }
 #top .little-triangle:nth-child(6){
-    animation-duration: 4.7s;
-    animation-delay: 0s;
-    left: 270px;
+    animation-duration: 3s;
+    animation-delay: .5s;
+    top: 47vh;
 }
 #top .little-triangle:nth-child(7){
-    animation-duration: 4.7s;
+    animation-duration: 4.3s;
     animation-delay: 0s;
-    left: 270px;
+    top: 56vh;
 }
 #top .little-triangle:nth-child(8){
-    animation-duration: 4.7s;
+    animation-duration: 5.2s;
     animation-delay: 0s;
-    left: 270px;
+    top: 65vh;
 }
 #top .little-triangle:nth-child(9){
-    animation-duration: 4.7s;
+    animation-duration: 4.5s;
     animation-delay: 0s;
-    left: 270px;
+    top: 72vh;
 }
 #top .little-triangle:nth-child(10){
-    animation-duration: 4.7s;
+    animation-duration: 6s;
     animation-delay: 0s;
-    left: 270px;
+    top: 81vh;
 }
-@keyframes right_top{
+@keyframes right{
     from{
-        transform: translate(-10vw, 0vh) rotate(-45deg);
+        transform: translateX(-10vw);
     }
     to{
-        transform: translate(90vw, -100vh) rotate(-45deg);
+        transform: translateX(110vw);
     }
 }
 

@@ -12,7 +12,6 @@ var navbar_position = $('#navbar').offset();
 var slogan_position = $('#slogan').offset();
 var talk_position = $('#talk').offset();
 
-setInterval(function(){
 $(window).scroll(function(){
 //    fixed navbar
     if($(window).scrollTop() > navbar_position.top){
@@ -47,7 +46,17 @@ $(window).scroll(function(){
 //        $('body').css('background-color', '#FFF');
 //    }
 });
-}, 100);
+
+$('#top .blink').on('animationend webkitAnimationEnd oAnimationEnd', function (){
+    if($(this).next('.blink').length != 0){
+        $(this).next('.blink').addClass('active');
+    }
+    else{
+        $('#top .blink').first().addClass('active');
+        console.log("FUCK");
+    }
+    $(this).removeClass('active');
+});
 
 //slide down button
 $('#scroll_to_navbar').click(function(){
