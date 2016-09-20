@@ -131,6 +131,19 @@ h4 .triangle-right{
     }
 }
 
+.more{
+    position: absolute;
+    width: 25vw;
+    border-bottom: 2px solid #000;
+    text-align: right;
+    font-size: 24px;
+}
+.more a,
+.more a:hover{
+    color: #000;
+    text-decoration: none;
+}
+
 /*loading mask and animation*/
 body.loading{
     overflow: hidden;
@@ -465,21 +478,21 @@ body.loading{
 }
 #five .floating.grain:nth-child(1){
     top: 42%;
-    left: 25%;
+    left: 28%;
 }
 #five .floating.grain:nth-child(2){
+    top: 38%;
+    left: 60%;
+    animation-delay: .5s;
+}
+#five .floating.grain:nth-child(3){
     top: 38%;
     left: 42%;
     animation-delay: .5s;
 }
-#five .floating.grain:nth-child(3){
-    top: 40%;
-    left: 58%;
-    animation-delay: .2s;
-}
 #five .floating.grain:nth-child(4){
-    top: 39%;
-    left: 75%;
+    top: 78%;
+    left: 44%;
     animation-delay: .4s;
 }
 @keyframes spin{
@@ -494,51 +507,54 @@ body.loading{
     width: 5vw;
     animation-name: float;
     animation-iteration-count: infinite;
-    animation-duration: 3s;
-    animation-timing-function: linear;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
 }
 #five .floating.five:nth-child(5){
     top: 60%;
-    left: 23%;
-    animation-delay: .5s;
+    left: 26%;
+    animation-delay: 0s;
 }
 #five .floating.five:nth-child(6){
     top: 58%;
-    left: 35%;
-    animation-delay: .5s;
+    left: 37%;
+    animation-delay: 1s;
 }
 #five .floating.five:nth-child(7){
     top: 62%;
-    left: 48%;
-    animation-delay: .5s;
+    left: 51%;
+    animation-delay: 0.5s;
 }
 #five .floating.five:nth-child(8){
     top: 61%;
-    left: 61%;
-    animation-delay: .5s;
+    left: 63%;
+    animation-delay: 1.5s;
 }
 #five .floating.five:nth-child(9){
     top: 59%;
-    left: 75%;
-    animation-delay: .5s;
+    left: 76%;
+    animation-delay: 1.2s;
 }
 @keyframes float{
     0%{
-        transform: rotate(0deg) translate(30px, 20px);
+        transform: rotate(0deg) translate(0px, 0px);
     }
     25%{
-        transform: rotate(-25deg) translate(50px, 70px);
+        transform: rotate(-21deg) translate(8px, -32px);
     }
     50%{
-        transform: rotate(0deg) translate(50px, 70px);
+        transform: rotate(0deg) translate(-22px, -10px);
     }
     75%{
-        transform: rotate(0deg) translate(50px, 70px);
+        transform: rotate(26deg) translate(-24px, 16px);
     }
     100%{
-        transform: rotate(0deg) translate(50px, 70px);
+        transform: rotate(0deg) translate(0px, 0px);
     }
-    
+}
+#five .more{
+    right: 0;
+    top: 70%;
 }
 
 /*faq*/
@@ -858,7 +874,7 @@ body.loading{
 
 #how{
     background-color: #666;
-    height: 50vh;
+    height: 30vh;
     padding: 10vh 0;
     color: #fff;
 }
@@ -869,6 +885,7 @@ body.loading{
 
 #about{
     padding: 5vh 0;
+    background-color: #fff;
 }
 #about .partner > span{
     display: inline-block;

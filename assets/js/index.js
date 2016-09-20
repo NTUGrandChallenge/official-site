@@ -1,7 +1,7 @@
-$(window).load(function(){
-    $('body').removeClass('loading');
-    $('#loading').fadeOut(800).remove();
-})
+//$(window).load(function(){
+//    $('body').removeClass('loading');
+//    $('#loading').fadeOut(800).remove();
+//})
 
 //$('#overview').css('height', $('#overview .slides img').height())
 

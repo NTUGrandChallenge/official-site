@@ -19,7 +19,8 @@
     <script src="assets/plugins/couter-up/jquery.counterup.min.js"></script>
     
 </head>
-<body class="loading">
+<body>
+<!--
     <div id="loading" style="color: #FFF;">
         <div class="flexbox-center">
             <div class="img-container">
@@ -29,6 +30,7 @@
             </div>
         </div>
     </div>
+-->
 <!--
     <script>
         var loading_img = $('#loading img');
@@ -182,23 +184,26 @@
         <img src="assets/img/index_five/five_4.png" class="floating five" />
         <img src="assets/img/index_five/five_5.png" class="floating five" />
         <img src="assets/img/index_five/0_universe-02.png" style="width: 100%; position: relative; z-index: -1;" />
+        <img src="assets/img/index_five/five%20domains.png" style="width: 20%; position: absolute; top: 0;" />
+        <div class="more">
+            <a href="five.html">瞭解更多</a>
+        </div>
     </div>
     
-    <div class="container" id="how">
-        <div class="row">
-            <h2 class="text-center">如何成為挑戰者？</h2>
-            <p class="text-center">blablablablabla blablabla</p>
-            <div class="col-xs-offset-2 col-xs-4">
+    <div id="how">
+            <div class="col-xs-6">
+                <h2 class="text-center">如何成為挑戰者？</h2>
+            </div>
+            <div class="col-xs-3">
                 <a class="parallelogram-button black" href="sign.html">
                     <span class="skew-fix">我是個人</span>
                 </a>
             </div>
-            <div class="col-xs-4">
+            <div class="col-xs-3">
                 <a class="parallelogram-button yellow" href="sign.html">
                     <span class="skew-fix">我是團隊</span>
                 </a>
             </div>
-        </div>
     </div>
 
     
@@ -528,6 +533,7 @@
 -->
     
     
+<!--
     <div class="container-fluid margin-25">
         <div class="row" id="faq">
             <div class="col-md-offset-1 col-md-2 col-xs-3">
@@ -569,6 +575,7 @@
             </div>
         </div>
     </div>
+-->
         
         
         
@@ -775,18 +782,12 @@
                         <img src="assets/img/overview_2.png"/>
                     </div>
                 </div>
-                <div class="slides">
-                    <div class="full-height">
-                        <h2>h3llo</h2>
-                    </div>
-                </div>
             </div>
             <a class="prev" onclick="ov_slideshow.plusSlides(-1)"></a>
             <a class="next" onclick="ov_slideshow.plusSlides(1)"></a>
             <div class="indicator-container text-center">
                 <span class="indicator" onclick="ov_slideshow.currentSlide(0)"></span>
                 <span class="indicator" onclick="ov_slideshow.currentSlide(1)"></span>
-                <span class="indicator" onclick="ov_slideshow.currentSlide(2)"></span>
             </div>
         </div>
     </div>
