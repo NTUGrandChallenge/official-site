@@ -52,6 +52,9 @@ img.tall {
     
 }
 
+#news-list{
+    margin: 10vh auto;
+}
 #news-list .one-news{
     margin-top: 15px;
     margin-bottom: 15px;

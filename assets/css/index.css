@@ -259,7 +259,7 @@ body.loading{
 
 /*overview*/
 #overview{
-    height: 90vh;
+    height: 80vh;
     background-color: #b2b2b2;
     padding: 0;
     background-size: cover;
@@ -654,13 +654,14 @@ body.loading{
 }
 
 #encourage{
-    height: 70vh;
+/*    height: 70vh;*/
     padding: 5vh 0;
     background-color: #fff;
 }
 #encourage .row{
     margin-top: 25px;
     margin-bottom: 25px;
+    height: 30vh;
 }
 #encourage .circular-img{
     width: 100%;
