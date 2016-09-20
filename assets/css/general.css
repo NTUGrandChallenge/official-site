@@ -12,7 +12,7 @@ html *{
     font-family: 'Coves-Bold', 'Noto Sans TC', sans-serif;
 }
 body{
-/*    background-color: #EEE;*/
+    overflow-x: hidden;
 }
 p{
     font-size: 18px;

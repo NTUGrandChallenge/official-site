@@ -365,7 +365,7 @@ body.loading{
 
 /*overview*/
 #overview{
-    min-height: 80vh;
+/*    min-height: 80vh;*/
     background-color: #b2b2b2;
     padding: 0;
     background-size: cover;
@@ -555,6 +555,22 @@ body.loading{
 #five .more{
     right: 0;
     top: 70%;
+}
+
+/*why*/
+#why .parallelogram{
+    padding: 0px 10px;
+    margin-bottom: 10px;
+    width: 80%;
+    transform: skew(-20deg);
+    background-color: #ffeb32;
+    left: 5px;
+}
+#why .parallelogram h4{
+    margin: 0px;
+}
+#why .parallelogram .skew-fix{
+    transform: skew(20deg);
 }
 
 /*faq*/
@@ -860,7 +876,6 @@ body.loading{
 #encourage{
 /*    height: 70vh;*/
     padding: 5vh 0;
-    background-color: #fff;
 }
 #encourage .row{
     margin-top: 25px;

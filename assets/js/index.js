@@ -106,22 +106,17 @@ var Slideshow = {
 var ov_slideshow = Slideshow.createNew('#overview');
 $('#overview').css("height", $('#overview img').height());
 
-$(".diamondswrap").diamonds({
-    size: 150, // Size of the squares
-    gap: 1 // Pixels between squares
-});
-
 //question and answer
-for(var i = 1; i <= $('.speech-bubble-question').length; i++){
-    $('.speech-bubble-question:nth-child('+ i +')').hover(function(){
-        $('.speech-bubble-question').addClass('mask');
-        $(this).removeClass('mask');
-        $('.speech-bubble-answer:nth-child('+ ($(this).index()+1) +')').addClass('active');
-    },function(){
-        $('.speech-bubble-question').removeClass('mask');
-        $('.speech-bubble-answer').removeClass('active');
-    })
-}
+//for(var i = 1; i <= $('.speech-bubble-question').length; i++){
+//    $('.speech-bubble-question:nth-child('+ i +')').hover(function(){
+//        $('.speech-bubble-question').addClass('mask');
+//        $(this).removeClass('mask');
+//        $('.speech-bubble-answer:nth-child('+ ($(this).index()+1) +')').addClass('active');
+//    },function(){
+//        $('.speech-bubble-question').removeClass('mask');
+//        $('.speech-bubble-answer').removeClass('active');
+//    })
+//}
 //speecher hover effect
 $('.speecher').hover(function(){
     $(this).siblings('.speech-bubble').addClass('active');
