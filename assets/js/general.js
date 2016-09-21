@@ -9,6 +9,15 @@ if($('footer .toggle-collapse').is(':visible')){
     $('footer .collapse').removeClass('in');
 }
 
+//alert
+function commingSoon(){
+    swal({
+        title: "即將上線!",   
+        imageUrl: "assets/img/avatar_3.png",
+        imageSize: "100x100"
+    });
+}
+
 //messenger button controller
 function deselect(e){
     $('#messenger_pop').slideFadeToggle(function(){

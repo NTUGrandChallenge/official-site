@@ -1,11 +1,18 @@
 $(document).ready(function() {
-    $('#fullpage').fullpage({
-        anchors:['1st', '2nd', '3rd', '4th', '5th', '6tn', '7th', '8th']
-    });
+	$("#row1").hide();	
+	$("#row2").hide();
+    $("#single").click(function(){
+    	$("#row2").hide();
+    	$("#row1").fadeIn();
+    	$("#single").css("background-color","#ffee32");
+    	$("#team").css("background-color","#b2b2b2");
+    	$("#row0").hide();
+    })
+    $("#team").click(function(){
+    	$("#row1").hide();
+    	$("#row2").fadeIn();
+    	$("#team").css("background-color","#ffee32");
+    	$("#single").css("background-color","#b2b2b2");
+    	$("#row0").hide();
+    })
 });
-
-$('a').on('click', function(){
-    $.fn.fullpage.setScrollingSpeed(0);
-    setTimeout(function(){
-        $.fn.fullpage.setScrollingSpeed(700)}, 100);
-})

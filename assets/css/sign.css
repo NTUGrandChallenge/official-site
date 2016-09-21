@@ -42,3 +42,39 @@ h2 .triangle-left{
     font-weight: 900;
     font-size: 40px;
 }
+.textbox {
+    border-radius: 10px;
+    border:1px solid #B2B2B2;
+    width:100%;
+    font-size:20px;
+    padding:5px;
+}
+
+.button{
+    width:100%;
+    font-size:25px;
+    padding:3px;
+    border:1px solid #B2B2B2;
+    border-radius: 10px;
+    background-color:#FFEB32;
+}
+.button:hover{
+    color:white;
+    background-color: #142598;
+}
+.word {
+    cursor: pointer;
+    width:100%;
+    font-size:25px;
+    padding:3px;
+    border:1px solid #B2B2B2;
+    text-align:center;
+    background-color:#FFEB32;
+}
+.word:hover{
+    color:white;
+    background-color: #142598;
+}
+#row0{
+    text-align: center;
+}

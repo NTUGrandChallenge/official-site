@@ -21,6 +21,15 @@ h4 .triangle-right{
     border-color: transparent transparent transparent #ffeb32;
 }
 
+.title-img{
+    width: 50vw;
+}
+@media screen and (min-width: 768px){
+    .title-img{
+        width: 25vw;
+    }
+}
+
 /*slideshow*/
 .indicator-container .indicator{
     margin-right: 5px;
@@ -433,7 +442,7 @@ body.loading{
     margin-top: 50px;
     margin-bottom: 50px;
 }
-#feature img{
+#feature .row img{
     width: 100%;
 }
 
@@ -559,7 +568,7 @@ body.loading{
 
 /*why*/
 #why .parallelogram{
-    padding: 0px 10px;
+    padding: 5px 10px;
     margin-bottom: 10px;
     width: 80%;
     transform: skew(-20deg);

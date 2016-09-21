@@ -5,6 +5,12 @@
 
 //$('#overview').css('height', $('#overview .slides img').height())
 
+if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+    swal({
+        title: "貼心小提醒：",
+        text: "手機版還在調整中，建議使用電腦瀏覽喔！"
+    })
+}
 
 //scrolling events
 var navbar_position = $('#navbar').offset();

@@ -20,191 +20,88 @@
     <script src="assets/plugins/fullPage.js/vendors/scrolloverflow.min.js"></script>
     <script src="assets/plugins/fullPage.js/jquery.fullPage.min.js"></script>
 </head>
-<body>
+<body style="background-color:#b2b2b2;">
     <nav id="navbar" class="fixed">
         
     </nav>
     
-    <div id="fullpage">
-        <div class="section">
-            <div class="container-fluid full-height">
-            <div class="row full-height">
-                <div class="flexbox-center">
-                    <div class="full-width">
-                        <div class="col-md-6">
-                        
-                        </div>
-                        <div class="col-md-5">
-                            <p>錯過這次，與你擦身而過的不是一次比賽，而是一次塑造未來的機會！</p>
-                            <p style="font-size: 24px;">提案截止時間倒數：45天</p>
-                            <div class="text-right"><h2><a href="#3rd/single">個人報名 <span class="triangle-right"></span></a></h2></div>
-                            <div><h2><a href="#3rd/team"><span class="triangle-left"></span> 團隊報名</a></h2></div>
-                        </div>
-                    </div>
-                </div>
+    <div class="container">
+        <div class="row" id="row0">   
+            <br />
+            <br />
+            <h1>想報名成為挑戰者嗎？那你是？</h1>
+            <br />
+            <br />
+            <br />
+        </div>
+        <div class="row">
+            <div class="col-md-2 col-md-offset-4">
+                <button class="word" id="single">我是個人</button>
             </div>
+            <div class="col-md-2">
+                <button class="word" id="team">我有團隊</button>
             </div>
         </div>
-        <div class="section fp-auto-height" style="background-color: #FFF;">
-            <div style="height: 300px;">
-                <div class="full-height flexbox-center">
-                    <div>
-                        <p style="font-size: 20px;">報名/提案開放時間：10/6 23:59</p>
-                        <p style="font-size: 20px;">報名/提案截止時間：11/6 23:59</p>
-                    </div>
+        <div class="row">
+            <br />
+            <br />
+            <br />
+        </div>
+        <div class="row"  id="row1">
+            <div class="col-md-3 col-md-offset-1">
+                <img src="assets/img/single.png" style="width:80%">
+            </div>
+            <div class="col-md-6 col-md-offset-2">
+            <br />
+                <h2>我是個人</h2>
+                <br />
+                <br />
+                <p>還沒找齊解決問題的夥伴嗎？沒有關係！只要在提案前找好隊友就好。
+立即註冊成為挑戰者，進入挑戰者的線上世界吧（Challengers' Club)！</p>
+                <br />
+                <br />
+                
+               <div class="col-md-10">
+                    <input type="email" name="email" placeholder="Email" class="textbox"  />
                 </div>
+                <div class="col-md-2">                       
+                     <button class="button">送出</button>
+                </div> 
+                
             </div>
         </div>
-        <div class="section" data-anchor="single">
-            <div class="slide" data-anchor="single">
-                <div class="container full-height">
-                <div class="row full-height">
-                <h2><span class="triangle-right"></span>個人報名</h2>
-                    <div class="flexbox-center">
-                        <div class="full-width">
-                            <div class="col-md-4">
-                                <h3><span class="number">1</span>線上註冊為挑戰者</h3>
-                                <p>在大賽官方網站右上角點選進入 「Challengers’ Club」，並填寫個人資料進行註冊，認證完成即成為挑戰者。</p>
-                            </div>
-                            <div class="col-md-4">
-                                <h3><span class="number">2</span>加入/創建團隊</h3>
-                                <p>登入 Challengers’ Club後，你可選擇自行創建團隊，或是申請加入已經存在的團隊，每隊限制人數為 2-6人，需組隊後才能進行提案。</p>
-                            </div>
-                            <div class="col-md-4">
-                                <h3><span class="number">3</span>團隊提案</h3>
-                                <p>團隊須在截止時間前，上傳挑戰提案簡報以及挑戰提案書。大賽將以該團隊最後上傳的檔案為團隊最終提案，以及以截止時間時為最終團隊成員。</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                </div>
+        <div class="row"  id="row2">
+            <div class="col-md-4 col-md-offset-1">
+                <img src="assets/img/team.png" style="width:100%">
             </div>
-            <div class="slide" data-anchor="team">
-                <div class="container full-height">
-                <div class="row full-height">
-                <h2><span class="triangle-right"></span>團隊報名</h2>
-                    <div class="flexbox-center">
-                        <div class="full-width">
-                            <div class="col-md-4">
-                                <h3><span class="number">1</span>團隊成員線上註冊</h3>
-                                <p>隊長於大賽官方網站註冊於點選右上角進入 「Challengers’ Club」，並填寫個人資料進行註冊，認證完成即成為挑戰者。（注意：每人皆需註冊為挑戰者！）</p>
-                            </div>
-                            <div class="col-md-4">
-                                <h3><span class="number">2</span>隊長創建團隊 / 成員加入團隊</h3>
-                                <p>在 Challengers’ Club，由隊長需負責創建團隊，並且邀請團隊成員加入該團隊，每隊限制人數為 2-6人。</p>
-                            </div>
-                            <div class="col-md-4">
-                                <h3><span class="number">3</span>團隊提案</h3>
-                                <p>團隊須在截止時間前，上傳挑戰提案簡報以及挑戰提案書。大賽將以該團隊最後上傳的檔案為團隊最終提案，以及以截止時間時為最終團隊成員。</p>
-                            </div>
-                        </div>
-                    </div>
+            <div class="col-md-6 col-md-offset-1">
+            <br />
+                <h2>我有團隊</h2>
+                <br />
+                <br />
+                <p>好的團隊，是解決難題的關鍵要素！恭喜你們已踏出成功的第一步。提醒你，每個團隊成員皆須註冊成為挑戰者，並且線上組成團隊，並且繳交提案，才算報名成功喔！</p>
+                <br />
+                <br />
+                
+                <div class="col-md-10">
+                    <input type="email" name="email" placeholder="Email" class="textbox"  />
                 </div>
-                </div>
+                <div class="col-md-2">                        
+                    <button class="button">送出</button>
+                </div> 
+                
             </div>
+            
         </div>
-        <div class="section fp-auto-height" style="background-color: #FFF;">
-            <div style="height: 300px;">
-                <div class="full-height flexbox-center">
-                    <div style="padding-right: 50px;">
-                        <p style="font-size: 28px;">團隊提案內容需包含：</p>
-                    </div>
-                    <div style="padding-left: 50px;">
-                        <p style="font-size: 20px;">1.團隊特質與成員簡介</p>
-                        <p style="font-size: 20px;">2.挑戰議題設定與說明</p>
-                        <p style="font-size: 20px;">3.解決問題的構想與預期影響</p>
-                        <p style="font-size: 20px;">4.實踐構想的行動方案</p>
-                    </div>
-                </div>
-            </div>        
-        </div>
-        <div class="section">
-            <div class="container full-height">
-            <div class="row full-height">
-                <h3>團隊提案上傳</h3>
-                <p>團隊須在截止時間前，上傳<strong>挑戰提案簡報</strong>以及<strong>挑戰提案書</strong>。大賽將以該團隊最後上傳的檔案為團隊最終提案，以及以截止時間時為最終團隊成員。</p>
-                <table class="table table-bordered table-responsive">
-                    <tr>
-                        <th></th>
-                        <th>挑戰提案簡報</th>
-                        <th>挑戰提案書</th>
-                    </tr>
-                    <tr>
-                        <th>重點</th>
-                        <td>易快速掌握重點</td>
-                        <td>補充說明、完整詳盡</td>
-                    </tr>
-                    <tr>
-                        <th>評選</th>
-                        <td>主要評選依據</td>
-                        <td>參考閱讀資料</td>
-                    </tr>
-                    <tr>
-                        <th>格式</th>
-                        <td>PDF（長寬比可為4:3或16:9）</td>
-                        <td>PDF（A4）</td>
-                    </tr>
-                    <tr>
-                        <th>頁數</th>
-                        <td>至多12頁（含封面封底）</td>
-                        <td>至多12頁（含封面封底）</td>
-                    </tr>
-                    <tr>
-                        <th>內容</th>
-                        <td colspan="2" style="text-align: left;">
-                            格式自訂，但內容需涵蓋
-                            <ol>
-                                <li>團隊特質與成員簡介：</li>
-                                可描述團隊組成、成員經歷、團隊特色，幫助評審對於團隊有更鮮明的印象及更深刻的認識。<br />
-                                團隊成員的多元性與構想適配性，通常更有助於解決困難的挑戰
-                                <li>挑戰議題設定與說明：</li>
-                                請<strong>清楚定義</strong>出團隊欲解決的是何種挑戰議題，並說明團隊為何欲解決此類問題。<br />
-                                議題背景的完整描述以及分析解構，能幫助評審更深入的理解團隊的構想。
-                                <li>解決問題的構想與預期影響：</li>
-                                面對該挑戰議題，團隊欲利用何種方式解決？<br />
-                                請運用任何方式清晰的描述團隊的提案構想，以及推論此構想若順利運行，所帶來的影響力及成效。
-                                <li>實踐構想的行動方案</li>
-                                請設想未來半年（11–4），你將如何實踐你的構想。<br />
-                                例如團隊分工、時程規劃、預期投入，或是如何運用各階段的驗證資金，驗證自己的解決方案。
-                            </ol>
-                            以及任何有助於通過書審的內容。
-                        </td>
-                    </tr>
-                </table>
-            </div>
-            </div>
-        </div>
-        <div class="section fp-auto-height" style="background-color: #FFF;">
-            <div style="height: 300px;">
-                <div class="full-height flexbox-center">
-                    <div style="padding-right: 50px;">
-                        <p style="font-size: 28px;">書審重點：</p>
-                    </div>
-                    <div style="padding-left: 50px;">
-                        <p style="font-size: 20px;">1.團隊特質</p>
-                        <p style="font-size: 20px;">2.構想創新性</p>
-                        <p style="font-size: 20px;">3.議題的分析與社會影響程度</p>
-                        <p style="font-size: 20px;">4.實踐可行性</p>
-                    </div>
-                </div>
-            </div>        
-        </div>
-        <div class="section fp-auto-height">
-            <div class="container" style="height: 300px;">
-            <div class="row full-height">
-            <h2>公布入圍結果</h2>
-            <div class="flexbox-center">
-                <p>承辦單位將團隊提案彙整後寄送給評審，評審將評分結果回報給承辦單位後，由承辦單位統計分數，若部分隊伍分數相當接近，則主辦單位將邀請該隊伍進行面談，並於 11/19 公佈入圍名單。</p>
-            </div>
-            </div>
-            </div>
-        </div>
-        <div class="section fp-auto-height">
-            <footer>
-        
-            </footer>
+        <div class="row">
+            <br />
+            <br />
+            <br />
         </div>
     </div>
+
+    <footer>
+    </footer>
     
     
     <div id="messenger">
@@ -213,5 +110,6 @@
     
     <script type="text/javascript" src="assets/js/general.js"></script>
     <script type="text/javascript" src="assets/js/sign.js"></script>
+
 </body>
 </html>
