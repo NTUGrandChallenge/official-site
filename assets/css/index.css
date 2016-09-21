@@ -143,9 +143,9 @@ h4 .triangle-right{
 
 .more{
     position: absolute;
-    width: 25vw;
+    width: 20vw;
     border-bottom: 2px solid #000;
-    text-align: right;
+    text-align: center;
     font-size: 24px;
 }
 .more a,
@@ -360,6 +360,9 @@ body.loading{
 #slogan{
     padding: 10vh 0px;
 }
+#slogan p{
+    text-align: justify;
+}
 #slogan h1{
     position: relative;
 }
@@ -443,8 +446,13 @@ body.loading{
     margin-top: 50px;
     margin-bottom: 50px;
 }
-#feature .row img{
+#feature img.icon{
     width: 60%;
+}
+@media screen and (min-width: 768px){
+    #feature .padding-wrapper{
+        padding: 0px 100px;
+    }
 }
 
 #feature .one{
@@ -484,41 +492,6 @@ body.loading{
         top: 10%;
     }
 }
-#five .grain{
-    position: absolute;
-    width: 2vw;
-    animation-name: spin;
-    animation-iteration-count: infinite;
-    animation-duration: 3s;
-    animation-timing-function: linear;
-}
-#five .grain:nth-child(6){
-    top: 42%;
-    left: 28%;
-}
-#five .grain:nth-child(7){
-    top: 38%;
-    left: 60%;
-    animation-delay: .5s;
-}
-#five .grain:nth-child(8){
-    top: 38%;
-    left: 42%;
-    animation-delay: .5s;
-}
-#five .grain:nth-child(9){
-    top: 78%;
-    left: 44%;
-    animation-delay: .4s;
-}
-@keyframes spin{
-    from{
-        transform: rotate(0deg);
-    }
-    to{
-        transform: rotate(360deg);
-    }
-}
 #five .five{
     position: absolute;
     animation-name: float;
@@ -542,7 +515,7 @@ body.loading{
     color: #fff;
     position: absolute;
     top: 73%;
-    left: 33%;
+    left: 30%;
     opacity: 0;
     transition: opacity .3s ease-in;
 }
@@ -553,27 +526,27 @@ body.loading{
     opacity: 1;
 }
 #five .five:nth-child(1){
-    top: 60%;
+    top: 55%;
     left: 26%;
     animation-delay: 0s;
 }
 #five .five:nth-child(2){
-    top: 58%;
+    top: 52%;
     left: 37%;
     animation-delay: 1s;
 }
 #five .five:nth-child(3){
-    top: 62%;
+    top: 58%;
     left: 51%;
     animation-delay: 0.5s;
 }
 #five .five:nth-child(4){
-    top: 61%;
+    top: 56%;
     left: 63%;
     animation-delay: 1.5s;
 }
 #five .five:nth-child(5){
-    top: 59%;
+    top: 54%;
     left: 76%;
     animation-delay: 1.2s;
 }
@@ -592,6 +565,51 @@ body.loading{
     }
     100%{
         transform: rotate(0deg) translate(0px, 0px);
+    }
+}
+#five .grain{
+    position: absolute;
+    width: 2vw;
+    animation-name: spin;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+}
+#five .grain:nth-child(6){
+    top: 42%;
+    left: 28%;
+}
+#five .grain:nth-child(7){
+    top: 32%;
+    left: 42%;
+    animation-delay: .5s;
+}
+#five .grain:nth-child(8){
+    top: 46%;
+    left: 63%;
+    animation-delay: .5s;
+}
+#five .grain:nth-child(9){
+    top: 39%;
+    left: 78%;
+    animation-delay: .4s;
+}
+#five .grain:nth-child(10){
+    top: 67%;
+    left: 40%;
+    animation-delay: .4s;
+}
+#five .grain:nth-child(11){
+    top: 77%;
+    left: 58%;
+    animation-delay: .4s;
+}
+@keyframes spin{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
     }
 }
 #five .more{
