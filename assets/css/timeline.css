@@ -73,7 +73,6 @@ svg {
 .stage {
   width: 100%;
   position: relative;
-  background-color: #bbb;
 }
 .events {
   position: absolute;

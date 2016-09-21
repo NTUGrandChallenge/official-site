@@ -2,9 +2,6 @@
 $('#navbar').load('/official-site/_navbar.html');
 $('footer').load('/official-site/_footer.html');
 $('#messenger').load('/official-site/_messenger.html');
-if($('#navbar').hasClass('fixed')){
-    $('body').css('padding-top', $('#navbar').height());
-}
 if($('footer .toggle-collapse').is(':visible')){
     $('footer .collapse').removeClass('in');
 }
