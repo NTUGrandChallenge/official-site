@@ -102,9 +102,10 @@ h4 .triangle-right{
 .parallelogram-button {
     transform: skew(-10deg);
     padding: 3px 10px;
-    font-size: 34px;
+    font-size: 28px;
     font-weight: bold;
     text-decoration: none;
+    text-align: center;
     animation: outline-pulse 2s linear infinite;
 }
 .parallelogram-button.yellow{
@@ -443,7 +444,7 @@ body.loading{
     margin-bottom: 50px;
 }
 #feature .row img{
-    width: 100%;
+    width: 60%;
 }
 
 #feature .one{
@@ -474,6 +475,14 @@ body.loading{
 
 #five{
     position: relative;
+}
+#five .title-img{
+    top: 0;
+}
+@media screen and (min-width: 768px){
+    #five .title-img{
+        top: 10%;
+    }
 }
 #five .grain{
     position: absolute;
@@ -604,6 +613,9 @@ body.loading{
 }
 #why .parallelogram .skew-fix{
     transform: skew(20deg);
+}
+#why .content{
+    margin-bottom: 20px;
 }
 
 /*faq*/
@@ -923,12 +935,11 @@ body.loading{
 #how{
     background-color: #666;
     height: 30vh;
-    padding: 10vh 0;
+/*    padding: 10vh 0;*/
     color: #fff;
 }
 #how .parallelogram-button{
-    position: absolute;
-    left: 25%;
+    width: 80%;
 }
 
 #about{
