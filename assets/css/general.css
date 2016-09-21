@@ -179,11 +179,19 @@ p{
     
 }
 */
+/*
+@media screen and (min-width: 768px){
+    #header{
+        background-size: 80%;
+    }
+}
+*/
 #header{
     background: url('../img/header.png');
     background-size: cover;
-    height: 300px;
+    height: 350px;
     background-position: center;
+    background-repeat: no-repeat;
 /*    margin-bottom: 50px;*/
 }
 

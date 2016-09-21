@@ -55,6 +55,7 @@ $(window).scroll(function(){
 //    }
 });
 
+//top blink
 $('#top .blink').on('animationend webkitAnimationEnd oAnimationEnd', function (){
     if($(this).next('.blink').length != 0){
         $(this).next('.blink').addClass('active');
@@ -80,6 +81,17 @@ for(var i = 1; i <= $('#five .five').length; i++){
         $('#five .description p:nth-child('+ ($(this).index()+1) +')').removeClass('active');
     })
 }
+
+//why
+$('#why .shake').on('animationend webkitAnimationEnd oAnimationEnd', function (){
+    if($(this).hasClass('single')){
+        $('#why .shake.team').addClass('active');
+    }
+    else{
+        $('#why .shake.single').addClass('active');
+    }
+    $(this).removeClass('active');
+});
 
 
 //slide show function

@@ -146,7 +146,7 @@ h4 .triangle-right{
     width: 20vw;
     border-bottom: 2px solid #000;
     text-align: center;
-    font-size: 24px;
+    font-size: 20px;
 }
 .more a,
 .more a:hover{
@@ -450,7 +450,7 @@ body.loading{
     width: 60%;
 }
 @media screen and (min-width: 768px){
-    #feature .padding-wrapper{
+    .padding-wrapper{
         padding: 0px 100px;
     }
 }
@@ -618,13 +618,69 @@ body.loading{
 }
 
 /*why*/
+@media screen and (min-width: 1170px){
+    #why .title-img{
+        position: absolute;
+    }
+}
 #why .parallelogram{
     padding: 5px 10px;
-    margin-bottom: 10px;
+    margin: 25px 0;
     width: 80%;
     transform: skew(-20deg);
     background-color: #ffeb32;
     left: 5px;
+}
+#why .single{
+    width: 100%;
+    position: absolute;
+    top: 20%;
+}
+#why .single img{
+    width: 80%;
+    position: absolute;
+}
+#why .single img:nth-child(2){
+    visibility: hidden;
+}
+#why .single:hover img:nth-child(2){
+    visibility: visible;
+}
+#why .team{
+    width: 100%;
+    position: absolute;
+    top: 40%;
+}
+#why .team img{
+    width: 80%;
+    position: absolute;
+}
+#why .team img:nth-child(2){
+    visibility: hidden;
+}
+#why .team:hover img:nth-child(2){
+    visibility: visible;
+}
+#why .single.shake.active,
+#why .team.shake.active{
+    animation-name: shake;
+    animation-duration: .5s;
+    animation-timing-function: ease-out;
+    animation-delay: 2s;
+}
+@keyframes shake{
+    0%{
+        transform: rotate(0deg);
+    }
+    25%{
+        transform: rotate(25deg);
+    }
+    75%{
+        transform: rotate(-25deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
 }
 #why .parallelogram h4{
     margin: 0px;
@@ -634,6 +690,7 @@ body.loading{
 }
 #why .content{
     margin-bottom: 20px;
+    text-align: justify;
 }
 
 /*faq*/
