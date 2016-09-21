@@ -1,10 +1,3 @@
-//$(window).load(function(){
-//    $('body').removeClass('loading');
-//    $('#loading').fadeOut(800).remove();
-//})
-
-//$('#overview').css('height', $('#overview .slides img').height())
-
 if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
     swal({
         title: "貼心小提醒：",
@@ -30,29 +23,6 @@ $(window).scroll(function(){
         navbar.removeClass('fixed');
         wedge.css('margin-top', '0');
     }
-    
-//    fade in
-//    if($(window).scrollTop() > (slogan_position.top - 500)){
-//        $('#slogan h1').fadeTo(600, 1);
-//        setTimeout(function(){
-//            $('#slogan p').fadeTo(600, 1);
-//        }, 600);
-//    }
-//    if($(window).scrollTop() > (talk_position.top - 500)){
-//        $('#talk h2').fadeTo(600, 1);
-//        setTimeout(function(){
-//            $('#talk p').fadeTo(600, 1);
-//        }, 600);
-//    }
-    
-//    easing background
-//    if($(window).scrollTop() > divider_position.top){
-//        var rgb = Math.floor((divider_position.top - $(window).scrollTop())/5 + 256);
-//        $('body').css('background-color', 'rgb(' + rgb + ',' + rgb + ',' + rgb + ')');
-//    }
-//    else{
-//        $('body').css('background-color', '#FFF');
-//    }
 });
 
 //top blink
@@ -135,27 +105,10 @@ var Slideshow = {
 var ov_slideshow = Slideshow.createNew('#overview');
 $('#overview').css("height", $('#overview img').height());
 
-//question and answer
-//for(var i = 1; i <= $('.speech-bubble-question').length; i++){
-//    $('.speech-bubble-question:nth-child('+ i +')').hover(function(){
-//        $('.speech-bubble-question').addClass('mask');
-//        $(this).removeClass('mask');
-//        $('.speech-bubble-answer:nth-child('+ ($(this).index()+1) +')').addClass('active');
-//    },function(){
-//        $('.speech-bubble-question').removeClass('mask');
-//        $('.speech-bubble-answer').removeClass('active');
-//    })
-//}
 //speecher hover effect
 $('.speecher').hover(function(){
     $(this).siblings('.speech-bubble').addClass('active');
 },function(){
     $(this).siblings('.speech-bubble').removeClass('active');
 })
-
-//number count up
-//$('#data .counter').counterUp({
-//    delay: 10,
-//    time: 500
-//});
 
