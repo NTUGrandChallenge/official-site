@@ -189,6 +189,7 @@ a.active .sweeper .outside{
 #challenge .block{
     height: 200px;
     margin-bottom: 30px;
+    color: #FFF;
 }
 .challenge-name{
 /*    padding: 5px;*/
