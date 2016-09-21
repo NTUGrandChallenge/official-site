@@ -16,19 +16,19 @@ if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
 //var divider_position = $('#divider').offset();
 var navbar = $('#navbar'),
     navbar_position = navbar.offset(),
-    slogan = $('#slogan'),
-    slogan_position = slogan.offset(),
+    wedge = $('#wedge'),
+    wedge_position = wedge.offset(),
     talk_position = $('#talk').offset();
 
 $(window).scroll(function(){
 //    fixed navbar
     if($(window).scrollTop() > navbar_position.top){
         navbar.addClass('fixed');
-        slogan.css('margin-top', $('#navbar').height());
+        wedge.css('margin-top', $('#navbar').height());
     }
     else{
         navbar.removeClass('fixed');
-        slogan.css('margin-top', '0');
+        wedge.css('margin-top', '0');
     }
     
 //    fade in
