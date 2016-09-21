@@ -1,3 +1,7 @@
+body{
+    background-color: #b2b2b2;
+}
+
 .circular-img{
 	border-radius: 50%;
 	width:100%;

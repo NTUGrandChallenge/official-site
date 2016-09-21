@@ -150,10 +150,9 @@ a.active .sweeper .outside{
 }
 
 .one-teacher{
-    background-color: #999;
     min-height: 200px;
     margin-bottom: 30px;
-    color: #FFF;
+    color: #000000;
     position: relative;
 }
 .one-teacher .ribbon-wrapper{
@@ -207,4 +206,7 @@ a.active .sweeper .outside{
 .challenge-description{
     padding: 5px;
     background-color: rgba(255, 255, 255, 0.8);
+}
+.fontBlack{
+    color:black;
 }
