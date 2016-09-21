@@ -102,9 +102,10 @@ h4 .triangle-right{
 .parallelogram-button {
     transform: skew(-10deg);
     padding: 3px 10px;
-    font-size: 34px;
+    font-size: 28px;
     font-weight: bold;
     text-decoration: none;
+    text-align: center;
     animation: outline-pulse 2s linear infinite;
 }
 .parallelogram-button.yellow{
@@ -443,7 +444,7 @@ body.loading{
     margin-bottom: 50px;
 }
 #feature .row img{
-    width: 100%;
+    width: 60%;
 }
 
 #feature .one{
@@ -475,31 +476,37 @@ body.loading{
 #five{
     position: relative;
 }
-#five .floating{
-    position: absolute;
+#five .title-img{
+    top: 0;
 }
-#five .floating.grain{
+@media screen and (min-width: 768px){
+    #five .title-img{
+        top: 10%;
+    }
+}
+#five .grain{
+    position: absolute;
     width: 2vw;
     animation-name: spin;
     animation-iteration-count: infinite;
     animation-duration: 3s;
     animation-timing-function: linear;
 }
-#five .floating.grain:nth-child(1){
+#five .grain:nth-child(6){
     top: 42%;
     left: 28%;
 }
-#five .floating.grain:nth-child(2){
+#five .grain:nth-child(7){
     top: 38%;
     left: 60%;
     animation-delay: .5s;
 }
-#five .floating.grain:nth-child(3){
+#five .grain:nth-child(8){
     top: 38%;
     left: 42%;
     animation-delay: .5s;
 }
-#five .floating.grain:nth-child(4){
+#five .grain:nth-child(9){
     top: 78%;
     left: 44%;
     animation-delay: .4s;
@@ -512,34 +519,60 @@ body.loading{
         transform: rotate(360deg);
     }
 }
-#five .floating.five{
-    width: 5vw;
+#five .five{
+    position: absolute;
     animation-name: float;
     animation-iteration-count: infinite;
     animation-duration: 5s;
     animation-timing-function: ease-in-out;
 }
-#five .floating.five:nth-child(5){
+#five .five img{
+    width: 5vw;
+}
+#five .five .name{
+    position: absolute;
+    left: -2w;
+    width: 9vw;
+    margin-top: 20px;
+    color: #FFF;
+    opacity: 0;
+    transition: opacity .3s ease-in;
+}
+#five .description p{
+    color: #fff;
+    position: absolute;
+    top: 73%;
+    left: 33%;
+    opacity: 0;
+    transition: opacity .3s ease-in;
+}
+#five .description p.active{
+    opacity: 1;
+}
+#five .five img:hover ~ .name{
+    opacity: 1;
+}
+#five .five:nth-child(1){
     top: 60%;
     left: 26%;
     animation-delay: 0s;
 }
-#five .floating.five:nth-child(6){
+#five .five:nth-child(2){
     top: 58%;
     left: 37%;
     animation-delay: 1s;
 }
-#five .floating.five:nth-child(7){
+#five .five:nth-child(3){
     top: 62%;
     left: 51%;
     animation-delay: 0.5s;
 }
-#five .floating.five:nth-child(8){
+#five .five:nth-child(4){
     top: 61%;
     left: 63%;
     animation-delay: 1.5s;
 }
-#five .floating.five:nth-child(9){
+#five .five:nth-child(5){
     top: 59%;
     left: 76%;
     animation-delay: 1.2s;
@@ -580,6 +613,9 @@ body.loading{
 }
 #why .parallelogram .skew-fix{
     transform: skew(20deg);
+}
+#why .content{
+    margin-bottom: 20px;
 }
 
 /*faq*/
@@ -899,12 +935,11 @@ body.loading{
 #how{
     background-color: #666;
     height: 30vh;
-    padding: 10vh 0;
+/*    padding: 10vh 0;*/
     color: #fff;
 }
 #how .parallelogram-button{
-    position: absolute;
-    left: 25%;
+    width: 80%;
 }
 
 #about{
