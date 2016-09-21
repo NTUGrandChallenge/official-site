@@ -70,6 +70,15 @@ $('#scroll_to_navbar').click(function(){
     }, 1000);
 });
 
+//five
+for(var i = 1; i <= $('#five .five').length; i++){
+    $('#five .five:nth-child('+ i +')').hover(function(){
+        $('#five .description p:nth-child('+ ($(this).index()+1) +')').addClass('active');
+    },function(){
+        $('#five .description p:nth-child('+ ($(this).index()+1) +')').removeClass('active');
+    })
+}
+
 
 //slide show function
 var Slideshow = {

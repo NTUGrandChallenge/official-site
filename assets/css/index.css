@@ -475,31 +475,29 @@ body.loading{
 #five{
     position: relative;
 }
-#five .floating{
+#five .grain{
     position: absolute;
-}
-#five .floating.grain{
     width: 2vw;
     animation-name: spin;
     animation-iteration-count: infinite;
     animation-duration: 3s;
     animation-timing-function: linear;
 }
-#five .floating.grain:nth-child(1){
+#five .grain:nth-child(6){
     top: 42%;
     left: 28%;
 }
-#five .floating.grain:nth-child(2){
+#five .grain:nth-child(7){
     top: 38%;
     left: 60%;
     animation-delay: .5s;
 }
-#five .floating.grain:nth-child(3){
+#five .grain:nth-child(8){
     top: 38%;
     left: 42%;
     animation-delay: .5s;
 }
-#five .floating.grain:nth-child(4){
+#five .grain:nth-child(9){
     top: 78%;
     left: 44%;
     animation-delay: .4s;
@@ -512,34 +510,60 @@ body.loading{
         transform: rotate(360deg);
     }
 }
-#five .floating.five{
-    width: 5vw;
+#five .five{
+    position: absolute;
     animation-name: float;
     animation-iteration-count: infinite;
     animation-duration: 5s;
     animation-timing-function: ease-in-out;
 }
-#five .floating.five:nth-child(5){
+#five .five img{
+    width: 5vw;
+}
+#five .five .name{
+    position: absolute;
+    left: -2w;
+    width: 9vw;
+    margin-top: 20px;
+    color: #FFF;
+    opacity: 0;
+    transition: opacity .3s ease-in;
+}
+#five .description p{
+    color: #fff;
+    position: absolute;
+    top: 73%;
+    left: 33%;
+    opacity: 0;
+    transition: opacity .3s ease-in;
+}
+#five .description p.active{
+    opacity: 1;
+}
+#five .five img:hover ~ .name{
+    opacity: 1;
+}
+#five .five:nth-child(1){
     top: 60%;
     left: 26%;
     animation-delay: 0s;
 }
-#five .floating.five:nth-child(6){
+#five .five:nth-child(2){
     top: 58%;
     left: 37%;
     animation-delay: 1s;
 }
-#five .floating.five:nth-child(7){
+#five .five:nth-child(3){
     top: 62%;
     left: 51%;
     animation-delay: 0.5s;
 }
-#five .floating.five:nth-child(8){
+#five .five:nth-child(4){
     top: 61%;
     left: 63%;
     animation-delay: 1.5s;
 }
-#five .floating.five:nth-child(9){
+#five .five:nth-child(5){
     top: 59%;
     left: 76%;
     animation-delay: 1.2s;
