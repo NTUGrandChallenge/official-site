@@ -7,12 +7,15 @@ if($('footer .toggle-collapse').is(':visible')){
 }
 
 //alert
-function commingSoon(){
+function comingSoon(){
     swal({
         title: "即將上線!",   
-        imageUrl: "assets/img/avatar_3.png",
+        imageUrl: "/official-site/assets/img/avatar_3.png",
         imageSize: "100x100"
     });
+}
+function increasing(){
+    swal("陸續邀請中...");
 }
 
 //messenger button controller
