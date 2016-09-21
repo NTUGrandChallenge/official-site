@@ -59,13 +59,17 @@ p{
 #navbar .navbar-brand{
     padding: 2px;
 }
-#navbar .navbar-brand img{
+#navbar-fixed-logo{
+    width: auto;
     height: 50px;
+    display: inline-block;
 }
-.fixed #navbar-logo {
-    display: none;
+#navbar-text-logo {
+    width: 106px;
+    height: auto;
+    display: inline-block;
 }
-#navbar-fixed-logo {
+.fixed #navbar-text-logo {
     display: none;
 }
 .fixed #navbar-fixed-logo {
@@ -140,7 +144,7 @@ p{
 #navbar .navbar-right li a:hover ~ .triangle,
 #navbar .navbar-right li a:focus ~ .triangle{
     top: 15px;
-    opacity: 0.7;
+    opacity: 0.6;
 }
 #navbar .navbar-right .dropdown-menu{
     padding: 0px;
