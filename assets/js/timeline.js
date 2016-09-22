@@ -58,10 +58,31 @@ function toContent(selector) {
 /* SVG */
 var flow = $('#flow');
 var fromOffset = flow.attr('stroke-dashoffset');
-var maxHeight = $('#flow-base')[0].getBoundingClientRect().height;
+var maxHeight = $('#flow-base')[0].getBoundingClientRect().height - $(window).height();
 
 $(window).scroll(function() {
 	var currentProgress = ($(window).scrollTop() < maxHeight) ? fromOffset * (1 - $(window).scrollTop() / maxHeight) : 0;
 	// currentProgress getting lessened
 	flow.attr('stroke-dashoffset', currentProgress);
+
+	/* Scroll Anchor Respond */
+	if($(window).scrollTop() >= $('#stage1').offset().top &&
+		$(window).scrollTop() < $('#stage2').offset().top) {
+		anchorColorChange('#anchor-stage1');
+	}
+	if($(window).scrollTop() >= $('#stage2').offset().top &&
+		$(window).scrollTop() < $('#stage3').offset().top) {
+		anchorColorChange('#anchor-stage2');
+	}
+	if($(window).scrollTop() >= $('#stage3').offset().top &&
+		$(window).scrollTop() < $('#stage4').offset().top) {
+		anchorColorChange('#anchor-stage3');
+	}
+	if($(window).scrollTop() >= $('#stage4').offset().top &&
+		$(window).scrollTop() < $('#stage5').offset().top) {
+		anchorColorChange('#anchor-stage4');
+	}
+	if($(window).scrollTop() >= $('#stage5').offset().top) {
+		anchorColorChange('#anchor-stage5');
+	}
 })
