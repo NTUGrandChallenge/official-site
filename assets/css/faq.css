@@ -8,3 +8,15 @@ body{
 .panel{
 	background-color: #B2B2B2;
 }
+.panel-body{
+    background-color: #ffeb32;
+}
+#content{
+    padding: 50px 0px;
+    text-align: justify;
+}
+@media screen and (min-width: 768px){
+    #content{
+        padding: 50px 100px;
+    }
+}

@@ -214,6 +214,7 @@ p{
     background: url('../img/header.png');
     background-size: cover;
     height: 350px;
+    margin-top: 50px;
     background-position: center;
     background-repeat: no-repeat;
 /*    margin-bottom: 50px;*/
