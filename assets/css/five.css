@@ -34,19 +34,8 @@ body{
     }
 }
 
-/*
-.parallelogram{
-    position: absolute;
-    z-index: -1;
-    height: 70%;
-    width: 100%;
-    top: 15%;
-    transform: skew(-20deg);
-}
-*/
 .triangle{
     display: inline-block;
-/*    position: absolute;*/
     right: 0;
     bottom: 0;
     width: 0;
@@ -191,9 +180,7 @@ a.active .sweeper .outside{
     color: #FFF;
 }
 .challenge-name{
-/*    padding: 5px;*/
-/*    border: 2px #666 solid;*/
-/*    background-color: #FFF;*/
+    
 }
 .challenge-name a{
     color: #000;

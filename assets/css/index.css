@@ -259,8 +259,6 @@ h4 .triangle-right{
         transform: translateX(110vw);
     }
 }
-
-
 #videoModal .modal-dialog{
     width: 80vw;
     height: 80vh;
@@ -329,66 +327,7 @@ h4 .triangle-right{
     border-color: transparent transparent transparent #ffeb32;
 }
 
-/*overview*/
-#overview{
-/*    min-height: 80vh;*/
-    background-color: #b2b2b2;
-    padding: 0;
-    background-size: cover;
-    background-position: center;
-    position: relative;
-}
-#overview .indicator-container{
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-}
-#overview .slides img{
-    width: 100%;
-}
-#overview .parallelogram-button{
-    position: absolute;
-    top: 45%;
-    left: 10%;
-}
 
-/*speech-bubble*/
-.speech-bubble{
-    position: relative;
-    background-color: #ffe65a;
-    padding: 15px;
-    border-radius: 10px;
-    width: 100%;
-    visibility: hidden;
-}
-
-.speech-bubble:after{
-    content: "";
-    display: block;
-    position: absolute;
-    bottom: -15px;
-    left: 9vw;
-    width: 0;
-    border-width: 15px 15px 0;
-    border-style: solid;
-    border-color: #ffe65a transparent;
-}
-.speech-bubble.active{
-    visibility: visible;
-}
-.speecher{
-    margin-top: 20px;
-}
-.speecher p{
-    font-size: 24px;
-}
-
-/*spirit*/
-#challengers{
-    background-color: #b2b2b2;
-    padding-top: 25px;
-    padding-bottom: 25px;
-}
 
 /*feature*/
 #feature{
@@ -404,32 +343,7 @@ h4 .triangle-right{
     }
 }
 
-#feature .one{
-    margin-bottom: 20px;
-}
-#feature .parallelogram{
-    padding: 0px 25px;
-    width: 100%;
-    transform: skew(-20deg);
-    background-color: #ffeb32;
-    left: 5px;
-}
-#feature .parallelogram .skew-fix{
-    transform: skew(20deg);
-}
-#feature .content{
-    border-left: 2px solid #ffeb32;
-    border-bottom: 2px solid #ffeb32;
-    padding: 10px 10px;
-    height: 180px;
-    text-align: justify;
-}
-@media screen and (max-width: 768px){
-    #feature .content{
-        height: 250px;
-    }
-}
-
+/*five*/
 #five{
     position: relative;
 }
@@ -642,308 +556,8 @@ h4 .triangle-right{
     text-align: justify;
 }
 
-/*faq*/
-#faq{
-    background-color: #b2b2b2;
-    padding: 5vh 0;
-}
-#faq .avatar{
-    height: 350px;
-}
-#faq .avatar img{
-    height: 100%;
-}
-.bubble-wrapper{
-    position: relative;
-    height: 350px;
-}
-.speech-bubble-question,
-.speech-bubble-answer{
-    background-color: #ffeb32;
-    padding: 15px;
-    margin-bottom: 5px;
-    border-radius: 5px;
-    transition: all .1s linear;
-    font-size: 18px;
-}
-.speech-bubble-question{
-    width: 80%;
-    position: relative;
-    margin-bottom: 10px;
-}
-.speech-bubble-question:nth-child(2n){
-    margin-left: 20px;
-}
-.speech-bubble-question:before{
-    content: "";
-    display: block;
-    position: absolute;
-    left: -15px;
-    width: 0;
-    border-width: 15px 15px 15px 0;
-    border-style: solid;
-    border-color: transparent #ffeb32;
-}
-.speech-bubble-question.mask{
-    opacity: 0;
-}
-.speech-bubble-answer{
-    width: 100%;
-    position: absolute;
-    opacity: 0;
-}
-.speech-bubble-answer:after{
-    content: "";
-    display: block;
-    position: absolute;
-    right: -15px;
-    bottom: 30px;
-    width: 0;
-    border-width: 15px 0 15px 15px;
-    border-style: solid;
-    border-color: transparent #ffeb32;
-}
-.speech-bubble-answer.active{
-    opacity: 1;
-}
-
-
-/*curtain*/
-.curtain{
-    overflow: hidden;
-    height: 200px;
-    margin-top: 25px;
-    margin-bottom: 25px;
-}
-.curtain_wrapper{
-    width: 100%;
-    height: 100%;
-    position: relative;
-}
-.curtain_panel{
-    background-color: #0eac6f;
-    z-index: 2;
-    float: left;
-    height: 100%;
-    width: 50%;
-    border-radius: none;
-    transition: all .3s ease-out;
-    line-height: 200px;
-    color: #FFF;
-    font-size: large;
-}
-.curtain_wrapper:hover .panel-left{
-    transform: translateX(-100%);
-}
-.curtain_wrapper:hover .panel-right{
-    transform: translateX(100%);
-}
-.inside{
-    position: absolute;
-    z-index: -1;
-    height: 100%;
-    width: 100%;
-}
-
-.parallax-window {
-    min-height: 500px;
-    background: transparent;
-}
-
-#data{
-    padding-top: 50px;
-    padding-bottom: 50px;
-    background-color: #FFF;
-    color: #000;
-}
-#data span{
-    font-size: 24px;
-}
-
-/*full width five column*/
-.col-xs-5ths,
-.col-sm-5ths,
-.col-md-5ths,
-.col-lg-5ths {
-    position: relative;
-    min-height: 1px;
-    padding-right: 10px;
-    padding-left: 10px;
-}
-.col-xs-5ths {
-    width: 20%;
-    float: left;
-}
-@media (min-width: 768px) {
-    .col-sm-5ths {
-        width: 20%;
-        float: left;
-    }
-}
-@media (min-width: 992px) {
-    .col-md-5ths {
-        width: 20%;
-        float: left;
-    }
-}
-@media (min-width: 1200px) {
-    .col-lg-5ths {
-        width: 20%;
-        float: left;
-    }
-}
-
-
-.hover-fade{
-    position: relative;
-    height: 150px;
-}
-.hover-fade .inside{
-    position: absolute;
-    height: 100%;
-}
-.hover-fade .outside{
-    padding: 10px;
-    height: 100%;
-    position: absolute;
-    opacity: 0;
-    transition: opacity .1s linear;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: #FFF;
-}
-.hover-fade:hover .outside{
-    opacity: 1;
-}
-
-#five-field-toggle .sweeper{
-    height: 300px;
-    overflow: hidden;
-    position: relative;
-}
-.sweeper .inside,
-.sweeper .outside,
-.sweeper .outside-wrapper{
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    left: 0;
-    transition: transform .3s ease-out;
-/*
-    border-left: 1px #ffeb32 solid;    
-    border-right: 1px #ffeb32 solid;    
-*/
-}
-.sweeper .outside{
-    text-align: center;
-    background-color: #FFF;
-    z-index: 2;
-}
-.sweeper .outside-wrapper{
-    overflow: hidden;
-    z-index: 3;
-}
-.sweeper .inside{
-    z-index: 1;
-}
-.sweeper:hover .outside-wrapper{
-    transform: translateY(-300px);
-}
-.sweeper:hover .outside{
-    transform: translateY(300px);
-}
-.sweeper img{
-    height: 120px;
-    margin-top: 50px;
-}
-.sweeper .outside h2{
-    color: black;
-}
-.sweeper .inside,
-.sweeper .inside a{
-    color: white;
-    text-decoration: none;
-}
-.sweeper .inside .content{
-    padding: 10px;
-}
-.sweeper .inside .content .more{
-    position: absolute;
-    right: 10px;
-    bottom: 10px;
-    border: 2px solid #FFF;
-    padding: 5px 10px;
-    background-color: transparent;
-}
-
-
-#ball-container{
-    height: 150vh;
-    position: relative;
-}
-.ball {
-    width: 30px;
-    height: 30px;
-    margin: 30px auto;
-    border-radius: 30px;
-    position: absolute;
-    bottom: 0;
-    z-index: -1;
-    animation-name: up;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-    background-color: red;
-}
-.ball:nth-child(1){
-    left: 0px;
-    animation-duration: 2s;
-}
-.ball:nth-child(2){
-    left: 50px;
-    animation-duration: 1.5s;
-}
-.ball:nth-child(3){
-    left: 90px;
-    animation-duration: 1s;
-}
-.ball:nth-child(4){
-    left: 140px;
-    animation-duration: 4s;
-}
-.ball:nth-child(5){
-    left: 170px;
-    animation-duration: 3.2s;
-}
-.ball:nth-child(6){
-    left: 250px;
-    animation-duration: 2.7s;
-}
-.ball:nth-child(7){
-    left: 300px;
-    animation-duration: 1.8s;
-}
-.ball:nth-child(8){
-    left: 340px;
-    animation-duration: 2.9s;
-}
-.ball:nth-child(9){
-    left: 500px;
-    animation-duration: 3.2s;
-}
-.ball:nth-child(10){
-    left: 600px;
-    animation-duration: 1.4s;
-}
-@keyframes up{
-    from{
-        transform: translateY(10vh);
-    }
-    to{
-        transform: translateY(-150vh);
-    }
-}
-
+/*encourage*/
 #encourage{
-/*    height: 70vh;*/
     padding: 5vh 0;
 }
 #encourage .row{
@@ -956,16 +570,30 @@ h4 .triangle-right{
     border-radius: 50%;
 }
 
-#how{
-    background-color: #666;
-    height: 30vh;
-/*    padding: 10vh 0;*/
-    color: #fff;
+/*overview*/
+#overview{
+/*    min-height: 80vh;*/
+    background-color: #b2b2b2;
+    padding: 0;
+    background-size: cover;
+    background-position: center;
+    position: relative;
 }
-#how .parallelogram-button{
-    width: 80%;
+#overview .indicator-container{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+}
+#overview .slides img{
+    width: 100%;
+}
+#overview .parallelogram-button{
+    position: absolute;
+    top: 45%;
+    left: 10%;
 }
 
+/*about*/
 #about{
     padding: 5vh 0;
     background-color: #fff;
