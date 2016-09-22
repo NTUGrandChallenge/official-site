@@ -8,12 +8,14 @@
     <link rel="shortcut icon" href="assets/img/logo.ico">
     <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/plugins/sweetalert/dist/sweetalert.css">
     <link rel="stylesheet" href="assets/css/general.css">
     <link rel="stylesheet" href="assets/css/faq.css">
 
     <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
     <!-- Latest compiled and minified JavaScript -->
     <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/plugins/sweetalert/dist/sweetalert.min.js"></script>
 </head>
 <body>
     <nav id="navbar" class="fixed">
@@ -25,77 +27,158 @@
         </div>
     </div>
     <div class="container" style="padding: 50px 0px;">
-        <div class="row">
-            <div class="col-md-offset-1 col-md-10 qa">
-                <h2 class="text-center">NTU Challenge是什麼？</h2>
-                <div class="content">
-                    <p class="text-center">NTUChallenge是一場由國立台灣大學主辦的年度大型競賽，挑戰者在比賽中學習動手實作解決問題，<br />扛起社會責任，並以創業發揮永續影響力。</p>
-                    <hr />
-                </div>
+        <div class="panel-group" id="accordion">
+          <div class="panel panel-default">
+            <div class="panel-heading" style="background-color:#666;">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+                    NTU Challenge是什麼？
+                </a>
+              </h4>
             </div>
-            <div class="col-md-offset-1 col-md-10 qa">
-                <h2 class="text-center">誰可以參加NTU Challenge？</h2>
-                <div class="content">
-                    <p class="text-center">所有人。不限年齡，不限職業，只要具備挑戰者精神就可。<br />挑戰者精神：射月思維 、 創意自信 、動手實作、 社會實踐。</p>
-                    <hr />
-                </div>
+            <div id="collapse1" class="panel-collapse collapse in">
+              <div class="panel-body"><p>NTU Challenge 是一場國立台灣大學首次主辦的大型創新創業活動，將邀請師生校友針對「智慧生活」、「永續環境」、「健康醫療」、「社會文化」、「食品與農業」五個領域當前的挑戰，一同思考創新的解決方案。挑戰者在比賽中學習動手實作解決問題，扛起社會責任，並以創業發揮永續影響力。挑戰者（參賽者）將經歷為期半年的比賽流程，包含三梯次營隊、四次的評選，最後產生 5 組優勝團隊，挑戰賽提供八百萬元的獎金與構想驗證金。</p></div>
             </div>
-            <div class="col-md-offset-1 col-md-10 qa">
-                <h2 class="text-center">我需要會什麼嗎？</h2>
-                <div class="content">
-                    <p class="text-center">不用。<br />這次的比賽透過不同階段培訓，逐步帶領挑戰者從議題分析、團隊建立、構想與解方精煉、製作原型並驗證概念、<br />創業轉化的步驟從無到有進而實際解決社會問題，讓你練功！</p>
-                    <hr />
-                </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading" style="background-color:#666;">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+                    誰可以參加NTU Challenge？
+                </a>
+              </h4>
             </div>
-            <div class="col-md-offset-1 col-md-10 qa">
-                <h2 class="text-center">比賽地點在哪兒？</h2>
-                <div class="content">
-                    <p class="text-center">大部分的實體活動場地都在台大，只有ㄧ些大型活動會在校外舉辦，不用到處跑。</p>
-                    <hr />
-                </div>
+            <div id="collapse2" class="panel-collapse collapse">
+              <div class="panel-body"><p>不違反特別資格限制下，原則上為所有人，不限年齡，不限職業，只要具備挑戰者精神即可。挑戰者精神為射月思維 、 創意自信 、動手實作、 社會實踐。<br /></p>
+              <p>為鼓勵年輕原創團隊，特別資格限制如下：<br />
+              1.  參賽團隊若於報名截止前（11/7）已經以參賽核心構想成立公司，不得報名。<br />
+              2.  參賽隊伍若於報名截止前（11/7）已經領取超過一百萬台幣以上之獎金或投資，不得報名。<br />
+              3.  參賽構想及作品須為團隊原創，不得有抄襲之行為。<br />
+              4.  除承辦單位工作人員以外之自然人皆可登錄成為挑戰者。<br />
+              </p></div>
             </div>
-            <div class="col-md-offset-1 col-md-10 qa">
-                <h2 class="text-center">比賽時間呢？</h2>
-                <div class="content">
-                    <p class="text-center">比賽時間將從今年9/21開始，到明年4/30結束，其中除了各階段的評選外，也安排了數場聚會、講座、demo show、營隊等充實的活動。</p>
-                    <hr />
-                </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading" style="background-color:#666;">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+                該如何參加 NTU Challenge ？</a>
+              </h4>
             </div>
-            <div class="col-md-offset-1 col-md-10 qa">
-                <h2 class="text-center">為什麼賽程那麼長呢？</h2>
-                <div class="content">
-                    <p class="text-center">這不只是一個比賽，而是一個完整扎實，包含課程、交流、腦力激盪的過程，從無到有解決社會問題。</p>
-                    <hr />
-                </div>
+            <div id="collapse3" class="panel-collapse collapse">
+              <div class="panel-body"><p>
+                主要有三個步驟：<br />
+                線上註冊成為挑戰者：在大賽官方網站右上角點選進入 「Challengers’ Club」（挑戰賽內網），並填寫個人資料進行註冊，認證完成即成為挑戰者。（Challengers’ Club開放時間為 10/6 ）
+                <br />
+                2.加入/創建團隊：登入 Challengers’ Club  並線上組成團隊。挑戰者可選擇自行創建團隊，或是申請加入已經存在的團隊，每隊限制人數為 2-6人，挑戰者需組隊後才能進行提案。
+                <br />
+                3. 團隊提案報名：團隊須在截止時間（11/6）前，上傳「挑戰提案簡報」以及「挑戰提案書」，即視為報名成功。挑戰賽將以該團隊最後上傳的檔案為團隊最終提案，以及以截止時間時為最終團隊成員。
+              </p></div>
             </div>
-            <div class="col-md-offset-1 col-md-10 qa">
-                <h2 class="text-center">我能從比賽中得到什麼？</h2>
-                <div class="content">
-                    <p class="text-center">在比賽過程中，除了可以吸收知識、認識新朋友外，更重要的是挑戰者們能在比賽中獲得充足的資源，找到可以發揮所學的舞台，實踐理想、回饋社會。</p>
-                    <hr />
-                </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading" style="background-color:#666;">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">
+                我需要會什麼嗎？</a>
+              </h4>
             </div>
-            <div class="col-md-offset-1 col-md-10 qa">
-                <h2 class="text-center">問題百百種，要解決什麼呢？</h2>
-                <div class="content">
-                    <p class="text-center">比賽議題共分為五大領域，包含：<br />智慧生活、健康醫療、永續環境、社會文化、食品與農業。<br />你是否曾關注過這些議題，也試著改善這些問題？<br />不要猶豫，加入我們，一起成為挑戰者吧！</p>
-                    <hr />
-                </div>
+            <div id="collapse4" class="panel-collapse collapse">
+              <div class="panel-body"><p>原則上不用，只需要帶著你原有的背景知識與能力，以及一顆願意解決問題的心。NTU Challenge 將透過不同階段培訓，逐步帶領挑戰者從議題分析、團隊建立、構想與解方精煉、製作原型並驗證概念、創業轉化的五個階段，從無到有進而實際解決社會問題，讓你練功！</p></div>
             </div>
-            <div class="col-md-offset-1 col-md-10 qa">
-                <h2 class="text-center">我在比賽中要做什麼呢？</h2>
-                <div class="content">
-                    <p class="text-center">探究五大領域→察覺全新問題，探索既有問題→接受挑戰→深入理解問題→提出解決方案</p>
-                    <hr />
-                </div>
+          </div>
+           <div class="panel panel-default">
+            <div class="panel-heading" style="background-color:#666;">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapse5">
+                比賽地點在哪兒？</a>
+              </h4>
             </div>
-            <div class="col-md-offset-1 col-md-10 qa">
-                <h2 class="text-center">我該組好隊再報名嗎？</h2>
-                <div class="content">
-                    <p class="text-center">還不急。報名以個人為單位，在提案前找齊隊友就好了喔！<br />參賽方式：報名成為挑戰者→在挑戰者中尋找隊友→登錄成為團隊</p>
-                    <hr />
-                </div>
+            <div id="collapse5" class="panel-collapse collapse">
+              <div class="panel-body"><p>大部分的實體活動場地都在台大，只有ㄧ些大型活動會在校外舉辦，不用到處跑。</p></div>
             </div>
+          </div>
+           <div class="panel panel-default">
+            <div class="panel-heading" style="background-color:#666;">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapse6">
+                比賽時間呢？</a>
+              </h4>
+            </div>
+            <div id="collapse6" class="panel-collapse collapse">
+              <div class="panel-body"><p>NTU Challenge 為 9/21 正式進入第一階段，10/6 開放註冊成為挑戰者及提案報名，11/6 提案報名截止，11/19 將公佈書審結果，最後於 4/30 結束。
+              </p></div>
+            </div>
+          </div>
+           <div class="panel panel-default">
+            <div class="panel-heading" style="background-color:#666;">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapse7">
+                Challengers’ Club 是什麼？</a>
+              </h4>
+            </div>
+            <div id="collapse7" class="panel-collapse collapse">
+              <div class="panel-body"><p>Challengers’ Club 是挑戰賽/挑戰者專用的網站，預計於 10/6 開放。<br />
+              他有幾項重要的功能：<br />
+              提供個人註冊成為挑戰者，成為 NTU Challenge 的 ”會員”。<br />
+              挑戰者交流的平台，包含搜尋隊友、傳遞私人訊息、線上提問、討論交流。<br />
+              組成團隊，使挑戰者得以創建團隊、申請加入團隊。<br />
+              團隊報名及上傳提案，挑戰者將以團隊為單位上傳「挑戰提案書」、「挑戰提案簡報」，上傳完成後團隊即報名成功。<br />
+              公告資訊，NTU Challenge 會將活動的重要資訊都發佈在 Challengers’ Club。<br />
+              </p></div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading" style="background-color:#666;">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapse8">
+                為什麼賽程那麼長呢？</a>
+              </h4>
+            </div>
+            <div id="collapse8" class="panel-collapse collapse">
+              <div class="panel-body"><p>這不只是一個比賽，而是一個完整扎實，包含課程、交流、腦力激盪的過程，從無到有解決社會問題。透過 6 個月的密集流程，培養完整的創新創業能力。</p></div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading" style="background-color:#666;">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapse9">
+                我能從比賽中得到什麼？</a>
+              </h4>
+            </div>
+            <div id="collapse9" class="panel-collapse collapse">
+              <div class="panel-body"><p>在比賽過程中，除了可以吸收知識、認識新朋友外，更重要的是挑戰者們能在比賽中獲得充足的資源，找到可以發揮所學的舞台，實踐理想、回饋社會。
+              </p></div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading" style="background-color:#666;">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapse10">
+                問題百百種，要解決什麼呢？</a>
+              </h4>
+            </div>
+            <div id="collapse10" class="panel-collapse collapse">
+              <div class="panel-body"><p>比賽議題共分為五大領域，包含：<br />
+              智慧生活、健康醫療、永續環境、社會文化、食品與農業。<br />
+              你是否曾關注過這些議題，也試著改善這些問題？<br />
+              不要猶豫，加入我們，一起成為挑戰者吧！
+              </p></div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading" style="background-color:#666;">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapse11">
+                我該組好隊再報名嗎？</a>
+              </h4>
+            </div>
+            <div id="collapse11" class="panel-collapse collapse">
+              <div class="panel-body"><p>還不急。
+              挑戰者以個人為單位進行註冊，在提案前找齊隊友（2-6人），即可進行提案報名。
+              </p></div>
+            </div>
+          </div>
         </div>
     </div>
     

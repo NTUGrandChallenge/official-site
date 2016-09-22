@@ -34,19 +34,8 @@ body{
     }
 }
 
-/*
-.parallelogram{
-    position: absolute;
-    z-index: -1;
-    height: 70%;
-    width: 100%;
-    top: 15%;
-    transform: skew(-20deg);
-}
-*/
 .triangle{
     display: inline-block;
-/*    position: absolute;*/
     right: 0;
     bottom: 0;
     width: 0;
@@ -68,7 +57,10 @@ body{
     width: 100%;
     position: absolute;
     left: 0;
+    -webkit-transition: -webkit-transform .5s cubic-bezier(.69,.42,.01,.59);
+    transition: -webkit-transform .5s cubic-bezier(.69,.42,.01,.59);
     transition: transform .5s cubic-bezier(.69,.42,.01,.59);
+    transition: transform .5s cubic-bezier(.69,.42,.01,.59), -webkit-transform .5s cubic-bezier(.69,.42,.01,.59);
 }
 .sweeper .outside{
     background-color: #FFF;
@@ -83,11 +75,13 @@ body{
 }
 .sweeper:hover .outside-wrapper,
 a.active .sweeper .outside-wrapper{
-    transform: translateY(-300px);
+    -webkit-transform: translateY(-300px);
+            transform: translateY(-300px);
 }
 .sweeper:hover .outside,
 a.active .sweeper .outside{
-    transform: translateY(300px);
+    -webkit-transform: translateY(300px);
+            transform: translateY(300px);
 }
 .sweeper img{
     height: 120px;
@@ -150,10 +144,9 @@ a.active .sweeper .outside{
 }
 
 .one-teacher{
-    background-color: #999;
     min-height: 200px;
     margin-bottom: 30px;
-    color: #FFF;
+    color: #000000;
     position: relative;
 }
 .one-teacher .ribbon-wrapper{
@@ -166,7 +159,8 @@ a.active .sweeper .outside{
 }
 .one-teacher .ribbon-wrapper .ribbon{
     text-align: center;
-    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
     position: relative;
     top: 30px;
     padding: 5px 0;
@@ -192,9 +186,7 @@ a.active .sweeper .outside{
     color: #FFF;
 }
 .challenge-name{
-/*    padding: 5px;*/
-/*    border: 2px #666 solid;*/
-/*    background-color: #FFF;*/
+    
 }
 .challenge-name a{
     color: #000;
@@ -207,4 +199,7 @@ a.active .sweeper .outside{
 .challenge-description{
     padding: 5px;
     background-color: rgba(255, 255, 255, 0.8);
+}
+.fontBlack{
+    color:black;
 }

@@ -1,66 +1,37 @@
-//$(window).load(function(){
-//    $('body').removeClass('loading');
-//    $('#loading').fadeOut(800).remove();
-//})
-
-//$('#overview').css('height', $('#overview .slides img').height())
-
-if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-    swal({
-        title: "貼心小提醒：",
-        text: "手機版還在調整中，建議使用電腦瀏覽喔！"
-    })
-}
+//if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+//    swal({
+//        title: "貼心小提醒：",
+//        text: "手機版還在調整中，建議使用電腦瀏覽喔！"
+//    })
+//}
 
 //scrolling events
 //var divider_position = $('#divider').offset();
 var navbar = $('#navbar'),
     navbar_position = navbar.offset(),
-    slogan = $('#slogan'),
-    slogan_position = slogan.offset(),
+    wedge = $('#wedge'),
+    wedge_position = wedge.offset(),
     talk_position = $('#talk').offset();
 
 $(window).scroll(function(){
 //    fixed navbar
     if($(window).scrollTop() > navbar_position.top){
         navbar.addClass('fixed');
-        slogan.css('margin-top', $('#navbar').height());
+        wedge.css('margin-top', $('#navbar').height());
     }
     else{
         navbar.removeClass('fixed');
-        slogan.css('margin-top', '0');
+        wedge.css('margin-top', '0');
     }
-    
-//    fade in
-//    if($(window).scrollTop() > (slogan_position.top - 500)){
-//        $('#slogan h1').fadeTo(600, 1);
-//        setTimeout(function(){
-//            $('#slogan p').fadeTo(600, 1);
-//        }, 600);
-//    }
-//    if($(window).scrollTop() > (talk_position.top - 500)){
-//        $('#talk h2').fadeTo(600, 1);
-//        setTimeout(function(){
-//            $('#talk p').fadeTo(600, 1);
-//        }, 600);
-//    }
-    
-//    easing background
-//    if($(window).scrollTop() > divider_position.top){
-//        var rgb = Math.floor((divider_position.top - $(window).scrollTop())/5 + 256);
-//        $('body').css('background-color', 'rgb(' + rgb + ',' + rgb + ',' + rgb + ')');
-//    }
-//    else{
-//        $('body').css('background-color', '#FFF');
-//    }
 });
 
+//top blink
 $('#top .blink').on('animationend webkitAnimationEnd oAnimationEnd', function (){
     if($(this).next('.blink').length != 0){
         $(this).next('.blink').addClass('active');
     }
     else{
-        $('#top .blink').first().addClass('active');
+        $(this).siblings('.blink').first().addClass('active');
     }
     $(this).removeClass('active');
 });
@@ -80,6 +51,17 @@ for(var i = 1; i <= $('#five .five').length; i++){
         $('#five .description p:nth-child('+ ($(this).index()+1) +')').removeClass('active');
     })
 }
+
+//why
+$('#why .shake').on('animationend webkitAnimationEnd oAnimationEnd', function (){
+    if($(this).hasClass('single')){
+        $('#why .shake.team').addClass('active');
+    }
+    else{
+        $('#why .shake.single').addClass('active');
+    }
+    $(this).removeClass('active');
+});
 
 
 //slide show function
@@ -123,27 +105,10 @@ var Slideshow = {
 var ov_slideshow = Slideshow.createNew('#overview');
 $('#overview').css("height", $('#overview img').height());
 
-//question and answer
-//for(var i = 1; i <= $('.speech-bubble-question').length; i++){
-//    $('.speech-bubble-question:nth-child('+ i +')').hover(function(){
-//        $('.speech-bubble-question').addClass('mask');
-//        $(this).removeClass('mask');
-//        $('.speech-bubble-answer:nth-child('+ ($(this).index()+1) +')').addClass('active');
-//    },function(){
-//        $('.speech-bubble-question').removeClass('mask');
-//        $('.speech-bubble-answer').removeClass('active');
-//    })
-//}
 //speecher hover effect
 $('.speecher').hover(function(){
     $(this).siblings('.speech-bubble').addClass('active');
 },function(){
     $(this).siblings('.speech-bubble').removeClass('active');
 })
-
-//number count up
-//$('#data .counter').counterUp({
-//    delay: 10,
-//    time: 500
-//});
 

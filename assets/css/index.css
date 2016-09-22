@@ -38,10 +38,14 @@ h4 .triangle-right{
     border-radius: 50%;
     background-color: #000;
     color: #FFF;
+    -webkit-transition: -webkit-transform .1s linear;
+    transition: -webkit-transform .1s linear;
     transition: transform .1s linear;
+    transition: transform .1s linear, -webkit-transform .1s linear;
 }
 .indicator-container .indicator:hover{
-    transform: scale(3);
+    -webkit-transform: scale(3);
+            transform: scale(3);
 }
 .indicator-container .indicator.active{
     background-color: #ffeb32;
@@ -53,7 +57,10 @@ h4 .triangle-right{
     overflow: hidden;
 }
 .slides-container{
+    -webkit-transition: -webkit-transform .3s ease-out;
+    transition: -webkit-transform .3s ease-out;
     transition: transform .3s ease-out;
+    transition: transform .3s ease-out, -webkit-transform .3s ease-out;
     position: absolute;
     width: 1000%;
     height: 100%;
@@ -100,13 +107,15 @@ h4 .triangle-right{
 
 /*parallelogram-button*/
 .parallelogram-button {
-    transform: skew(-10deg);
+    -webkit-transform: skew(-10deg);
+            transform: skew(-10deg);
     padding: 3px 10px;
     font-size: 28px;
     font-weight: bold;
     text-decoration: none;
     text-align: center;
-    animation: outline-pulse 2s linear infinite;
+    -webkit-animation: outline-pulse 2s linear infinite;
+            animation: outline-pulse 2s linear infinite;
 }
 .parallelogram-button.yellow{
     outline: 2px solid #ffeb32;
@@ -122,11 +131,25 @@ h4 .triangle-right{
     outline: none;
     color: #FFF;
     background-color: #142598;
-    animation: none;
+    -webkit-animation: none;
+            animation: none;
 }
 .skew-fix{
     display:inline-block;
-    transform: skew(10deg);
+    -webkit-transform: skew(10deg);
+            transform: skew(10deg);
+}
+@-webkit-keyframes outline-pulse{
+    0%{
+        outline-offset: 0px;
+    }
+    50%{
+        outline-color: transparent;
+        outline-offset: 10px;
+    }
+    100%{
+        outline-color: transparent;
+    }
 }
 @keyframes outline-pulse{
     0%{
@@ -143,10 +166,10 @@ h4 .triangle-right{
 
 .more{
     position: absolute;
-    width: 25vw;
+    width: 20vw;
     border-bottom: 2px solid #000;
-    text-align: right;
-    font-size: 24px;
+    text-align: center;
+    font-size: 20px;
 }
 .more a,
 .more a:hover{
@@ -154,53 +177,12 @@ h4 .triangle-right{
     text-decoration: none;
 }
 
-/*loading mask and animation*/
-body.loading{
-    overflow: hidden;
-}
-#loading{
-    position: fixed;
-    height: 100vh;
-    width: 100vw;
-    background-color: #b2b2b2;
-    z-index: 100;
-}
-#loading .img-container{
-    position: relative;
-    height: 10%;
-}
-#loading img{
-    height: 100%;
-}
-#loading img.playing{
-    animation: loading 1.2s linear infinite;
-}
-#loading img:nth-child(2).playing{
-    animation-delay: .5s;
-}
-#loading img:nth-child(3).playing{
-    animation-delay: 1s;
-}
-@keyframes loading{
-    0%{
-        opacity: 1;
-    }
-    50%{
-        opacity: 0.5;
-        transform: scale(2, 2);
-    }
-    100%{
-        opacity: 1;        
-        transform: scale(1, 1);
-    }
-}
 
 /*top*/
 #top{
     height: 90vh;
     background-color: #b2b2b2;
     padding: 0px;
-/*    background-image: url('../img/top.png');*/
     background-size: cover;
     background-position: center;
     position: relative;
@@ -215,10 +197,24 @@ body.loading{
 }
 #top img.blink{
     opacity: 0;
+    z-index: 3;
 }
 #top img.blink.active{
-    animation-name: blink;
-    animation-duration: 2s;
+    -webkit-animation-name: blink;
+            animation-name: blink;
+    -webkit-animation-duration: 2.5s;
+            animation-duration: 2.5s;
+}
+@-webkit-keyframes blink{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100${
+        opacity: 0;
+    }
 }
 @keyframes blink{
     0%{
@@ -236,78 +232,103 @@ body.loading{
     border-style: solid;
     border-width: 15px 0px 15px 25px;
     border-color: transparent transparent transparent rgba(255, 235, 50, 0.6);
-    animation-name: right; 
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
+    -webkit-animation-name: right;
+            animation-name: right; 
+    -webkit-animation-timing-function: linear; 
+            animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    z-index: 1;
 }
 #top .little-triangle:nth-child(1){
-    animation-duration: 5s;
-    animation-delay: 0s;
+    -webkit-animation-duration: 5s;
+            animation-duration: 5s;
+    -webkit-animation-delay: 0s;
+            animation-delay: 0s;
     top: 0vh;
 }
 #top .little-triangle:nth-child(2){
-    animation-duration: 4s;
-    animation-delay: .2s;
+    -webkit-animation-duration: 4s;
+            animation-duration: 4s;
+    -webkit-animation-delay: .2s;
+            animation-delay: .2s;
     top: 10vh;
 }
 #top .little-triangle:nth-child(3){
-    animation-duration: 5.3s;
-    animation-delay: .4s;
+    -webkit-animation-duration: 5.3s;
+            animation-duration: 5.3s;
+    -webkit-animation-delay: .4s;
+            animation-delay: .4s;
     top: 18vh;
 }
 #top .little-triangle:nth-child(4){
-    animation-duration: 3.6s;
-    animation-delay: 0s;
+    -webkit-animation-duration: 3.6s;
+            animation-duration: 3.6s;
+    -webkit-animation-delay: 0s;
+            animation-delay: 0s;
     top: 26vh;
 }
 #top .little-triangle:nth-child(5){
-    animation-duration: 4.7s;
-    animation-delay: 0s;
+    -webkit-animation-duration: 4.7s;
+            animation-duration: 4.7s;
+    -webkit-animation-delay: 0s;
+            animation-delay: 0s;
     top: 40vh;
 }
 #top .little-triangle:nth-child(6){
-    animation-duration: 3s;
-    animation-delay: .5s;
+    -webkit-animation-duration: 3s;
+            animation-duration: 3s;
+    -webkit-animation-delay: .5s;
+            animation-delay: .5s;
     top: 47vh;
 }
 #top .little-triangle:nth-child(7){
-    animation-duration: 4.3s;
-    animation-delay: 0s;
+    -webkit-animation-duration: 4.3s;
+            animation-duration: 4.3s;
+    -webkit-animation-delay: 0s;
+            animation-delay: 0s;
     top: 56vh;
 }
 #top .little-triangle:nth-child(8){
-    animation-duration: 5.2s;
-    animation-delay: 0s;
+    -webkit-animation-duration: 5.2s;
+            animation-duration: 5.2s;
+    -webkit-animation-delay: 0s;
+            animation-delay: 0s;
     top: 65vh;
 }
 #top .little-triangle:nth-child(9){
-    animation-duration: 4.5s;
-    animation-delay: 0s;
+    -webkit-animation-duration: 4.5s;
+            animation-duration: 4.5s;
+    -webkit-animation-delay: 0s;
+            animation-delay: 0s;
     top: 72vh;
 }
 #top .little-triangle:nth-child(10){
-    animation-duration: 6s;
-    animation-delay: 0s;
+    -webkit-animation-duration: 6s;
+            animation-duration: 6s;
+    -webkit-animation-delay: 0s;
+            animation-delay: 0s;
     top: 81vh;
+}
+@-webkit-keyframes right{
+    from{
+        -webkit-transform: translateX(-10vw);
+                transform: translateX(-10vw);
+    }
+    to{
+        -webkit-transform: translateX(110vw);
+                transform: translateX(110vw);
+    }
 }
 @keyframes right{
     from{
-        transform: translateX(-10vw);
+        -webkit-transform: translateX(-10vw);
+                transform: translateX(-10vw);
     }
     to{
-        transform: translateX(110vw);
+        -webkit-transform: translateX(110vw);
+                transform: translateX(110vw);
     }
-}
-
-#top .parallelogram-button{
-    position: absolute;
-    top: 45%;
-    left: 12%;
-}
-#top .indicator-container{
-    position: absolute;
-    bottom: 20px;
-    right: 50px;
 }
 #videoModal .modal-dialog{
     width: 80vw;
@@ -332,20 +353,35 @@ body.loading{
     left: 50%;
     right: 50%;
     color: #FFF;
+    z-index: 5;
 }
 #scroll_to_navbar i{
-    animation-name: pulse;
-    animation-duration: 1.2s;
-    animation-iteration-count: infinite;
+    -webkit-animation-name: pulse;
+            animation-name: pulse;
+    -webkit-animation-duration: 1.2s;
+            animation-duration: 1.2s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
 }
 #scroll_to_navbar i:nth-child(1){
-    animation-delay: 0s;
+    -webkit-animation-delay: 0s;
+            animation-delay: 0s;
 }
 #scroll_to_navbar i:nth-child(2){
-    animation-delay: 0.2s;
+    -webkit-animation-delay: 0.2s;
+            animation-delay: 0.2s;
 }
 #scroll_to_navbar i:nth-child(3){
-    animation-delay: 0.4s;
+    -webkit-animation-delay: 0.4s;
+            animation-delay: 0.4s;
+}
+@-webkit-keyframes pulse{
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
 }
 @keyframes pulse{
     from{
@@ -356,14 +392,17 @@ body.loading{
     }
 }
 
-/*slogan*/
-#slogan{
+/*wedge*/
+#wedge{
     padding: 10vh 0px;
 }
-#slogan h1{
+#wedge p{
+    text-align: justify;
+}
+#wedge h1{
     position: relative;
 }
-#slogan .triangle-right{
+#wedge .triangle-right{
     display: block;
     position: absolute;
     left: 5%;
@@ -371,6 +410,336 @@ body.loading{
     border-width: 30px 0px 30px 30px;
     border-style: solid;
     border-color: transparent transparent transparent #ffeb32;
+}
+
+
+
+/*feature*/
+#feature{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+#feature img.icon{
+    width: 60%;
+}
+@media screen and (min-width: 768px){
+    .padding-wrapper{
+        padding: 0px 100px;
+    }
+}
+
+/*five*/
+#five{
+    position: relative;
+}
+#five .title-img{
+    top: 0;
+}
+@media screen and (min-width: 768px){
+    #five .title-img{
+        top: 10%;
+    }
+}
+#five .five{
+    position: absolute;
+    -webkit-animation-name: float;
+            animation-name: float;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-duration: 5s;
+            animation-duration: 5s;
+    -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out;
+}
+#five .five img{
+    width: 5vw;
+}
+#five .five .name{
+    position: absolute;
+    left: -2w;
+    width: 9vw;
+    margin-top: 20px;
+    color: #FFF;
+    opacity: 0;
+    -webkit-transition: opacity .3s ease-in;
+    transition: opacity .3s ease-in;
+}
+#five .description p{
+    color: #fff;
+    position: absolute;
+    top: 73%;
+    left: 30%;
+    opacity: 0;
+    -webkit-transition: opacity .3s ease-in;
+    transition: opacity .3s ease-in;
+}
+#five .description p.active{
+    opacity: 1;
+}
+#five .five img:hover ~ .name{
+    opacity: 1;
+}
+#five .five:nth-child(1){
+    top: 55%;
+    left: 26%;
+    -webkit-animation-delay: 0s;
+            animation-delay: 0s;
+}
+#five .five:nth-child(2){
+    top: 52%;
+    left: 37%;
+    -webkit-animation-delay: 1s;
+            animation-delay: 1s;
+}
+#five .five:nth-child(3){
+    top: 58%;
+    left: 51%;
+    -webkit-animation-delay: 0.5s;
+            animation-delay: 0.5s;
+}
+#five .five:nth-child(4){
+    top: 56%;
+    left: 63%;
+    -webkit-animation-delay: 1.5s;
+            animation-delay: 1.5s;
+}
+#five .five:nth-child(5){
+    top: 54%;
+    left: 76%;
+    -webkit-animation-delay: 1.2s;
+            animation-delay: 1.2s;
+}
+@-webkit-keyframes float{
+    0%{
+        -webkit-transform: rotate(0deg) translate(0px, 0px);
+                transform: rotate(0deg) translate(0px, 0px);
+    }
+    25%{
+        -webkit-transform: rotate(-21deg) translate(8px, -32px);
+                transform: rotate(-21deg) translate(8px, -32px);
+    }
+    50%{
+        -webkit-transform: rotate(0deg) translate(-22px, -10px);
+                transform: rotate(0deg) translate(-22px, -10px);
+    }
+    75%{
+        -webkit-transform: rotate(26deg) translate(-24px, 16px);
+                transform: rotate(26deg) translate(-24px, 16px);
+    }
+    100%{
+        -webkit-transform: rotate(0deg) translate(0px, 0px);
+                transform: rotate(0deg) translate(0px, 0px);
+    }
+}
+@keyframes float{
+    0%{
+        -webkit-transform: rotate(0deg) translate(0px, 0px);
+                transform: rotate(0deg) translate(0px, 0px);
+    }
+    25%{
+        -webkit-transform: rotate(-21deg) translate(8px, -32px);
+                transform: rotate(-21deg) translate(8px, -32px);
+    }
+    50%{
+        -webkit-transform: rotate(0deg) translate(-22px, -10px);
+                transform: rotate(0deg) translate(-22px, -10px);
+    }
+    75%{
+        -webkit-transform: rotate(26deg) translate(-24px, 16px);
+                transform: rotate(26deg) translate(-24px, 16px);
+    }
+    100%{
+        -webkit-transform: rotate(0deg) translate(0px, 0px);
+                transform: rotate(0deg) translate(0px, 0px);
+    }
+}
+#five .grain{
+    position: absolute;
+    width: 2vw;
+    -webkit-animation-name: spin;
+            animation-name: spin;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-duration: 3s;
+            animation-duration: 3s;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+}
+#five .grain:nth-child(6){
+    top: 42%;
+    left: 28%;
+}
+#five .grain:nth-child(7){
+    top: 32%;
+    left: 42%;
+    -webkit-animation-delay: .5s;
+            animation-delay: .5s;
+}
+#five .grain:nth-child(8){
+    top: 46%;
+    left: 63%;
+    -webkit-animation-delay: .5s;
+            animation-delay: .5s;
+}
+#five .grain:nth-child(9){
+    top: 39%;
+    left: 78%;
+    -webkit-animation-delay: .4s;
+            animation-delay: .4s;
+}
+#five .grain:nth-child(10){
+    top: 67%;
+    left: 40%;
+    -webkit-animation-delay: .4s;
+            animation-delay: .4s;
+}
+#five .grain:nth-child(11){
+    top: 77%;
+    left: 58%;
+    -webkit-animation-delay: .4s;
+            animation-delay: .4s;
+}
+@-webkit-keyframes spin{
+    from{
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+    to{
+        -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+    }
+}
+@keyframes spin{
+    from{
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+    to{
+        -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+    }
+}
+#five .more{
+    right: 0;
+    top: 70%;
+}
+
+/*why*/
+@media screen and (min-width: 1170px){
+    #why .title-img{
+        position: absolute;
+    }
+}
+#why .parallelogram{
+    padding: 5px 10px;
+    margin: 25px 0;
+    width: 80%;
+    -webkit-transform: skew(-20deg);
+            transform: skew(-20deg);
+    background-color: #ffeb32;
+    left: 5px;
+}
+#why .single{
+    width: 100%;
+    position: absolute;
+    top: 20%;
+}
+#why .single img{
+    width: 80%;
+    position: absolute;
+}
+#why .single img:nth-child(2){
+    visibility: hidden;
+}
+#why .single:hover img:nth-child(2){
+    visibility: visible;
+}
+#why .team{
+    width: 100%;
+    position: absolute;
+    top: 40%;
+}
+#why .team img{
+    width: 80%;
+    position: absolute;
+}
+#why .team img:nth-child(2){
+    visibility: hidden;
+}
+#why .team:hover img:nth-child(2){
+    visibility: visible;
+}
+#why .single.shake.active,
+#why .team.shake.active{
+    -webkit-animation-name: shake;
+            animation-name: shake;
+    -webkit-animation-duration: .5s;
+            animation-duration: .5s;
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+    -webkit-animation-delay: 2s;
+            animation-delay: 2s;
+}
+@-webkit-keyframes shake{
+    0%{
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+    25%{
+        -webkit-transform: rotate(25deg);
+                transform: rotate(25deg);
+    }
+    75%{
+        -webkit-transform: rotate(-25deg);
+                transform: rotate(-25deg);
+    }
+    100%{
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+}
+@keyframes shake{
+    0%{
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+    25%{
+        -webkit-transform: rotate(25deg);
+                transform: rotate(25deg);
+    }
+    75%{
+        -webkit-transform: rotate(-25deg);
+                transform: rotate(-25deg);
+    }
+    100%{
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+}
+#why .parallelogram h4{
+    margin: 0px;
+}
+#why .parallelogram .skew-fix{
+    -webkit-transform: skew(20deg);
+            transform: skew(20deg);
+}
+#why .content{
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+/*encourage*/
+#encourage{
+    padding: 5vh 0;
+}
+#encourage .row{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    height: 30vh;
+}
+#encourage .circular-img{
+    width: 100%;
+    border-radius: 50%;
 }
 
 /*overview*/
@@ -390,558 +759,13 @@ body.loading{
 #overview .slides img{
     width: 100%;
 }
-
-.diamondswrap img.item{
-    width: 100%;
-}
-
-#talk{
-    padding: 20vh 0;
-    background-color: #ffeb32;
-}
-
-/*speech-bubble*/
-.speech-bubble{
-    position: relative;
-    background-color: #ffe65a;
-    padding: 15px;
-    border-radius: 10px;
-    width: 100%;
-    visibility: hidden;
-}
-
-.speech-bubble:after{
-    content: "";
-    display: block;
+#overview .parallelogram-button{
     position: absolute;
-    bottom: -15px;
-    left: 9vw;
-    width: 0;
-    border-width: 15px 15px 0;
-    border-style: solid;
-    border-color: #ffe65a transparent;
-}
-.speech-bubble.active{
-    visibility: visible;
-}
-.speecher{
-    margin-top: 20px;
-}
-.speecher p{
-    font-size: 24px;
+    top: 45%;
+    left: 10%;
 }
 
-/*spirit*/
-#challengers{
-    background-color: #b2b2b2;
-    padding-top: 25px;
-    padding-bottom: 25px;
-}
-
-/*feature*/
-#feature{
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
-#feature .row img{
-    width: 60%;
-}
-
-#feature .one{
-    margin-bottom: 20px;
-}
-#feature .parallelogram{
-    padding: 0px 25px;
-    width: 100%;
-    transform: skew(-20deg);
-    background-color: #ffeb32;
-    left: 5px;
-}
-#feature .parallelogram .skew-fix{
-    transform: skew(20deg);
-}
-#feature .content{
-    border-left: 2px solid #ffeb32;
-    border-bottom: 2px solid #ffeb32;
-    padding: 10px 10px;
-    height: 180px;
-    text-align: justify;
-}
-@media screen and (max-width: 768px){
-    #feature .content{
-        height: 250px;
-    }
-}
-
-#five{
-    position: relative;
-}
-#five .title-img{
-    top: 0;
-}
-@media screen and (min-width: 768px){
-    #five .title-img{
-        top: 10%;
-    }
-}
-#five .grain{
-    position: absolute;
-    width: 2vw;
-    animation-name: spin;
-    animation-iteration-count: infinite;
-    animation-duration: 3s;
-    animation-timing-function: linear;
-}
-#five .grain:nth-child(6){
-    top: 42%;
-    left: 28%;
-}
-#five .grain:nth-child(7){
-    top: 38%;
-    left: 60%;
-    animation-delay: .5s;
-}
-#five .grain:nth-child(8){
-    top: 38%;
-    left: 42%;
-    animation-delay: .5s;
-}
-#five .grain:nth-child(9){
-    top: 78%;
-    left: 44%;
-    animation-delay: .4s;
-}
-@keyframes spin{
-    from{
-        transform: rotate(0deg);
-    }
-    to{
-        transform: rotate(360deg);
-    }
-}
-#five .five{
-    position: absolute;
-    animation-name: float;
-    animation-iteration-count: infinite;
-    animation-duration: 5s;
-    animation-timing-function: ease-in-out;
-}
-#five .five img{
-    width: 5vw;
-}
-#five .five .name{
-    position: absolute;
-    left: -2w;
-    width: 9vw;
-    margin-top: 20px;
-    color: #FFF;
-    opacity: 0;
-    transition: opacity .3s ease-in;
-}
-#five .description p{
-    color: #fff;
-    position: absolute;
-    top: 73%;
-    left: 33%;
-    opacity: 0;
-    transition: opacity .3s ease-in;
-}
-#five .description p.active{
-    opacity: 1;
-}
-#five .five img:hover ~ .name{
-    opacity: 1;
-}
-#five .five:nth-child(1){
-    top: 60%;
-    left: 26%;
-    animation-delay: 0s;
-}
-#five .five:nth-child(2){
-    top: 58%;
-    left: 37%;
-    animation-delay: 1s;
-}
-#five .five:nth-child(3){
-    top: 62%;
-    left: 51%;
-    animation-delay: 0.5s;
-}
-#five .five:nth-child(4){
-    top: 61%;
-    left: 63%;
-    animation-delay: 1.5s;
-}
-#five .five:nth-child(5){
-    top: 59%;
-    left: 76%;
-    animation-delay: 1.2s;
-}
-@keyframes float{
-    0%{
-        transform: rotate(0deg) translate(0px, 0px);
-    }
-    25%{
-        transform: rotate(-21deg) translate(8px, -32px);
-    }
-    50%{
-        transform: rotate(0deg) translate(-22px, -10px);
-    }
-    75%{
-        transform: rotate(26deg) translate(-24px, 16px);
-    }
-    100%{
-        transform: rotate(0deg) translate(0px, 0px);
-    }
-}
-#five .more{
-    right: 0;
-    top: 70%;
-}
-
-/*why*/
-#why .parallelogram{
-    padding: 5px 10px;
-    margin-bottom: 10px;
-    width: 80%;
-    transform: skew(-20deg);
-    background-color: #ffeb32;
-    left: 5px;
-}
-#why .parallelogram h4{
-    margin: 0px;
-}
-#why .parallelogram .skew-fix{
-    transform: skew(20deg);
-}
-#why .content{
-    margin-bottom: 20px;
-}
-
-/*faq*/
-#faq{
-    background-color: #b2b2b2;
-    padding: 5vh 0;
-}
-#faq .avatar{
-    height: 350px;
-}
-#faq .avatar img{
-    height: 100%;
-}
-.bubble-wrapper{
-    position: relative;
-    height: 350px;
-}
-.speech-bubble-question,
-.speech-bubble-answer{
-    background-color: #ffeb32;
-    padding: 15px;
-    margin-bottom: 5px;
-    border-radius: 5px;
-    transition: all .1s linear;
-    font-size: 18px;
-}
-.speech-bubble-question{
-    width: 80%;
-    position: relative;
-    margin-bottom: 10px;
-}
-.speech-bubble-question:nth-child(2n){
-    margin-left: 20px;
-}
-.speech-bubble-question:before{
-    content: "";
-    display: block;
-    position: absolute;
-    left: -15px;
-    width: 0;
-    border-width: 15px 15px 15px 0;
-    border-style: solid;
-    border-color: transparent #ffeb32;
-}
-.speech-bubble-question.mask{
-    opacity: 0;
-}
-.speech-bubble-answer{
-    width: 100%;
-    position: absolute;
-    opacity: 0;
-}
-.speech-bubble-answer:after{
-    content: "";
-    display: block;
-    position: absolute;
-    right: -15px;
-    bottom: 30px;
-    width: 0;
-    border-width: 15px 0 15px 15px;
-    border-style: solid;
-    border-color: transparent #ffeb32;
-}
-.speech-bubble-answer.active{
-    opacity: 1;
-}
-
-
-/*curtain*/
-.curtain{
-    overflow: hidden;
-    height: 200px;
-    margin-top: 25px;
-    margin-bottom: 25px;
-}
-.curtain_wrapper{
-    width: 100%;
-    height: 100%;
-    position: relative;
-}
-.curtain_panel{
-    background-color: #0eac6f;
-    z-index: 2;
-    float: left;
-    height: 100%;
-    width: 50%;
-    border-radius: none;
-    transition: all .3s ease-out;
-    line-height: 200px;
-    color: #FFF;
-    font-size: large;
-}
-.curtain_wrapper:hover .panel-left{
-    transform: translateX(-100%);
-}
-.curtain_wrapper:hover .panel-right{
-    transform: translateX(100%);
-}
-.inside{
-    position: absolute;
-    z-index: -1;
-    height: 100%;
-    width: 100%;
-}
-
-.parallax-window {
-    min-height: 500px;
-    background: transparent;
-}
-
-#data{
-    padding-top: 50px;
-    padding-bottom: 50px;
-    background-color: #FFF;
-    color: #000;
-}
-#data span{
-    font-size: 24px;
-}
-
-/*full width five column*/
-.col-xs-5ths,
-.col-sm-5ths,
-.col-md-5ths,
-.col-lg-5ths {
-    position: relative;
-    min-height: 1px;
-    padding-right: 10px;
-    padding-left: 10px;
-}
-.col-xs-5ths {
-    width: 20%;
-    float: left;
-}
-@media (min-width: 768px) {
-    .col-sm-5ths {
-        width: 20%;
-        float: left;
-    }
-}
-@media (min-width: 992px) {
-    .col-md-5ths {
-        width: 20%;
-        float: left;
-    }
-}
-@media (min-width: 1200px) {
-    .col-lg-5ths {
-        width: 20%;
-        float: left;
-    }
-}
-
-
-.hover-fade{
-    position: relative;
-    height: 150px;
-}
-.hover-fade .inside{
-    position: absolute;
-    height: 100%;
-}
-.hover-fade .outside{
-    padding: 10px;
-    height: 100%;
-    position: absolute;
-    opacity: 0;
-    transition: opacity .1s linear;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: #FFF;
-}
-.hover-fade:hover .outside{
-    opacity: 1;
-}
-
-#five-field-toggle .sweeper{
-    height: 300px;
-    overflow: hidden;
-    position: relative;
-}
-.sweeper .inside,
-.sweeper .outside,
-.sweeper .outside-wrapper{
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    left: 0;
-    transition: transform .3s ease-out;
-/*
-    border-left: 1px #ffeb32 solid;    
-    border-right: 1px #ffeb32 solid;    
-*/
-}
-.sweeper .outside{
-    text-align: center;
-    background-color: #FFF;
-    z-index: 2;
-}
-.sweeper .outside-wrapper{
-    overflow: hidden;
-    z-index: 3;
-}
-.sweeper .inside{
-    z-index: 1;
-}
-.sweeper:hover .outside-wrapper{
-    transform: translateY(-300px);
-}
-.sweeper:hover .outside{
-    transform: translateY(300px);
-}
-.sweeper img{
-    height: 120px;
-    margin-top: 50px;
-}
-.sweeper .outside h2{
-    color: black;
-}
-.sweeper .inside,
-.sweeper .inside a{
-    color: white;
-    text-decoration: none;
-}
-.sweeper .inside .content{
-    padding: 10px;
-}
-.sweeper .inside .content .more{
-    position: absolute;
-    right: 10px;
-    bottom: 10px;
-    border: 2px solid #FFF;
-    padding: 5px 10px;
-    background-color: transparent;
-}
-
-
-#ball-container{
-    height: 150vh;
-    position: relative;
-}
-.ball {
-    width: 30px;
-    height: 30px;
-    margin: 30px auto;
-    border-radius: 30px;
-    position: absolute;
-    bottom: 0;
-    z-index: -1;
-    animation-name: up;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-    background-color: red;
-}
-.ball:nth-child(1){
-    left: 0px;
-    animation-duration: 2s;
-}
-.ball:nth-child(2){
-    left: 50px;
-    animation-duration: 1.5s;
-}
-.ball:nth-child(3){
-    left: 90px;
-    animation-duration: 1s;
-}
-.ball:nth-child(4){
-    left: 140px;
-    animation-duration: 4s;
-}
-.ball:nth-child(5){
-    left: 170px;
-    animation-duration: 3.2s;
-}
-.ball:nth-child(6){
-    left: 250px;
-    animation-duration: 2.7s;
-}
-.ball:nth-child(7){
-    left: 300px;
-    animation-duration: 1.8s;
-}
-.ball:nth-child(8){
-    left: 340px;
-    animation-duration: 2.9s;
-}
-.ball:nth-child(9){
-    left: 500px;
-    animation-duration: 3.2s;
-}
-.ball:nth-child(10){
-    left: 600px;
-    animation-duration: 1.4s;
-}
-@keyframes up{
-    from{
-        transform: translateY(10vh);
-    }
-    to{
-        transform: translateY(-150vh);
-    }
-}
-
-#encourage{
-/*    height: 70vh;*/
-    padding: 5vh 0;
-}
-#encourage .row{
-    margin-top: 25px;
-    margin-bottom: 25px;
-    height: 30vh;
-}
-#encourage .circular-img{
-    width: 100%;
-    border-radius: 50%;
-}
-
-#how{
-    background-color: #666;
-    height: 30vh;
-/*    padding: 10vh 0;*/
-    color: #fff;
-}
-#how .parallelogram-button{
-    width: 80%;
-}
-
+/*about*/
 #about{
     padding: 5vh 0;
     background-color: #fff;
