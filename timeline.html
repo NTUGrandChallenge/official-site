@@ -8,6 +8,7 @@
     <link rel="shortcut icon" href="assets/img/logo.ico">
     <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/plugins/sweetalert/dist/sweetalert.css">
     <link rel="stylesheet" href="assets/css/general.css">
     <link rel="stylesheet" href="assets/css/timeline.css">
 
@@ -32,86 +33,34 @@
         </ul>
     </div>
     <div class="stage" id="stage1">
-        <div data-start="bottom: 30%;" data-end="bottom: -130%;" class="events">
-            <p class="event-stage">問題探索階段</p>
-            <div class="event">
-                <a href="#"><p class="event-name">開幕記者會</p></a>
-                <p class="event-date">0921</p>
-            </div>
-            <div class="event">
-                <a href="#"><p class="event-name">五大領域論壇</p></a>
-                <p class="event-date">0921</p>
-            </div>
-            <div class="event">
-                <a href="#"><p class="event-name">招集挑戰者</p></a>
-                <p class="event-date">0921</p>
-            </div>
-        </div>
-        <img class="bg" src="assets/img/stage1_bg.svg">
-        <img data-start="bottom: 10%;" data-end="bottom: -120%;" class="icon" src="assets/img/stage1_icon.png">
+        <img class="bg" src="assets/img/timeline/phase1_layer1.png">
+        <img class="title" id="title1" src="assets/img/timeline/phase1_title.png">
     </div>
     <div class="stage" id="stage2">
-        <div data-start="bottom: 50%;" data-end="bottom: -90%;" class="events">
-            <p class="event-stage">團隊建立階段</p>
-            <div class="event">
-                <a href="#"><p class="event-name">Meet Up No.1</p></a>
-                <p class="event-date">0921</p>
-            </div>
-            <div class="event">
-                <a href="#"><p class="event-name">Meet Up No.2</p></a>
-                <p class="event-date">0921</p>
-            </div>
-            <div class="event">
-                <a href="#"><p class="event-name">線上書審</p></a>
-                <p class="event-date">0921</p>
-            </div>
-        </div>
-        <img class="bg" src="assets/img/stage2_bg.svg">
-        <img data-start="bottom: 20%;" data-end="bottom: -60%;" class="icon" src="assets/img/stage2_icon.png">
+        <img class="bg" src="assets/img/timeline/phase2_layerall.png">
+        <img id="phase2yellow" src="assets/img/timeline/phase2_layer4.png">
+        <img class="title" id="title2" src="assets/img/timeline/phase2_title.png">
     </div>
     <div class="stage" id="stage3">
-        <div data-start="bottom: 75%;" data-end="bottom: -55%;" class="events">
-            <p class="event-stage">構想精煉階段</p>
-            <div class="event">
-                <a href="#"><p class="event-name">構想營</p></a>
-                <p class="event-date">0921</p>
-            </div>
-            <div class="event">
-                <a href="#"><p class="event-name">Idea Show</p></a>
-                <p class="event-date">0921</p>
-            </div>
-        </div>
-        <img class="bg" src="assets/img/stage3_bg.svg">
-        <img data-start="bottom: 20%;" data-end="bottom: -60%;" class="icon" src="assets/img/stage3_icon.png">
+        <img id="lightning" src="assets/img/timeline/phase3_layer2.png">
+        <img class="bg" src="assets/img/timeline/phase3_layer1.png">
+        <img class="title" id="title3" src="assets/img/timeline/phase3_title.png">
     </div>
     <div class="stage" id="stage4">
-        <div data-start="bottom: 70%;" data-end="bottom: -20%;" class="events">
-            <p class="event-stage">實作驗證階段</p>
-            <div class="event">
-                <a href="#"><p class="event-name">實作營</p></a>
-                <p class="event-date">0921</p>
-            </div>
-        </div>
-        <img class="bg" src="assets/img/stage4_bg.png">
-        <img data-start="top: -10%;" data-end="top: 50%;" class="icon" src="assets/img/stage4_icon.png">
+        <img class="bg" src="assets/img/timeline/phase4_layerall.png">
+        <img class="title" id="title4" src="assets/img/timeline/phase4_title.png">
     </div>
     <div class="stage" id="stage5">
-        <div data-start="bottom: 90%;" data-end="bottom: 30%;" class="events">
-            <p class="event-stage">轉化實踐階段</p>
-            <div class="event">
-                <a href="#"><p class="event-name">轉化營</p></a>
-                <p class="event-date">0921</p>
-            </div>
-        </div>
-        <img class="bg" src="assets/img/stage5_bg.svg">
-        <img data-start="top: 0%;" data-end="top: 40%;" class="icon" src="assets/img/stage5_icon.png">
+        <img class="bg" src="assets/img/timeline/phase5_layerall.png">
+        <img class="title" id="title5" src="assets/img/timeline/phase5_title.png">
     </div>
-    <!--
-    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewbox="0 0 1440 3777" preserveAspectRatio="xMidYMin slice" id="route">
-        <path d="M650 0 Q450 375, 650 749 T650 1460 Q480 1742, 650 2073 v330 l120 120 l-120 120 v400 q80 100, 180 0 l110 -88" stroke="#777" stroke-width="12" fill="none" />
-        <path stroke-dasharray="3595" stroke-dashoffset="3595" d="M650 0 Q450 375, 650 749 T650 1460 Q480 1742, 650 2073 v330 l120 120 l-120 120 v400 q80 100, 180 0 l110 -88" stroke="#FFEB32" stroke-width="12" fill="none" id="flow" />
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1440 3640.72">
+        <path class="cls-1" d="M711.49, 194.41 C764, 244.79, 811.56, 324.8, 811.56, 441.05, 811.56, 716.47, 549.65, 806,490, 806 v646.26 l322, 236.53 v606.78 L245, 2608 v552.78 L703.87, 3455" transform="translate(12 -24)" />
     </svg>
-    -->
+    <!--<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewbox="0 0 1440 4144" preserveAspectRatio="xMidYMin slice" id="route">
+        <path d="M680 0 Q1100 540, 412 760" stroke="#777" stroke-width="12" fill="none" />
+        <path stroke-dasharray="" stroke-dashoffset="0" d="" stroke="#FFEB32" stroke-width="10" fill="none" id="flow" />
+    </svg>-->
     <footer>
     
     </footer>
@@ -119,8 +68,9 @@
         
     </div>
     
-    <script type="text/javascript" src="assets/js/general.js"></script>
+    <script src="assets/plugins/sweetalert/dist/sweetalert.min.js"></script>
     <script src="assets/plugins/skrollr.js/skrollr.min.js"></script>
+    <script type="text/javascript" src="assets/js/general.js"></script>
     <script src="assets/js/timeline.js"></script>
 </body>
 </html>
