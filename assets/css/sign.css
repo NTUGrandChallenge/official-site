@@ -28,6 +28,7 @@
     color: #FFF;
     background-color: #142598;
     animation: none;
+    outline: solid #FFF 2px;
 }
 .skew-fix{
     display:inline-block;
