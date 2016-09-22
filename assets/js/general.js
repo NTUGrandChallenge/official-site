@@ -1,7 +1,7 @@
 //load template
-$('#navbar').load('/official-site/_navbar.html');
-$('footer').load('/official-site/_footer.html');
-$('#messenger').load('/official-site/_messenger.html');
+$('#navbar').load('/_navbar.html');
+$('footer').load('/_footer.html');
+$('#messenger').load('/_messenger.html');
 if($('footer .toggle-collapse').is(':visible')){
     $('footer .collapse').removeClass('in');
 }
@@ -10,7 +10,7 @@ if($('footer .toggle-collapse').is(':visible')){
 function comingSoon(){
     swal({
         title: "即將上線!",   
-        imageUrl: "/official-site/assets/img/avatar_3.png",
+        imageUrl: "/assets/img/avatar_3.png",
         imageSize: "100x100"
     });
 }
