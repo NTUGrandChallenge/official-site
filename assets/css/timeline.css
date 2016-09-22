@@ -7,6 +7,11 @@ svg {
 	display: block;
   z-index: -1;
 }
+svg path {
+  fill: none;
+  stroke-miterlimit: 10;
+  stroke-width: 4px;
+}
 
 /* Anchor */
 #div-anchor {
@@ -78,7 +83,7 @@ svg {
 }
 #stage1 .bg {
   width: 50%;
-  margin-top: 100px;
+  margin-top: 7%;
 }
 #stage2 .bg {
   width: 100%;
@@ -96,14 +101,14 @@ svg {
 }
 #stage5 .bg {
   width: 85%;
-  margin-top: 17%;
+  margin-top: 22%;
   margin-left: -24%;
 }
 #lightning {
   position: absolute;
   top: 0;
-  left: 14%;
-  width: 50%;
+  left: 9%;
+  width: 54%;
   z-index: -1;
 }
 
@@ -116,13 +121,13 @@ svg {
 
 /* Titles */
 .title {
-  width: 16%;
   position: absolute;
+  width: 16%;
   z-index: 1;
 }
 #title1 {
+  top: 13%;
   right: 15%;
-  top: 100px;
 }
 #title2 {
   top: 15%;
@@ -137,14 +142,59 @@ svg {
   left: 18%;
 }
 #title5 {
-  top: 53%;
+  top: 56%;
   left: 15%;
 }
 
+/* Content */
+.content {
+  position: absolute;
+}
+#content1 {
+  width: 26%;
+  top: 40%;
+  right: 15%;
+}
+#content2-1 {
+  width: 40%;
+  top: 7%;
+  left: 38%;
+}
+#content2-2 {
+  width: 22%;
+  top: 37%;
+  left: 36%;
+}
+#content3 {
+  width: 30%;
+  top: 34%;
+  right: 6%;
+}
+#content4-1 {
+  width: 25%;
+  top: 46%;
+  left: 25%;
+}
+#content4-2 {
+  width: 34%;
+  top: 78%;
+  left: 19%;
+}
+#content5-1 {
+  width: 20%;
+  top: 8%;
+  left: 14%;
+}
+#content5-2 {
+  width: 24%;
+  top: 34%;
+  right: 12%;
+}
+
 /* SVG */
-.cls-1 {
-  fill: none;
+#flow-base {
+  stroke: #1a1a1a;
+}
+#flow {
   stroke: #ffe534;
-  stroke-miterlimit: 10;
-  stroke-width: 4px;
 }

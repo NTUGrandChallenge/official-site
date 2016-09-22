@@ -58,7 +58,7 @@ function toContent(selector) {
 /* SVG */
 var flow = $('#flow');
 var fromOffset = flow.attr('stroke-dashoffset');
-var maxHeight = $('#flow')[0].getBoundingClientRect().height - $(window).height();
+var maxHeight = $('#flow-base')[0].getBoundingClientRect().height;
 
 $(window).scroll(function() {
 	var currentProgress = ($(window).scrollTop() < maxHeight) ? fromOffset * (1 - $(window).scrollTop() / maxHeight) : 0;
