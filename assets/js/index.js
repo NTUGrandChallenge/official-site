@@ -103,7 +103,11 @@ var Slideshow = {
 }
 //var top_slideshow = Slideshow.createNew('#top');
 var ov_slideshow = Slideshow.createNew('#overview');
-$('#overview').css("height", $('#overview img').height());
+$(window).load(function(){
+$('#overview').height($('#overview img:nth-child(1)').height());
+    
+})
+
 //var overview_height = document.getElementById('overview').getElementsByTagName('img')[0].height;
 //document.getElementById('overview').style.height = overview_height;
 
