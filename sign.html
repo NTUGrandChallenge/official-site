@@ -12,6 +12,7 @@
     <link rel="stylesheet" type="text/css" href="assets/plugins/sweetalert/dist/sweetalert.css">
     <link rel="stylesheet" href="assets/css/general.css">
     <link rel="stylesheet" href="assets/css/sign.css">
+
     
 
     <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
@@ -26,82 +27,173 @@
     <nav id="navbar" class="fixed">
         
     </nav>
-    
-    <div class="container">
-        <div class="row" id="row0">   
-            <br />
-            <br />
-            <h1>想報名成為挑戰者嗎？那你是？</h1>
-            <br />
-            <br />
-            <br />
-        </div>
-        <div class="row">
-            <div class="col-md-2 col-md-offset-4">
-                <button class="word" id="single">我是個人</button>
-            </div>
-            <div class="col-md-2">
-                <button class="word" id="team">我有團隊</button>
+    <div class="container " style="margin-top:50px; ">
+        <div class="row" >
+            <div class="col-md-4 col-md-offset-4">
+                <h3 class="textCenter">你有團隊了嗎？</h3>
             </div>
         </div>
         <div class="row">
-            <br />
-            <br />
-            <br />
-        </div>
-        <div class="row"  id="row1">
-            <div class="col-md-3 col-md-offset-1">
-                <img src="assets/img/single.png" style="width:80%">
+            <div class="col-md-4 col-md-offset-2">
+                <div class="parallelogram-button black text-center " id="single-color"><span class="skew-fix text-center">組隊中</span></div>
             </div>
-            <div class="col-md-6 col-md-offset-2">
-            <br />
-                <h2>我是個人</h2>
-                <br />
-                <br />
-                <p>還沒找齊解決問題的夥伴嗎？沒有關係！只要在提案前找好隊友就好。
-立即註冊成為挑戰者，進入挑戰者的線上世界吧（Challengers' Club)！</p>
-                <br />
-                <br />
-                
-               <div class="col-md-10">
-                    <input type="email" name="email" placeholder="Email" class="textbox"  />
-                </div>
-                <div class="col-md-2">                       
-                     <button class="button">送出</button>
-                </div> 
-                
+            <div class="col-md-4">
+                <div class="parallelogram-button black text-center" id="team-color"><span class="skew-fix text-center" >已組好隊</span></div>
             </div>
         </div>
-        <div class="row"  id="row2">
-            <div class="col-md-4 col-md-offset-1">
-                <img src="assets/img/team.png" style="width:100%">
+        
+        <div id="single_div">
+            <div class="row">
+                <br />
             </div>
-            <div class="col-md-6 col-md-offset-1">
-            <br />
-                <h2>我有團隊</h2>
-                <br />
-                <br />
-                <p>好的團隊，是解決難題的關鍵要素！恭喜你們已踏出成功的第一步。提醒你，每個團隊成員皆須註冊成為挑戰者，並且線上組成團隊，並且繳交提案，才算報名成功喔！</p>
-                <br />
-                <br />
-                
-                <div class="col-md-10">
-                    <input type="email" name="email" placeholder="Email" class="textbox"  />
+            <div class="row">
+                <div class="col-md-4 col-md-offset-1">
+                    <img src="assets/img/sign/team.png" style="width:100%" />
                 </div>
-                <div class="col-md-2">                        
-                    <button class="button">送出</button>
-                </div> 
+                <div class="col-md-5 col-md-offset-1">
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    
+                    <h3 style="line-height:40px;">還沒找齊解決問題的夥伴嗎？沒有關係！只要在提案前找好隊友就好。 立即註冊成為挑戰者，進入挑戰者的線上世界吧！<br />
+                    （Challengers' Club 10.6 正式上線！)</h3>
+                    <center><button class="button">我要報名</button></center>
+                </div>
                 
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="assets/img/sign/team_comic1.png" style="width:100%" />
+                </div>
+                <div class="col-md-5">
+                    <br />
+                    <br />
+                    <h2>線上註冊為挑戰者</h2>
+                    <br />
+                    <font style="font-size:20px;line-height:40px">在大賽官方網站右上角點選進入 「Challengers’ Club」，並填寫個人資料進行註冊，認證完成即成為挑戰者。</font>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="assets/img/sign/team_comic2.png" style="width:100%" />
+                </div>
+                <div class="col-md-5">
+                    <br />
+                    <br />
+                    <h2>加入/創建團隊</h2>
+                    <br />
+                    <font style="font-size:20px;line-height:40px">登入 Challengers’ Club 後，你可選擇自行創建團隊，或是申請加入已經存在的團隊，每隊限制人數為 2-6人，需組隊後才能進行提案。</font>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="assets/img/sign/team_comic3.png" style="width:100%" />
+                </div>
+                <div class="col-md-5">
+                    <br />
+                    <br />
+                    <h2>團隊提案</h2>
+                    <br />
+                    <font style="font-size:20px;line-height:40px">團隊須在截止時間前，上傳挑戰提案簡報以及挑戰提案書。大賽將以該團隊最後上傳的檔案為團隊最終提案，以及以截止時間時之團隊成員為最終成員。</font>
+                </div>
+
+
+
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="assets/img/sign/team_comic4.png" style="width:100%" />
+                </div>
+                <div class="col-md-5">
+                    <br />
+                    <br />
+                    <h2>其他報名流程—獨立團隊快速報名流程</h2>
+                    <br />
+                    <font style="font-size:20px;line-height:40px">為方便已甄成熟及完整的隊伍參賽，大賽特別提供了「獨立團隊快速報名流程」，供獨立團隊快速參賽。（需額外繳交「獨立團隊快速報名申請書」，10.6 正式開放）</font>
+                </div>
             </div>
             
+
         </div>
-        <div class="row">
-            <br />
-            <br />
-            <br />
+        <div id="team_div">
+            <div class="row">
+                <br />
+            </div>
+            <div class="row">
+                <div class="col-md-5 col-md-offset-1">
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    
+                    <h3 style="line-height:40px;">好的團隊是解決難題的關鍵要素！恭喜你們已踏出成功的第一步。提醒你，每個團隊成員皆須註冊成為挑戰者，並且線上組成團隊，並且繳交提案，才算報名成功喔！<br />
+                    （Challengers' Club 10.6 正式上線！)</h3>
+                    <center><button class="button">我要報名</button></center>
+                </div>
+                <div class="col-md-4 col-md-offset-1">
+                    <img src="assets/img/sign/single.png" style="width:70%" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="assets/img/sign/single_comic1.png" style="width:100%" />
+                </div>
+                <div class="col-md-5">
+                    <br />
+                    <br />
+                    <h2>隊員線上註冊</h2>
+                    <br />
+                    <font style="font-size:20px;line-height:40px">隊長於大賽官方網站註冊於點選右上角進入 「Challengers’ Club」，並填寫個人資料進行註冊，認證完成即成為挑戰者。（注意：每個團隊成員皆需註冊為挑戰者！）</font>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="assets/img/sign/single_comic2.png" style="width:100%" />
+                </div>
+                <div class="col-md-5">
+                    <br />
+                    <br />
+                    <h2>隊長創建團隊及成員申請加入團隊</h2>
+                    <br />
+                    <font style="font-size:20px;line-height:40px">登入 Challengers’ Club 後，由隊長需負責創建團隊。而其他團隊成員則可透過搜尋團隊名稱，申請加入隊長創建之團隊，每隊限制人數為 2-6人。</font>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="assets/img/sign/single_comic3.png" style="width:100%" />
+                </div>
+                <div class="col-md-5">
+                    <br />
+                    <br />
+                    <h2>團隊提案</h2>
+                    <br />
+                    <font style="font-size:20px;line-height:40px">團隊須在截止時間前，上傳挑戰提案簡報以及挑戰提案書。大賽將以該團隊最後上傳的檔案為團隊最終提案，以及以截止時間時之團隊成員為最終成員。</font>
+                </div>
+
+
+
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="assets/img/sign/single_comic4.png" style="width:100%" />
+                </div>
+                <div class="col-md-5">
+                    <br />
+                    <br />
+                    <h2>其他報名流程—獨立團隊快速報名流程</h2>
+                    <br />
+                    <font style="font-size:20px;line-height:40px">為方便已甄成熟及完整的隊伍參賽，大賽特別提供了「獨立團隊快速報名流程」，供獨立團隊快速參賽。（需額外繳交「獨立團隊快速報名申請書」，10/6 正式開放）</font>
+                </div>
+            </div>
         </div>
     </div>
-
+    <br />
+    <br />
+    <br />
+    <br />
     <footer>
     </footer>
     
