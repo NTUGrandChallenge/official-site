@@ -1,80 +1,43 @@
-#fullpage .section{
-    background-color: #b2b2b2;
-}
-#fullpage .section h2,
-#fullpage .section h3{
-    margin-top: 50px;
-}
 
-.full-width{
-    width: 100%;
-}
-
-a,
-a:hover,
-a:focus{
-    color: #333;
-    text-decoration: none;
-}
-
-.fp-controlArrow {
-    display: none;
-}
-
-h2 .triangle-right{
-    display: inline-block;
-    width: 0;
-    border-width: 15px 5px 15px 25px;
-    border-style: solid;
-    border-color: transparent transparent transparent #ffeb32;
-}
-
-h2 .triangle-left{
-    display: inline-block;
-    width: 0;
-    border-width: 15px 25px 15px 0px;
-    border-style: solid;
-    border-color: transparent #fff transparent transparent;
-}
-
-.number{
-    color: #ffeb32;
-    font-weight: 900;
-    font-size: 40px;
-}
-.textbox {
-    border-radius: 10px;
-    border:1px solid #B2B2B2;
-    width:100%;
-    font-size:20px;
-    padding:5px;
-}
-
-.button{
-    width:100%;
-    font-size:25px;
-    padding:3px;
-    border:1px solid #B2B2B2;
-    border-radius: 10px;
-    background-color:#FFEB32;
-}
-.button:hover{
-    color:white;
-    background-color: #142598;
-}
-.word {
-    cursor: pointer;
-    width:100%;
-    font-size:25px;
-    padding:3px;
-    border:1px solid #B2B2B2;
-    text-align:center;
-    background-color:#FFEB32;
-}
-.word:hover{
-    color:white;
-    background-color: #142598;
-}
-#row0{
+.textCenter {
     text-align: center;
+}
+.textRight {
+    text-align: right;
+}
+.textLeft {
+    text-align: left;
+}
+.parallelogram-button {
+    transform: skew(-10deg);
+    padding: 3px 10px;
+    font-size: 34px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor:pointer;
+}
+.parallelogram-button.yellow{
+    background-color: #ffeb32;
+    color: #000;
+}
+.parallelogram-button.black{
+    background-color: #000;
+    color: #ffeb32;
+}
+.parallelogram-button:hover{
+    color: #FFF;
+    background-color: #142598;
+    animation: none;
+}
+.skew-fix{
+    display:inline-block;
+    transform: skew(10deg);
+}
+.button{
+    background-color:#B2B2B2;
+    font-size:25px;
+    padding:5px;.
+    width:100%;
+    border:2px solid black;
+    border-radius: 10px;
 }
