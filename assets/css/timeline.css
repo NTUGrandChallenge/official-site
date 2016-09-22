@@ -81,9 +81,14 @@ svg path {
 .bg {
   height: auto;
 }
-#stage1 .bg {
+#stage1 .bg-container {
+  position: relative;
   width: 50%;
   margin-top: 7%;
+}
+#stage1 .bg {
+  width: 100%;
+  margin-left: 3%;
 }
 #stage2 .bg {
   width: 100%;
@@ -104,19 +109,25 @@ svg path {
   margin-top: 22%;
   margin-left: -24%;
 }
+
+#floats {
+  position: absolute;
+  top: 5%;
+  left: 15%;
+  width: 80%;
+}
+#yellow {
+  position: absolute;
+  top: 10%;
+  left: -5%;
+  width: 40%;
+}
 #lightning {
   position: absolute;
   top: 0;
   left: 9%;
   width: 54%;
   z-index: -1;
-}
-
-#phase2yellow {
-  position: absolute;
-  top: 10%;
-  left: -5%;
-  width: 40%;
 }
 
 /* Titles */
@@ -150,10 +161,15 @@ svg path {
 .content {
   position: absolute;
 }
-#content1 {
-  width: 26%;
+#content1-1 {
+  width: 20%;
   top: 40%;
-  right: 15%;
+  right: 20%;
+}
+#content1-2 {
+  width: 24%;
+  top: 90%;
+  right: 24%;
 }
 #content2-1 {
   width: 40%;
