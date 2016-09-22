@@ -25,9 +25,15 @@ p{
     height: 100%;
 }
 .flexbox-center{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     height: 100%;
 }
 
@@ -50,6 +56,7 @@ p{
     min-height: 5vh;
     height: auto;
     background-color: #b2b2b2;
+    -webkit-transition: background .2s ease-out;
     transition: background .2s ease-out;
 }
 #navbar.fixed{
@@ -89,8 +96,10 @@ p{
         left: 0;
         background-color: rgba(255, 228, 50, 0.9);
         /* 以x為軸旋轉 */
-        transform: scaleY(1.3) perspective(.5em) rotateX(-5deg);
-        transform-origin: bottom;
+        -webkit-transform: scaleY(1.3) perspective(.5em) rotateX(-5deg);
+                transform: scaleY(1.3) perspective(.5em) rotateX(-5deg);
+        -webkit-transform-origin: bottom;
+                transform-origin: bottom;
     }
     .fixed .row::after {
         content: '';
@@ -100,8 +109,10 @@ p{
         top: 0;
         right: 0;
         background-color: rgba(255, 228, 50, 0.9);
-        transform: scaleY(1.3) perspective(.5em) rotateX(-2deg);
-        transform-origin: bottom;
+        -webkit-transform: scaleY(1.3) perspective(.5em) rotateX(-2deg);
+                transform: scaleY(1.3) perspective(.5em) rotateX(-2deg);
+        -webkit-transform-origin: bottom;
+                transform-origin: bottom;
     }
     #navbar.fixed  {
         background-color: transparent;
@@ -134,6 +145,7 @@ p{
     border-width: 0px 30px 20px 30px;
     border-color: transparent transparent #fff transparent;
     opacity: 0;
+    -webkit-transition: all .3s ease-in;
     transition: all .3s ease-in;
     
 }
@@ -152,8 +164,6 @@ p{
     -moz-border: none;
     -o-border: none;
     border: none;
-    -webkit-box-shadow: none;
-    -moz-box-shadow: none;
     -o-box-shadow: none;
     box-shadow: none;
     background-color: transparent;
@@ -281,4 +291,3 @@ footer .footer-menu{
     bottom: 60px;
     right: 10px;
 }
-

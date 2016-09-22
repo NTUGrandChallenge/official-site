@@ -57,7 +57,10 @@ body{
     width: 100%;
     position: absolute;
     left: 0;
+    -webkit-transition: -webkit-transform .5s cubic-bezier(.69,.42,.01,.59);
+    transition: -webkit-transform .5s cubic-bezier(.69,.42,.01,.59);
     transition: transform .5s cubic-bezier(.69,.42,.01,.59);
+    transition: transform .5s cubic-bezier(.69,.42,.01,.59), -webkit-transform .5s cubic-bezier(.69,.42,.01,.59);
 }
 .sweeper .outside{
     background-color: #FFF;
@@ -72,11 +75,13 @@ body{
 }
 .sweeper:hover .outside-wrapper,
 a.active .sweeper .outside-wrapper{
-    transform: translateY(-300px);
+    -webkit-transform: translateY(-300px);
+            transform: translateY(-300px);
 }
 .sweeper:hover .outside,
 a.active .sweeper .outside{
-    transform: translateY(300px);
+    -webkit-transform: translateY(300px);
+            transform: translateY(300px);
 }
 .sweeper img{
     height: 120px;
@@ -154,7 +159,8 @@ a.active .sweeper .outside{
 }
 .one-teacher .ribbon-wrapper .ribbon{
     text-align: center;
-    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
     position: relative;
     top: 30px;
     padding: 5px 0;

@@ -38,10 +38,14 @@ h4 .triangle-right{
     border-radius: 50%;
     background-color: #000;
     color: #FFF;
+    -webkit-transition: -webkit-transform .1s linear;
+    transition: -webkit-transform .1s linear;
     transition: transform .1s linear;
+    transition: transform .1s linear, -webkit-transform .1s linear;
 }
 .indicator-container .indicator:hover{
-    transform: scale(3);
+    -webkit-transform: scale(3);
+            transform: scale(3);
 }
 .indicator-container .indicator.active{
     background-color: #ffeb32;
@@ -53,7 +57,10 @@ h4 .triangle-right{
     overflow: hidden;
 }
 .slides-container{
+    -webkit-transition: -webkit-transform .3s ease-out;
+    transition: -webkit-transform .3s ease-out;
     transition: transform .3s ease-out;
+    transition: transform .3s ease-out, -webkit-transform .3s ease-out;
     position: absolute;
     width: 1000%;
     height: 100%;
@@ -100,13 +107,15 @@ h4 .triangle-right{
 
 /*parallelogram-button*/
 .parallelogram-button {
-    transform: skew(-10deg);
+    -webkit-transform: skew(-10deg);
+            transform: skew(-10deg);
     padding: 3px 10px;
     font-size: 28px;
     font-weight: bold;
     text-decoration: none;
     text-align: center;
-    animation: outline-pulse 2s linear infinite;
+    -webkit-animation: outline-pulse 2s linear infinite;
+            animation: outline-pulse 2s linear infinite;
 }
 .parallelogram-button.yellow{
     outline: 2px solid #ffeb32;
@@ -122,11 +131,25 @@ h4 .triangle-right{
     outline: none;
     color: #FFF;
     background-color: #142598;
-    animation: none;
+    -webkit-animation: none;
+            animation: none;
 }
 .skew-fix{
     display:inline-block;
-    transform: skew(10deg);
+    -webkit-transform: skew(10deg);
+            transform: skew(10deg);
+}
+@-webkit-keyframes outline-pulse{
+    0%{
+        outline-offset: 0px;
+    }
+    50%{
+        outline-color: transparent;
+        outline-offset: 10px;
+    }
+    100%{
+        outline-color: transparent;
+    }
 }
 @keyframes outline-pulse{
     0%{
@@ -177,8 +200,21 @@ h4 .triangle-right{
     z-index: 3;
 }
 #top img.blink.active{
-    animation-name: blink;
-    animation-duration: 2.5s;
+    -webkit-animation-name: blink;
+            animation-name: blink;
+    -webkit-animation-duration: 2.5s;
+            animation-duration: 2.5s;
+}
+@-webkit-keyframes blink{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100${
+        opacity: 0;
+    }
 }
 @keyframes blink{
     0%{
@@ -196,67 +232,102 @@ h4 .triangle-right{
     border-style: solid;
     border-width: 15px 0px 15px 25px;
     border-color: transparent transparent transparent rgba(255, 235, 50, 0.6);
-    animation-name: right; 
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
+    -webkit-animation-name: right;
+            animation-name: right; 
+    -webkit-animation-timing-function: linear; 
+            animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
     z-index: 1;
 }
 #top .little-triangle:nth-child(1){
-    animation-duration: 5s;
-    animation-delay: 0s;
+    -webkit-animation-duration: 5s;
+            animation-duration: 5s;
+    -webkit-animation-delay: 0s;
+            animation-delay: 0s;
     top: 0vh;
 }
 #top .little-triangle:nth-child(2){
-    animation-duration: 4s;
-    animation-delay: .2s;
+    -webkit-animation-duration: 4s;
+            animation-duration: 4s;
+    -webkit-animation-delay: .2s;
+            animation-delay: .2s;
     top: 10vh;
 }
 #top .little-triangle:nth-child(3){
-    animation-duration: 5.3s;
-    animation-delay: .4s;
+    -webkit-animation-duration: 5.3s;
+            animation-duration: 5.3s;
+    -webkit-animation-delay: .4s;
+            animation-delay: .4s;
     top: 18vh;
 }
 #top .little-triangle:nth-child(4){
-    animation-duration: 3.6s;
-    animation-delay: 0s;
+    -webkit-animation-duration: 3.6s;
+            animation-duration: 3.6s;
+    -webkit-animation-delay: 0s;
+            animation-delay: 0s;
     top: 26vh;
 }
 #top .little-triangle:nth-child(5){
-    animation-duration: 4.7s;
-    animation-delay: 0s;
+    -webkit-animation-duration: 4.7s;
+            animation-duration: 4.7s;
+    -webkit-animation-delay: 0s;
+            animation-delay: 0s;
     top: 40vh;
 }
 #top .little-triangle:nth-child(6){
-    animation-duration: 3s;
-    animation-delay: .5s;
+    -webkit-animation-duration: 3s;
+            animation-duration: 3s;
+    -webkit-animation-delay: .5s;
+            animation-delay: .5s;
     top: 47vh;
 }
 #top .little-triangle:nth-child(7){
-    animation-duration: 4.3s;
-    animation-delay: 0s;
+    -webkit-animation-duration: 4.3s;
+            animation-duration: 4.3s;
+    -webkit-animation-delay: 0s;
+            animation-delay: 0s;
     top: 56vh;
 }
 #top .little-triangle:nth-child(8){
-    animation-duration: 5.2s;
-    animation-delay: 0s;
+    -webkit-animation-duration: 5.2s;
+            animation-duration: 5.2s;
+    -webkit-animation-delay: 0s;
+            animation-delay: 0s;
     top: 65vh;
 }
 #top .little-triangle:nth-child(9){
-    animation-duration: 4.5s;
-    animation-delay: 0s;
+    -webkit-animation-duration: 4.5s;
+            animation-duration: 4.5s;
+    -webkit-animation-delay: 0s;
+            animation-delay: 0s;
     top: 72vh;
 }
 #top .little-triangle:nth-child(10){
-    animation-duration: 6s;
-    animation-delay: 0s;
+    -webkit-animation-duration: 6s;
+            animation-duration: 6s;
+    -webkit-animation-delay: 0s;
+            animation-delay: 0s;
     top: 81vh;
+}
+@-webkit-keyframes right{
+    from{
+        -webkit-transform: translateX(-10vw);
+                transform: translateX(-10vw);
+    }
+    to{
+        -webkit-transform: translateX(110vw);
+                transform: translateX(110vw);
+    }
 }
 @keyframes right{
     from{
-        transform: translateX(-10vw);
+        -webkit-transform: translateX(-10vw);
+                transform: translateX(-10vw);
     }
     to{
-        transform: translateX(110vw);
+        -webkit-transform: translateX(110vw);
+                transform: translateX(110vw);
     }
 }
 #videoModal .modal-dialog{
@@ -285,18 +356,32 @@ h4 .triangle-right{
     z-index: 5;
 }
 #scroll_to_navbar i{
-    animation-name: pulse;
-    animation-duration: 1.2s;
-    animation-iteration-count: infinite;
+    -webkit-animation-name: pulse;
+            animation-name: pulse;
+    -webkit-animation-duration: 1.2s;
+            animation-duration: 1.2s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
 }
 #scroll_to_navbar i:nth-child(1){
-    animation-delay: 0s;
+    -webkit-animation-delay: 0s;
+            animation-delay: 0s;
 }
 #scroll_to_navbar i:nth-child(2){
-    animation-delay: 0.2s;
+    -webkit-animation-delay: 0.2s;
+            animation-delay: 0.2s;
 }
 #scroll_to_navbar i:nth-child(3){
-    animation-delay: 0.4s;
+    -webkit-animation-delay: 0.4s;
+            animation-delay: 0.4s;
+}
+@-webkit-keyframes pulse{
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
 }
 @keyframes pulse{
     from{
@@ -357,10 +442,14 @@ h4 .triangle-right{
 }
 #five .five{
     position: absolute;
-    animation-name: float;
-    animation-iteration-count: infinite;
-    animation-duration: 5s;
-    animation-timing-function: ease-in-out;
+    -webkit-animation-name: float;
+            animation-name: float;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-duration: 5s;
+            animation-duration: 5s;
+    -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out;
 }
 #five .five img{
     width: 5vw;
@@ -372,6 +461,7 @@ h4 .triangle-right{
     margin-top: 20px;
     color: #FFF;
     opacity: 0;
+    -webkit-transition: opacity .3s ease-in;
     transition: opacity .3s ease-in;
 }
 #five .description p{
@@ -380,6 +470,7 @@ h4 .triangle-right{
     top: 73%;
     left: 30%;
     opacity: 0;
+    -webkit-transition: opacity .3s ease-in;
     transition: opacity .3s ease-in;
 }
 #five .description p.active{
@@ -391,52 +482,88 @@ h4 .triangle-right{
 #five .five:nth-child(1){
     top: 55%;
     left: 26%;
-    animation-delay: 0s;
+    -webkit-animation-delay: 0s;
+            animation-delay: 0s;
 }
 #five .five:nth-child(2){
     top: 52%;
     left: 37%;
-    animation-delay: 1s;
+    -webkit-animation-delay: 1s;
+            animation-delay: 1s;
 }
 #five .five:nth-child(3){
     top: 58%;
     left: 51%;
-    animation-delay: 0.5s;
+    -webkit-animation-delay: 0.5s;
+            animation-delay: 0.5s;
 }
 #five .five:nth-child(4){
     top: 56%;
     left: 63%;
-    animation-delay: 1.5s;
+    -webkit-animation-delay: 1.5s;
+            animation-delay: 1.5s;
 }
 #five .five:nth-child(5){
     top: 54%;
     left: 76%;
-    animation-delay: 1.2s;
+    -webkit-animation-delay: 1.2s;
+            animation-delay: 1.2s;
+}
+@-webkit-keyframes float{
+    0%{
+        -webkit-transform: rotate(0deg) translate(0px, 0px);
+                transform: rotate(0deg) translate(0px, 0px);
+    }
+    25%{
+        -webkit-transform: rotate(-21deg) translate(8px, -32px);
+                transform: rotate(-21deg) translate(8px, -32px);
+    }
+    50%{
+        -webkit-transform: rotate(0deg) translate(-22px, -10px);
+                transform: rotate(0deg) translate(-22px, -10px);
+    }
+    75%{
+        -webkit-transform: rotate(26deg) translate(-24px, 16px);
+                transform: rotate(26deg) translate(-24px, 16px);
+    }
+    100%{
+        -webkit-transform: rotate(0deg) translate(0px, 0px);
+                transform: rotate(0deg) translate(0px, 0px);
+    }
 }
 @keyframes float{
     0%{
-        transform: rotate(0deg) translate(0px, 0px);
+        -webkit-transform: rotate(0deg) translate(0px, 0px);
+                transform: rotate(0deg) translate(0px, 0px);
     }
     25%{
-        transform: rotate(-21deg) translate(8px, -32px);
+        -webkit-transform: rotate(-21deg) translate(8px, -32px);
+                transform: rotate(-21deg) translate(8px, -32px);
     }
     50%{
-        transform: rotate(0deg) translate(-22px, -10px);
+        -webkit-transform: rotate(0deg) translate(-22px, -10px);
+                transform: rotate(0deg) translate(-22px, -10px);
     }
     75%{
-        transform: rotate(26deg) translate(-24px, 16px);
+        -webkit-transform: rotate(26deg) translate(-24px, 16px);
+                transform: rotate(26deg) translate(-24px, 16px);
     }
     100%{
-        transform: rotate(0deg) translate(0px, 0px);
+        -webkit-transform: rotate(0deg) translate(0px, 0px);
+                transform: rotate(0deg) translate(0px, 0px);
     }
 }
 #five .grain{
     position: absolute;
     width: 2vw;
-    animation-name: spin;
-    animation-iteration-count: infinite;
-    animation-duration: 3s;
-    animation-timing-function: linear;
+    -webkit-animation-name: spin;
+            animation-name: spin;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-duration: 3s;
+            animation-duration: 3s;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
 }
 #five .grain:nth-child(6){
     top: 42%;
@@ -445,34 +572,51 @@ h4 .triangle-right{
 #five .grain:nth-child(7){
     top: 32%;
     left: 42%;
-    animation-delay: .5s;
+    -webkit-animation-delay: .5s;
+            animation-delay: .5s;
 }
 #five .grain:nth-child(8){
     top: 46%;
     left: 63%;
-    animation-delay: .5s;
+    -webkit-animation-delay: .5s;
+            animation-delay: .5s;
 }
 #five .grain:nth-child(9){
     top: 39%;
     left: 78%;
-    animation-delay: .4s;
+    -webkit-animation-delay: .4s;
+            animation-delay: .4s;
 }
 #five .grain:nth-child(10){
     top: 67%;
     left: 40%;
-    animation-delay: .4s;
+    -webkit-animation-delay: .4s;
+            animation-delay: .4s;
 }
 #five .grain:nth-child(11){
     top: 77%;
     left: 58%;
-    animation-delay: .4s;
+    -webkit-animation-delay: .4s;
+            animation-delay: .4s;
+}
+@-webkit-keyframes spin{
+    from{
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+    to{
+        -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+    }
 }
 @keyframes spin{
     from{
-        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
     }
     to{
-        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
     }
 }
 #five .more{
@@ -490,7 +634,8 @@ h4 .triangle-right{
     padding: 5px 10px;
     margin: 25px 0;
     width: 80%;
-    transform: skew(-20deg);
+    -webkit-transform: skew(-20deg);
+            transform: skew(-20deg);
     background-color: #ffeb32;
     left: 5px;
 }
@@ -526,30 +671,57 @@ h4 .triangle-right{
 }
 #why .single.shake.active,
 #why .team.shake.active{
-    animation-name: shake;
-    animation-duration: .5s;
-    animation-timing-function: ease-out;
-    animation-delay: 2s;
+    -webkit-animation-name: shake;
+            animation-name: shake;
+    -webkit-animation-duration: .5s;
+            animation-duration: .5s;
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+    -webkit-animation-delay: 2s;
+            animation-delay: 2s;
+}
+@-webkit-keyframes shake{
+    0%{
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+    25%{
+        -webkit-transform: rotate(25deg);
+                transform: rotate(25deg);
+    }
+    75%{
+        -webkit-transform: rotate(-25deg);
+                transform: rotate(-25deg);
+    }
+    100%{
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
 }
 @keyframes shake{
     0%{
-        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
     }
     25%{
-        transform: rotate(25deg);
+        -webkit-transform: rotate(25deg);
+                transform: rotate(25deg);
     }
     75%{
-        transform: rotate(-25deg);
+        -webkit-transform: rotate(-25deg);
+                transform: rotate(-25deg);
     }
     100%{
-        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
     }
 }
 #why .parallelogram h4{
     margin: 0px;
 }
 #why .parallelogram .skew-fix{
-    transform: skew(20deg);
+    -webkit-transform: skew(20deg);
+            transform: skew(20deg);
 }
 #why .content{
     margin-bottom: 20px;

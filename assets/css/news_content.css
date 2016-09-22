@@ -13,7 +13,8 @@ body{
 
 /*parallelogram-button*/
 .parallelogram-button {
-    transform: skew(-10deg);
+    -webkit-transform: skew(-10deg);
+            transform: skew(-10deg);
     padding: 3px 10px;
     font-size: 34px;
     font-weight: bold;
@@ -31,9 +32,11 @@ body{
 .parallelogram-button:hover{
     color: #FFF;
     background-color: #142598;
-    animation: none;
+    -webkit-animation: none;
+            animation: none;
 }
 .skew-fix{
     display:inline-block;
-    transform: skew(10deg);
+    -webkit-transform: skew(10deg);
+            transform: skew(10deg);
 }
