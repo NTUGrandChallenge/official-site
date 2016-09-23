@@ -62,38 +62,96 @@ var flow = $('#flow'),
 	// Height of svg: $('#flow-base')[0].getBoundingClientRect().height
 	maxHeight = $(document).height() - $(window).height();
 
-var stage1Top = $('#stage1').offset().top,
-	stage2Top = $('#stage2').offset().top,
-	stage3Top = $('#stage3').offset().top,
-	stage4Top = $('#stage4').offset().top,
-	stage5Top = $('#stage5').offset().top;
-	
+var stageTop = [];
+stageTop.push($('#stage1').offset().top);
+stageTop.push($('#stage2').offset().top);
+stageTop.push($('#stage3').offset().top);
+stageTop.push($('#stage4').offset().top);
+stageTop.push($('#stage5').offset().top);
+
+var display_c1_1 = stageTop[0],
+	display_c1_2 = 0.7 * stageTop[0] + 0.3 * stageTop[1],
+	display_c2_1 = 0.3 * stageTop[0] + 0.7 * stageTop[1],
+	display_c2_2 = stageTop[1],
+	display_c3 = stageTop[2],
+	display_c4_1 = stageTop[3],
+	display_c4_2 = 0.77 * stageTop[3] + 0.23 * stageTop[4],
+	display_c5_1 = 0.3 * stageTop[3] + 0.7 * stageTop[4],
+	display_c5_2 = stageTop[4];
+
+var content1_1 = $('#content1-1'),
+	content1_2 = $('#content1-2'),
+	content2_1 = $('#content2-1'),
+	content2_2 = $('#content2-2'),
+	content3 = $('#content3'),
+	content4_1 = $('#content4-1'),
+	content4_2 = $('#content4-2'),
+	content5_1 = $('#content5-1'),
+	content5_2 = $('#content5-2');
+
 $(window).scroll(function() {
-	console.log($(window).scrollTop());
 	var currentProgress = ($(window).scrollTop() <= maxHeight) ? fromOffset * (1 - $(window).scrollTop() / maxHeight) : 0;
 	// CurrentProgress getting lessened
 	flow.attr('stroke-dashoffset', currentProgress);
 
-	/* Scroll Anchor Respond */
+	// Scroll Anchor Respond
 	var windowTop = $(window).scrollTop();
 
-	if(windowTop >= stage1Top &&
-		windowTop < stage2Top) {
+	if(windowTop >= stageTop[0] &&
+		windowTop < stageTop[1]) {
 		anchorColorChange('#anchor-stage1');
 	}
-	if(windowTop >= stage2Top &&
-		windowTop < stage3Top) {
+	if(windowTop >= stageTop[1] &&
+		windowTop < stageTop[2]) {
 		anchorColorChange('#anchor-stage2');
 	}
-	if(windowTop >= stage3Top &&
-		windowTop < stage4Top) {
+	if(windowTop >= stageTop[2] &&
+		windowTop < stageTop[3]) {
 		anchorColorChange('#anchor-stage3');
 	}
-	if(windowTop >= stage4Top &&
-		windowTop < stage5Top) {
+	if(windowTop >= stageTop[3] &&
+		windowTop < stageTop[4]) {
 		anchorColorChange('#anchor-stage4');
 	}
-	if(windowTop >= stage5Top) {
+	if(windowTop >= stageTop[4]) {
 		anchorColorChange('#anchor-stage5');
+	}
+
+	// Content display
+	if(windowTop >= display_c1_1) {
+		content1_1.addClass('fadein');
+		content1_1.css('opacity', '1.0');
+	}
+	if(windowTop >= display_c1_2) {
+		content1_2.addClass('fadein');
+		content1_2.css('opacity', '1.0');
+	}
+	if(windowTop >= display_c2_1) {
+		content2_1.addClass('fadein');
+		content2_1.css('opacity', '1.0');
+	}
+	if(windowTop >= display_c2_2) {
+		content2_2.addClass('fadein');
+		content2_2.css('opacity', '1.0');
+	}
+	if(windowTop >= display_c3) {
+		content3.addClass('fadein');
+		content3.css('opacity', '1.0');
+	}
+	if(windowTop >= display_c4_1) {
+		content4_1.addClass('fadein');
+		content4_1.css('opacity', '1.0');
+	}
+	if(windowTop >= display_c4_2) {
+		content4_2.addClass('fadein');
+		content4_2.css('opacity', '1.0');
+	}
+	if(windowTop >= display_c5_1) {
+		content5_1.addClass('fadein');
+		content5_1.css('opacity', '1.0');
+	}
+	if(windowTop >= display_c5_2) {
+		content5_2.addClass('fadein');
+		content5_2.css('opacity', '1.0');
 	}
 });
