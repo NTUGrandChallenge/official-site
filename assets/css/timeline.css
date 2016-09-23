@@ -125,6 +125,9 @@ svg path {
   width: 54%;
   z-index: -1;
 }
+#tosign {
+
+}
 
 /* Titles */
 .title {
@@ -153,6 +156,11 @@ svg path {
   left: 15%;
 }
 
+#stage1 a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
 /* Content */
 .content {
   position: absolute;
