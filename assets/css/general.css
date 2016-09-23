@@ -8,6 +8,13 @@
     src: url('../font/Coves Bold.otf');
 }
 
+::selection {
+  background: #ffeb32; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: #ffeb32; /* Gecko Browsers */
+}
+
 html *{
     font-family: 'Coves-Bold', 'Noto Sans TC', sans-serif;
 }

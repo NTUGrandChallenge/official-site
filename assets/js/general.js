@@ -9,7 +9,7 @@ if($('footer .toggle-collapse').is(':visible')){
 //alert
 function comingSoon(){
     swal({
-        title: "即將上線!",   
+        title: "Coming Soon!",   
         imageUrl: "/assets/img/avatar_3.png",
         imageSize: "100x100"
     });
