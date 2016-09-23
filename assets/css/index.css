@@ -85,20 +85,20 @@ h4 .triangle-right{
     width: 0;
     border-width: 15px 25px 15px 0px;
     border-style: solid;
-    border-color: transparent #ffeb32 transparent transparent;
+    border-color: transparent #142598 transparent transparent;
 }
 .slideshow-container .prev:hover{
-    border-color: transparent #142598 transparent transparent;
+    border-color: transparent #2b43e3 transparent transparent;
 }
 .slideshow-container .next{
     right: 30px;
     width: 0;
     border-width: 15px 0px 15px 25px;
     border-style: solid;
-    border-color: transparent transparent transparent #ffeb32;
+    border-color: transparent transparent transparent #142598;
 }
 .slideshow-container .next:hover{
-    border-color: transparent transparent transparent #142598;
+    border-color: transparent transparent transparent #2b43e3;
 }
 .indicator{
     cursor: pointer;
