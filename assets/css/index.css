@@ -412,19 +412,25 @@ h4 .triangle-right{
     border-color: transparent transparent transparent #ffeb32;
 }
 
-
-
 /*feature*/
 #feature{
     margin-top: 50px;
-    margin-bottom: 50px;
+}
+#feature .img-wrapper{
+    position: relative;
 }
 #feature img.icon{
     width: 60%;
 }
 #feature img.icon.active{
     position: absolute;
-    visibility: hidden;
+    left: 0;
+    right: 0;
+    margin: auto;
+    opacity: 0;
+}
+#feature img.icon.active:hover{
+    opacity: 1;
 }
 @media screen and (min-width: 768px){
     .padding-wrapper{
