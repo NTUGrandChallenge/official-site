@@ -59,7 +59,8 @@ function toContent(selector) {
 /* SVG */
 var flow = $('#flow'),
 	fromOffset = flow.attr('stroke-dashoffset'),
-	maxHeight = $('#flow-base')[0].getBoundingClientRect().height - $(window).height();
+	// Height of svg: $('#flow-base')[0].getBoundingClientRect().height
+	maxHeight = $(document).height() - $(window).height();
 
 var stage1Top = $('#stage1').offset().top,
 	stage2Top = $('#stage2').offset().top,
@@ -68,8 +69,9 @@ var stage1Top = $('#stage1').offset().top,
 	stage5Top = $('#stage5').offset().top;
 	
 $(window).scroll(function() {
-	var currentProgress = ($(window).scrollTop() < maxHeight) ? fromOffset * (1 - $(window).scrollTop() / maxHeight) : 0;
-	// currentProgress getting lessened
+	console.log($(window).scrollTop());
+	var currentProgress = ($(window).scrollTop() <= maxHeight) ? fromOffset * (1 - $(window).scrollTop() / maxHeight) : 0;
+	// CurrentProgress getting lessened
 	flow.attr('stroke-dashoffset', currentProgress);
 
 	/* Scroll Anchor Respond */
@@ -94,4 +96,4 @@ $(window).scroll(function() {
 	if(windowTop >= stage5Top) {
 		anchorColorChange('#anchor-stage5');
 	}
-})
+});
