@@ -1,3 +1,8 @@
+/*
+var trape_right = $('#navbar .navbar-right').width() + ($(window).width() - $('#navbar .navbar-right').offset().left);
+$('.fixed .row::after').css('width', trape_right);
+*/
+
 // Navbar div centered
 var as = $('#navbar-sign');
 var ai = $('#navbar-introduce');
