@@ -1,32 +1,32 @@
+function showTeam() {
+    $("#team-color").addClass('active');
+    $("#single-color").removeClass('active');
+    $("#team_div").show();
+    $("#single_div").hide();
+}
+function showSingle() {
+    $("#single-color").addClass('active');
+    $("#team-color").removeClass('active');
+    $("#single_div").show();
+    $("#team_div").hide();
+}
 $(document).ready(function() {
     $("#team_div").hide();
     //five field toggle
     if(location.hash){
         var hash = window.location.hash.substring(1);
         if(hash == 'single') {
-            $("#single-color").addClass('active');
-            $("#team-color").removeClass('active');
-            $("#single_div").show();
-            $("#team_div").hide();
+            showSingle();
         }
         if(hash == 'team') {
-            $("#team-color").addClass('active');
-            $("#single-color").removeClass('active');
-            $("#team_div").show();
-            $("#single_div").hide();
+            showTeam();
         }
     }
 	$("#single-color").click(function(){
-        $("#single-color").addClass('active');
-        $("#team-color").removeClass('active');
-        $("#single_div").show();
-        $("#team_div").hide();
+        showSingle();
     })
     $("#team-color").click(function(){
-        $("#team-color").addClass('active');
-        $("#single-color").removeClass('active');
-        $("#team_div").show();
-        $("#single_div").hide();
+        showTeam();
     })
 });
 
