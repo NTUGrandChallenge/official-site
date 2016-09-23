@@ -1,7 +1,7 @@
 //load template
 $('#navbar').load('/_navbar.html');
 $('footer').load('/_footer.html');
-$('#messenger').load('/official-site/_messenger.html');
+$('#messenger').load('/_messenger.html');
 if($('footer .toggle-collapse').is(':visible')){
     $('footer .collapse').removeClass('in');
 }
