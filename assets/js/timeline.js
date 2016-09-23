@@ -155,3 +155,10 @@ $(window).scroll(function() {
 		content5_2.css('opacity', '1.0');
 	}
 });
+
+$('#stage1 > a').css({
+	'height': $('#content1_2').height(),
+	'width': $('#content1_2').width(),
+	'top': $('#content1_2').offset().top,
+	'left': $('#content1_2').offset().left
+})
