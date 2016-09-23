@@ -30,6 +30,11 @@
     animation: none;
     outline: solid #FFF 2px;
 }
+.toggle-button.active{
+    color: #FFF;
+    background-color: #142598;
+    outline: #fff solid 2px;
+}
 .skew-fix{
     display:inline-block;
     transform: skew(10deg);

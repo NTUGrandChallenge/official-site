@@ -1,20 +1,19 @@
 $(document).ready(function() {
     $("#team_div").hide();
-    $("#single-color").css("background-color","#142598");
 	$("#single-color").click(function(){
-        $("#single-color").css("background-color","#142598");
-        $("#single-color").css("outline","solid #FFF 2px");
-        $("#team-color").css("outline","none");
-        $("#team-color").css("background-color","black");
-        $("#team_div").hide();
+        $("#single-color").addClass('active');
+        $("#team-color").removeClass('active');
         $("#single_div").show();
+        $("#team_div").hide();
     })
     $("#team-color").click(function(){
-        $("#team-color").css("background-color","#142598");
-        $("#team-color").css("outline","solid #FFF 2px");
-        $("#single-color").css("outline","none");
-        $("#single-color").css("background-color","black");    
+        $("#team-color").addClass('active');
+        $("#single-color").removeClass('active');
         $("#team_div").show();
         $("#single_div").hide();
     })
 });
+
+function start(){
+    swal("10 / 6 開放報名")
+}
