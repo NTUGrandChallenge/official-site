@@ -155,3 +155,11 @@ $(window).scroll(function() {
 		content5_2.css('opacity', '1.0');
 	}
 });
+
+$('#tosign').css({
+	height: $('#content1-2').height(),
+	width: $('#content1-2').width(),
+	top: $('#content1-2').offset().top - $('#content1-2').height(),
+	left: $('#content1-2').offset().left,
+	'z-index': 2
+})
