@@ -1,5 +1,5 @@
 //load template
-$('#navbar').load('/_navbar.html');
+$('#navbar').load('/official-site/_navbar.html');
 $('footer').load('/_footer.html');
 $('#messenger').load('/official-site/_messenger.html');
 if($('footer .toggle-collapse').is(':visible')){
