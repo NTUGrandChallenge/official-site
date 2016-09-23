@@ -156,9 +156,10 @@ $(window).scroll(function() {
 	}
 });
 
-$('#stage1 > a').css({
-	'height': $('#content1_2').height(),
-	'width': $('#content1_2').width(),
-	'top': $('#content1_2').offset().top,
-	'left': $('#content1_2').offset().left
+$('#tosign').css({
+	height: $('#content1-2').height(),
+	width: $('#content1-2').width(),
+	top: $('#content1-2').offset().top - $('#content1-2').height(),
+	left: $('#content1-2').offset().left,
+	'z-index': 2
 })
