@@ -1,7 +1,7 @@
-/*
-var trape_right = $('#navbar .navbar-right').width() + ($(window).width() - $('#navbar .navbar-right').offset().left);
-$('.fixed .row::after').css('width', trape_right);
-*/
+var trape_right = $(window).width() - $('#navbar .navbar-right').offset().left;
+function getRightWidth() {
+	return trape_right;
+}
 
 // Navbar div centered
 var as = $('#navbar-sign');
@@ -21,4 +21,5 @@ $(function() {
 	navCenter(as, ds);
 	navCenter(ai, di);
 	navCenter(aa, da);
+	$('.fixed .row::after').css('background-color', 'red');
 })
