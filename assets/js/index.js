@@ -104,8 +104,11 @@ var Slideshow = {
 //var top_slideshow = Slideshow.createNew('#top');
 var ov_slideshow = Slideshow.createNew('#overview');
 $(window).load(function(){
-$('#overview').height($('#overview img:nth-child(1)').height());
-    
+    $('#overview').height($('#overview img:nth-child(1)').height());
+})
+$(window).on('resize', function(){
+    console.log("FF");
+    $('#overview').height($('#overview img:nth-child(1)').height());
 })
 
 //var overview_height = document.getElementById('overview').getElementsByTagName('img')[0].height;
