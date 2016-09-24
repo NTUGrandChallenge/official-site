@@ -39,3 +39,6 @@ body{
     -webkit-transform: skew(10deg);
             transform: skew(10deg);
 }
+.top-content{
+    text-align: justify;
+}
