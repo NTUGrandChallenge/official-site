@@ -105,11 +105,10 @@ var Slideshow = {
 var ov_slideshow = Slideshow.createNew('#overview');
 $(window).load(function(){
     $('#overview').height($('#overview img:nth-child(1)').height());
-})
+});
 $(window).on('resize', function(){
-    console.log("FF");
     $('#overview').height($('#overview img:nth-child(1)').height());
-})
+});
 
 //var overview_height = document.getElementById('overview').getElementsByTagName('img')[0].height;
 //document.getElementById('overview').style.height = overview_height;
@@ -119,5 +118,5 @@ $('.speecher').hover(function(){
     $(this).siblings('.speech-bubble').addClass('active');
 },function(){
     $(this).siblings('.speech-bubble').removeClass('active');
-})
+});
 
