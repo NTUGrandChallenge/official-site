@@ -1,7 +1,12 @@
-var trape_right = $(window).width() - $('#navbar .navbar-right').offset().left;
-function getRightWidth() {
-	return trape_right;
-}
+var trape_right = $(window).width() - $('#navbar .navbar-right').offset().left + 50;
+$('head').append('<style id="after-width">.fixed .row::after {	width: ' + trape_right + 'px;	}</style>');
+$(window).on('resize', function(){
+	if($('#after-width').length != 0) {
+		$('#after-width').remove();
+	}
+	trape_right = $(window).width() - $('#navbar .navbar-right').offset().left + 50;
+    $('head').append('<style id="after-width">.fixed .row::after {	width: ' + trape_right + 'px;	}</style>');
+});
 
 // Navbar div centered
 var as = $('#navbar-sign');
