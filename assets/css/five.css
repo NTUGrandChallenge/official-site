@@ -183,31 +183,23 @@ a.active .sweeper .outside{
     font-size: 12px;
     font-weight: 400;
 }
+.speech{
+    border-bottom: solid 1px #333;
+    margin-bottom: 25px;
+}
+.speech p{
+    text-align: justify;
+}
 
 #challenge{
     margin-top: 50px;
     margin-bottom: 50px;
 }
-#challenge .block{
-    height: 200px;
-    margin-bottom: 30px;
-    color: #FFF;
+#challenge h2,
+#challenge h3{
+    color: #fff;
 }
-.challenge-name{
-    
-}
-.challenge-name a{
-    color: #000;
-    text-decoration: none;
-}
-.challenge-name h3{
-    text-align: center;
-    color: #FFF;
-}
-.challenge-description{
-    padding: 5px;
-    background-color: rgba(255, 255, 255, 0.8);
-}
-.fontBlack{
-    color:black;
+#challenge ul{
+    color: #fff;
+    list-style-type: square;
 }
