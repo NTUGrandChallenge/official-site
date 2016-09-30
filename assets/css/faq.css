@@ -1,9 +1,11 @@
 body{
     background-color: #B2B2B2;
 }
+.panel > a {
+    color: #fff;
+}
 .panel-title{
-	font-size:25px;
-	color:white;
+	font-size: 25px;
 }
 .panel{
 	background-color: #B2B2B2;
