@@ -195,9 +195,34 @@ a.active .sweeper .outside{
     margin-top: 50px;
     margin-bottom: 50px;
 }
-#challenge h2,
-#challenge h3{
+#challenge hr{
+    color: #333;
+    background-color: #333;
+    height: 2px;
+}
+#challenge h2{
+    font-size: 32px;
+    color: #333;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: -32px;
+    width: 200px;
+    background-color: #fff;
+}
+#challenge .row{
+    margin-bottom: 15px;
+}
+#challenge .topic{
+    padding: 15px 0;
+}
+#challenge .topic h3{
     color: #fff;
+    text-align: center;
+    margin: 0px;
 }
 #challenge ul{
     color: #fff;
