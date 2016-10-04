@@ -205,13 +205,17 @@ a.active .sweeper .outside{
     color: #333;
     text-align: center;
     margin-top: 0px;
-    margin-bottom: 30px;
+    margin-bottom: 0px;
     margin-left: auto;
     margin-right: auto;
     position: relative;
     top: -32px;
     width: 200px;
     background-color: #fff;
+}
+#challenge .challenge-description{
+    text-indent: 36px;
+    text-align: justify;
 }
 #challenge .row{
     margin-bottom: 15px;
