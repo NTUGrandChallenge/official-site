@@ -42,3 +42,20 @@ body{
 .top-content{
     text-align: justify;
 }
+
+.title2 {
+    font-size: 24px;
+}
+ol > li {
+    font-size: 18px;
+}
+.content {
+    margin-left: 20px;
+}
+.textYellow{
+    color: #ffeb32;
+    
+}
+.marginTop{
+    margin-top:30px;
+}

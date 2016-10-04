@@ -94,29 +94,31 @@ p{
 }
 
 @media screen and (min-width: 992px) {
-    .fixed .row::before {
+    .navbar-header::before,
+    .navbar-right::after {
         content: '';
         height: 0;
-        width: 160px;
         position: absolute;
         top: 0;
-        left: 0;
         background-color: transparent;
         border-top: 50px solid rgba(255, 228, 50, 0.9);
-        border-right: 50px solid transparent;
         z-index: -1;
+        opacity: 0;
     }
-    .fixed .row::after {
-        content: '';
-        height: 0;
+    .navbar-header::before {
+        width: 160px;
+        left: 0;
+        border-right: 50px solid transparent;
+    }
+    .navbar-right::after {
         width: 700px;
-        position: absolute;
-        top: 0;
         right: 0;
-        background-color: transparent;
-        border-top: 50px solid rgba(255, 228, 50, 0.9);
         border-left: 50px solid transparent;
-        z-index: -1;
+    }
+    .fixed .navbar-header::before,
+    .fixed .navbar-right::after {
+        opacity: 1;
+        transition: opacity 1s;
     }
     #navbar.fixed  {
         background-color: transparent;
