@@ -97,3 +97,6 @@ img.tall {
 .cover-img{
     overflow: hidden;
 }
+.background-gray {
+    background-color: #b2b2b2;
+}

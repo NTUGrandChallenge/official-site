@@ -59,3 +59,14 @@ ol > li {
 .marginTop{
     margin-top:30px;
 }
+.marginBottom80{
+    margin-bottom: 80px;
+}
+
+.schedule {
+    margin-left: 70px;
+    font-size: 18px;
+}
+.schedule tr td:nth-child(even) {
+    padding-left: 50px;
+}
