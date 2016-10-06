@@ -4,14 +4,16 @@ function getTrapeRight() {
 	return w.width() - $('#navbar .navbar-right').offset().left + 50;
 }
 
-var navAfterStyle = '<style id="after-width">.navbar-right::after {	width: ' + String(getTrapeRight()) + 'px;	}</style>';
+function getNavAfterStyle() {
+	return '<style id="after-width">.navbar-right::after {	width: ' + String(getTrapeRight()) + 'px;	}</style>';
+}
 
-$('head').append(navAfterStyle);
+$('head').append(getNavAfterStyle());
 w.on('resize', function(){
-	if($('#after-width').length != 0) {
+	if($('#after-width').length > 0) {
 		$('#after-width').remove();
 	}
-	$('head').append(navAfterStyle);
+	$('head').append(getNavAfterStyle());
 });
 
 // Navbar div centered
