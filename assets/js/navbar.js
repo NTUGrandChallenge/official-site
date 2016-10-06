@@ -1,11 +1,17 @@
-var trape_right = $(window).width() - $('#navbar .navbar-right').offset().left + 50;
-$('head').append('<style id="after-width">.fixed .row::after {	width: ' + trape_right + 'px;	}</style>');
-$(window).on('resize', function(){
+var w = $(window);
+
+function getTrapeRight() {
+	return w.width() - $('#navbar .navbar-right').offset().left + 50;
+}
+
+var navAfterStyle = '<style id="after-width">.navbar-right::after {	width: ' + String(getTrapeRight()) + 'px;	}</style>';
+
+$('head').append(navAfterStyle);
+w.on('resize', function(){
 	if($('#after-width').length != 0) {
 		$('#after-width').remove();
 	}
-	trape_right = $(window).width() - $('#navbar .navbar-right').offset().left + 50;
-    $('head').append('<style id="after-width">.fixed .row::after {	width: ' + trape_right + 'px;	}</style>');
+	$('head').append(navAfterStyle);
 });
 
 // Navbar div centered
