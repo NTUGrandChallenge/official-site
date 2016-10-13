@@ -70,3 +70,9 @@ ol > li {
 .schedule tr td:nth-child(even) {
     padding-left: 50px;
 }
+.background-white {
+    background-color: white;
+}
+.paddingTop {
+    padding-top: 20px;
+}
