@@ -9,6 +9,16 @@ body{
     padding-left: 80px;
     padding-right: 80px;
 }
-.container img{
+.container .border-radius{
     border-radius: 10px 10px 10px 10px ;
+}
+.crop {
+	/*width: 25%;*/
+	flex: 1;
+	overflow: hidden;
+	display: inline-block;
+	margin: 5px;
+}
+.flexbox {
+	display:  flex;
 }
