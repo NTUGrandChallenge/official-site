@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>記者會</title>
+    
+    <link rel="stylesheet" href="../../assets/plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../assets/plugins/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/plugins/sweetalert/dist/sweetalert.css">
+    <link rel="stylesheet" href="../../assets/css/general.css">
+    <link rel="stylesheet" href="../../assets/css/record_content.css">
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="../../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../../assets/plugins/sweetalert/dist/sweetalert.min.js"></script>
+
+
+    <script type="text/javascript" src="../../assets/js/lib/jquery-1.10.1.min.js"></script>
+
+    <!-- Add mousewheel plugin (this is optional) -->
+    <script type="text/javascript" src="../../assets/js/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+
+    <!-- Add fancyBox main JS and CSS files -->
+    <script type="text/javascript" src="../../assets/js/source/jquery.fancybox.js?v=2.1.5"></script>
+    <link rel="stylesheet" type="text/css" href="../../assets/js/source/jquery.fancybox.css?v=2.1.5" media="screen" />
+
+    <!-- Add Button helper (this is optional) -->
+    <link rel="stylesheet" type="text/css" href="../../assets/js/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" />
+    <script type="text/javascript" src="../../assets/js/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+
+    <!-- Add Thumbnail helper (this is optional) -->
+    <link rel="stylesheet" type="text/css" href="../../assets/js/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" />
+    <script type="text/javascript" src="../../assets/js/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+
+    <!-- Add Media helper (this is optional) -->
+    <script type="text/javascript" src="../../assets/js/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            /*
+             *  Simple image gallery. Uses default settings
+             */
+            $(".crop").css("height",$(".crop").css("width"));
+            $(".crop img").css("margin-left","-50%");
+
+
+
+            $('.fancybox').fancybox();
+
+            /*
+             *  Different effects
+             */
+
+            // Change title type, overlay closing speed
+            $(".fancybox-effects-a").fancybox({
+                helpers: {
+                    title : {
+                        type : 'outside'
+                    },
+                    overlay : {
+                        speedOut : 0
+                    }
+                }
+            });
+
+            // Disable opening and closing animations, change title type
+            $(".fancybox-effects-b").fancybox({
+                openEffect  : 'none',
+                closeEffect : 'none',
+
+                helpers : {
+                    title : {
+                        type : 'over'
+                    }
+                }
+            });
+
+            // Set custom style, close if clicked, change title type and overlay color
+            $(".fancybox-effects-c").fancybox({
+                wrapCSS    : 'fancybox-custom',
+                closeClick : true,
+
+                openEffect : 'none',
+
+                helpers : {
+                    title : {
+                        type : 'inside'
+                    },
+                    overlay : {
+                        css : {
+                            'background' : 'rgba(238,238,238,0.85)'
+                        }
+                    }
+                }
+            });
+
+            // Remove padding, set opening and closing animations, close if clicked and disable overlay
+            $(".fancybox-effects-d").fancybox({
+                padding: 0,
+
+                openEffect : 'elastic',
+                openSpeed  : 150,
+
+                closeEffect : 'elastic',
+                closeSpeed  : 150,
+
+                closeClick : true,
+
+                helpers : {
+                    overlay : null
+                }
+            });
+
+            /*
+             *  Button helper. Disable animations, hide close button, change title type and content
+             */
+
+            $('.fancybox-buttons').fancybox({
+                openEffect  : 'none',
+                closeEffect : 'none',
+
+                prevEffect : 'none',
+                nextEffect : 'none',
+
+                closeBtn  : false,
+
+                helpers : {
+                    title : {
+                        type : 'inside'
+                    },
+                    buttons : {}
+                },
+
+                afterLoad : function() {
+                    this.title = 'Image ' + (this.index + 1) + ' of ' + this.group.length + (this.title ? ' - ' + this.title : '');
+                }
+            });
+
+
+            /*
+             *  Thumbnail helper. Disable animations, hide close button, arrows and slide to next gallery item if clicked
+             */
+
+            $('.fancybox-thumbs').fancybox({
+                prevEffect : 'none',
+                nextEffect : 'none',
+
+                closeBtn  : false,
+                arrows    : false,
+                nextClick : true,
+
+                helpers : {
+                    thumbs : {
+                        width  : 50,
+                        height : 50
+                    }
+                }
+            });
+
+            /*
+             *  Media helper. Group items, disable animations, hide arrows, enable media and button helpers.
+            */
+            $('.fancybox-media')
+                .attr('rel', 'media-gallery')
+                .fancybox({
+                    openEffect : 'none',
+                    closeEffect : 'none',
+                    prevEffect : 'none',
+                    nextEffect : 'none',
+
+                    arrows : false,
+                    helpers : {
+                        media : {},
+                        buttons : {}
+                    }
+                });
+
+            /*
+             *  Open manually
+             */
+
+            $("#fancybox-manual-a").click(function() {
+                $.fancybox.open('1_b.jpg');
+            });
+
+            $("#fancybox-manual-b").click(function() {
+                $.fancybox.open({
+                    href : 'iframe.html',
+                    type : 'iframe',
+                    padding : 5
+                });
+            });
+
+            $("#fancybox-manual-c").click(function() {
+                $.fancybox.open([
+                    {
+                        href : '1_b.jpg',
+                        title : 'My title'
+                    }, {
+                        href : '2_b.jpg',
+                        title : '2nd title'
+                    }, {
+                        href : '3_b.jpg'
+                    }
+                ], {
+                    helpers : {
+                        thumbs : {
+                            width: 75,
+                            height: 50
+                        }
+                    }
+                });
+            });
+
+
+        });
+    </script>
+
+
+
+
+
+
+
+</head>
+<body>
+    <nav id="navbar" class="fixed">
+        
+    </nav>
+    <div class="container content">    
+        <div class="row">
+            <img src="../../assets/img/record/6/01.jpg" alt="論壇合照" width="100%" /> 
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <br />
+                <p class="text-center">面對面的深入訪談，挖掘出對方的需求及洞見，再經過點子發想和快速測試，大家在九十分鐘的 Wallet 體驗課程中經歷了設計思考的 Empathize、Define、Ideate、Prototype、Test 五個階段，絞盡腦汁設計出符合對方需求的錢包。
+　               </p>
+                <p class="text-center">發表想法熱絡不斷，紙上記滿了珍貴的使用者研究資料，親身感受了設計思考的精髓，也交到了不少朋友，今日工作坊成功！！
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="flexbox">
+                <div class="crop">
+                    <a class="fancybox" href="../../assets/img/record/6/02.jpg" data-fancybox-group="gallery" ><img src="../../assets/img/record/6/02.jpg" width="200%"  alt="設計思考 工作坊" /></a>
+                </div>
+                <div class="crop">
+                    <a class="fancybox" href="../../assets/img/record/6/03.jpg" data-fancybox-group="gallery" ><img src="../../assets/img/record/6/03.jpg" width="200%"  alt="設計思考 工作坊" /></a>
+                </div>
+                <div class="crop">
+                    <a class="fancybox" href="../../assets/img/record/6/04.jpg" data-fancybox-group="gallery" ><img src="../../assets/img/record/6/04.jpg" width="200%"  alt="設計思考 工作坊" /></a>
+                </div>
+                <div class="crop">
+                    <a class="fancybox" href="../../assets/img/record/6/05.jpg" data-fancybox-group="gallery"><img src="../../assets/img/record/6/05.jpg" width="200%"  alt="設計思考 工作坊" /></a>
+                </div>
+            </div>
+            <div class="flexbox">
+                <div class="crop">
+                    <a class="fancybox" href="../../assets/img/record/6/06.jpg" data-fancybox-group="gallery" ><img src="../../assets/img/record/6/06.jpg" width="200%"  alt="設計思考 工作坊" /></a>
+                </div>
+                <div class="crop">
+                    <a class="fancybox" href="../../assets/img/record/6/07.jpg" data-fancybox-group="gallery"><img src="../../assets/img/record/6/07.jpg" width="200%"  alt="設計思考 工作坊" /></a>
+                </div>
+                <div class="crop">
+                    <a class="fancybox" href="../../assets/img/record/6/08.jpg" data-fancybox-group="gallery"><img src="../../assets/img/record/6/08.jpg" width="200%"  alt="設計思考 工作坊" /></a>
+                </div>
+                <div class="crop">
+                    <a class="fancybox" href="../../assets/img/record/6/09.jpg" data-fancybox-group="gallery"><img src="../../assets/img/record/6/09.jpg" width="200%"  alt="設計思考 工作坊" /></a>
+                </div>
+            </div>
+            <div class="flexbox">
+                <div class="crop">
+                    <a class="fancybox" href="../../assets/img/record/6/10.jpg" data-fancybox-group="gallery" ><img src="../../assets/img/record/6/10.jpg" width="200%"  alt="設計思考 工作坊" /></a>
+                </div>
+                <div class="crop">
+                    <a class="fancybox" href="../../assets/img/record/6/11.jpg" data-fancybox-group="gallery"><img src="../../assets/img/record/6/11.jpg" width="200%"  alt="設計思考 工作坊" /></a>
+                </div>
+                <div class="crop">
+                    <a class="fancybox" href="../../assets/img/record/6/12.jpg" data-fancybox-group="gallery"><img src="../../assets/img/record/6/12.jpg" width="200%"  alt="設計思考 工作坊" /></a>
+                </div>
+                <div class="crop">
+                    <a class="fancybox" href="../../assets/img/record/6/13.jpg" data-fancybox-group="gallery"><img src="../../assets/img/record/6/13.jpg" width="200%"  alt="設計思考 工作坊" /></a>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    
+    <footer>
+        
+    </footer>
+    <div id="messenger">
+        
+    </div>
+    
+    <script type="text/javascript" src="../../assets/js/general.js"></script>
+</body>
+</html>
