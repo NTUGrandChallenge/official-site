@@ -394,7 +394,7 @@ h4 .triangle-right{
 
 /*wedge*/
 #wedge{
-    padding: 10vh 0px;
+    padding: 10vh 0px 0vh 0px;
 }
 #wedge p{
     text-align: justify;
@@ -410,6 +410,34 @@ h4 .triangle-right{
     border-width: 30px 0px 30px 30px;
     border-style: solid;
     border-color: transparent transparent transparent #ffeb32;
+}
+
+/*countdown*/
+#countdown fieldset{
+    border: solid 5px #ffeb32;
+    padding: 10px;
+}
+#countdown fieldset legend{
+    border-bottom: none;
+    width: auto;
+    padding: 0px 10px;
+    font-size: 28px;
+    font-weight: bold;
+}
+#countdown #clock{
+    display: flex;
+}
+#countdown #clock div{
+    flex: 1;
+}
+#countdown #clock p{
+    text-align: center;
+/*    color: #ffeb32;*/
+}
+#countdown #clock p strong{
+    font-size: 120px;
+    font-weight: bold;
+    color: #333;
 }
 
 /*feature*/

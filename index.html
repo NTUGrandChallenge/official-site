@@ -8,14 +8,15 @@
     <link rel="shortcut icon" href="assets/img/logo.ico">
     <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="assets/plugins/sweetalert/dist/sweetalert.css">
+    <link rel="stylesheet" href="assets/plugins/sweetalert/dist/sweetalert.css">
+    <link rel="stylesheet" href="assets/plugins/toastr/toastr.min.css">
     <link rel="stylesheet" href="assets/css/general.css">
     <link rel="stylesheet" href="assets/css/index.css">
 
     <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
     <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/plugins/sweetalert/dist/sweetalert.min.js"></script>
-    
+    <script src="assets/plugins/jquery.countdown/jquery.countdown.min.js"></script>
 </head>
 <body>
     <div class="" id="top">
@@ -63,12 +64,10 @@
         <img src="assets/img/wedge.png" class="title-img" />
         <div class="container-fluid">
             <div class="row">
-                
-                <div class="col-md-3 visible-md visible-lg" style="padding-left: 0;">
-                    <img src="assets/img/wedge_1.png" style="width: 100%"/>
+                <div class="visible-md visible-lg" style="padding-left: 0; position: absolute; width: 25%; opacity: 0.3;">
+                    <img src="assets/img/wedge_1.png" style="width: 100%;"/>
                 </div>
-                
-                <div class="col-md-offset-1 col-md-6">
+                <div class="col-md-offset-1 col-md-5">
                     <div>
                         <h3>我們正處於一個關鍵的時刻</h3>
                         <p>臺灣即將邁入超高齡社會，健保與醫療體系卻岌岌可危；貧富差距持續擴大，社會的對立與不安該如何撫平？互聯世代即將到來，我們該如何應對典範轉移，洞悉人們的真實需求，找回失落的二十年？</p>
@@ -77,9 +76,46 @@
                         <h3>你，準備好接受挑戰了嗎？</h3>
                     </div>
                 </div>
+                <div class="col-md-5">
+                    <div class="flexbox-center" style="width: 100%; height: 400px;">
+                        <div class="fb-video" data-href="https://www.facebook.com/ntuchallenge/videos/1844352949129666/" data-show-text="false" data-autoplay="true"></div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+    
+    <div class="container" id="countdown">
+        <div class="row">
+            <div class="col-md-offset-1 col-md-10">
+                <fieldset>
+                    <legend align="center">距離 11 . 06 提案倒數</legend>
+                    <div id="clock">
+                        
+                    </div>
+                </fieldset>
+            </div>
+        </div>
+    </div>
+<!--
+            <div class="col-md-offset-1 col-md-5">
+                <div id="video">
+                    <div data-toggle="modal" data-target="#videoModal" style="">
+                        ooooo
+                    </div>
+                </div>
+            </div>
+-->
+        
+<!--
+        <div id="videoModal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                     <iframe  src="https://www.youtube.com/embed/q6EoRBvdVPQ?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+                 </div>
+            </div>
+        </div>
+-->
     
     <div id="feature">
     <div class="container-fluid">
