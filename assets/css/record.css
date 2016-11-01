@@ -43,12 +43,13 @@ img.wide {
 img.tall {
     height: 100%;
 }
-#news-top .news-container .news-title{
-    
-}
 
 #news-list{
     margin: 10vh auto;
+}
+.one-news{
+    width: 84%;
+    margin-left: 8%;
 }
 #news-list .one-news{
     margin-top: 15px;
