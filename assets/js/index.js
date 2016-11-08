@@ -43,15 +43,6 @@ $('#scroll_to_navbar').click(function(){
     }, 1000);
 });
 
-//countdown
-$('#countdown #clock').countdown('2016/11/06 23:59:59', function(event){
-    $(this).html(event.strftime('' +
-                        '<div><p><strong>%-D</strong>天</p></div>' + 
-                        '<div><p><strong>%-H</strong>時</p></div>' + 
-                        '<div><p><strong>%-M</strong>分</p></div>' + 
-                        '<div><p><strong>%-S</strong>秒</p></div>'));
-})
-
 //five
 for(var i = 1; i <= $('#five .five').length; i++){
     $('#five .five:nth-child('+ i +')').hover(function(){

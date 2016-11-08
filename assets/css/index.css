@@ -330,22 +330,6 @@ h4 .triangle-right{
                 transform: translateX(110vw);
     }
 }
-#videoModal .modal-dialog{
-    width: 80vw;
-    height: 80vh;
-}
-#videoModal .modal-content{
-    background: none;
-    border: 0;
-    border-radius: 0;
-    box-shadow: none;
-    height: 100%;
-    width: 100%;
-}
-#videoModal .modal-content iframe{
-    height: 100%;
-    width: 100%;
-}
 #scroll_to_navbar{
     cursor: pointer;
     position: absolute;
@@ -410,34 +394,6 @@ h4 .triangle-right{
     border-width: 30px 0px 30px 30px;
     border-style: solid;
     border-color: transparent transparent transparent #ffeb32;
-}
-
-/*countdown*/
-#countdown fieldset{
-    border: solid 5px #ffeb32;
-    padding: 10px;
-}
-#countdown fieldset legend{
-    border-bottom: none;
-    width: auto;
-    padding: 0px 10px;
-    font-size: 28px;
-    font-weight: bold;
-}
-#countdown #clock{
-    display: flex;
-}
-#countdown #clock div{
-    flex: 1;
-}
-#countdown #clock p{
-    text-align: center;
-/*    color: #ffeb32;*/
-}
-#countdown #clock p strong{
-    font-size: 120px;
-    font-weight: bold;
-    color: #333;
 }
 
 /*feature*/
