@@ -1,0 +1,93 @@
+body{
+    padding-top: 50px;
+    background-color: #b2b2b2;
+}
+
+#judge .field-name{
+    display: flex;
+    margin-top: 25px;
+}
+@media screen and (min-width: 768px){
+    #judge .field-name{
+        width: 50%;
+    }
+}
+#judge .field-name .logo{
+    flex: 1;
+}
+#judge .field-name .logo img{
+    width: 100%;
+}
+#judge .field-name .text{
+    flex: 4;
+}
+#judge .field-name h3{
+    margin: 0;
+}
+
+#judge .one-judge{
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 25px;
+}
+#judge .one-judge .outside,
+#judge .one-judge .inside
+{
+    padding: 10px;
+    width: 100%;
+    height: 320px;
+}
+@media screen and (max-width: 768px){
+    #judge .one-judge .outside,
+    #judge .one-judge .inside{
+        height: 500px;
+    }
+}
+#judge .one-judge .outside{
+    background-color: #fff;
+}
+#judge .one-judge .outside img{
+    border-radius: 50%;
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+}
+#judge .one-judge .outside .info h3{
+    margin-bottom: 10px;
+}
+#judge .one-judge .outside .info p{
+    margin: 0;
+    font-size: 14px;
+}
+
+#judge .one-judge .inside{
+    position: absolute;
+    color: #fff;
+    top: 0;
+    left: 100%;
+    transition: all .3s;
+}
+#judge .one-judge:hover .inside{
+    left: 0;
+}
+#judge #environment .one-judge .inside{
+    background-color: #00B140;
+}
+#judge #agriculture .one-judge .inside{
+    background-color: #B77729;
+}
+#judge #health .one-judge .inside{
+    background-color: #EE2737;
+}
+#judge #smart .one-judge .inside{
+    background-color: #FFA3B5;
+}
+#judge #society .one-judge .inside{
+    background-color: #005EB8;
+}
+#judge .one-judge .inside h4{
+    margin-top: 20px;
+}
+#judge .one-judge .inside p{
+    font-size: 14px;
+}
