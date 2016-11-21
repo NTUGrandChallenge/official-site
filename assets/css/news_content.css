@@ -39,6 +39,7 @@ body{
     -webkit-transform: skew(10deg);
             transform: skew(10deg);
 }
+
 .top-content{
     text-align: justify;
 }
@@ -75,4 +76,27 @@ ol > li {
 }
 .paddingTop {
     padding-top: 20px;
+}
+
+.color-block{
+    height: 100px;
+    background-color: #50d0c8;
+    color: #fff;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.color-block.et{
+    background-color: #00B140;
+}
+.color-block.fa{
+    background-color: #B77729;
+}
+.color-block.hc{
+    background-color: #EE2737;
+}
+.color-block.sl{
+    background-color: #FFA3B5;
+}
+.color-block.sy{
+    background-color: #005EB8;
 }
