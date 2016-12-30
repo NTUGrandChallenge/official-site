@@ -1,0 +1,18 @@
+[
+    {
+        "name": "Name",
+        "title": "GGG",
+        "expertises": ["1", "2"],
+        "experiences": ["a", "b", "c"],
+        "field": "sl",
+        "imageUrl": "assets/img/judge/smart_5.jpg"
+    },
+    {
+        "name": "Name2",
+        "title": "GGG2",
+        "expertises": ["1", "2", "87"],
+        "experiences": ["a", "b", "c"],
+        "field": "sl",
+        "imageUrl": "assets/img/judge/smart_4.jpg"
+    }
+]
