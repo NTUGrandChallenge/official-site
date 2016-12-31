@@ -1,6 +1,6 @@
 $.ajaxSetup({ cache: false });
 var judges = new Vue({
-    el: '.judges',
+    el: '#judges',
     data: {
         judges: []
     },
