@@ -45,6 +45,9 @@ body{
     color: #333;
     font-size: 24px;
 }
+#judges .phase-name.active a{
+    font-weight: bold;
+}
 
 a[data-toggle="tab"]:hover,
 a[data-toggle="tab"]:focus,
