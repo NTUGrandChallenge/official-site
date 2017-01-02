@@ -35,47 +35,59 @@ body{
     }
 }
 
+#judges .phase-name{
+    border-right: 2px solid #333;
+}
+#judges .phase-name:last-child{
+    border-right: none;
+}
+#judges .phase-name a{
+    color: #333;
+    font-size: 24px;
+}
+
 a[data-toggle="tab"]:hover,
 a[data-toggle="tab"]:focus,
 a[data-toggle="tab"]:target{
     text-decoration: none;
     color: #333;
 }
-#judge .field-name{
+#judges .field-name{
     border-radius: 10px;
     background-color: #fff;
     padding: 5px;
+    margin-bottom: 10px;
 }
-#judge a[href="#smart"] .field-name:hover,
-#judge a[href="#smart"]:focus .field-name{
+#judges a[href="#smart"] .field-name:hover,
+#judges a[href="#smart"]:focus .field-name{
     background-color: #FFA3B5;
     color: #fff;
 }
-#judge a[href="#health"] .field-name:hover,
-#judge a[href="#health"]:focus .field-name{
+#judges a[href="#health"] .field-name:hover,
+#judges a[href="#health"]:focus .field-name{
     background-color: #EE2737;
     color: #fff;
 }
-#judge a[href="#environment"] .field-name:hover,
-#judge a[href="#environment"]:focus .field-name{
+#judges a[href="#environment"] .field-name:hover,
+#judges a[href="#environment"]:focus .field-name{
     background-color: #00B140;
     color: #fff;
 }
-#judge a[href="#society"]:focus .field-name,
-#judge a[href="#society"] .field-name:hover{
+#judges a[href="#society"]:focus .field-name,
+#judges a[href="#society"] .field-name:hover{
     background-color: #005EB8;
     color: #fff;
 }
-#judge a[href="#agriculture"] .field-name:hover,
-#judge a[href="#agriculture"]:focus .field-name{
+#judges a[href="#agriculture"] .field-name:hover,
+#judges a[href="#agriculture"]:focus .field-name{
     background-color: #B77729;
     color: #fff;
 }
-#judge .field-name{
+#judges .field-name{
     color: #333;
 }
 
-#judge .padding-container{
+#judges .padding-container{
     padding: 0 50px;
 }
 .circular-img{
@@ -127,69 +139,69 @@ a[data-toggle="tab"]:target{
 
 
 
-#judge .one-judge{
+#judges .one-judge{
     position: relative;
     overflow: hidden;
     margin-bottom: 25px;
 }
-#judge .one-judge .outside,
-#judge .one-judge .inside
+#judges .one-judge .outside,
+#judges .one-judge .inside
 {
     padding: 10px;
     width: 100%;
     height: 320px;
 }
 @media screen and (max-width: 768px){
-    #judge .one-judge .outside,
-    #judge .one-judge .inside{
+    #judges .one-judge .outside,
+    #judges .one-judge .inside{
         height: 500px;
     }
 }
-#judge .one-judge .outside{
+#judges .one-judge .outside{
     background-color: #fff;
 }
-#judge .one-judge .outside img{
+#judges .one-judge .outside img{
     border-radius: 50%;
     width: 80%;
     display: block;
     margin: 0 auto;
 }
-#judge .one-judge .outside .info h3{
+#judges .one-judge .outside .info h3{
     margin-bottom: 10px;
 }
-#judge .one-judge .outside .info p{
+#judges .one-judge .outside .info p{
     margin: 0;
     font-size: 14px;
 }
 
-#judge .one-judge .inside{
+#judges .one-judge .inside{
     position: absolute;
     color: #fff;
     top: 0;
     left: 100%;
     transition: all .3s;
 }
-#judge .one-judge:hover .inside{
+#judges .one-judge:hover .inside{
     left: 0;
 }
-#judge #environment .one-judge .inside{
+#judges #environment .one-judge .inside{
     background-color: #00B140;
 }
-#judge #agriculture .one-judge .inside{
+#judges #agriculture .one-judge .inside{
     background-color: #B77729;
 }
-#judge #health .one-judge .inside{
+#judges #health .one-judge .inside{
     background-color: #EE2737;
 }
-#judge #smart .one-judge .inside{
+#judges #smart .one-judge .inside{
     background-color: #FFA3B5;
 }
-#judge #society .one-judge .inside{
+#judges #society .one-judge .inside{
     background-color: #005EB8;
 }
-#judge .one-judge .inside h4{
+#judges .one-judge .inside h4{
     margin-top: 20px;
 }
-#judge .one-judge .inside p{
+#judges .one-judge .inside p{
     font-size: 14px;
 }

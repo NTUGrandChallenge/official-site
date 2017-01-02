@@ -10,10 +10,8 @@ var judges = new Vue({
     methods: {
         fetchData: function(){
             var self = this;
-            $.getJSON('assets/js/judges.json', function(data){
+            $.getJSON('judges.json', function(data){
                 self.judges = data;
-                console.log(data)
-                console.log("hello")
             })
         }
     }
