@@ -1,0 +1,443 @@
+{
+  "smartLife": [
+    {
+      "name": "黃鐘揚",
+      "title": "臺大電機系暨電子工程學研究所教授",
+      "expertises": [
+        "正規驗證",
+        "資料分析",
+        "創業教育"
+      ],
+      "experiences": [
+        "優拓資訊顧問/創辦人",
+        "Verplex/Cadence Consultant/Sr. Manager",
+        "加州大學聖塔芭芭拉分校電腦工程學博士",
+        "臺灣大學電機工程學系學士"
+      ],
+      "imageUrl": "../assets/img/judge/smart_5.jpg"
+    },
+    {
+      "name": "馬仕毅",
+      "title": "穎家科技股份有限公司共同創辦人兼執行長",
+      "expertises": [
+        "多媒體嵌入式系統設計",
+        "產品策略",
+        "科技創業"
+      ],
+      "experiences": [
+        "晶睿通訊股份有限公司執行副總經理",
+        "臺大電機研究所博士"
+      ],
+      "imageUrl": "../assets/img/judge/smart_1.jpg"
+    },
+    {
+      "name": "莊裕澤",
+      "title": "國家實驗研究院科技政策研究與資訊中心主任",
+      "expertises": [
+        "分散式計算",
+        "網際網路應用服務",
+        "資訊科技與創新",
+        "科技管理"
+      ],
+      "experiences": [
+        "美國紐約州立大學石溪分校博士",
+        "美國紐約州立大學石溪分校碩士",
+        "臺灣大學電機工程學系學士"
+      ],
+      "imageUrl": "../assets/img/judge/smart_2.jpg"
+    },
+    {
+      "name": "邱彥錡",
+      "title": "Camp Mobile (BAND) 臺灣總經理",
+      "expertises": [
+        "新創事業管理與營運",
+        "國際創業投資",
+        "全球商務拓展",
+        "新市場經營策略"
+      ],
+      "experiences": [
+        "臺大 EMBA 創業實踐課程業師",
+        "Gogolook 營運長暨商務總監",
+        "IBM 商業策略諮詢顧問",
+        "清華大學計量財務金融學士"
+      ],
+      "imageUrl": "../assets/img/judge/smart_3.jpg"
+    },
+    {
+      "name": "孫憶明",
+      "title": "瀚師科技創辦人暨總經理",
+      "expertises": [
+        "軟體及服務事業經營",
+        "科技產品開發與管理",
+        "市場行銷與銷售策略",
+        "數位教育與行動學習應用"
+      ],
+      "experiences": [
+        "美國哈佛大學企業碩士",
+        "美國史丹佛大學電腦科學碩士",
+        "臺灣大學資訊工程系學士"
+      ],
+      "imageUrl": "../assets/img/judge/smart_4.jpg"
+    }
+  ],
+  "healthCare": [
+    {
+      "name": "瞿志豪",
+      "title": "永加利醫學科技股份有限公司董事長",
+      "expertises": [
+        "公司之策略規劃與購併",
+        "引導公司策略轉型",
+        "校園技術商業化",
+        "組織運作"
+      ],
+      "experiences": [
+        "Executive Vice President / Chief Technology Officer , Gigamedia Limited",
+        "臺大EMBA基金會副執行長",
+        "遊戲橘子 / 大宇資訊 / Cambridge Entertainment Software Limited 董事"
+      ],
+      "imageUrl": "../assets/img/judge/health_1.jpg"
+    },
+    {
+      "name": "黃博浩",
+      "title": "臺大神經外科 主治醫師 助理教授",
+      "expertises": [
+        "腦部微創手術",
+        "醫療器材與生物製劑開發"
+      ],
+      "experiences": [
+        "史丹佛醫療器材設計研修員",
+        "矽谷紅木衫創投/Y combinator",
+        "哈佛大學腦神經外科研修員",
+        "臺大醫學系"
+      ],
+      "imageUrl": "../assets/img/judge/health_2.jpg"
+    },
+    {
+      "name": "高燕彬",
+      "title": "雲集醫管顧問股份有限公司 協理 兼 宏祥健康事業 董事長特助",
+      "expertises": [
+        "高齡長期照顧規劃執行",
+        "醫務管理顧問",
+        "大健康產界策略",
+        "智慧醫療"
+      ],
+      "experiences": [
+        "台北醫學大學 醫學士",
+        "美國約翰霍普金斯大學 醫務管理碩士",
+        "美國明尼蘇達大學 醫療研究暨老人長照碩士",
+        "台北醫學大學 公共衛生博士班"
+      ],
+      "imageUrl": "../assets/img/judge/health_3.jpg"
+    },
+    {
+      "name": "馮燕",
+      "title": "臺灣大學社會工作學系教授",
+      "expertises": [
+        "兒童福利",
+        "非營利組織",
+        "家庭福利服務",
+        "社會政策分析"
+      ],
+      "experiences": [
+        "國立臺灣大學社會工作學系專任教授",
+        "美國伊利諾大學香檳校區社會工作學院博士"
+      ],
+      "imageUrl": "../assets/img/judge/health_4.jpg"
+    }
+  ],
+  "environment": [
+    {
+      "name": "周素卿",
+      "title": "國立臺灣大學理學院副院長",
+      "expertises": [
+        "都市政策與治理",
+        "都市更新與再發展",
+        "參與式流域治理"
+      ],
+      "experiences": [
+        "國立臺灣大學 氣候變遷與永續發展國際學位學程 主任",
+        "國立臺灣大學 地理環境資源學系 主任",
+        "美國明尼蘇達大學地理系 博士"
+      ],
+      "imageUrl": "../assets/img/judge/environment_1.jpg"
+    },
+    {
+      "name": "李根政",
+      "title": "地球公民基金會執行長",
+      "expertises": [
+        "環境運動與教育",
+        "政治運動",
+        "書法藝術"
+      ],
+      "experiences": [
+        "社會民主黨共組聯盟",
+        "臺灣綠黨、綠社盟共同召集人",
+        "中央通訊社2008年十大潛力人物「社運環保」類得獎人",
+        "公共電視台「有話好話．南部開講」節目主持人",
+        "環保署第六屆環境影響評估委員",
+        "天下雜誌陽光世代之「共生世界守護者」代表人物之一",
+        "臺灣生態學會首任祕書長",
+        "創立高雄市教師會生態教育中心"
+      ],
+      "imageUrl": "../assets/img/judge/environment_2.jpg"
+    },
+    {
+      "name": "陳慧如",
+      "title": "南華大學非營利事業管理碩士專班 副教授",
+      "expertises": [
+        "社會創新",
+        "社會企業",
+        "眾效建構"
+      ],
+      "experiences": [
+        "美國加州大學洛杉磯分校經濟學士",
+        "美國南加州大學會計碩士",
+        "臺灣大學國企所博士"
+      ],
+      "imageUrl": "../assets/img/judge/environment_3.png"
+    },
+    {
+      "name": "李偉文",
+      "title": "荒野保護協會榮譽理事長",
+      "expertises": [
+        "非營利組織管理與發展",
+        "永續發展與生態保育"
+      ],
+      "experiences": [
+        "公共電視董事華視電視公司董事(民95-96)",
+        "行政院國家永續發展委員會委員(民91-97)"
+      ],
+      "imageUrl": "../assets/img/judge/environment_4.jpg"
+    }
+  ],
+  "societyCulture": [
+    {
+      "name": "楊家彥",
+      "title": "活水社企 合夥人",
+      "expertises": [
+        "影響力投資",
+        "中小企業發展",
+        "知識服務產業",
+        "總體經濟分析"
+      ],
+      "experiences": [
+        "臺灣經濟研究院六所所長",
+        "經濟部產諮會綜合審議會委員",
+        "美國愛荷華州立大學經濟學博士"
+      ],
+      "imageUrl": "../assets/img/judge/society_1.jpg"
+    },
+    {
+      "name": "陳東升",
+      "title": "臺大社會學系 專任教授",
+      "expertises": [
+        "社會設計與社會創新",
+        "直接民主與參與式預算"
+      ],
+      "experiences": [
+        "臺灣大學公共衛生學系學士",
+        "美國明尼蘇達大學博士",
+        "曾任國家科學委員會人文及社會科學處處長"
+      ],
+      "imageUrl": "../assets/img/judge/society_2.jpg"
+    },
+    {
+      "name": "陳一強",
+      "title": "活水社企投資開發公司 總經理",
+      "expertises": [
+        "社會企業開發",
+        "企業管理顧問"
+      ],
+      "experiences": [
+        "勤業、德勤、德碩管理顧問合夥人",
+        "伊利諾大學香檳校區企業管理碩士"
+      ],
+      "imageUrl": "../assets/img/judge/society_3.jpg"
+    },
+    {
+      "name": "黃莉翔",
+      "title": "新竹縣政府工策會 副總",
+      "expertises": [
+        "跨界策展製作",
+        "國際藝文專案規劃",
+        "創意經濟經營策略"
+      ],
+      "experiences": [
+        "德國國立多特蒙音樂碩士",
+        "臺灣大學國際企業研究所EMBA碩士",
+        "臺灣金曲獎&金鐘獎評審委員"
+      ],
+      "imageUrl": "../assets/img/judge/society_4.jpg"
+    },
+    {
+      "name": "林峻丞",
+      "title": "甘樂文創志業股份有限公司、小草書屋夢想學校 執行長",
+      "expertises": [
+        "文創產業創新營運",
+        "品牌經營發展策略",
+        "社會創新解決方案"
+      ],
+      "experiences": [
+        "豐喜食品股份有限公司 品牌顧問",
+        "翠山房事業有限公司（茶山房手工肥皂）總經理",
+        "環球科技大學行銷系聘任業師"
+      ],
+      "imageUrl": "../assets/img/judge/society_5.jpg"
+    }
+  ],
+  "foodAgriculture": [
+    {
+      "name": "張駿極",
+      "title": "厚生市集執行長",
+      "expertises": [
+        "農業電子商務之經營與管理",
+        "創業與融資",
+        "半導體業之經營與管理"
+      ],
+      "experiences": [
+        "OctoTech 執行長",
+        "Duet Investment 執行長",
+        "穩懋半導體營運副總經理",
+        "英國牛津大學物理學博士",
+        "美國麻省理工學院企管碩士",
+        "國立臺灣大學物理系學士"
+      ],
+      "imageUrl": "../assets/img/judge/agriculture_3.jpg"
+    },
+    {
+      "name": "蔣丙煌",
+      "title": "臺大食品科技研究所教授",
+      "expertises": [
+        "食品科技",
+        "包裝材料",
+        "生化工程"
+      ],
+      "experiences": [
+        "國立臺灣大學食品科技研究所教授",
+        "美國普渡大學工學院化工系訪問學者",
+        "國立臺灣大學食品科技研究所所長",
+        "美國密蘇里大學農學院生物工程學系訪問教授",
+        "國立臺灣大學生物資源暨農學院院長",
+        "國立臺灣大學教務長",
+        "國立臺灣大學食品科技研究所特聘教授",
+        "行政院政務委員",
+        "中華民國衛生福利部部長"
+      ],
+      "imageUrl": "../assets/img/judge/agriculture_4.jpg"
+    },
+    {
+      "name": "張世宗",
+      "title": "臺灣大學生命科學院生化科技學系 副教授",
+      "expertises": [
+        "生物科技",
+        "農產品製造",
+        "生物化學",
+        "酵素化學"
+      ],
+      "experiences": [
+        "臺灣大學創意創業學程 副主任",
+        "臺灣大學農業化學系 博士",
+        "美國哈佛大學醫學院細胞生物學系 博士後研究員"
+      ],
+      "imageUrl": "../assets/img/judge/agriculture_1.jpg"
+    },
+    {
+      "name": "蔡培慧",
+      "title": "世新大學社會發展研究所副教授、第九屆立法委員",
+      "expertises": [
+        "臺灣農村研究",
+        "社會經濟",
+        "農業合作化",
+        "社區發展研究",
+        "小農交換的社會基礎",
+        "社區協力農業"
+      ],
+      "experiences": [
+        "九二一震災重建基金會執行秘書",
+        "台灣農村陣線發言人暨秘書長",
+        "世新大學社會發展研究所助理教授"
+      ],
+      "imageUrl": "../assets/img/judge/agriculture_2.jpg"
+    }
+  ],
+  "second": [
+    {
+      "name": "馬鴻文",
+      "title": "國立台灣大學環境工程學研究所教授",
+      "expertises": [
+        "循環經濟",
+        "永續都市",
+        "環境風險評估與管理"
+      ],
+      "experiences": [
+        "國立台灣大學環境工程學研究所所長",
+        "中華環境工程學會秘書長",
+        "美國北卡羅萊納大學環境科學與工程博士"
+      ],
+      "imageUrl": "../assets/img/judge/second_1.jpg"
+    },
+    {
+      "name": "黃世貝",
+      "title": "智醫海量數據股份有限公司 總經理",
+      "expertises": [
+        "消化醫學",
+        "醫療資訊",
+        "基因醫學",
+        "生技產業暨技術分析"
+      ],
+      "experiences": [
+        "台大醫院主治醫師",
+        "有勁生技(股)公司醫學長",
+        "盛弘醫藥(股)策略長",
+        "永明科技顧問(股)公司總經理"
+      ],
+      "imageUrl": "../assets/img/judge/second_2.jpg"
+    },
+    {
+      "name": "張正",
+      "title": "燦爛時光東南亞主題書店負責人",
+      "expertises": [
+        "東南亞研究",
+        "媒體經營",
+        "社會企業"
+      ],
+      "experiences": [
+        "四方報總編輯",
+        "移民工文學獎召集人",
+        "文化部東南亞事務諮詢委員會委員"
+      ],
+      "imageUrl": "../assets/img/judge/second_3.jpg"
+    },
+    {
+      "name": "李竺姮",
+      "title": "智榮基金會龍吟研論營運總監",
+      "expertises": [
+        "質性研究",
+        "華人需求趨勢洞察",
+        "跨領域創新協作導引"
+      ],
+      "experiences": [
+        "財團法人商業發展研究院行銷所副所長",
+        "TNS Taiwan模範市場研究公司研究副總監",
+        "台灣大學國際企業管理博士班",
+        "政治大學企業管理系碩士"
+      ],
+      "imageUrl": "../assets/img/judge/second_4.jpg"
+    },
+    {
+      "name": "陳玠甫",
+      "title": "臺灣大學管理學院資訊管理所 博士候選人",
+      "expertises": [
+        "企業新創事業策略規劃與執行",
+        "創新事業投資與創投基金管理"
+      ],
+      "experiences": [
+        "群碁投資 總經理",
+        "宏碁 投資總監 (Chief Investment Officer）",
+        "華碩 策略投資協理",
+        "日本野村集團JAFCO創投 投資協理"
+      ],
+      "imageUrl": "../assets/img/judge/second_5.jpg"
+    }
+  ]
+}
