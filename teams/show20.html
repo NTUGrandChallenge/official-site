@@ -22,9 +22,9 @@
     </nav>
     
     <div class="container-fluid" id="single_team">
-        <p>{{ current_team }}</p>
+        <p>{{ current_team.team_id }}</p>
         <p>fuck</p>
-        <!-- <img v-for="member in members" src="" alt=""> -->
+        <img v-for="member in current_team.members" v-bind:src="member.imgSrc" alt="">
     </div>
         
     <footer>
@@ -35,6 +35,6 @@
     </div>
     
     <script type="text/javascript" src="../assets/js/general.js"></script>
-    <script type="text/javascript" src="../assets/js/20teams.js?v=4"></script>
+    <script type="text/javascript" src="../assets/js/20teams.js?v=87"></script>
 </body>
 </html>

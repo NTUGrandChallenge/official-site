@@ -17,32 +17,30 @@ var team = new Vue({
     },
     created: function(){
         this.fetchData();
-        this.setMembersImgSrc();
-    },
-    computed: {
-        imageBasePath: function(){
-            return '../assets/img/20teams/' + this.current_team.team_id + '/';
-        }
     },
     methods: {
         fetchData: function(){
             var self = this;
             $.getJSON('20teams.json', function(data){
                 var current_id = getParameterByName('team_id');
-                console.log(current_id);
                 $.each(data, function(i, v){
                     if(v.team_id == current_id){
                         self.current_team = v;
                         return false;
                     }
                 })
+                self.setMembersImgSrc();
             })
         },
         setMembersImgSrc: function(){
             var self = this;
-            for(i = 0; i < 5; i++){
-                this.current_team.members[i].imgSrc = self.current_team.imageBasePath + (i + 1) + '.jpg';
-            }
+            var imgBasePath = '../assets/img/20teams/' + this.current_team.team_id + '/';
+            self.$set(self.current_team, 'imgBasePath', imgBasePath);
+            $.each(self.current_team.members, function(i, v){
+                var imgSrc = self.current_team.imgBasePath + 'members/' + (i + 1) + '.jpg';
+                console.log(imgSrc);
+                self.$set(v, 'imgSrc', imgSrc);
+            })
             
         }
     }
