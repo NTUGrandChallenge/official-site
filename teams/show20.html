@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     
+    <link rel="shortcut icon" href="../assets/img/logo.ico">
     <link rel="stylesheet" href="../assets/plugins/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="../assets/plugins/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="../assets/plugins/sweetalert/dist/sweetalert.css">
     <link rel="stylesheet" href="../assets/css/general.css">
-    <link rel="stylesheet" href="../assets/css/five.css">
+    <link rel="stylesheet" href="../assets/css/teams.css">
 
     <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
     <script src="../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
@@ -22,9 +23,31 @@
     </nav>
     
     <div class="container-fluid" id="single_team">
+        <div class="row" id="top" v-bind:style="{ 'background-image': 'url(' + coverImgSrc + ')' }">
+            <div class="col-md-6 flexbox-center" style="height: 100%;">
+                <div id="team_name_block">
+                    <div class="top">
+                        <h1 id="team_name">{{ current_team.team_name }}</h1>
+                    </div>
+                    <div class="bottom">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <img v-bind:src="logoImgSrc" alt="" id="logo">
+                            </div>
+                            <div class="col-md-6">
+                                <p id="slogan">{{ current_team.slogan }}</p>
+                                <div style="position: relative;">
+                                    <img src="" alt="" id="field_img">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                
+        </div>
         <p>{{ current_team.team_id }}</p>
         <p>fuck</p>
-        <img v-for="member in current_team.members" v-bind:src="member.imgSrc" alt="">
     </div>
         
     <footer>
@@ -35,6 +58,6 @@
     </div>
     
     <script type="text/javascript" src="../assets/js/general.js"></script>
-    <script type="text/javascript" src="../assets/js/20teams.js?v=87"></script>
+    <script type="text/javascript" src="../assets/js/20teams.js?v=99"></script>
 </body>
 </html>

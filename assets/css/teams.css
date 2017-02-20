@@ -1,0 +1,42 @@
+body{
+	background-color: #b2b2b2;
+}
+
+#single_team #top{
+	height: 100vh;
+	position: relative;
+}
+#single_team #top #team_name_block{
+	height: 80vh;
+	width: 90%;
+	border: 10px solid #fff;
+	background-color: #666;
+	color: #fff;
+}
+#single_team #top #team_name_block .top{
+	padding: 30px;
+	position: relative;
+	height: 45%;
+}
+#single_team #top #team_name_block #team_name{
+	position: absolute;
+	bottom: 0;
+	font-size: 60px;
+	color: #ffeb32;
+	font-family: 'Jaapokki-Regular';
+}
+#single_team #top #team_name_block .bottom{
+	padding: 30px;
+}
+#single_team #top #team_name_block #logo{
+	width: 90%;
+	border-radius: 50%;
+}
+#single_team #top #team_name_block #slogan{
+
+}
+#single_team #top #team_name_block #field_img{
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+}

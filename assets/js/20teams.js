@@ -18,6 +18,14 @@ var team = new Vue({
     created: function(){
         this.fetchData();
     },
+    computed: {
+        coverImgSrc: function(){
+            return this.current_team.imgBasePath + 'cover.jpg';
+        },
+        logoImgSrc: function(){
+            return this.current_team.imgBasePath + 'logo.png';
+        }
+    },
     methods: {
         fetchData: function(){
             var self = this;
@@ -38,18 +46,9 @@ var team = new Vue({
             self.$set(self.current_team, 'imgBasePath', imgBasePath);
             $.each(self.current_team.members, function(i, v){
                 var imgSrc = self.current_team.imgBasePath + 'members/' + (i + 1) + '.jpg';
-                console.log(imgSrc);
                 self.$set(v, 'imgSrc', imgSrc);
             })
             
         }
     }
 });
-// console.log(team)
-
-// Vue.component('team-details', {
-//     template: '#single_team_template',
-//     props: {
-//         team: Object
-//     }
-// })
