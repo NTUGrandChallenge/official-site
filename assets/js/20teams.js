@@ -24,6 +24,15 @@ var team = new Vue({
         },
         logoImgSrc: function(){
             return this.current_team.imgBasePath + 'logo.png';
+        },
+        fieldImgSrc: function(){
+            return '../assets/img/20teams/' + this.current_team.field + '.png';
+        },
+        recordImgSrc: function(){
+            return this.current_team.imgBasePath + 'record.jpg';
+        },
+        productImgSrc: function(){
+            return this.current_team.imgBasePath + 'product.jpg';
         }
     },
     methods: {

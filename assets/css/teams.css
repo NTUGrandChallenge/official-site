@@ -10,7 +10,7 @@ body{
 	height: 80vh;
 	width: 90%;
 	border: 10px solid #fff;
-	background-color: #666;
+	background-color: #444;
 	color: #fff;
 }
 #single_team #top #team_name_block .top{
@@ -33,10 +33,16 @@ body{
 	border-radius: 50%;
 }
 #single_team #top #team_name_block #slogan{
-
+	margin-bottom: 20px;
 }
 #single_team #top #team_name_block #field_img{
 	width: 100%;
+	display: inline-block;
+	vertical-align: bottom;
+}
+#single_team #top #challenge_definition{
 	position: absolute;
-	bottom: 0;
+	bottom: 10%;
+	color: #fff;
+	font-size: 30px;
 }
