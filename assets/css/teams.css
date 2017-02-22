@@ -20,34 +20,39 @@ body{
 #single_team .big-image{
 	width: 100%;
 }
-
-
-#single_team #top .sidebar{
-	height: 100%;
+#single_team .sidebar{
+	height: 100vh;
 	background-color: rgba(0, 0, 0, 0.5);
+	position: relative;
 }
+
 #single_team #top #logo{
-	width: 80%;
+	width: 60%;
 	display: block;
 	margin: auto;
-	padding: 20px 0;
+	padding: 50px 0 30px;
 	border-radius: 50%;
 }
 #single_team #top #team_name{
 	text-align: center;
-	font-size: 40px;
+	font-size: 50px;
 	color: #ffeb32;
-	font-family: 'Jaapokki-Regular';
+	font-family: 'Jaapokki-Regular', 'Noto Sans TC';
+	margin: 30px 0 50px;
 }
 #single_team #top #slogan{
 	text-align: center;
-	padding: 20px 40px;
+	padding: 0 60px;
+	margin-bottom: 30px;
 	color: #fff;
 }
 #single_team #top #field_img{
-	width: 40%;
-	display: block;
+	position: absolute;
+	bottom: 30px;
+	right: 0;
+	left: 0;
 	margin: 0 auto;
+	width: 40%;
 }
 #single_team .fade-color{
 	position: absolute;
@@ -70,45 +75,17 @@ body{
 	text-align: justify;
 }
 
-/*
-#single_team #top #team_name_block{
-	height: 80vh;
-	width: 90%;
-	border: 10px solid #fff;
-	background-color: #444;
-	color: #fff;
-}
-#single_team #top #team_name_block .top{
-	padding: 30px;
-	position: relative;
-	height: 45%;
-}
-#single_team #top #team_name_block #team_name{
-	position: absolute;
-	bottom: 0;
-	font-size: 60px;
+#single_team .article-title{
+	text-align: center;
+	font-size: 50px;
 	color: #ffeb32;
-	font-family: 'Jaapokki-Regular';
+	font-family: 'Jaapokki-Regular', 'Noto Sans TC';
+	margin: 30px;
 }
-#single_team #top #team_name_block .bottom{
-	padding: 30px;
-}
-#single_team #top #team_name_block #logo{
-	width: 90%;
-	border-radius: 50%;
-}
-#single_team #top #team_name_block #slogan{
-	margin-bottom: 20px;
-}
-#single_team #top #team_name_block #field_img{
-	width: 100%;
-	display: inline-block;
-	vertical-align: bottom;
-}
-#single_team #top #challenge_definition{
-	position: absolute;
-	bottom: 10%;
+#single_team article{
 	color: #fff;
-	font-size: 30px;
+	padding: 40px;
+	font-size: 18px;
+	text-align: justify;
+	line-height: 30px;
 }
-*/

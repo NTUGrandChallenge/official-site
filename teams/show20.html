@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -28,8 +28,8 @@
         <div class="section container-fluid">
             <div class="row row-custom" id="top">
                 <div class="blur-background" :style="'background-image: url(' + coverImgSrc + ')'"></div>
-                <div class="col-md-4 full-height sidebar">
-                    <div style="height: 60%;">
+                <div class="col-md-4 sidebar">
+                    <div style="height: 50%;">
                         <img v-bind:src="logoImgSrc" alt="LOGO" id="logo">
                     </div>
                     <h1 id="team_name">{{ current_team.team_name }}</h1>
@@ -45,22 +45,43 @@
         </div>
         <div class="section container-fluid">
             <div class="row row-custom">
-                <div class="col-md-8">
-                    <img v-bind:src="recordImgSrc" alt="">
+                <div class="blur-background" :style="'background-image: url(' + recordImgSrc + ')'"></div>
+                <div class="col-md-8 full-height flexbox-center" style="position: relative; padding: 0;">
+                    <img :src="recordImgSrc" alt="cover image" class="big-image">
                 </div>
-                <div class="col-md-4">
-                    <h2 class="title">議題觀察</h2>
-                    
+                <div class="col-md-4 sidebar flexbox-center">
+                    <div>
+                        <h2 class="article-title">議題觀察</h2>
+                        <article>
+                            {{ current_team.observation }}
+                        </article>
+                    </div>
                 </div>
-                <h2 class="title">產品或服務簡介</h2>
+            </div>
+        </div>
+        <div class="section container-fluid">
+            <div class="row row-custom">
+                <div class="blur-background" :style="'background-image: url(' + productImgSrc + ')'"></div>
+                <div class="col-md-4 sidebar flexbox-center">
+                    <div>
+                        <h2 class="article-title">產品或服務簡介</h2>
+                        <article>
+                            {{ current_team.product_introduction }}
+                        </article>
+                    </div>
+                </div>
+                <div class="col-md-8 full-height flexbox-center" style="position: relative; padding: 0;">
+                    <img :src="productImgSrc" alt="cover image" class="big-image">
+                </div>
+            </div>
+        </div>
+                <!-- <h2 class="title">產品或服務簡介</h2>
                 <div class="col-md-8">
                     <img v-bind:src="productImgSrc" alt="">
                 </div>
                 <div class="col-md-4">
                     
-                </div>
-            </div>
-        </div>
+                </div> -->
     </div>
     
         
