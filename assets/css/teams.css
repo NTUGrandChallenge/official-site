@@ -6,6 +6,34 @@ body{
 	height: 100vh;
 	position: relative;
 }
+#single_team #top .sidebar{
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+#single_team #top #logo{
+	width: 80%;
+	display: block;
+	margin: auto;
+	padding: 20px 0;
+	border-radius: 50%;
+}
+#single_team #top #team_name{
+	text-align: center;
+	font-size: 40px;
+	color: #ffeb32;
+	font-family: 'Jaapokki-Regular';
+}
+#single_team #top #slogan{
+	text-align: center;
+	padding: 20px 40px;
+	color: #fff;
+}
+#single_team #top #field_img{
+	width: 40%;
+	display: block;
+	margin: 0 auto;
+}
+/*
 #single_team #top #team_name_block{
 	height: 80vh;
 	width: 90%;
@@ -46,3 +74,4 @@ body{
 	color: #fff;
 	font-size: 30px;
 }
+*/

@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../assets/plugins/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="../assets/plugins/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="../assets/plugins/sweetalert/dist/sweetalert.css">
+    <link rel="stylesheet" href="../assets/plugins/fullPage.js/jquery.fullPage.css">
     <link rel="stylesheet" href="../assets/css/general.css">
     <link rel="stylesheet" href="../assets/css/teams.css">
 
@@ -16,39 +17,27 @@
     <script src="../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
     <script src="https://unpkg.com/vue/dist/vue.min.js"></script>
     <script src="../assets/plugins/sweetalert/dist/sweetalert.min.js"></script>
+    <script type="text/javascript" src="../assets/plugins/fullPage.js/jquery.fullPage.js"></script>
 </head>
 <body>
     <nav id="navbar" class="fixed">
         
     </nav>
     
+    <div>
+        
+    </div>
     <div class="container-fluid" id="single_team">
-        <div class="row" id="top" v-bind:style="{ 'background-image': 'url(' + coverImgSrc + ')' }">
-            <div class="col-md-6 flexbox-center full-height">
-                <div id="team_name_block">
-                    <div class="top">
-                        <h1 id="team_name">{{ current_team.team_name }}</h1>
-                    </div>
-                    <div class="bottom">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <img v-bind:src="logoImgSrc" alt="" id="logo">
-                            </div>
-                            <div class="col-md-6">
-                                <div>
-                                    <p id="slogan">{{ current_team.slogan }}</p>
-                                </div>
-                                <div style="position: relative;">
-                                    <img v-bind:src="fieldImgSrc" alt="" id="field_img">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+        <div class="row" id="top">
+            <div class="col-md-4 full-height sidebar">
+                <div style="height: 60%;">
+                    <img v-bind:src="logoImgSrc" alt="LOGO" id="logo">
                 </div>
+                <h1 id="team_name">{{ current_team.team_name }}</h1>
+                <p id="slogan">{{ current_team.slogan }}</p>
+                <img v-bind:src="fieldImgSrc" alt="field_img" id="field_img">
             </div>
-            <div class="col-md-offset-1 col-md-4 full-height" style="position: relative;">
-                <p id="challenge_definition">{{ current_team.challenge_definition }}</p>
-            </div>   
+        
         </div>
         <div class="row" id="product_introduction">
             <h2 class="title">議題觀察</h2>
