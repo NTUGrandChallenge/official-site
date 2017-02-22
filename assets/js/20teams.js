@@ -61,3 +61,8 @@ var team = new Vue({
         }
     }
 });
+
+
+$('#single_team').fullpage();
+
+$('.fp-tableCell').css("position", "relative");

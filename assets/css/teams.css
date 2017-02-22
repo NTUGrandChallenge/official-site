@@ -2,10 +2,26 @@ body{
 	background-color: #b2b2b2;
 }
 
-#single_team #top{
-	height: 100vh;
+#single_team .section{
 	position: relative;
+	padding: 0;
 }
+#single_team .row-custom{
+	/*setting for blur background*/
+	position: relative;
+	height: 100vh;
+}
+#single_team .blur-background{
+	position: absolute;
+	height: 100vh;
+	width: 100%;
+	filter: blur(5px);
+}
+#single_team .big-image{
+	width: 100%;
+}
+
+
 #single_team #top .sidebar{
 	height: 100%;
 	background-color: rgba(0, 0, 0, 0.5);
@@ -33,6 +49,27 @@ body{
 	display: block;
 	margin: 0 auto;
 }
+#single_team .fade-color{
+	position: absolute;
+	height: 100vh;
+	width: 100%;
+}
+#single_team #top .fade-color.sl{
+	background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(255,0,0,1));
+}
+#single_team #top .fade-color.hc{
+	background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(244, 37, 52, 0), rgba(244, 37, 52, 0.9));
+}
+#single_team #top #challenge_definition{
+	position: absolute;
+	width: 40%;
+	right: 50px;
+	bottom: 30px;
+	color: #fff;
+	font-size: 30px;
+	text-align: justify;
+}
+
 /*
 #single_team #top #team_name_block{
 	height: 80vh;

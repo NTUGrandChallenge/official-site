@@ -24,38 +24,45 @@
         
     </nav>
     
-    <div>
-        
-    </div>
-    <div class="container-fluid" id="single_team">
-        <div class="row" id="top">
-            <div class="col-md-4 full-height sidebar">
-                <div style="height: 60%;">
-                    <img v-bind:src="logoImgSrc" alt="LOGO" id="logo">
+    <div id="single_team">
+        <div class="section container-fluid">
+            <div class="row row-custom" id="top">
+                <div class="blur-background" :style="'background-image: url(' + coverImgSrc + ')'"></div>
+                <div class="col-md-4 full-height sidebar">
+                    <div style="height: 60%;">
+                        <img v-bind:src="logoImgSrc" alt="LOGO" id="logo">
+                    </div>
+                    <h1 id="team_name">{{ current_team.team_name }}</h1>
+                    <p id="slogan">{{ current_team.slogan }}</p>
+                    <img v-bind:src="fieldImgSrc" alt="field_img" id="field_img">
                 </div>
-                <h1 id="team_name">{{ current_team.team_name }}</h1>
-                <p id="slogan">{{ current_team.slogan }}</p>
-                <img v-bind:src="fieldImgSrc" alt="field_img" id="field_img">
+                <div class="col-md-8 full-height flexbox-center" style="position: relative; padding: 0;">
+                    <img :src="coverImgSrc" alt="cover image" class="big-image">
+                    <div :class="'fade-color ' + current_team.field"></div>
+                    <p id="challenge_definition">{{ current_team.challenge_definition }}</p>
+                </div>
             </div>
-        
         </div>
-        <div class="row" id="product_introduction">
-            <h2 class="title">議題觀察</h2>
-            <div class="col-md-8">
-                <img v-bind:src="recordImgSrc" alt="">
-            </div>
-            <div class="col-md-4">
-                
-            </div>
-            <h2 class="title">產品或服務簡介</h2>
-            <div class="col-md-8">
-                <img v-bind:src="productImgSrc" alt="">
-            </div>
-            <div class="col-md-4">
-                
+        <div class="section container-fluid">
+            <div class="row row-custom">
+                <div class="col-md-8">
+                    <img v-bind:src="recordImgSrc" alt="">
+                </div>
+                <div class="col-md-4">
+                    <h2 class="title">議題觀察</h2>
+                    
+                </div>
+                <h2 class="title">產品或服務簡介</h2>
+                <div class="col-md-8">
+                    <img v-bind:src="productImgSrc" alt="">
+                </div>
+                <div class="col-md-4">
+                    
+                </div>
             </div>
         </div>
     </div>
+    
         
     <footer>
         
