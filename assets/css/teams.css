@@ -22,7 +22,7 @@ body{
 }
 #single_team .sidebar{
 	height: 100vh;
-	background-color: rgba(0, 0, 0, 0.5);
+	background-color: rgba(0, 0, 0, 0.7);
 	position: relative;
 }
 
@@ -90,7 +90,7 @@ body{
 	text-align: center;
 	font-size: 50px;
 	color: #ffeb32;
-	font-family: 'Jaapokki-Regular', 'Noto Sans TC';
+	font-family: 'Noto Sans TC';
 	margin: 30px;
 }
 #single_team article{
