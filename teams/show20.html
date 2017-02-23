@@ -113,6 +113,14 @@
     </div>
     
     <script type="text/javascript" src="../assets/js/general.js"></script>
-    <script type="text/javascript" src="../assets/js/20teams.js"></script>
+    <script type="text/javascript" src="../assets/js/20teams-vue.js"></script>
+    <script type="text/javascript">
+    $(window).load(function(){
+        $('#single_team').fullpage({
+            scrollOverflow: true,
+            verticalCentered: false
+        });
+    })
+    </script>
 </body>
 </html>

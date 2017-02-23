@@ -69,11 +69,3 @@ var team = new Vue({
         }
     }
 });
-
-
-$('#single_team').fullpage({
-    scrollOverflow: true,
-    verticalCentered: false
-});
-
-$('.fp-tableCell').css("position", "relative");
