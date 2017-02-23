@@ -18,23 +18,23 @@ var team = new Vue({
     created: function(){
         this.fetchData();
     },
-    computed: {
-        coverImgSrc: function(){
-            return this.current_team.imgBasePath + 'cover.jpg';
-        },
-        logoImgSrc: function(){
-            return this.current_team.imgBasePath + 'logo.png';
-        },
-        fieldImgSrc: function(){
-            return '../assets/img/20teams/' + this.current_team.field + '.png';
-        },
-        recordImgSrc: function(){
-            return this.current_team.imgBasePath + 'record.jpg';
-        },
-        productImgSrc: function(){
-            return this.current_team.imgBasePath + 'product.jpg';
-        }
-    },
+    // computed: {
+    //     coverImgSrc: function(){
+    //         return this.current_team.imgBasePath + 'cover.jpg';
+    //     },
+    //     logoImgSrc: function(){
+    //         return this.current_team.imgBasePath + 'logo.png';
+    //     },
+    //     fieldImgSrc: function(){
+    //         return '../assets/img/20teams/' + this.current_team.field + '.png';
+    //     },
+    //     recordImgSrc: function(){
+    //         return this.current_team.imgBasePath + 'record.jpg';
+    //     },
+    //     productImgSrc: function(){
+    //         return this.current_team.imgBasePath + 'product.jpg';
+    //     }
+    // },
     methods: {
         fetchData: function(){
             var self = this;
@@ -46,17 +46,25 @@ var team = new Vue({
                         return false;
                     }
                 })
-                self.setMembersImgSrc();
+                self.setImgSrc();
             })
         },
-        setMembersImgSrc: function(){
+        setImgSrc: function(){
             var self = this;
             var imgBasePath = '../assets/img/20teams/' + this.current_team.team_id + '/';
             self.$set(self.current_team, 'imgBasePath', imgBasePath);
+
             $.each(self.current_team.members, function(i, v){
                 var imgSrc = self.current_team.imgBasePath + 'members/' + (i + 1) + '.jpg';
                 self.$set(v, 'imgSrc', imgSrc);
-            })
+            });
+
+            self.$set(self.current_team, 'coverImgSrc', imgBasePath + 'cover.jpg');
+            self.$set(self.current_team, 'logoImgSrc', imgBasePath + 'logo.png');
+            self.$set(self.current_team, 'recordImgSrc', imgBasePath + 'record.jpg');
+            self.$set(self.current_team, 'productImgSrc', imgBasePath + 'product.jpg');
+            self.$set(self.current_team, 'fieldImgSrc', '../assets/img/20teams/' + self.current_team.field + '.png');
+
             
         }
     }

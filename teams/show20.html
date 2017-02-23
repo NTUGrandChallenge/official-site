@@ -28,17 +28,17 @@
     <div id="single_team">
         <div class="section container-fluid">
             <div class="row row-custom" id="top">
-                <div class="blur-background" :style="'background-image: url(' + coverImgSrc + ')'"></div>
+                <div class="blur-background" :style="'background-image: url(' + current_team.coverImgSrc + ')'"></div>
                 <div class="col-md-4 sidebar">
                     <div style="height: 50%;">
-                        <img v-bind:src="logoImgSrc" alt="LOGO" id="logo">
+                        <img v-bind:src="current_team.logoImgSrc" alt="LOGO" id="logo">
                     </div>
                     <h1 id="team_name">{{ current_team.team_name }}</h1>
                     <p id="slogan">{{ current_team.slogan }}</p>
-                    <img v-bind:src="fieldImgSrc" alt="field_img" id="field_img">
+                    <img v-bind:src="current_team.fieldImgSrc" alt="field_img" id="field_img">
                 </div>
                 <div class="col-md-8 full-height flexbox-center" style="position: relative; padding: 0;">
-                    <img :src="coverImgSrc" alt="cover image" class="big-image">
+                    <img :src="current_team.coverImgSrc" alt="cover image" class="big-image">
                     <div :class="'fade-color ' + current_team.field"></div>
                     <p id="challenge_definition">{{ current_team.challenge_definition }}</p>
                 </div>
@@ -46,9 +46,9 @@
         </div>
         <div class="section container-fluid">
             <div class="row row-custom">
-                <div class="blur-background" :style="'background-image: url(' + recordImgSrc + ')'"></div>
+                <div class="blur-background" :style="'background-image: url(' + current_team.recordImgSrc + ')'"></div>
                 <div class="col-md-8 full-height flexbox-center" style="position: relative; padding: 0;">
-                    <img :src="recordImgSrc" alt="cover image" class="big-image">
+                    <img :src="current_team.recordImgSrc" alt="cover image" class="big-image">
                 </div>
                 <div class="col-md-4 sidebar flexbox-center">
                     <div>
@@ -62,7 +62,7 @@
         </div>
         <div class="section container-fluid">
             <div class="row row-custom">
-                <div class="blur-background" :style="'background-image: url(' + productImgSrc + ')'"></div>
+                <div class="blur-background" :style="'background-image: url(' + current_team.productImgSrc + ')'"></div>
                 <div class="col-md-4 sidebar flexbox-center">
                     <div>
                         <h2 class="article-title">產品或服務簡介</h2>
@@ -72,7 +72,7 @@
                     </div>
                 </div>
                 <div class="col-md-8 full-height flexbox-center" style="position: relative; padding: 0;">
-                    <img :src="productImgSrc" alt="cover image" class="big-image">
+                    <img :src="current_team.productImgSrc" alt="cover image" class="big-image">
                 </div>
             </div>
         </div>
