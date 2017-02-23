@@ -17,6 +17,7 @@
     <script src="../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
     <script src="https://unpkg.com/vue/dist/vue.min.js"></script>
     <script src="../assets/plugins/sweetalert/dist/sweetalert.min.js"></script>
+    <script type="text/javascript" src="../assets/plugins/fullPage.js/vendors/scrolloverflow.min.js"></script>
     <script type="text/javascript" src="../assets/plugins/fullPage.js/jquery.fullPage.js"></script>
 </head>
 <body>
@@ -52,8 +53,8 @@
                 <div class="col-md-4 sidebar flexbox-center">
                     <div>
                         <h2 class="article-title">議題觀察</h2>
-                        <article>
-                            {{ current_team.observation }}
+                        <article v-html="current_team.observation">
+
                         </article>
                     </div>
                 </div>
@@ -65,8 +66,8 @@
                 <div class="col-md-4 sidebar flexbox-center">
                     <div>
                         <h2 class="article-title">產品或服務簡介</h2>
-                        <article>
-                            {{ current_team.product_introduction }}
+                        <article v-html="current_team.product_introduction">
+
                         </article>
                     </div>
                 </div>
@@ -75,24 +76,43 @@
                 </div>
             </div>
         </div>
-                <!-- <h2 class="title">產品或服務簡介</h2>
-                <div class="col-md-8">
-                    <img v-bind:src="productImgSrc" alt="">
+        <div class="section container-fluid" style="background-color: #333;">
+            <h2 class="team-title">團隊介紹</h2>
+            <div class="row">
+                <div class="flexbox-center" style="width: 80%; margin: 0 auto;">
+                    <div v-for="member in current_team.members" class="one-member">
+                        <img :src="member.imgSrc">
+                        <p>{{ member.name }}</p>
+                        <p>{{ member.role }}</p>
+                    </div>
                 </div>
-                <div class="col-md-4">
+            </div>
+            <div class="row">
+                <p id="team_introduction">{{ current_team.team_introduction }}</p>
+            </div>
+            <h3 id="self_question">{{ current_team.self_question }}</h3>
+            <div class="row">
+                <article id="self_answer" v-html="current_team.self_answer">
                     
-                </div> -->
+                </article>
+            </div>
+            <div class="row flexbox-center" style="background-color: #444;">
+                <a v-for="link in current_team.links" :href="link.url" class="one-link">{{ link.name }}</a>
+            </div>
+
+            <footer>
+        
+            </footer>
+        </div>
     </div>
     
         
-    <footer>
-        
-    </footer>
+    
     <div id="messenger">
         
     </div>
     
     <script type="text/javascript" src="../assets/js/general.js"></script>
-    <script type="text/javascript" src="../assets/js/20teams.js?v=99"></script>
+    <script type="text/javascript" src="../assets/js/20teams.js"></script>
 </body>
 </html>

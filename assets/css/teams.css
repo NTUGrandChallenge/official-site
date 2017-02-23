@@ -89,3 +89,49 @@ body{
 	text-align: justify;
 	line-height: 30px;
 }
+
+#single_team .team-title{
+	text-align: center;
+	font-size: 50px;
+	color: #ffeb32;
+	font-family: 'Jaapokki-Regular', 'Noto Sans TC';
+	margin: 40px 0;
+}
+#single_team .one-member{
+	width: 15%;
+	margin: 0 10px;
+}
+#single_team .one-member img{
+	width: 100%;
+	border-radius: 50%;
+	margin-bottom: 20px;
+}
+#single_team .one-member p{
+	color: #fff;
+	text-align: center;
+	margin-bottom: 0px;
+}
+#single_team #team_introduction{
+	color: #fff;
+	text-align: center;
+	width: 60%;
+	font-size: 24px;
+	margin: 50px auto 100px;
+}
+#single_team #self_question{
+	text-align: center;
+	font-size: 40px;
+	color: #ffeb32;
+	font-family: 'Jaapokki-Regular', 'Noto Sans TC';
+}
+#single_team #self_answer{
+	width: 60%;
+	color: #fff;
+	text-align: center;
+	margin: 0 auto;
+}
+#single_team .one-link{
+	color: #ffeb32;
+	font-size: 40px;
+	margin: 50px;
+}

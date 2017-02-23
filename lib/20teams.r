@@ -1,15 +1,19 @@
 library("jsonlite")
 
+slashNToBr <- function(str){
+  result = gsub("\n", "<br>", str)
+  return(result)
+}
 getLinks <- function(i){
   links = list()
   if(data[i,]$link1 != ''){
     tmp = list()
-    tmp[["link_name"]] = data[i,]$link1_name
+    tmp[["name"]] = data[i,]$link1_name
     tmp[["url"]] = data[i,]$link1
     links[[1]] = tmp
     if(data[i,]$link2 != ''){
       tmp = list()
-      tmp[["link_name"]] = data[i,]$link2_name
+      tmp[["name"]] = data[i,]$link2_name
       tmp[["url"]] = data[i,]$link2
       links[[2]] = tmp
     }
@@ -69,13 +73,14 @@ data = read.table("data.csv", header=TRUE, sep=",")
 l = lapply(1:nrow(data), FUN=function(i){
   list(team_name = data[i,]$team_name,
        team_id = data[i,]$team_id,
+       field = data[i,]$field,
        slogan = data[i,]$slogan,
-       observation = data[i,]$observation,
-       challenge_definotion = data[i,]$challenge_definition,
-       product_introduction = data[i,]$product_introduction,
-       team_introduction = data[i,]$team_introduction,
+       observation = slashNToBr(data[i,]$observation),
+       challenge_definition = data[i,]$challenge_definition,
+       product_introduction = slashNToBr(data[i,]$product_introduction),
+       team_introduction = slashNToBr(data[i,]$team_introduction),
        self_question = data[i,]$self_question,
-       self_answer = data[i,]$self_answer,
+       self_answer = slashNToBr(data[i,]$self_answer),
        links = getLinks(i),
        agree = getAgree(i),
        members = getMembers(i)
