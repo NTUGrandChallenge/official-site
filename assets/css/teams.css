@@ -63,7 +63,7 @@ body{
 	width: 100%;
 }
 #single_team #top .fade-color.sl{
-	background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(255,0,0,1));
+	background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(255, 164, 180, 0), rgba(255, 164, 180,1));
 }
 #single_team #top .fade-color.hc{
 	background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(244, 37, 52, 0), rgba(244, 37, 52, 0.9));
