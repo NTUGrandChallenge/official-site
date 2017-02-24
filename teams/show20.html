@@ -28,25 +28,27 @@
     <div id="single_team">
         <div class="section container-fluid">
             <div class="row row-custom" id="top">
-                <div class="blur-background" :style="'background-image: url(' + current_team.coverImgSrc + ')'"></div>
+                <!-- <div class="blur-background" :style="'background-image: url(' + current_team.coverImgSrc + ')'"></div> -->
+                <img :src="current_team.coverImgSrc" alt="cover image" class="blur-background">
                 <div class="col-md-4 sidebar">
                     <div style="height: 50%;">
                         <img v-bind:src="current_team.logoImgSrc" alt="LOGO" id="logo">
                     </div>
-                    <h1 id="team_name">{{ current_team.team_name }}</h1>
-                    <p id="slogan">{{ current_team.slogan }}</p>
+                    <h1 id="team_name" v-html="current_team.team_name">     </h1>
+                    <p id="slogan" v-html="current_team.slogan">    </p>
                     <img v-bind:src="current_team.fieldImgSrc" alt="field_img" id="field_img">
                 </div>
                 <div class="col-md-8 full-height flexbox-center" style="position: relative; padding: 0;">
                     <img :src="current_team.coverImgSrc" alt="cover image" class="big-image">
                     <div :class="'fade-color ' + current_team.field"></div>
-                    <p id="challenge_definition">{{ current_team.challenge_definition }}</p>
+                    <p id="challenge_definition" v-html="current_team.challenge_definition">    </p>
                 </div>
             </div>
         </div>
         <div class="section container-fluid">
             <div class="row row-custom">
-                <div class="blur-background" :style="'background-image: url(' + current_team.recordImgSrc + ')'"></div>
+                <!-- <div class="blur-background" :style="'background-image: url(' + current_team.recordImgSrc + ')'"></div> -->
+                <img :src="current_team.recordImgSrc" alt="record image" class="blur-background">
                 <div class="col-md-8 full-height flexbox-center" style="position: relative; padding: 0;">
                     <img :src="current_team.recordImgSrc" alt="cover image" class="big-image">
                 </div>
@@ -62,7 +64,8 @@
         </div>
         <div class="section container-fluid">
             <div class="row row-custom">
-                <div class="blur-background" :style="'background-image: url(' + current_team.productImgSrc + ')'"></div>
+                <!-- <div class="blur-background" :style="'background-image: url(' + current_team.productImgSrc + ')'"></div> -->
+                <img :src="current_team.productImgSrc" alt="product image" class="blur-background">
                 <div class="col-md-4 sidebar flexbox-center">
                     <div>
                         <h2 class="article-title">產品與服務</h2>
@@ -82,8 +85,10 @@
                 <div class="flexbox-center" style="width: 80%; margin: 0 auto;">
                     <div v-for="member in current_team.members" class="one-member">
                         <img :src="member.imgSrc">
-                        <p>{{ member.name }}</p>
-                        <p>{{ member.role }}</p>
+                        <div style="height: 80px;">
+                            <p v-html="member.name"></p>
+                            <p v-html="member.role"></p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -122,6 +127,9 @@
                 if(index == 3 && direction == 'down'){
                     $.fn.fullpage.reBuild();
                 }
+            },
+            afterResize: function(){
+                $.fn.fullpage.reBuild();
             }
         });
     </script>

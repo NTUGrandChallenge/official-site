@@ -13,9 +13,10 @@ body{
 }
 #single_team .blur-background{
 	position: absolute;
-	height: 100vh;
 	width: 100%;
-	filter: blur(5px);
+	/*height: 100vh;*/
+	overflow: hidden;
+	filter: blur(5px) brightness(70%);
 }
 #single_team .big-image{
 	width: 100%;
