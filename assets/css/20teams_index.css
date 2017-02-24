@@ -1,0 +1,140 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400);
+@import url(http://fonts.googleapis.com/earlyaccess/notosanstc.css);
+/* line 33, ../sass/team_intro.scss */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 38, ../sass/team_intro.scss */
+body {
+  background-color: #333333;
+  overflow-x: scroll;
+}
+
+/* line 42, ../sass/team_intro.scss */
+a, h1, h2, h3, h4, h5, h6, p, span, button {
+  font-family: "Noto Sans TC", "Open Sans", Sans-Serif;
+  color: #ececec;
+}
+
+/* line 47, ../sass/team_intro.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 51, ../sass/team_intro.scss */
+#index {
+  text-align: center;
+}
+
+/* line 55, ../sass/team_intro.scss */
+.slideshow {
+  margin-top: 50vh;
+  transform: translateY(-21.875vw);
+}
+
+/* line 60, ../sass/team_intro.scss */
+.slideshow-container {
+  white-space: nowrap;
+  list-style: none;
+}
+
+/* line 65, ../sass/team_intro.scss */
+.slideshow-item {
+  vertical-align: top;
+  display: inline-block;
+  width: 64vw;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+/* line 72, ../sass/team_intro.scss */
+.slideshow-item:first-of-type {
+  margin-left: 18%;
+}
+/* line 76, ../sass/team_intro.scss */
+.slideshow-item:last-of-type {
+  margin-right: 18%;
+}
+
+/* line 81, ../sass/team_intro.scss */
+.item-wrapper {
+  text-align: center;
+  height: 40vw;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+}
+/* line 88, ../sass/team_intro.scss */
+.item-wrapper#smart {
+  background-image: url(../img/five-field/20teams-index/smart.png);
+}
+/* line 92, ../sass/team_intro.scss */
+.item-wrapper#health {
+  background-image: url(../img/five-field/20teams-index/health.png);
+}
+/* line 96, ../sass/team_intro.scss */
+.item-wrapper#environment {
+  background-image: url(../img/five-field/20teams-index/environment.png);
+}
+/* line 100, ../sass/team_intro.scss */
+.item-wrapper#society {
+  background-image: url(../img/five-field/20teams-index/society.png);
+}
+/* line 104, ../sass/team_intro.scss */
+.item-wrapper#agriculture {
+  background-image: url(../img/five-field/20teams-index/agriculture.png);
+}
+/* line 108, ../sass/team_intro.scss */
+.item-wrapper:hover {
+  transform: scale(1.03);
+}
+
+/* line 113, ../sass/team_intro.scss */
+.text-wrapper {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+/* line 116, ../sass/team_intro.scss */
+.text-wrapper .title {
+  letter-spacing: 16px;
+}
+/* line 119, ../sass/team_intro.scss */
+.text-wrapper .info {
+  letter-spacing: 4px;
+}
+
+/* line 124, ../sass/team_intro.scss */
+.view-more,
+.close-view {
+  margin: 24px 0;
+  font-size: 14px;
+  letter-spacing: 6px;
+  transition: all 0.4s;
+}
+/* line 131, ../sass/team_intro.scss */
+.view-more:hover,
+.close-view:hover {
+  cursor: pointer;
+  letter-spacing: 10px;
+}
+
+/* line 137, ../sass/team_intro.scss */
+.close-view {
+  display: none;
+}
+
+/* line 141, ../sass/team_intro.scss */
+.teams {
+  display: none;
+}
+/* line 144, ../sass/team_intro.scss */
+.teams .item-wrapper {
+  width: 56vw;
+  margin: 24px auto 0;
+  background-color: #4d4d4d;
+}
