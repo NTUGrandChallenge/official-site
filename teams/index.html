@@ -43,13 +43,13 @@
                         </div>
                         <div class="teams">
                             <!-- Team Cover -->
-                            <a href="#">
-                                <div class="item-wrapper">
+                            <a v-for="team in smartLife" :href="team.link">
+                                <div class="item-wrapper" :style="'background-image : url(' + team.coverImgSrc + ')'">
                                     <div class="text-wrapper">
                                         <!-- 隊名 -->
-                                        <h2 class="title">隊名</h2>
+                                        <h2 class="title" v-html="team.team_name">  </h2>
                                         <!-- info -->
-                                        <span class="info">slogan</span>
+                                        <span class="info" v-html="team.slogan">    </span>
                                     </div>
                                 </div>
                             </a>
@@ -75,13 +75,13 @@
                         </div>
                         <div class="teams">
                             <!-- Team Cover -->
-                            <a href="#">
-                                <div class="item-wrapper">
+                            <a v-for="team in healthCare" :href="team.link">
+                                <div class="item-wrapper" :style="'background-image : url(' + team.coverImgSrc + ')'">
                                     <div class="text-wrapper">
                                         <!-- 隊名 -->
-                                        <h2 class="title">隊名</h2>
+                                        <h2 class="title" v-html="team.team_name">  </h2>
                                         <!-- info -->
-                                        <span class="info">slogan</span>
+                                        <span class="info" v-html="team.slogan">    </span>
                                     </div>
                                 </div>
                             </a>
@@ -107,13 +107,13 @@
                         </div>
                         <div class="teams">
                             <!-- Team Cover -->
-                            <a href="#">
-                                <div class="item-wrapper">
+                            <a v-for="team in environment" :href="team.link">
+                                <div class="item-wrapper" :style="'background-image : url(' + team.coverImgSrc + ')'">
                                     <div class="text-wrapper">
                                         <!-- 隊名 -->
-                                        <h2 class="title">隊名</h2>
+                                        <h2 class="title" v-html="team.team_name">  </h2>
                                         <!-- info -->
-                                        <span class="info">slogan</span>
+                                        <span class="info" v-html="team.slogan">    </span>
                                     </div>
                                 </div>
                             </a>
@@ -139,13 +139,13 @@
                         </div>
                         <div class="teams">
                             <!-- Team Cover -->
-                            <a href="#">
-                                <div class="item-wrapper">
+                            <a v-for="team in societyCulture" :href="team.link">
+                                <div class="item-wrapper" :style="'background-image : url(' + team.coverImgSrc + ')'">
                                     <div class="text-wrapper">
                                         <!-- 隊名 -->
-                                        <h2 class="title">隊名</h2>
+                                        <h2 class="title" v-html="team.team_name">  </h2>
                                         <!-- info -->
-                                        <span class="info">slogan</span>
+                                        <span class="info" v-html="team.slogan">    </span>
                                     </div>
                                 </div>
                             </a>
@@ -171,13 +171,13 @@
                         </div>
                         <div class="teams">
                             <!-- Team Cover -->
-                            <a href="#">
-                                <div class="item-wrapper">
+                            <a v-for="team in foodAgriculture" :href="team.link">
+                                <div class="item-wrapper" :style="'background-image : url(' + team.coverImgSrc + ')'">
                                     <div class="text-wrapper">
                                         <!-- 隊名 -->
-                                        <h2 class="title">隊名</h2>
+                                        <h2 class="title" v-html="team.team_name">  </h2>
                                         <!-- info -->
-                                        <span class="info">slogan</span>
+                                        <span class="info" v-html="team.slogan">    </span>
                                     </div>
                                 </div>
                             </a>
@@ -199,6 +199,7 @@
     </div>
 
     <script type="text/javascript" src="../assets/js/general.js"></script>
+    <script type="text/javascript" src="../assets/js/20teams-vue.js"></script>
     <script type="text/javascript" src="../assets/js/20teams_index.js"></script>
 </body>
 </html>
