@@ -71,23 +71,23 @@ a {
 }
 /* line 88, ../sass/team_intro.scss */
 .item-wrapper#smart {
-  background-image: url(../img/five-field/20teams-index/smart.png);
+  background-image: url(../img/20teams/smart.png);
 }
 /* line 92, ../sass/team_intro.scss */
 .item-wrapper#health {
-  background-image: url(../img/five-field/20teams-index/health.png);
+  background-image: url(../img/20teams/health.png);
 }
 /* line 96, ../sass/team_intro.scss */
 .item-wrapper#environment {
-  background-image: url(../img/five-field/20teams-index/environment.png);
+  background-image: url(../img/20teams/environment.png);
 }
 /* line 100, ../sass/team_intro.scss */
 .item-wrapper#society {
-  background-image: url(../img/five-field/20teams-index/society.png);
+  background-image: url(../img/20teams/society.png);
 }
 /* line 104, ../sass/team_intro.scss */
 .item-wrapper#agriculture {
-  background-image: url(../img/five-field/20teams-index/agriculture.png);
+  background-image: url(../img/20teams/agriculture.png);
 }
 /* line 108, ../sass/team_intro.scss */
 .item-wrapper:hover {
@@ -135,7 +135,21 @@ a {
 }
 /* line 144, ../sass/team_intro.scss */
 .teams .item-wrapper {
+  position: relative;
+  height: 35vw;
   width: 56vw;
   margin: 24px auto 0;
   background-color: #4d4d4d;
+  overflow: hidden;
+}
+.teams .item-wrapper .cover-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  filter: brightness(30%) blur(5px);
+}
+.teams .item-wrapper:hover .cover-background {
+  transition: filter 0.3s ease;
+  filter: brightness(70%);
 }

@@ -44,7 +44,8 @@
                         <div class="teams">
                             <!-- Team Cover -->
                             <a v-for="team in smartLife" :href="team.link">
-                                <div class="item-wrapper" :style="'background-image : url(' + team.coverImgSrc + ')'">
+                                <div class="item-wrapper">
+                                    <img :src="team.coverImgSrc" class="cover-background">
                                     <div class="text-wrapper">
                                         <!-- 隊名 -->
                                         <h2 class="title" v-html="team.team_name">  </h2>
@@ -76,7 +77,8 @@
                         <div class="teams">
                             <!-- Team Cover -->
                             <a v-for="team in healthCare" :href="team.link">
-                                <div class="item-wrapper" :style="'background-image : url(' + team.coverImgSrc + ')'">
+                                <div class="item-wrapper">
+                                    <img :src="team.coverImgSrc" class="cover-background">
                                     <div class="text-wrapper">
                                         <!-- 隊名 -->
                                         <h2 class="title" v-html="team.team_name">  </h2>
@@ -108,7 +110,8 @@
                         <div class="teams">
                             <!-- Team Cover -->
                             <a v-for="team in environment" :href="team.link">
-                                <div class="item-wrapper" :style="'background-image : url(' + team.coverImgSrc + ')'">
+                                <div class="item-wrapper">
+                                    <img :src="team.coverImgSrc" class="cover-background">
                                     <div class="text-wrapper">
                                         <!-- 隊名 -->
                                         <h2 class="title" v-html="team.team_name">  </h2>
@@ -140,7 +143,8 @@
                         <div class="teams">
                             <!-- Team Cover -->
                             <a v-for="team in societyCulture" :href="team.link">
-                                <div class="item-wrapper" :style="'background-image : url(' + team.coverImgSrc + ')'">
+                                <div class="item-wrapper">
+                                    <img :src="team.coverImgSrc" class="cover-background">
                                     <div class="text-wrapper">
                                         <!-- 隊名 -->
                                         <h2 class="title" v-html="team.team_name">  </h2>
@@ -172,7 +176,8 @@
                         <div class="teams">
                             <!-- Team Cover -->
                             <a v-for="team in foodAgriculture" :href="team.link">
-                                <div class="item-wrapper" :style="'background-image : url(' + team.coverImgSrc + ')'">
+                                <div class="item-wrapper">
+                                    <img :src="team.coverImgSrc" class="cover-background">
                                     <div class="text-wrapper">
                                         <!-- 隊名 -->
                                         <h2 class="title" v-html="team.team_name">  </h2>
