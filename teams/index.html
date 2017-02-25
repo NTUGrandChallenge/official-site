@@ -32,7 +32,7 @@
                                 <!-- title -->
                                 <h2 class="title">智慧生活</h2>
                                 <!-- info -->
-                                <span class="info">1111</span>
+                                <!-- <span class="info">1111</span> -->
                             </div>
                         </div>
                         <div class="view-more">
@@ -43,7 +43,7 @@
                         </div>
                         <div class="teams">
                             <!-- Team Cover -->
-                            <a v-for="team in smartLife" :href="team.link">
+                            <a v-for="team in shuffle(smartLife)" :href="team.link">
                                 <div class="item-wrapper">
                                     <img :src="team.coverImgSrc" class="cover-background">
                                     <div class="text-wrapper">
@@ -65,7 +65,7 @@
                                 <!-- title -->
                                 <h2 class="title">健康醫療</h2>
                                 <!-- info -->
-                                <span class="info">22222</span>
+                                <!-- <span class="info">22222</span> -->
                             </div>
                         </div>
                         <div class="view-more">
@@ -76,7 +76,7 @@
                         </div>
                         <div class="teams">
                             <!-- Team Cover -->
-                            <a v-for="team in healthCare" :href="team.link">
+                            <a v-for="team in shuffle(healthCare)" :href="team.link">
                                 <div class="item-wrapper">
                                     <img :src="team.coverImgSrc" class="cover-background">
                                     <div class="text-wrapper">
@@ -98,7 +98,7 @@
                                 <!-- title -->
                                 <h2 class="title">永續環境</h2>
                                 <!-- info -->
-                                <span class="info">3333333</span>
+                                <!-- <span class="info">3333333</span> -->
                             </div>
                         </div>
                         <div class="view-more">
@@ -109,7 +109,7 @@
                         </div>
                         <div class="teams">
                             <!-- Team Cover -->
-                            <a v-for="team in environment" :href="team.link">
+                            <a v-for="team in shuffle(environment)" :href="team.link">
                                 <div class="item-wrapper">
                                     <img :src="team.coverImgSrc" class="cover-background">
                                     <div class="text-wrapper">
@@ -131,7 +131,7 @@
                                 <!-- title -->
                                 <h2 class="title">社會文化</h2>
                                 <!-- info -->
-                                <span class="info">444444</span>
+                                <!-- <span class="info">444444</span> -->
                             </div>
                         </div>
                         <div class="view-more">
@@ -142,7 +142,7 @@
                         </div>
                         <div class="teams">
                             <!-- Team Cover -->
-                            <a v-for="team in societyCulture" :href="team.link">
+                            <a v-for="team in shuffle(societyCulture)" :href="team.link">
                                 <div class="item-wrapper">
                                     <img :src="team.coverImgSrc" class="cover-background">
                                     <div class="text-wrapper">
@@ -164,7 +164,7 @@
                                 <!-- title -->
                                 <h2 class="title">食品與農業</h2>
                                 <!-- info -->
-                                <span class="info">555555</span>
+                                <!-- <span class="info">555555</span> -->
                             </div>
                         </div>
                         <div class="view-more">
@@ -175,7 +175,7 @@
                         </div>
                         <div class="teams">
                             <!-- Team Cover -->
-                            <a v-for="team in foodAgriculture" :href="team.link">
+                            <a v-for="team in shuffle(foodAgriculture)" :href="team.link">
                                 <div class="item-wrapper">
                                     <img :src="team.coverImgSrc" class="cover-background">
                                     <div class="text-wrapper">
@@ -204,7 +204,7 @@
     </div>
 
     <script type="text/javascript" src="../assets/js/general.js"></script>
-    <script type="text/javascript" src="../assets/js/20teams-vue.js"></script>
+    <script type="text/javascript" src="../assets/js/20teams-vue.js?v=23"></script>
     <script type="text/javascript" src="../assets/js/20teams_index.js"></script>
 </body>
 </html>
