@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    
+    <title>NTU Challenge | 臺大創創挑戰賽 團隊推廣 首頁</title>
+
     <link rel="shortcut icon" href="../assets/img/logo.ico">
     <link rel="stylesheet" href="../assets/plugins/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="../assets/plugins/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="../assets/plugins/sweetalert/dist/sweetalert.css">
     <link rel="stylesheet" href="../assets/css/general.css">
-    <link rel="stylesheet" href="../assets/css/five.css">
+    <link rel="stylesheet" href="../assets/css/20teams_index.css">
 
     <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
     <script src="../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
@@ -19,19 +19,192 @@
 </head>
 <body>
     <nav id="navbar" class="fixed">
-        
+
     </nav>
-    
-    
-    
+
+    <main id="container" role="main>">
+        <div id="index" class="">
+            <div class="slideshow">
+                <ul class="slideshow-container">
+                    <li class="slideshow-item">
+                        <div id="smart" class="item-wrapper">
+                            <div class="text-wrapper">
+                                <!-- title -->
+                                <h2 class="title">智慧生活</h2>
+                                <!-- info -->
+                                <span class="info">1111</span>
+                            </div>
+                        </div>
+                        <div class="view-more">
+                            <span>OPEN</span>
+                        </div>
+                        <div class="close-view">
+                            <span>CLOSE</span>
+                        </div>
+                        <div class="teams">
+                            <!-- Team Cover -->
+                            <a v-for="team in smartLife" :href="team.link">
+                                <div class="item-wrapper">
+                                    <img :src="team.coverImgSrc" class="cover-background">
+                                    <div class="text-wrapper">
+                                        <!-- 隊名 -->
+                                        <h2 class="title" v-html="team.team_name">  </h2>
+                                        <!-- info -->
+                                        <span class="info" v-html="team.slogan">    </span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="close-view">
+                            <span>CLOSE</span>
+                        </div>
+                    </li>
+                    <li class="slideshow-item">
+                        <div id="health" class="item-wrapper">
+                            <div class="text-wrapper">
+                                <!-- title -->
+                                <h2 class="title">健康醫療</h2>
+                                <!-- info -->
+                                <span class="info">22222</span>
+                            </div>
+                        </div>
+                        <div class="view-more">
+                            <span>OPEN</span>
+                        </div>
+                        <div class="close-view">
+                            <span>CLOSE</span>
+                        </div>
+                        <div class="teams">
+                            <!-- Team Cover -->
+                            <a v-for="team in healthCare" :href="team.link">
+                                <div class="item-wrapper">
+                                    <img :src="team.coverImgSrc" class="cover-background">
+                                    <div class="text-wrapper">
+                                        <!-- 隊名 -->
+                                        <h2 class="title" v-html="team.team_name">  </h2>
+                                        <!-- info -->
+                                        <span class="info" v-html="team.slogan">    </span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="close-view">
+                            <span>CLOSE</span>
+                        </div>
+                    </li>
+                    <li class="slideshow-item">
+                        <div id="environment" class="item-wrapper">
+                            <div class="text-wrapper">
+                                <!-- title -->
+                                <h2 class="title">永續環境</h2>
+                                <!-- info -->
+                                <span class="info">3333333</span>
+                            </div>
+                        </div>
+                        <div class="view-more">
+                            <span>OPEN</span>
+                        </div>
+                        <div class="close-view">
+                            <span>CLOSE</span>
+                        </div>
+                        <div class="teams">
+                            <!-- Team Cover -->
+                            <a v-for="team in environment" :href="team.link">
+                                <div class="item-wrapper">
+                                    <img :src="team.coverImgSrc" class="cover-background">
+                                    <div class="text-wrapper">
+                                        <!-- 隊名 -->
+                                        <h2 class="title" v-html="team.team_name">  </h2>
+                                        <!-- info -->
+                                        <span class="info" v-html="team.slogan">    </span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="close-view">
+                            <span>CLOSE</span>
+                        </div>
+                    </li>
+                    <li class="slideshow-item">
+                        <div id="society" class="item-wrapper">
+                            <div class="text-wrapper">
+                                <!-- title -->
+                                <h2 class="title">社會文化</h2>
+                                <!-- info -->
+                                <span class="info">444444</span>
+                            </div>
+                        </div>
+                        <div class="view-more">
+                            <span>OPEN</span>
+                        </div>
+                        <div class="close-view">
+                            <span>CLOSE</span>
+                        </div>
+                        <div class="teams">
+                            <!-- Team Cover -->
+                            <a v-for="team in societyCulture" :href="team.link">
+                                <div class="item-wrapper">
+                                    <img :src="team.coverImgSrc" class="cover-background">
+                                    <div class="text-wrapper">
+                                        <!-- 隊名 -->
+                                        <h2 class="title" v-html="team.team_name">  </h2>
+                                        <!-- info -->
+                                        <span class="info" v-html="team.slogan">    </span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="close-view">
+                            <span>CLOSE</span>
+                        </div>
+                    </li>
+                    <li class="slideshow-item">
+                        <div id="agriculture" class="item-wrapper">
+                            <div class="text-wrapper">
+                                <!-- title -->
+                                <h2 class="title">食品與農業</h2>
+                                <!-- info -->
+                                <span class="info">555555</span>
+                            </div>
+                        </div>
+                        <div class="view-more">
+                            <span>OPEN</span>
+                        </div>
+                        <div class="close-view">
+                            <span>CLOSE</span>
+                        </div>
+                        <div class="teams">
+                            <!-- Team Cover -->
+                            <a v-for="team in foodAgriculture" :href="team.link">
+                                <div class="item-wrapper">
+                                    <img :src="team.coverImgSrc" class="cover-background">
+                                    <div class="text-wrapper">
+                                        <!-- 隊名 -->
+                                        <h2 class="title" v-html="team.team_name">  </h2>
+                                        <!-- info -->
+                                        <span class="info" v-html="team.slogan">    </span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="close-view">
+                            <span>CLOSE</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
     <footer>
-        
+
     </footer>
     <div id="messenger">
-        
+
     </div>
-    
+
     <script type="text/javascript" src="../assets/js/general.js"></script>
-    <script type="text/javascript" src="../assets/js/20teams.js"></script>
+    <script type="text/javascript" src="../assets/js/20teams-vue.js"></script>
+    <script type="text/javascript" src="../assets/js/20teams_index.js"></script>
 </body>
 </html>

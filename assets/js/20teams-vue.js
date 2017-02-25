@@ -10,6 +10,69 @@ function getParameterByName(name, url){
     if (!results[2]) return '';
     return decodeURIComponent(results[2].replace(/\+/g, " "));
 }
+
+// for index
+var teams = new Vue({
+    el: '#index',
+    data:{
+        all_teams: []
+    },
+    created: function(){
+        this.fetchData();
+    },
+    computed: {
+        smartLife: function(){
+            return this.all_teams.filter(function(team){
+                return team.field == 'sl'
+            });
+        },
+        healthCare: function(){
+            return this.all_teams.filter(function(team){
+                return team.field == 'hc'
+            });
+        },
+        environment: function(){
+            return this.all_teams.filter(function(team){
+                return team.field == 'et'
+            });
+        },
+        societyCulture: function(){
+            return this.all_teams.filter(function(team){
+                return team.field == 'sy'
+            });
+        },
+        foodAgriculture: function(){
+            return this.all_teams.filter(function(team){
+                return team.field == 'fa'
+            });
+        }
+    },
+    methods: {
+        fetchData: function(){
+            var self = this;
+            $.getJSON('20teams.json', function(data){
+                self.all_teams = data;
+
+                self.setOtherData();
+            });
+
+        },
+        setOtherData: function(){
+            var self = this;
+            var imgBasePath = '../assets/img/20teams/';
+            var linkBase = 'show20.html?team_id=';
+
+            $.each(self.all_teams, function(i, v){
+                var coverImgSrc = imgBasePath + v.team_id + '/cover.jpg';
+                var link = linkBase + v.team_id;
+                self.$set(v, 'coverImgSrc', coverImgSrc);
+                self.$set(v, 'link', link);
+            });
+        }
+    }
+})
+
+// for single_team
 var team = new Vue({
     el: '#single_team',
     data: {
@@ -18,23 +81,6 @@ var team = new Vue({
     created: function(){
         this.fetchData();
     },
-    // computed: {
-    //     coverImgSrc: function(){
-    //         return this.current_team.imgBasePath + 'cover.jpg';
-    //     },
-    //     logoImgSrc: function(){
-    //         return this.current_team.imgBasePath + 'logo.png';
-    //     },
-    //     fieldImgSrc: function(){
-    //         return '../assets/img/20teams/' + this.current_team.field + '.png';
-    //     },
-    //     recordImgSrc: function(){
-    //         return this.current_team.imgBasePath + 'record.jpg';
-    //     },
-    //     productImgSrc: function(){
-    //         return this.current_team.imgBasePath + 'product.jpg';
-    //     }
-    // },
     methods: {
         fetchData: function(){
             var self = this;
@@ -51,11 +97,11 @@ var team = new Vue({
         },
         setImgSrc: function(){
             var self = this;
-            var imgBasePath = '../assets/img/20teams/' + this.current_team.team_id + '/';
+            var imgBasePath = '../assets/img/20teams/' + self.current_team.team_id + '/';
             self.$set(self.current_team, 'imgBasePath', imgBasePath);
 
             $.each(self.current_team.members, function(i, v){
-                var imgSrc = self.current_team.imgBasePath + 'members/' + (i + 1) + '.jpg';
+                var imgSrc = imgBasePath + 'members/' + (i + 1) + '.jpg';
                 self.$set(v, 'imgSrc', imgSrc);
             });
 
@@ -64,8 +110,6 @@ var team = new Vue({
             self.$set(self.current_team, 'recordImgSrc', imgBasePath + 'record.jpg');
             self.$set(self.current_team, 'productImgSrc', imgBasePath + 'product.jpg');
             self.$set(self.current_team, 'fieldImgSrc', '../assets/img/20teams/' + self.current_team.field + '.png');
-
-            
         }
     }
 });
