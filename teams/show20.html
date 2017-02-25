@@ -119,19 +119,6 @@
     
     <script type="text/javascript" src="../assets/js/general.js"></script>
     <script type="text/javascript" src="../assets/js/20teams-vue.js"></script>
-    <script type="text/javascript">
-        $('#single_team').fullpage({
-            scrollOverflow: true,
-            verticalCentered: false,
-            onLeave: function(index, nextIndex, direction){
-                if(index == 3 && direction == 'down'){
-                    $.fn.fullpage.reBuild();
-                }
-            },
-            afterResize: function(){
-                $.fn.fullpage.reBuild();
-            }
-        });
-    </script>
+    <script type="text/javascript" src="../assets/js/20teams-show.js"></script>        
 </body>
 </html>
