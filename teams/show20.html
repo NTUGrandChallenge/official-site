@@ -28,8 +28,7 @@
     <div id="single_team">
         <div class="section container-fluid">
             <div class="row row-custom" id="top">
-                <!-- <div class="blur-background" :style="'background-image: url(' + current_team.coverImgSrc + ')'"></div> -->
-                <img :src="current_team.coverImgSrc" alt="cover image" class="blur-background">
+                <img :src="current_team.coverImgSrc" alt="cover image" class="blur-background hidden-xs hidden-sm">
                 <div class="col-md-4 sidebar">
                     <div style="height: 40%;">
                         <img v-bind:src="current_team.logoImgSrc" alt="LOGO" id="logo">
@@ -38,21 +37,18 @@
                     <p id="slogan" v-html="current_team.slogan">    </p>
                     <img v-bind:src="current_team.fieldImgSrc" alt="field_img" id="field_img">
                 </div>
-                <div class="col-md-8 full-height flexbox-center" style="position: relative; padding: 0;">
+                <div class="col-md-8 image-wrapper flexbox-center">
                     <img :src="current_team.coverImgSrc" alt="cover image" class="big-image">
-                    <div :class="'fade-color ' + current_team.field"></div>
-                    <p id="challenge_definition" v-html="current_team.challenge_definition">    </p>
+                    <div :class="'hidden-xs hidden-sm fade-color ' + current_team.field"></div>
+                    <p id="challenge_definition" class="hidden-xs hidden-sm" v-html="current_team.challenge_definition">    </p>
                 </div>
+                <div class="col-xs-12 hidden-md hidden-lg"><p style="color: #fff; padding: 20px;" v-html="current_team.challenge_definition"></p></div>
             </div>
         </div>
         <div class="section container-fluid">
             <div class="row row-custom">
-                <!-- <div class="blur-background" :style="'background-image: url(' + current_team.recordImgSrc + ')'"></div> -->
-                <img :src="current_team.recordImgSrc" alt="record image" class="blur-background">
-                <div class="col-md-8 full-height flexbox-center" style="position: relative; padding: 0;">
-                    <img :src="current_team.recordImgSrc" alt="cover image" class="big-image">
-                </div>
-                <div class="col-md-4 sidebar flexbox-center">
+                <img :src="current_team.recordImgSrc" alt="record image" class="blur-background hidden-xs hidden-sm">
+                <div class="col-md-4 col-md-push-8 sidebar flexbox-center">
                     <div>
                         <h2 class="article-title">議題觀察</h2>
                         <article v-html="current_team.observation">
@@ -60,12 +56,14 @@
                         </article>
                     </div>
                 </div>
+                <div class="col-md-8 col-md-pull-4 image-wrapper flexbox-center">
+                    <img :src="current_team.recordImgSrc" alt="cover image" class="big-image">
+                </div>
             </div>
         </div>
         <div class="section container-fluid">
             <div class="row row-custom">
-                <!-- <div class="blur-background" :style="'background-image: url(' + current_team.productImgSrc + ')'"></div> -->
-                <img :src="current_team.productImgSrc" alt="product image" class="blur-background">
+                <img :src="current_team.productImgSrc" alt="product image" class="blur-background hidden-xs hidden-sm">
                 <div class="col-md-4 sidebar flexbox-center">
                     <div>
                         <h2 class="article-title">產品與服務</h2>
@@ -74,7 +72,7 @@
                         </article>
                     </div>
                 </div>
-                <div class="col-md-8 full-height flexbox-center" style="position: relative; padding: 0;">
+                <div class="col-md-8 image-wrapper flexbox-center">
                     <img :src="current_team.productImgSrc" alt="cover image" class="big-image">
                 </div>
             </div>

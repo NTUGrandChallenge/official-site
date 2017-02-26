@@ -7,15 +7,24 @@ body{
 	padding: 0;
 }
 #single_team .row-custom{
-	/*setting for blur background*/
 	position: relative;
-	height: 100vh;
+	/*height: 100vh;*/
 }
 #single_team .blur-background{
 	position: absolute;
 	width: 100%;
 	overflow: hidden;
 	filter: blur(5px) brightness(70%);
+}
+#single_team .image-wrapper{
+	height: 100vh;
+	position: relative; 
+	padding: 0;
+}
+@media screen and (max-width: 768px){
+	#single_team .image-wrapper{
+		height: auto;
+	}
 }
 #single_team .big-image{
 	width: 100%;
@@ -29,7 +38,8 @@ body{
 #single_team #top #logo{
 	width: 50%;
 	display: block;
-	margin: 50px auto;
+	margin: 0 auto;
+	padding: 50px 0;
 	border-radius: 50%;
 }
 #single_team #top #team_name{
