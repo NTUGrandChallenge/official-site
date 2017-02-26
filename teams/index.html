@@ -24,7 +24,29 @@
 
     <main id="container" role="main>">
         <div id="index" class="">
-            <div class="slideshow">
+            <div class="selector-container">
+                <div class="selector smart">
+                    <img src="../assets/img/20teams/smart_t.png" alt="SmartLife" class="icon hidden-xs">
+                    <h2 class="field-name">智慧生活</h2>
+                </div>
+                <div class="selector health">
+                    <img src="../assets/img/20teams/health_t.png" alt="HealthCare" class="icon hidden-xs">
+                    <h2 class="field-name">健康醫療</h2>
+                </div>
+                <div class="selector environment">
+                    <img src="../assets/img/20teams/environment_t.png" alt="Environment" class="icon hidden-xs">
+                    <h2 class="field-name">永續環境</h2>
+                </div>
+                <div class="selector society">
+                    <img src="../assets/img/20teams/society_t.png" alt="SocietyCulture" class="icon hidden-xs">
+                    <h2 class="field-name">社會文化</h2>
+                </div>
+                <div class="selector agriculture">
+                    <img src="../assets/img/20teams/agriculture_t.png" alt="FoodAgriculture" class="icon hidden-xs">
+                    <h2 class="field-name">食品與農業</h2>
+                </div>
+            </div>
+            <div class="slideshow" style="display: none;">
                 <ul class="slideshow-container">
                     <li class="slideshow-item">
                         <div id="smart" class="item-wrapper">
@@ -36,11 +58,11 @@
                             </div>
                         </div>
                         <div class="view-more">
-                            <span>OPEN</span>
+                            <span><i class="fa fa-chevron-down" aria-hidden="true"></i></span>
                         </div>
-                        <div class="close-view">
+                        <!-- <div class="close-view">
                             <span>CLOSE</span>
-                        </div>
+                        </div> -->
                         <div class="teams">
                             <!-- Team Cover -->
                             <a v-for="team in shuffle(smartLife)" :href="team.link">
@@ -69,11 +91,11 @@
                             </div>
                         </div>
                         <div class="view-more">
-                            <span>OPEN</span>
+                            <span><i class="fa fa-chevron-down" aria-hidden="true"></i></span>
                         </div>
-                        <div class="close-view">
+                       <!--  <div class="close-view">
                             <span>CLOSE</span>
-                        </div>
+                        </div> -->
                         <div class="teams">
                             <!-- Team Cover -->
                             <a v-for="team in shuffle(healthCare)" :href="team.link">
@@ -102,11 +124,11 @@
                             </div>
                         </div>
                         <div class="view-more">
-                            <span>OPEN</span>
+                            <span><i class="fa fa-chevron-down" aria-hidden="true"></i></span>
                         </div>
-                        <div class="close-view">
+                       <!--  <div class="close-view">
                             <span>CLOSE</span>
-                        </div>
+                        </div> -->
                         <div class="teams">
                             <!-- Team Cover -->
                             <a v-for="team in shuffle(environment)" :href="team.link">
@@ -135,11 +157,11 @@
                             </div>
                         </div>
                         <div class="view-more">
-                            <span>OPEN</span>
+                            <span><i class="fa fa-chevron-down" aria-hidden="true"></i></span>
                         </div>
-                        <div class="close-view">
+                       <!--  <div class="close-view">
                             <span>CLOSE</span>
-                        </div>
+                        </div> -->
                         <div class="teams">
                             <!-- Team Cover -->
                             <a v-for="team in shuffle(societyCulture)" :href="team.link">
@@ -168,11 +190,11 @@
                             </div>
                         </div>
                         <div class="view-more">
-                            <span>OPEN</span>
+                            <span><i class="fa fa-chevron-down" aria-hidden="true"></i></span>
                         </div>
-                        <div class="close-view">
+                       <!--  <div class="close-view">
                             <span>CLOSE</span>
-                        </div>
+                        </div> -->
                         <div class="teams">
                             <!-- Team Cover -->
                             <a v-for="team in shuffle(foodAgriculture)" :href="team.link">

@@ -26,6 +26,50 @@ a {
   text-align: center;
 }
 
+.selector-container{
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+}
+.selector{
+  cursor: pointer;
+}
+@media screen and (min-width: 768px){
+  .selector-container{
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .selector{
+    color: #fff;
+    -webkit-flex: 1;
+            flex: 1;
+  }
+}
+@media screen and (max-width: 768px){
+  .selector{
+    height: 20vh;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+.selector-container .icon{
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+}
+
 /* line 55, ../sass/team_intro.scss */
 .slideshow {
   margin-top: 50vh;

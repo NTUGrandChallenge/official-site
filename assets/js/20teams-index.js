@@ -20,10 +20,14 @@ function getTeams(fieldNum) {
 	return $('#' + getField(fieldNum) + ' ~ .teams');
 }
 
+function getSelectorBtn(fieldNum) {
+	return $('.' + getField(fieldNum) + '.selector')
+}
+
 // Showing team info
 function showcase(field) {
 	// setTimeout( function() {
-		getTeams(field).show();
+		getTeams(field).slideDown("slow");
 		getCloseBtn(field).css('display', 'block');
 	// }, 1000 );
 }
@@ -31,9 +35,19 @@ function showcase(field) {
 // Closing team info
 function hidecase(field) {
 	// setTimeout( function() {
-		getTeams(field).hide();
+		getTeams(field).slideUp("slow");
 		getCloseBtn(field).css('display', 'none');
 	// }, 1000 );
+}
+
+// Toggle team info
+function togglecase(field){
+	if(getTeams(field).is(':hidden')){
+		showcase(field);
+	}
+	else{
+		hidecase(field);
+	}
 }
 
 // Init current window width
@@ -77,6 +91,21 @@ for(var fnum = 1; fnum <=5; fnum++) {
 		// Scrolling Slides
 		$('#' + getField(fnum)).click(function() {
 			toSlide(fnum);
+			getViewmoreBtn(fnum).hide();
+			togglecase(fnum);
 		});
+
+		getSelectorBtn(fnum).click(function() {
+			toSlide(fnum);
+			$('.selector-container').fadeOut('1000');
+			$('.slideshow').fadeIn('1000');
+		})
 	}(fnum));
 }
+
+//fix selector-container x-axis
+// $(window).scroll(function(){
+//     $('.selector-container').css({
+//         'left': $(this).scrollLeft() + 0
+//     });
+// });
