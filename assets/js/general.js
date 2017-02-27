@@ -1,6 +1,6 @@
 //load template
-$('#navbar').load('/_navbar.html?v=1');
-$('footer').load('/_footer.html?v=1');
+$('#navbar').load('/_navbar.html?v=2');
+$('footer').load('/_footer.html?v=2');
 $('#messenger').load('/_messenger.html');
 if($('footer .toggle-collapse').is(':visible')){
     $('footer .collapse').removeClass('in');
