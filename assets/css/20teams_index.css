@@ -146,6 +146,12 @@ a {
 .text-wrapper .title {
   letter-spacing: 16px;
 }
+@media screen and (max-width: 768px){
+  .text-wrapper .title {
+    letter-spacing: 4px;
+    font-size: 16px;
+  }
+}
 /* line 119, ../sass/team_intro.scss */
 .text-wrapper .info {
   letter-spacing: 4px;
