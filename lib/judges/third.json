@@ -23,7 +23,7 @@
   {
     "name": "吳景陽",
     "title": "心元資本 投資總監",
-    "expertises": ["跨領域服務規劃和策略合作"],
+    "expertises": "跨領域服務規劃和策略合作",
     "experiences": ["畢業於交通大學資工系所", "曾任職於 Acer, PChome、美商 Splashtop、松翰科技等軟硬體電商公司"],
     "imageUrl": "../assets/img/judge/third_4.jpg"
   },
@@ -50,14 +50,14 @@
   },
   {
     "name": "黃明源",
-    "title": "馬偕紀念醫院 生醫發展中心/ 產業研發專責醫師",
+    "title": "馬偕紀念醫院生醫發展中心 產業研發專責醫師",
     "expertises": ["數位醫療與行動電子醫材", "急重症醫療", "臨床試驗與認證"],
     "experiences": ["馬偕醫學院醫學系助理教授 ", "馬偕紀念醫院人體試驗委員委員"],
     "imageUrl": "../assets/img/judge/third_8.jpg"
   },
   {
     "name": "蔡依玲",
-    "title": "AppWorks / Senior associate",
+    "title": "AppWorks Senior associate",
     "expertises": ["電子商務", "科技趨勢", "投資併購"],
     "experiences": ["台灣大哥大新事業開發 ", "鴻海集團新服務開發"],
     "imageUrl": "../assets/img/judge/third_9.jpg"
