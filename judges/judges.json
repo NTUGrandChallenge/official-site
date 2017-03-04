@@ -439,5 +439,70 @@
       ],
       "imageUrl": "../assets/img/judge/second_5.jpg"
     }
+  ],
+  "third": [
+    {
+      "name": "瞿志豪",
+      "title": "永加利醫學科技股份有限公司董事長",
+      "expertises": ["公司之策略規劃與購併 ", "引導公司策略轉型 ", "校園技術商業化 ", "組織運作"],
+      "experiences": ["Executive Vice President / Chief Technology Officer , Gigamedia Limited ", "臺大EMBA基金會副執行長 ", "遊戲橘子 / 大宇資訊 / Cambridge Entertainment Software Limited 董事"],
+      "imageUrl": "../assets/img/judge/third_1.jpg"
+    },
+    {
+      "name": "陳玠甫",
+      "title": "臺灣大學管理學院資訊管理所 博士候選人",
+      "expertises": ["企業新創事業策略規劃與執行 ", "創新事業投資與創投基金管理"],
+      "experiences": ["群碁投資 總經理 ", "宏碁 投資總監 (Chief Investment Officer） ", "華碩 策略投資協理 ", "日本野村集團JAFCO創投 投資協理"],
+      "imageUrl": "../assets/img/judge/third_2.jpg"
+    },
+    {
+      "name": "黃彥臻",
+      "title": "鑽石生技投資股份有限公司 資深協理",
+      "expertises": [],
+      "experiences": ["Co-funder/ China Biotech Advisor", "Vice-Chairman, Industrial Economics Development Committee", "Chinese Pharmaceutical Manufacture and Development Association (CPMDA) _ Manager", "Industrial Economics and Knowledge Center, ITRI _ Engineer"],
+      "imageUrl": "../assets/img/judge/third_3.jpg"
+    },
+    {
+      "name": "吳景陽",
+      "title": "心元資本 投資總監",
+      "expertises": ["跨領域服務規劃和策略合作"],
+      "experiences": ["畢業於交通大學資工系所", "曾任職於 Acer, PChome、美商 Splashtop、松翰科技等軟硬體電商公司"],
+      "imageUrl": "../assets/img/judge/third_4.jpg"
+    },
+    {
+      "name": "林以涵",
+      "title": "社企流 共同創辦人暨執行長",
+      "expertises": [],
+      "experiences": [],
+      "imageUrl": "../assets/img/judge/third_5.jpg"
+    },
+    {
+      "name": "鄭涵睿",
+      "title": "綠藤生機 共同創辦人/執行長",
+      "expertises": ["創新創業管理", "永續資源管理"],
+      "experiences": ["匯豐銀行策略發展經理 ", "麻省理工史隆管理學院 MBA ", "台大財務金融學系學士"],
+      "imageUrl": "../assets/img/judge/third_6.jpg"
+    },
+    {
+      "name": "廖文忠",
+      "title": "益鼎工程 名譽董事長",
+      "expertises": ["工程產業全球化", "服務業的工業4.0", "大數據在服務業的應用"],
+      "experiences": ["益鼎工程董事長、總經理", "中鼎集團副總經理、創研長", "台大EMBA基金會董事"],
+      "imageUrl": "../assets/img/judge/third_7.jpg"
+    },
+    {
+      "name": "黃明源",
+      "title": "馬偕紀念醫院 生醫發展中心/ 產業研發專責醫師",
+      "expertises": ["數位醫療與行動電子醫材", "急重症醫療", "臨床試驗與認證"],
+      "experiences": ["馬偕醫學院醫學系助理教授 ", "馬偕紀念醫院人體試驗委員委員"],
+      "imageUrl": "../assets/img/judge/third_8.jpg"
+    },
+    {
+      "name": "蔡依玲",
+      "title": "AppWorks / Senior associate",
+      "expertises": ["電子商務", "科技趨勢", "投資併購"],
+      "experiences": ["台灣大哥大新事業開發 ", "鴻海集團新服務開發"],
+      "imageUrl": "../assets/img/judge/third_9.jpg"
+    }
   ]
 }

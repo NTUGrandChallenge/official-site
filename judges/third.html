@@ -24,10 +24,10 @@
 
     <div class="container" id="judges">
         <div class="row" style="margin: 25px 0;">
-            <div class="col-md-2 phase-name text-center">
+            <div class="col-md-2 phase-name text-center active">
                 <a href="third.html">實作評選評審</a>
             </div>
-            <div class="col-md-2 phase-name text-center active">
+            <div class="col-md-2 phase-name text-center">
                 <a href="second.html">精煉評選評審</a>
             </div>
             <div class="col-md-2 phase-name text-center">
@@ -35,7 +35,7 @@
             </div>
         </div>
         <div class="row">
-            <one-judge v-for="judge in judges.second" :judge="judge"></one-judge>
+            <one-judge v-for="judge in judges.third" :judge="judge"></one-judge>
         </div>
     </div>
     
@@ -47,7 +47,7 @@
     <div id="messenger">
         
     </div>
-
+    
     
     <script type="text/javascript" src="../assets/js/general.js"></script>
     <script type="text/javascript" src="../assets/js/judges.js?v=1"></script>
