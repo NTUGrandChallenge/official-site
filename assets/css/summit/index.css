@@ -3,30 +3,39 @@ body {
   background-color: #000;
 }
 
-/* line 5, ../../sass/summit/index.scss */
-#navbar_button {
+/* line 24, ../../sass/summit/index.scss */
+#sidenav:hover #nav_button {
+  left: 300px;
+}
+/* line 27, ../../sass/summit/index.scss */
+#sidenav:hover #nav_menu {
+  width: 300px;
+}
+/* line 30, ../../sass/summit/index.scss */
+#sidenav #nav_button {
   position: fixed;
   left: 0;
   top: 10vh;
   color: #000;
   z-index: 100;
   cursor: pointer;
+  transition: all .5s;
 }
-/* line 15, ../../sass/summit/index.scss */
-#navbar_button .icon-wrapper {
+/* line 41, ../../sass/summit/index.scss */
+#sidenav #nav_button .icon-wrapper {
   z-index: 100;
   position: absolute;
   height: 60px;
   left: 5px;
   top: 0;
 }
-/* line 22, ../../sass/summit/index.scss */
-#navbar_button .icon-wrapper .fa-bars {
+/* line 48, ../../sass/summit/index.scss */
+#sidenav #nav_button .icon-wrapper .fa-bars {
   position: relative;
   line-height: 60px;
 }
-/* line 28, ../../sass/summit/index.scss */
-#navbar_button .triangle {
+/* line 53, ../../sass/summit/index.scss */
+#sidenav #nav_button .triangle {
   content: "";
   z-index: 99;
   position: absolute;
@@ -38,14 +47,67 @@ body {
   border-bottom: 30px solid transparent;
   border-left: 40px solid #fff;
 }
+/* line 67, ../../sass/summit/index.scss */
+#sidenav #nav_menu {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  height: 100vh;
+  width: 0;
+  background-color: #eee;
+  overflow: hidden;
+  transition: width .5s;
+}
 
-/* line 46, ../../sass/summit/index.scss */
+/* line 81, ../../sass/summit/index.scss */
 #top {
   background-color: #999;
   height: 100vh;
   position: relative;
 }
-/* line 51, ../../sass/summit/index.scss */
+/* line 86, ../../sass/summit/index.scss */
+#top .stars {
+  height: 100%;
+  width: 100%;
+  background-image: url("../../img/summit/circle.png");
+  background-size: cover;
+  background-position: center;
+  animation: spin 300s infinite linear;
+}
+@-webkit-keyframes spin {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+@-moz-keyframes spin {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+@-ms-keyframes spin {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+@keyframes spin {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+/* line 104, ../../sass/summit/index.scss */
 #top .text-container {
   position: absolute;
   width: 30vw;
@@ -53,7 +115,7 @@ body {
   left: 10vw;
   bottom: 0;
 }
-/* line 58, ../../sass/summit/index.scss */
+/* line 111, ../../sass/summit/index.scss */
 #top .text-container .trapezoid-wrapper {
   position: absolute;
   left: 0;
@@ -62,13 +124,13 @@ body {
   height: 100%;
   overflow: hidden;
 }
-/* line 66, ../../sass/summit/index.scss */
+/* line 119, ../../sass/summit/index.scss */
 #top .text-container .trapezoid-wrapper .trapezoid {
   position: absolute;
   left: 0;
   top: 0;
 }
-/* line 74, ../../sass/summit/index.scss */
+/* line 127, ../../sass/summit/index.scss */
 #top .fade-black {
   position: absolute;
   bottom: 0;
@@ -77,12 +139,12 @@ body {
   background: linear-gradient(to top, black, transparent, transparent);
 }
 
-/* line 83, ../../sass/summit/index.scss */
+/* line 136, ../../sass/summit/index.scss */
 #about {
   position: relative;
   height: 100vh;
 }
-/* line 89, ../../sass/summit/index.scss */
+/* line 142, ../../sass/summit/index.scss */
 #about .background {
   position: absolute;
   top: 0;
@@ -92,7 +154,7 @@ body {
   background-size: cover;
   background-position: center;
 }
-/* line 98, ../../sass/summit/index.scss */
+/* line 151, ../../sass/summit/index.scss */
 #about .black-mask {
   position: absolute;
   top: 0;
