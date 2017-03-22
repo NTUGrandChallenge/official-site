@@ -5,13 +5,9 @@ body {
 
 /* line 24, ../../sass/summit/index.scss */
 #sidenav:hover #nav_button {
-  left: 300px;
+  left: -50px;
 }
 /* line 27, ../../sass/summit/index.scss */
-#sidenav:hover #nav_menu {
-  width: 300px;
-}
-/* line 30, ../../sass/summit/index.scss */
 #sidenav #nav_button {
   position: fixed;
   left: 0;
@@ -21,7 +17,7 @@ body {
   cursor: pointer;
   transition: all .5s;
 }
-/* line 41, ../../sass/summit/index.scss */
+/* line 38, ../../sass/summit/index.scss */
 #sidenav #nav_button .icon-wrapper {
   z-index: 100;
   position: absolute;
@@ -29,12 +25,12 @@ body {
   left: 5px;
   top: 0;
 }
-/* line 48, ../../sass/summit/index.scss */
+/* line 45, ../../sass/summit/index.scss */
 #sidenav #nav_button .icon-wrapper .fa-bars {
   position: relative;
   line-height: 60px;
 }
-/* line 53, ../../sass/summit/index.scss */
+/* line 50, ../../sass/summit/index.scss */
 #sidenav #nav_button .triangle {
   content: "";
   z-index: 99;
@@ -47,8 +43,8 @@ body {
   border-bottom: 30px solid transparent;
   border-left: 40px solid #fff;
 }
-/* line 67, ../../sass/summit/index.scss */
-#sidenav #nav_menu {
+/* line 66, ../../sass/summit/index.scss */
+#sidenav #nav_menu .list {
   position: fixed;
   left: 0;
   top: 0;
@@ -56,17 +52,52 @@ body {
   height: 100vh;
   width: 0;
   background-color: #eee;
+  list-style-type: none;
   overflow: hidden;
-  transition: width .5s;
+  padding: 50px 0 0;
+  transition: width .4s ease-out;
+}
+/* line 79, ../../sass/summit/index.scss */
+#sidenav #nav_menu .list.expanded {
+  width: 300px;
+}
+/* line 83, ../../sass/summit/index.scss */
+#sidenav #nav_menu .list a, #sidenav #nav_menu .list a:hover {
+  text-decoration: none;
+  color: #333;
+}
+/* line 87, ../../sass/summit/index.scss */
+#sidenav #nav_menu .list li {
+  padding: 20px 40px;
+  width: 300px;
+}
+/* line 91, ../../sass/summit/index.scss */
+#sidenav #nav_menu .list li:hover {
+  background-color: #ffeb32;
+}
+/* line 94, ../../sass/summit/index.scss */
+#sidenav #nav_menu .list li .title-zh {
+  font-size: 28px;
+  font-weight: bold;
+}
+/* line 98, ../../sass/summit/index.scss */
+#sidenav #nav_menu .list li .title-en {
+  font-size: 24px;
+  font-style: italic;
+}
+/* line 104, ../../sass/summit/index.scss */
+#sidenav #nav_menu .list.sub {
+  left: 300px;
+  z-index: 99;
 }
 
-/* line 81, ../../sass/summit/index.scss */
+/* line 113, ../../sass/summit/index.scss */
 #top {
   background-color: #999;
   height: 100vh;
   position: relative;
 }
-/* line 86, ../../sass/summit/index.scss */
+/* line 118, ../../sass/summit/index.scss */
 #top .stars {
   height: 100%;
   width: 100%;
@@ -107,7 +138,7 @@ body {
     transform: rotateZ(360deg);
   }
 }
-/* line 104, ../../sass/summit/index.scss */
+/* line 136, ../../sass/summit/index.scss */
 #top .text-container {
   position: absolute;
   width: 30vw;
@@ -115,7 +146,7 @@ body {
   left: 10vw;
   bottom: 0;
 }
-/* line 111, ../../sass/summit/index.scss */
+/* line 143, ../../sass/summit/index.scss */
 #top .text-container .trapezoid-wrapper {
   position: absolute;
   left: 0;
@@ -124,13 +155,13 @@ body {
   height: 100%;
   overflow: hidden;
 }
-/* line 119, ../../sass/summit/index.scss */
+/* line 151, ../../sass/summit/index.scss */
 #top .text-container .trapezoid-wrapper .trapezoid {
   position: absolute;
   left: 0;
   top: 0;
 }
-/* line 127, ../../sass/summit/index.scss */
+/* line 159, ../../sass/summit/index.scss */
 #top .fade-black {
   position: absolute;
   bottom: 0;
@@ -139,12 +170,12 @@ body {
   background: linear-gradient(to top, black, transparent, transparent);
 }
 
-/* line 136, ../../sass/summit/index.scss */
+/* line 168, ../../sass/summit/index.scss */
 #about {
   position: relative;
   height: 100vh;
 }
-/* line 142, ../../sass/summit/index.scss */
+/* line 174, ../../sass/summit/index.scss */
 #about .background {
   position: absolute;
   top: 0;
@@ -154,7 +185,7 @@ body {
   background-size: cover;
   background-position: center;
 }
-/* line 151, ../../sass/summit/index.scss */
+/* line 183, ../../sass/summit/index.scss */
 #about .black-mask {
   position: absolute;
   top: 0;
