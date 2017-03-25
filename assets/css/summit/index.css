@@ -3,11 +3,11 @@ body {
   background-color: #000;
 }
 
-/* line 24, ../../sass/summit/index.scss */
+/* line 25, ../../sass/summit/index.scss */
 #sidenav:hover #nav_button {
   left: -50px;
 }
-/* line 27, ../../sass/summit/index.scss */
+/* line 28, ../../sass/summit/index.scss */
 #sidenav #nav_button {
   position: fixed;
   left: 0;
@@ -17,7 +17,7 @@ body {
   cursor: pointer;
   transition: all .5s;
 }
-/* line 38, ../../sass/summit/index.scss */
+/* line 39, ../../sass/summit/index.scss */
 #sidenav #nav_button .icon-wrapper {
   z-index: 100;
   position: absolute;
@@ -25,12 +25,12 @@ body {
   left: 5px;
   top: 0;
 }
-/* line 45, ../../sass/summit/index.scss */
+/* line 46, ../../sass/summit/index.scss */
 #sidenav #nav_button .icon-wrapper .fa-bars {
   position: relative;
   line-height: 60px;
 }
-/* line 50, ../../sass/summit/index.scss */
+/* line 51, ../../sass/summit/index.scss */
 #sidenav #nav_button .triangle {
   content: "";
   z-index: 99;
@@ -43,7 +43,7 @@ body {
   border-bottom: 30px solid transparent;
   border-left: 40px solid #fff;
 }
-/* line 66, ../../sass/summit/index.scss */
+/* line 67, ../../sass/summit/index.scss */
 #sidenav #nav_menu .list {
   position: fixed;
   left: 0;
@@ -52,52 +52,86 @@ body {
   height: 100vh;
   width: 0;
   background-color: #eee;
-  list-style-type: none;
   overflow: hidden;
-  padding: 50px 0 0;
   transition: width .4s ease-out;
 }
 /* line 79, ../../sass/summit/index.scss */
 #sidenav #nav_menu .list.expanded {
   width: 300px;
 }
-/* line 83, ../../sass/summit/index.scss */
+@media screen and (max-width: 768px) {
+  /* line 79, ../../sass/summit/index.scss */
+  #sidenav #nav_menu .list.expanded {
+    width: 100vw;
+  }
+}
+/* line 86, ../../sass/summit/index.scss */
 #sidenav #nav_menu .list a, #sidenav #nav_menu .list a:hover {
   text-decoration: none;
   color: #333;
 }
-/* line 87, ../../sass/summit/index.scss */
-#sidenav #nav_menu .list li {
+/* line 90, ../../sass/summit/index.scss */
+#sidenav #nav_menu .list .close_button {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+/* line 95, ../../sass/summit/index.scss */
+#sidenav #nav_menu .list ul {
+  list-style-type: none;
+  padding: 50px 0 0;
+}
+/* line 99, ../../sass/summit/index.scss */
+#sidenav #nav_menu .list ul li {
   padding: 20px 40px;
   width: 300px;
 }
-/* line 91, ../../sass/summit/index.scss */
-#sidenav #nav_menu .list li:hover {
+@media screen and (max-width: 768px) {
+  /* line 99, ../../sass/summit/index.scss */
+  #sidenav #nav_menu .list ul li {
+    width: 100vw;
+  }
+}
+/* line 107, ../../sass/summit/index.scss */
+#sidenav #nav_menu .list ul li:hover {
   background-color: #ffeb32;
 }
-/* line 94, ../../sass/summit/index.scss */
-#sidenav #nav_menu .list li .title-zh {
+/* line 110, ../../sass/summit/index.scss */
+#sidenav #nav_menu .list ul li .title-zh {
   font-size: 28px;
   font-weight: bold;
 }
-/* line 98, ../../sass/summit/index.scss */
-#sidenav #nav_menu .list li .title-en {
+/* line 114, ../../sass/summit/index.scss */
+#sidenav #nav_menu .list ul li .title-en {
   font-size: 24px;
   font-style: italic;
 }
-/* line 104, ../../sass/summit/index.scss */
+/* line 121, ../../sass/summit/index.scss */
 #sidenav #nav_menu .list.sub {
   left: 300px;
   z-index: 99;
+  background-color: #ddd;
+}
+@media screen and (max-width: 768px) {
+  /* line 121, ../../sass/summit/index.scss */
+  #sidenav #nav_menu .list.sub {
+    left: 0;
+  }
+}
+/* line 129, ../../sass/summit/index.scss */
+#sidenav #nav_menu .list.sub .back_button {
+  position: absolute;
+  left: 10px;
+  top: 10px;
 }
 
-/* line 113, ../../sass/summit/index.scss */
+/* line 139, ../../sass/summit/index.scss */
 #top {
   background-color: #999;
   height: 100vh;
   position: relative;
 }
-/* line 118, ../../sass/summit/index.scss */
+/* line 144, ../../sass/summit/index.scss */
 #top .stars {
   height: 100%;
   width: 100%;
@@ -138,7 +172,7 @@ body {
     transform: rotateZ(360deg);
   }
 }
-/* line 136, ../../sass/summit/index.scss */
+/* line 162, ../../sass/summit/index.scss */
 #top .text-container {
   position: absolute;
   width: 30vw;
@@ -146,7 +180,7 @@ body {
   left: 10vw;
   bottom: 0;
 }
-/* line 143, ../../sass/summit/index.scss */
+/* line 169, ../../sass/summit/index.scss */
 #top .text-container .trapezoid-wrapper {
   position: absolute;
   left: 0;
@@ -155,13 +189,43 @@ body {
   height: 100%;
   overflow: hidden;
 }
-/* line 151, ../../sass/summit/index.scss */
+/* line 177, ../../sass/summit/index.scss */
 #top .text-container .trapezoid-wrapper .trapezoid {
   position: absolute;
   left: 0;
   top: 0;
 }
-/* line 159, ../../sass/summit/index.scss */
+/* line 185, ../../sass/summit/index.scss */
+#top .sign-button {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 60px;
+  width: 180px;
+}
+/* line 195, ../../sass/summit/index.scss */
+#top .sign-button:hover .trapezoid path {
+  fill: #ffeb32;
+}
+/* line 199, ../../sass/summit/index.scss */
+#top .sign-button .trapezoid {
+  position: absolute;
+}
+/* line 202, ../../sass/summit/index.scss */
+#top .sign-button .text {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  padding-right: 10px;
+  font-size: 20px;
+  text-align: right;
+}
+/* line 211, ../../sass/summit/index.scss */
+#top .sign-button .text .zh {
+  font-weight: bold;
+}
+/* line 217, ../../sass/summit/index.scss */
 #top .fade-black {
   position: absolute;
   bottom: 0;
@@ -170,12 +234,12 @@ body {
   background: linear-gradient(to top, black, transparent, transparent);
 }
 
-/* line 168, ../../sass/summit/index.scss */
+/* line 226, ../../sass/summit/index.scss */
 #about {
   position: relative;
   height: 100vh;
 }
-/* line 174, ../../sass/summit/index.scss */
+/* line 232, ../../sass/summit/index.scss */
 #about .background {
   position: absolute;
   top: 0;
@@ -185,7 +249,7 @@ body {
   background-size: cover;
   background-position: center;
 }
-/* line 183, ../../sass/summit/index.scss */
+/* line 241, ../../sass/summit/index.scss */
 #about .black-mask {
   position: absolute;
   top: 0;

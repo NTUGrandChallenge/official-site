@@ -17,6 +17,7 @@ body{
 		@content;
 	} 
 }
+$yellow: #ffeb32;
 
 #sidenav{
 	$nav_width: 300px;
@@ -71,40 +72,65 @@ body{
 			height: 100vh;
 			width: 0;
 			background-color: #eee;
-			list-style-type: none;
 			overflow: hidden;
-			padding: 50px 0 0;
 			transition: width .4s ease-out;
+
 
 			&.expanded{
 				width: $nav_width;
+				@media screen and (max-width: 768px){
+					width: 100vw;
+				}
 			}
 
 			a, a:hover{
 				text-decoration: none;
 				color: #333;
 			}
-			li{
-				padding: 20px 40px;
-				width: $nav_width;
+			.close_button{
+				position: absolute;
+				right: 10px;
+				top: 10px;
+			}
+			ul{
+				list-style-type: none;
+				padding: 50px 0 0;
 
-				&:hover{
-					background-color: #ffeb32;
-				}
-				.title-zh{
-					font-size: 28px;
-					font-weight: bold;
-				}
-				.title-en{
-					font-size: 24px;
-					font-style: italic;
+				li{
+					padding: 20px 40px;
+					width: $nav_width;
+
+					@media screen and (max-width: 768px){
+						width: 100vw;
+					}
+
+					&:hover{
+						background-color: $yellow;
+					}
+					.title-zh{
+						font-size: 28px;
+						font-weight: bold;
+					}
+					.title-en{
+						font-size: 24px;
+						font-style: italic;
+					}
 				}
 			}
 		}
 		.list.sub{
 			left: $nav_width;
 			z-index: 99;
-			// transition-delay: .4s;
+			background-color: #ddd;
+			@media screen and (max-width: 768px){
+					left: 0;
+			}
+
+			.back_button{
+				position: absolute;
+				left: 10px;
+				top: 10px;
+			}
 		}
 	}
 }
@@ -154,6 +180,38 @@ $padding_horz: 10vw;
 				top: 0;
 			}
 		}
+    }
+
+    .sign-button{
+    	$button_width: 180px;
+    	$button_height: 60px;
+    	position: absolute;
+    	right: 0;
+    	top: 0;
+    	height: $button_height;
+    	width: $button_width;
+
+		&:hover{
+			.trapezoid path{
+				fill: $yellow;
+			}
+		}
+    	.trapezoid{
+    		position: absolute;
+    	}
+    	.text{
+    		position: absolute;
+			right: 0;
+			top: 50%;
+		    transform: translateY(-50%);
+		    padding-right: 10px;
+			font-size: 20px;
+			text-align: right;
+
+    		.zh{
+    			font-weight: bold;
+    		}
+    	}
     }
 
 	.fade-black{
