@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="shortcut icon" href="../assets/img/logo.ico">
+    <link rel="stylesheet" href="../assets/plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/plugins/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../assets/plugins/sweetalert/dist/sweetalert.css">
+    <link rel="stylesheet" href="../assets/css/general.css">
+    <link rel="stylesheet" href="../assets/css/summit/index.css">
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../assets/plugins/sweetalert/dist/sweetalert.min.js"></script>
+
+    <style>
+        /* line 6, ../../sass/summit/index.scss */
+        html * {
+          font-family: 'Futura-Medium', 'Noto Sans TC', sans-serif;
+        }
+
+        /* line 10, ../../sass/summit/index.scss */
+        body {
+          background-color: #000;
+        }
+
+        /* line 34, ../../sass/summit/index.scss */
+        #sidenav:hover #nav_button {
+          left: -50px;
+        }
+        /* line 37, ../../sass/summit/index.scss */
+        #sidenav #nav_button {
+          position: fixed;
+          left: 0;
+          top: 10vh;
+          color: #000;
+          z-index: 100;
+          cursor: pointer;
+          transition: all .5s;
+        }
+        /* line 48, ../../sass/summit/index.scss */
+        #sidenav #nav_button .icon-wrapper {
+          z-index: 100;
+          position: absolute;
+          height: 60px;
+          left: 5px;
+          top: 0;
+        }
+        /* line 55, ../../sass/summit/index.scss */
+        #sidenav #nav_button .icon-wrapper .fa {
+          position: relative;
+          line-height: 60px;
+        }
+        /* line 60, ../../sass/summit/index.scss */
+        #sidenav #nav_button .triangle {
+          content: "";
+          z-index: 99;
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 0;
+          height: 0;
+          border-top: 30px solid transparent;
+          border-bottom: 30px solid transparent;
+          border-left: 40px solid #fff;
+        }
+        /* line 76, ../../sass/summit/index.scss */
+        #sidenav #nav_menu .list {
+          position: fixed;
+          left: 0;
+          top: 0;
+          z-index: 100;
+          height: 100vh;
+          width: 0;
+          background-color: #eee;
+          overflow: hidden;
+          transition: width .4s ease-out;
+        }
+        /* line 88, ../../sass/summit/index.scss */
+        #sidenav #nav_menu .list.expanded {
+          width: 300px;
+        }
+        @media screen and (max-width: 768px) {
+          /* line 88, ../../sass/summit/index.scss */
+          #sidenav #nav_menu .list.expanded {
+            width: 100vw;
+          }
+        }
+        /* line 95, ../../sass/summit/index.scss */
+        #sidenav #nav_menu .list a, #sidenav #nav_menu .list a:hover {
+          text-decoration: none;
+          color: #333;
+        }
+        /* line 99, ../../sass/summit/index.scss */
+        #sidenav #nav_menu .list .close_button {
+          position: absolute;
+          right: 10px;
+          top: 10px;
+        }
+        /* line 104, ../../sass/summit/index.scss */
+        #sidenav #nav_menu .list ul {
+          list-style-type: none;
+          padding: 50px 0 0;
+        }
+        /* line 108, ../../sass/summit/index.scss */
+        #sidenav #nav_menu .list h2 {
+          padding: 20px 40px;
+          width: 300px;
+        }
+        @media screen and (max-width: 768px) {
+          /* line 108, ../../sass/summit/index.scss */
+          #sidenav #nav_menu .list h2 {
+            width: 100vw;
+          }
+        }
+        /* line 116, ../../sass/summit/index.scss */
+        #sidenav #nav_menu .list ul li:hover {
+          background-color: #ffeb32;
+        }
+        /* line 119, ../../sass/summit/index.scss */
+        #sidenav #nav_menu .list ul li .title-zh {
+          font-size: 28px;
+          font-weight: bold;
+        }
+        /* line 123, ../../sass/summit/index.scss */
+        #sidenav #nav_menu .list ul li .title-en {
+          font-size: 24px;
+          font-style: italic;
+        }
+        /* line 130, ../../sass/summit/index.scss */
+        #sidenav #nav_menu .list.sub {
+          left: 300px;
+          z-index: 99;
+          background-color: #ddd;
+        }
+        @media screen and (max-width: 768px) {
+          /* line 130, ../../sass/summit/index.scss */
+          #sidenav #nav_menu .list.sub {
+            left: 0;
+          }
+        }
+        /* line 138, ../../sass/summit/index.scss */
+        #sidenav #nav_menu .list.sub .back_button {
+          position: absolute;
+          left: 10px;
+          top: 10px;
+        }
+
+        .videoWrapper {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 */
+            height: 0;
+        }
+        .videoWrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div id="sidenav">
+        <span id="nav_button">
+            <span class="triangle"></span>
+            <span class="icon-wrapper">
+                <i class="fa fa-info fa-2x" aria-hidden="true"></i>
+            </span>
+        </span>
+        <div id="nav_menu">
+            <nav class="list main">
+                <span class="close_button"><i class="fa fa-times fa-2x" aria-hidden="true"></i></span>
+                <h2>活動網站<br>Coming Soon!</h2>
+                <a href="https://ntuchallenge.com/">
+                    <h2 style="font-size: 20px;">回到首頁</h2>
+                </a>
+            </nav>
+        </div>
+    </div>
+
+    <div class="videoWrapper">
+        <iframe width="1280" height="720" src="https://www.youtube.com/embed/mFfumhBpcQA?autoplay=1&rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+    </div>
+    
+    <script>
+        var nav_width = 300;
+        var nav_transition_time = 400;
+
+        // sidenav expand control
+        $('#sidenav').hover(function(){
+            $(this).find('.list.main').addClass('expanded');
+        }, function(){
+            $(this).find('.list.main').delay(nav_transition_time).queue(function(next){
+                $(this).removeClass('expanded');
+                next();
+            });
+        });
+        $('#sidenav .list.main li.hasSub').hover(function(){
+            $(this).find('.list.sub').delay(nav_transition_time).queue(function(next){
+                $(this).addClass('expanded');
+                next();
+            });
+        }, function(){
+            $(this).find('.list.sub').clearQueue();
+            $(this).find('.list.sub').removeClass('expanded');
+        });
+
+        // sidnav exit and back control on mobile
+        $('#sidenav .close_button').click(function(){
+            $('#sidenav .list').removeClass('expanded');
+            $('#sidenav').trigger('mouseleave');    //not work QQ
+        })
+        $('#sidenav .list.sub .back_button').click(function(){
+            $('#sidenav .list.sub').removeClass('expanded');
+})
+    </script>
+</body>
+</html>
