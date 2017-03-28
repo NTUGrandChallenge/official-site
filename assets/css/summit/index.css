@@ -175,8 +175,9 @@ p {
   background-repeat: no-repeat;
   height: 100vh;
   position: relative;
+  overflow: hidden;
 }
-/* line 11, ../../sass/summit/index.scss */
+/* line 12, ../../sass/summit/index.scss */
 #top .mountains-container .mountain, #top .pulse, #top .title {
   position: absolute;
   height: 100%;
@@ -185,7 +186,7 @@ p {
   background-repeat: no-repeat;
   background-position: center bottom;
 }
-/* line 19, ../../sass/summit/index.scss */
+/* line 20, ../../sass/summit/index.scss */
 #top .stars {
   position: absolute;
   top: -50%;
@@ -196,13 +197,13 @@ p {
   background-repeat: no-repeat;
   background-position: center;
 }
-/* line 28, ../../sass/summit/index.scss */
+/* line 29, ../../sass/summit/index.scss */
 #top .stars.inside {
   background-image: url("../../img/summit/index/stars_inside.png");
   opacity: 0.4;
   animation: spin 60s infinite linear;
 }
-/* line 33, ../../sass/summit/index.scss */
+/* line 34, ../../sass/summit/index.scss */
 #top .stars.outside {
   background-image: url("../../img/summit/index/stars_outside.png");
   opacity: 0.2;
@@ -240,7 +241,7 @@ p {
     transform: rotateZ(360deg);
   }
 }
-/* line 48, ../../sass/summit/index.scss */
+/* line 49, ../../sass/summit/index.scss */
 #top .mountains-container {
   position: absolute;
   top: 0;
@@ -322,35 +323,35 @@ p {
     perspective: 200px;
   }
 }
-/* line 72, ../../sass/summit/index.scss */
+/* line 73, ../../sass/summit/index.scss */
 #top .mountains-container .mountain {
   top: 100%;
   animation-name: rise;
   animation-timing-function: ease;
   animation-fill-mode: forwards;
 }
-/* line 81, ../../sass/summit/index.scss */
+/* line 82, ../../sass/summit/index.scss */
 #top .mountains-container .mountain.m1 {
   background-image: url("../../img/summit/index/mountain1.png");
   z-index: 3;
   animation-duration: 1.5s;
   animation-delay: 0;
 }
-/* line 87, ../../sass/summit/index.scss */
+/* line 88, ../../sass/summit/index.scss */
 #top .mountains-container .mountain.m2 {
   background-image: url("../../img/summit/index/mountain2.png");
   z-index: 4;
   animation-duration: 0.9s;
   animation-delay: 0.3s;
 }
-/* line 93, ../../sass/summit/index.scss */
+/* line 94, ../../sass/summit/index.scss */
 #top .mountains-container .mountain.m3 {
   background-image: url("../../img/summit/index/mountain3.png");
   z-index: 2;
   animation-duration: 0.8s;
   animation-delay: 0.7s;
 }
-/* line 99, ../../sass/summit/index.scss */
+/* line 100, ../../sass/summit/index.scss */
 #top .mountains-container .mountain.m4 {
   background-image: url("../../img/summit/index/mountain4.png");
   z-index: 1;
@@ -398,7 +399,7 @@ p {
     transform: translateZ(-20px);
   }
 }
-/* line 118, ../../sass/summit/index.scss */
+/* line 119, ../../sass/summit/index.scss */
 #top .pulse {
   background-image: url("../../img/summit/index/pulse.png");
   opacity: 0;
@@ -449,7 +450,7 @@ p {
     opacity: 0;
   }
 }
-/* line 137, ../../sass/summit/index.scss */
+/* line 138, ../../sass/summit/index.scss */
 #top .title {
   background-image: url("../../img/summit/index/title.png");
   background-position: center;
@@ -491,7 +492,7 @@ p {
     opacity: 1;
   }
 }
-/* line 157, ../../sass/summit/index.scss */
+/* line 158, ../../sass/summit/index.scss */
 #top .text-container {
   position: absolute;
   width: 30vw;
@@ -499,7 +500,7 @@ p {
   left: 10vw;
   bottom: 0;
 }
-/* line 164, ../../sass/summit/index.scss */
+/* line 165, ../../sass/summit/index.scss */
 #top .text-container .trapezoid-wrapper {
   position: absolute;
   left: 0;
@@ -508,13 +509,13 @@ p {
   height: 100%;
   overflow: hidden;
 }
-/* line 172, ../../sass/summit/index.scss */
+/* line 173, ../../sass/summit/index.scss */
 #top .text-container .trapezoid-wrapper .trapezoid {
   position: absolute;
   left: 0;
   top: 0;
 }
-/* line 180, ../../sass/summit/index.scss */
+/* line 181, ../../sass/summit/index.scss */
 #top .sign-button {
   position: absolute;
   right: 0;
@@ -522,15 +523,15 @@ p {
   height: 60px;
   width: 180px;
 }
-/* line 190, ../../sass/summit/index.scss */
+/* line 191, ../../sass/summit/index.scss */
 #top .sign-button:hover .trapezoid path {
   fill: #ffeb32;
 }
-/* line 194, ../../sass/summit/index.scss */
+/* line 195, ../../sass/summit/index.scss */
 #top .sign-button .trapezoid {
   position: absolute;
 }
-/* line 197, ../../sass/summit/index.scss */
+/* line 198, ../../sass/summit/index.scss */
 #top .sign-button .text {
   position: absolute;
   right: 0;
@@ -540,11 +541,11 @@ p {
   font-size: 20px;
   text-align: right;
 }
-/* line 206, ../../sass/summit/index.scss */
+/* line 207, ../../sass/summit/index.scss */
 #top .sign-button .text .zh {
   font-weight: bold;
 }
-/* line 212, ../../sass/summit/index.scss */
+/* line 213, ../../sass/summit/index.scss */
 #top .fade-black {
   position: absolute;
   bottom: 0;
@@ -553,12 +554,13 @@ p {
   background: linear-gradient(to top, black, rgba(58, 65, 104, 0.23), transparent);
 }
 
-/* line 221, ../../sass/summit/index.scss */
+/* line 222, ../../sass/summit/index.scss */
 #about {
   position: relative;
   height: 100vh;
+  color: #fff;
 }
-/* line 227, ../../sass/summit/index.scss */
+/* line 229, ../../sass/summit/index.scss */
 #about .background {
   position: absolute;
   top: 0;
@@ -568,7 +570,7 @@ p {
   background-size: cover;
   background-position: center;
 }
-/* line 236, ../../sass/summit/index.scss */
+/* line 238, ../../sass/summit/index.scss */
 #about .black-mask {
   position: absolute;
   top: 0;
@@ -577,10 +579,11 @@ p {
   width: 100vw;
   background-color: #000;
   opacity: 0.7;
+  z-index: -1;
 }
 
 /*full width five column*/
-/* line 249, ../../sass/summit/index.scss */
+/* line 252, ../../sass/summit/index.scss */
 .col-xs-5ths,
 .col-sm-5ths,
 .col-md-5ths,
@@ -591,65 +594,65 @@ p {
   padding-left: 10px;
 }
 
-/* line 258, ../../sass/summit/index.scss */
+/* line 261, ../../sass/summit/index.scss */
 .col-xs-5ths {
   width: 20%;
   float: left;
 }
 
 @media (min-width: 768px) {
-  /* line 263, ../../sass/summit/index.scss */
+  /* line 266, ../../sass/summit/index.scss */
   .col-sm-5ths {
     width: 20%;
     float: left;
   }
 }
 @media (min-width: 992px) {
-  /* line 269, ../../sass/summit/index.scss */
+  /* line 272, ../../sass/summit/index.scss */
   .col-md-5ths {
     width: 20%;
     float: left;
   }
 }
 @media (min-width: 1200px) {
-  /* line 275, ../../sass/summit/index.scss */
+  /* line 278, ../../sass/summit/index.scss */
   .col-lg-5ths {
     width: 20%;
     float: left;
   }
 }
-/* line 280, ../../sass/summit/index.scss */
+/* line 283, ../../sass/summit/index.scss */
 #five {
   padding: 50px 10vw;
 }
-/* line 283, ../../sass/summit/index.scss */
+/* line 286, ../../sass/summit/index.scss */
 #five .title {
   margin-bottom: 30px;
   color: #fff;
 }
-/* line 288, ../../sass/summit/index.scss */
+/* line 291, ../../sass/summit/index.scss */
 #five .activities-container .activity {
   text-align: center;
   padding: 0 30px;
 }
-/* line 293, ../../sass/summit/index.scss */
+/* line 296, ../../sass/summit/index.scss */
 #five .activities-container .activity:hover .image-wrapper img.active {
   opacity: 1;
 }
-/* line 296, ../../sass/summit/index.scss */
+/* line 299, ../../sass/summit/index.scss */
 #five .activities-container .activity:hover .title-wrapper {
   opacity: 1;
 }
-/* line 300, ../../sass/summit/index.scss */
+/* line 303, ../../sass/summit/index.scss */
 #five .activities-container .activity .image-wrapper {
   position: relative;
 }
-/* line 303, ../../sass/summit/index.scss */
+/* line 306, ../../sass/summit/index.scss */
 #five .activities-container .activity .image-wrapper img {
   width: 100%;
   animation: spin 15s linear infinite;
 }
-/* line 307, ../../sass/summit/index.scss */
+/* line 310, ../../sass/summit/index.scss */
 #five .activities-container .activity .image-wrapper img.active {
   position: absolute;
   left: 0;
@@ -657,7 +660,7 @@ p {
   opacity: 0;
   transition: opacity .3s ease;
 }
-/* line 316, ../../sass/summit/index.scss */
+/* line 319, ../../sass/summit/index.scss */
 #five .activities-container .activity .title-wrapper {
   margin-top: 30px;
   display: inline-block;
@@ -667,22 +670,22 @@ p {
   opacity: 0;
   transition: opacity .3s ease;
 }
-/* line 325, ../../sass/summit/index.scss */
+/* line 328, ../../sass/summit/index.scss */
 #five .activities-container .activity .title-wrapper .zh {
   font-weight: bold;
 }
-/* line 328, ../../sass/summit/index.scss */
+/* line 331, ../../sass/summit/index.scss */
 #five .activities-container .activity .title-wrapper .en {
   font-style: italic;
   font-weight: 100;
 }
-/* line 335, ../../sass/summit/index.scss */
+/* line 338, ../../sass/summit/index.scss */
 #five .descriptions-container {
   position: relative;
   height: 100px;
   margin-top: 50px;
 }
-/* line 340, ../../sass/summit/index.scss */
+/* line 343, ../../sass/summit/index.scss */
 #five .descriptions-container .description {
   position: absolute;
   width: 80%;
@@ -693,8 +696,46 @@ p {
   opacity: 0;
   transition: all .5s ease;
 }
-/* line 350, ../../sass/summit/index.scss */
+/* line 353, ../../sass/summit/index.scss */
 #five .descriptions-container .description.active {
   opacity: 1;
   right: 0;
+}
+
+/* line 361, ../../sass/summit/index.scss */
+#attend {
+  padding: 50px 10vw;
+  color: #fff;
+}
+/* line 366, ../../sass/summit/index.scss */
+#attend #schedule {
+  text-align: center;
+}
+/* line 369, ../../sass/summit/index.scss */
+#attend #schedule .grid {
+  height: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+/* line 385, ../../sass/summit/index.scss */
+#attend .map-container {
+  position: relative;
+  height: 0;
+  padding-bottom: 75%;
+}
+/* line 390, ../../sass/summit/index.scss */
+#attend .map-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
 }
