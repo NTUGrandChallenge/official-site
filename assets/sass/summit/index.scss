@@ -247,6 +247,58 @@ $padding_horz: 10vw;
 	}
 }
 
+#principle{
+	padding: 50px $padding_horz;
+	color: #fff;
+	background-image: url('../../img/summit/index/principle_bg.png');
+	background-position: left top;
+	background-size: contain;
+	background-repeat: no-repeat;
+
+	.background-N{
+	}
+
+	.one-man{
+		margin-bottom: 50px;
+
+		.circular-img{
+			width: 100%;
+			border-radius: 50%;
+		}
+
+		.title{
+			margin-top: 20px;
+			margin-bottom: 0;
+		}
+		.name{
+			font-size: 24px;
+		}
+		.text-container{
+			position: relative;
+			margin-top: 50px;
+
+			.quote{
+				position: absolute;
+				width: 5%;
+
+				&.start{
+					left: 0;
+					top: 0;
+				}
+				&.end{
+					right: 0;
+					bottom: 0;
+				}
+			}
+			p{
+				margin: 0;
+				padding: 50px 50px 25px;
+				font-size: 30px;
+				text-align: justify;
+			}
+		}
+	}
+}
 
 /*full width five column*/
 .col-xs-5ths,
@@ -361,7 +413,6 @@ $padding_horz: 10vw;
 #attend{
 	padding: 50px $padding_horz;
 	color: #fff;
-	
 
 	#schedule{
 		text-align: center;

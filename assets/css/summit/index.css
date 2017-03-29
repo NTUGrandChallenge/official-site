@@ -582,8 +582,63 @@ p {
   z-index: -1;
 }
 
+/* line 250, ../../sass/summit/index.scss */
+#principle {
+  padding: 50px 10vw;
+  color: #fff;
+  background-image: url("../../img/summit/index/principle_bg.png");
+  background-position: left top;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+/* line 261, ../../sass/summit/index.scss */
+#principle .one-man {
+  margin-bottom: 50px;
+}
+/* line 264, ../../sass/summit/index.scss */
+#principle .one-man .circular-img {
+  width: 100%;
+  border-radius: 50%;
+}
+/* line 269, ../../sass/summit/index.scss */
+#principle .one-man .title {
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+/* line 273, ../../sass/summit/index.scss */
+#principle .one-man .name {
+  font-size: 24px;
+}
+/* line 276, ../../sass/summit/index.scss */
+#principle .one-man .text-container {
+  position: relative;
+  margin-top: 50px;
+}
+/* line 280, ../../sass/summit/index.scss */
+#principle .one-man .text-container .quote {
+  position: absolute;
+  width: 5%;
+}
+/* line 284, ../../sass/summit/index.scss */
+#principle .one-man .text-container .quote.start {
+  left: 0;
+  top: 0;
+}
+/* line 288, ../../sass/summit/index.scss */
+#principle .one-man .text-container .quote.end {
+  right: 0;
+  bottom: 0;
+}
+/* line 293, ../../sass/summit/index.scss */
+#principle .one-man .text-container p {
+  margin: 0;
+  padding: 50px 50px 25px;
+  font-size: 30px;
+  text-align: justify;
+}
+
 /*full width five column*/
-/* line 252, ../../sass/summit/index.scss */
+/* line 304, ../../sass/summit/index.scss */
 .col-xs-5ths,
 .col-sm-5ths,
 .col-md-5ths,
@@ -594,65 +649,65 @@ p {
   padding-left: 10px;
 }
 
-/* line 261, ../../sass/summit/index.scss */
+/* line 313, ../../sass/summit/index.scss */
 .col-xs-5ths {
   width: 20%;
   float: left;
 }
 
 @media (min-width: 768px) {
-  /* line 266, ../../sass/summit/index.scss */
+  /* line 318, ../../sass/summit/index.scss */
   .col-sm-5ths {
     width: 20%;
     float: left;
   }
 }
 @media (min-width: 992px) {
-  /* line 272, ../../sass/summit/index.scss */
+  /* line 324, ../../sass/summit/index.scss */
   .col-md-5ths {
     width: 20%;
     float: left;
   }
 }
 @media (min-width: 1200px) {
-  /* line 278, ../../sass/summit/index.scss */
+  /* line 330, ../../sass/summit/index.scss */
   .col-lg-5ths {
     width: 20%;
     float: left;
   }
 }
-/* line 283, ../../sass/summit/index.scss */
+/* line 335, ../../sass/summit/index.scss */
 #five {
   padding: 50px 10vw;
 }
-/* line 286, ../../sass/summit/index.scss */
+/* line 338, ../../sass/summit/index.scss */
 #five .title {
   margin-bottom: 30px;
   color: #fff;
 }
-/* line 291, ../../sass/summit/index.scss */
+/* line 343, ../../sass/summit/index.scss */
 #five .activities-container .activity {
   text-align: center;
   padding: 0 30px;
 }
-/* line 296, ../../sass/summit/index.scss */
+/* line 348, ../../sass/summit/index.scss */
 #five .activities-container .activity:hover .image-wrapper img.active {
   opacity: 1;
 }
-/* line 299, ../../sass/summit/index.scss */
+/* line 351, ../../sass/summit/index.scss */
 #five .activities-container .activity:hover .title-wrapper {
   opacity: 1;
 }
-/* line 303, ../../sass/summit/index.scss */
+/* line 355, ../../sass/summit/index.scss */
 #five .activities-container .activity .image-wrapper {
   position: relative;
 }
-/* line 306, ../../sass/summit/index.scss */
+/* line 358, ../../sass/summit/index.scss */
 #five .activities-container .activity .image-wrapper img {
   width: 100%;
   animation: spin 15s linear infinite;
 }
-/* line 310, ../../sass/summit/index.scss */
+/* line 362, ../../sass/summit/index.scss */
 #five .activities-container .activity .image-wrapper img.active {
   position: absolute;
   left: 0;
@@ -660,7 +715,7 @@ p {
   opacity: 0;
   transition: opacity .3s ease;
 }
-/* line 319, ../../sass/summit/index.scss */
+/* line 371, ../../sass/summit/index.scss */
 #five .activities-container .activity .title-wrapper {
   margin-top: 30px;
   display: inline-block;
@@ -670,22 +725,22 @@ p {
   opacity: 0;
   transition: opacity .3s ease;
 }
-/* line 328, ../../sass/summit/index.scss */
+/* line 380, ../../sass/summit/index.scss */
 #five .activities-container .activity .title-wrapper .zh {
   font-weight: bold;
 }
-/* line 331, ../../sass/summit/index.scss */
+/* line 383, ../../sass/summit/index.scss */
 #five .activities-container .activity .title-wrapper .en {
   font-style: italic;
   font-weight: 100;
 }
-/* line 338, ../../sass/summit/index.scss */
+/* line 390, ../../sass/summit/index.scss */
 #five .descriptions-container {
   position: relative;
   height: 100px;
   margin-top: 50px;
 }
-/* line 343, ../../sass/summit/index.scss */
+/* line 395, ../../sass/summit/index.scss */
 #five .descriptions-container .description {
   position: absolute;
   width: 80%;
@@ -696,22 +751,22 @@ p {
   opacity: 0;
   transition: all .5s ease;
 }
-/* line 353, ../../sass/summit/index.scss */
+/* line 405, ../../sass/summit/index.scss */
 #five .descriptions-container .description.active {
   opacity: 1;
   right: 0;
 }
 
-/* line 361, ../../sass/summit/index.scss */
+/* line 413, ../../sass/summit/index.scss */
 #attend {
   padding: 50px 10vw;
   color: #fff;
 }
-/* line 366, ../../sass/summit/index.scss */
+/* line 417, ../../sass/summit/index.scss */
 #attend #schedule {
   text-align: center;
 }
-/* line 369, ../../sass/summit/index.scss */
+/* line 420, ../../sass/summit/index.scss */
 #attend #schedule .grid {
   height: 120px;
   display: -webkit-box;
@@ -724,13 +779,13 @@ p {
   -ms-flex-pack: center;
   justify-content: center;
 }
-/* line 385, ../../sass/summit/index.scss */
+/* line 436, ../../sass/summit/index.scss */
 #attend .map-container {
   position: relative;
   height: 0;
   padding-bottom: 75%;
 }
-/* line 390, ../../sass/summit/index.scss */
+/* line 441, ../../sass/summit/index.scss */
 #attend .map-container iframe {
   position: absolute;
   top: 0;
