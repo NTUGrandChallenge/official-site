@@ -224,6 +224,7 @@ $padding_horz: 10vw;
 	$block_height: 100vh;
 	$block_width: 100vw;
 	height: $block_height;
+	padding: 50px $padding_horz;
 	color: #fff;
 
 	.background{
@@ -245,6 +246,10 @@ $padding_horz: 10vw;
 		opacity: 0.7;
 		z-index: -1;
 	}
+	.title{
+		font-size: 40px;
+		font-style: italic;
+	}
 }
 
 #principle{
@@ -252,7 +257,7 @@ $padding_horz: 10vw;
 	color: #fff;
 	background-image: url('../../img/summit/index/principle_bg.png');
 	background-position: left top;
-	background-size: contain;
+	background-size: 40%;
 	background-repeat: no-repeat;
 
 	.background-N{
@@ -292,7 +297,7 @@ $padding_horz: 10vw;
 			}
 			p{
 				margin: 0;
-				padding: 50px 50px 25px;
+				padding: 30px 50px;
 				font-size: 30px;
 				text-align: justify;
 			}
@@ -338,6 +343,7 @@ $padding_horz: 10vw;
 	.title{
 		margin-bottom: 30px;
 		color: #fff;
+		font-style: italic;
 	}
 	.activities-container{
 		.activity{
@@ -399,6 +405,7 @@ $padding_horz: 10vw;
 			right: 10%;
 			margin: 0 auto;
 			color: #fff;
+			text-align: justify;
 			opacity: 0;
 			transition: all .5s ease;
 
@@ -448,4 +455,48 @@ $padding_horz: 10vw;
 		}
 	}
 	
+}
+
+#back{
+	color: #fff;
+	padding: 20px $padding_horz;
+
+	$height: 60px;
+	a{
+		color: #fff;
+		&:hover{
+			color: $yellow;
+			text-decoration: none;
+		}
+	}
+	.content{
+		text-align: right;
+		.logo{
+			display: inline-block;
+			vertical-align: top;
+			width: $height;
+			height: $height;
+			border-radius: 50%;
+			background-color: $yellow;
+			position: relative;
+
+			img{
+				width: 70%;
+				margin: 0 auto;
+				position: absolute;
+				left: 0;
+				right: 0;
+				top: 0;
+				bottom: 0;
+				margin: auto;
+			}
+		}
+		.text{
+			height: $height;
+			display: inline-block;
+			vertical-align: middle;
+			font-size: 30px;
+			padding-top: 10px;
+		}
+	}
 }
