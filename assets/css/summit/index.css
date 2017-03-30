@@ -21,7 +21,7 @@ p {
 
 /* line 19, ../../sass/summit/_general.scss */
 a:hover {
-  color: #ffeb32;
+  color: #f2c640;
 }
 
 /* line 23, ../../sass/summit/_general.scss */
@@ -142,7 +142,7 @@ a:hover {
 }
 /* line 145, ../../sass/summit/_general.scss */
 #sidenav #nav_menu .list ul li:hover {
-  background-color: #ffeb32;
+  background-color: #f2c640;
 }
 /* line 148, ../../sass/summit/_general.scss */
 #sidenav #nav_menu .list ul li .title-zh {
@@ -185,7 +185,11 @@ footer a {
   color: #fff;
 }
 
-/* line 4, ../../sass/summit/index.scss */
+@font-face {
+  font-family: Coves-Bold;
+  src: url("../../font/Coves Bold.otf");
+}
+/* line 8, ../../sass/summit/index.scss */
 #top {
   background-image: url("../../img/summit/index/background.png");
   background-size: cover;
@@ -194,7 +198,7 @@ footer a {
   position: relative;
   overflow: hidden;
 }
-/* line 12, ../../sass/summit/index.scss */
+/* line 16, ../../sass/summit/index.scss */
 #top .mountains-container .mountain, #top .pulse, #top .title {
   position: absolute;
   height: 100%;
@@ -203,7 +207,7 @@ footer a {
   background-repeat: no-repeat;
   background-position: center bottom;
 }
-/* line 20, ../../sass/summit/index.scss */
+/* line 24, ../../sass/summit/index.scss */
 #top .stars {
   position: absolute;
   top: -50%;
@@ -214,13 +218,13 @@ footer a {
   background-repeat: no-repeat;
   background-position: center;
 }
-/* line 29, ../../sass/summit/index.scss */
+/* line 33, ../../sass/summit/index.scss */
 #top .stars.inside {
   background-image: url("../../img/summit/index/stars_inside.png");
   opacity: 0.4;
   animation: spin 60s infinite linear;
 }
-/* line 34, ../../sass/summit/index.scss */
+/* line 38, ../../sass/summit/index.scss */
 #top .stars.outside {
   background-image: url("../../img/summit/index/stars_outside.png");
   opacity: 0.2;
@@ -258,7 +262,7 @@ footer a {
     transform: rotateZ(360deg);
   }
 }
-/* line 49, ../../sass/summit/index.scss */
+/* line 53, ../../sass/summit/index.scss */
 #top .mountains-container {
   position: absolute;
   top: 0;
@@ -340,35 +344,35 @@ footer a {
     perspective: 200px;
   }
 }
-/* line 73, ../../sass/summit/index.scss */
+/* line 77, ../../sass/summit/index.scss */
 #top .mountains-container .mountain {
   top: 100%;
   animation-name: rise;
   animation-timing-function: ease;
   animation-fill-mode: forwards;
 }
-/* line 82, ../../sass/summit/index.scss */
+/* line 86, ../../sass/summit/index.scss */
 #top .mountains-container .mountain.m1 {
   background-image: url("../../img/summit/index/mountain1.png");
   z-index: 3;
   animation-duration: 1.5s;
   animation-delay: 0;
 }
-/* line 88, ../../sass/summit/index.scss */
+/* line 92, ../../sass/summit/index.scss */
 #top .mountains-container .mountain.m2 {
   background-image: url("../../img/summit/index/mountain2.png");
   z-index: 4;
   animation-duration: 0.9s;
   animation-delay: 0.3s;
 }
-/* line 94, ../../sass/summit/index.scss */
+/* line 98, ../../sass/summit/index.scss */
 #top .mountains-container .mountain.m3 {
   background-image: url("../../img/summit/index/mountain3.png");
   z-index: 2;
   animation-duration: 0.8s;
   animation-delay: 0.7s;
 }
-/* line 100, ../../sass/summit/index.scss */
+/* line 104, ../../sass/summit/index.scss */
 #top .mountains-container .mountain.m4 {
   background-image: url("../../img/summit/index/mountain4.png");
   z-index: 1;
@@ -416,7 +420,7 @@ footer a {
     transform: translateZ(-20px);
   }
 }
-/* line 119, ../../sass/summit/index.scss */
+/* line 123, ../../sass/summit/index.scss */
 #top .pulse {
   background-image: url("../../img/summit/index/pulse.png");
   opacity: 0;
@@ -467,7 +471,7 @@ footer a {
     opacity: 0;
   }
 }
-/* line 138, ../../sass/summit/index.scss */
+/* line 142, ../../sass/summit/index.scss */
 #top .title {
   background-image: url("../../img/summit/index/title.png");
   background-position: center;
@@ -509,7 +513,7 @@ footer a {
     opacity: 1;
   }
 }
-/* line 158, ../../sass/summit/index.scss */
+/* line 162, ../../sass/summit/index.scss */
 #top .text-container {
   position: absolute;
   width: 30vw;
@@ -517,7 +521,7 @@ footer a {
   left: 10vw;
   bottom: 0;
 }
-/* line 165, ../../sass/summit/index.scss */
+/* line 169, ../../sass/summit/index.scss */
 #top .text-container .trapezoid-wrapper {
   position: absolute;
   left: 0;
@@ -526,13 +530,13 @@ footer a {
   height: 100%;
   overflow: hidden;
 }
-/* line 173, ../../sass/summit/index.scss */
+/* line 177, ../../sass/summit/index.scss */
 #top .text-container .trapezoid-wrapper .trapezoid {
   position: absolute;
   left: 0;
   top: 0;
 }
-/* line 181, ../../sass/summit/index.scss */
+/* line 185, ../../sass/summit/index.scss */
 #top .sign-button {
   position: absolute;
   right: 0;
@@ -540,15 +544,15 @@ footer a {
   height: 60px;
   width: 180px;
 }
-/* line 191, ../../sass/summit/index.scss */
-#top .sign-button:hover .trapezoid path {
-  fill: #ffeb32;
-}
 /* line 195, ../../sass/summit/index.scss */
+#top .sign-button:hover .trapezoid path {
+  fill: #f2c640;
+}
+/* line 199, ../../sass/summit/index.scss */
 #top .sign-button .trapezoid {
   position: absolute;
 }
-/* line 198, ../../sass/summit/index.scss */
+/* line 202, ../../sass/summit/index.scss */
 #top .sign-button .text {
   position: absolute;
   right: 0;
@@ -558,11 +562,11 @@ footer a {
   font-size: 20px;
   text-align: right;
 }
-/* line 207, ../../sass/summit/index.scss */
+/* line 211, ../../sass/summit/index.scss */
 #top .sign-button .text .zh {
   font-weight: bold;
 }
-/* line 213, ../../sass/summit/index.scss */
+/* line 217, ../../sass/summit/index.scss */
 #top .fade-black {
   position: absolute;
   bottom: 0;
@@ -571,14 +575,14 @@ footer a {
   background: linear-gradient(to top, black, rgba(58, 65, 104, 0.23), transparent);
 }
 
-/* line 222, ../../sass/summit/index.scss */
+/* line 226, ../../sass/summit/index.scss */
 #about {
   position: relative;
   height: 100vh;
   padding: 50px 10vw;
   color: #fff;
 }
-/* line 230, ../../sass/summit/index.scss */
+/* line 234, ../../sass/summit/index.scss */
 #about .background {
   position: absolute;
   top: 0;
@@ -588,7 +592,7 @@ footer a {
   background-size: cover;
   background-position: center;
 }
-/* line 239, ../../sass/summit/index.scss */
+/* line 243, ../../sass/summit/index.scss */
 #about .black-mask {
   position: absolute;
   top: 0;
@@ -599,13 +603,13 @@ footer a {
   opacity: 0.7;
   z-index: -1;
 }
-/* line 249, ../../sass/summit/index.scss */
+/* line 253, ../../sass/summit/index.scss */
 #about .title {
   font-size: 40px;
   font-style: italic;
 }
 
-/* line 255, ../../sass/summit/index.scss */
+/* line 259, ../../sass/summit/index.scss */
 #principle {
   padding: 50px 10vw;
   color: #fff;
@@ -614,45 +618,45 @@ footer a {
   background-size: 40%;
   background-repeat: no-repeat;
 }
-/* line 266, ../../sass/summit/index.scss */
+/* line 270, ../../sass/summit/index.scss */
 #principle .one-man {
   margin-bottom: 50px;
 }
-/* line 269, ../../sass/summit/index.scss */
+/* line 273, ../../sass/summit/index.scss */
 #principle .one-man .circular-img {
   width: 100%;
   border-radius: 50%;
 }
-/* line 274, ../../sass/summit/index.scss */
+/* line 278, ../../sass/summit/index.scss */
 #principle .one-man .title {
   margin-top: 20px;
   margin-bottom: 0;
 }
-/* line 278, ../../sass/summit/index.scss */
+/* line 282, ../../sass/summit/index.scss */
 #principle .one-man .name {
   font-size: 24px;
 }
-/* line 281, ../../sass/summit/index.scss */
+/* line 285, ../../sass/summit/index.scss */
 #principle .one-man .text-container {
   position: relative;
   margin-top: 50px;
 }
-/* line 285, ../../sass/summit/index.scss */
+/* line 289, ../../sass/summit/index.scss */
 #principle .one-man .text-container .quote {
   position: absolute;
   width: 5%;
 }
-/* line 289, ../../sass/summit/index.scss */
+/* line 293, ../../sass/summit/index.scss */
 #principle .one-man .text-container .quote.start {
   left: 0;
   top: 0;
 }
-/* line 293, ../../sass/summit/index.scss */
+/* line 297, ../../sass/summit/index.scss */
 #principle .one-man .text-container .quote.end {
   right: 0;
   bottom: 0;
 }
-/* line 298, ../../sass/summit/index.scss */
+/* line 302, ../../sass/summit/index.scss */
 #principle .one-man .text-container p {
   margin: 0;
   padding: 30px 50px;
@@ -661,7 +665,7 @@ footer a {
 }
 
 /*full width five column*/
-/* line 309, ../../sass/summit/index.scss */
+/* line 313, ../../sass/summit/index.scss */
 .col-xs-5ths,
 .col-sm-5ths,
 .col-md-5ths,
@@ -672,66 +676,66 @@ footer a {
   padding-left: 10px;
 }
 
-/* line 318, ../../sass/summit/index.scss */
+/* line 322, ../../sass/summit/index.scss */
 .col-xs-5ths {
   width: 20%;
   float: left;
 }
 
 @media (min-width: 768px) {
-  /* line 323, ../../sass/summit/index.scss */
+  /* line 327, ../../sass/summit/index.scss */
   .col-sm-5ths {
     width: 20%;
     float: left;
   }
 }
 @media (min-width: 992px) {
-  /* line 329, ../../sass/summit/index.scss */
+  /* line 333, ../../sass/summit/index.scss */
   .col-md-5ths {
     width: 20%;
     float: left;
   }
 }
 @media (min-width: 1200px) {
-  /* line 335, ../../sass/summit/index.scss */
+  /* line 339, ../../sass/summit/index.scss */
   .col-lg-5ths {
     width: 20%;
     float: left;
   }
 }
-/* line 340, ../../sass/summit/index.scss */
+/* line 344, ../../sass/summit/index.scss */
 #five {
   padding: 50px 10vw;
 }
-/* line 343, ../../sass/summit/index.scss */
+/* line 347, ../../sass/summit/index.scss */
 #five .title {
   margin-bottom: 30px;
   color: #fff;
   font-style: italic;
 }
-/* line 349, ../../sass/summit/index.scss */
+/* line 353, ../../sass/summit/index.scss */
 #five .activities-container .activity {
   text-align: center;
   padding: 0 30px;
 }
-/* line 354, ../../sass/summit/index.scss */
+/* line 358, ../../sass/summit/index.scss */
 #five .activities-container .activity:hover .image-wrapper img.active {
   opacity: 1;
 }
-/* line 357, ../../sass/summit/index.scss */
+/* line 361, ../../sass/summit/index.scss */
 #five .activities-container .activity:hover .title-wrapper {
   opacity: 1;
 }
-/* line 361, ../../sass/summit/index.scss */
+/* line 365, ../../sass/summit/index.scss */
 #five .activities-container .activity .image-wrapper {
   position: relative;
 }
-/* line 364, ../../sass/summit/index.scss */
+/* line 368, ../../sass/summit/index.scss */
 #five .activities-container .activity .image-wrapper img {
   width: 100%;
   animation: spin 15s linear infinite;
 }
-/* line 368, ../../sass/summit/index.scss */
+/* line 372, ../../sass/summit/index.scss */
 #five .activities-container .activity .image-wrapper img.active {
   position: absolute;
   left: 0;
@@ -739,7 +743,7 @@ footer a {
   opacity: 0;
   transition: opacity .3s ease;
 }
-/* line 377, ../../sass/summit/index.scss */
+/* line 381, ../../sass/summit/index.scss */
 #five .activities-container .activity .title-wrapper {
   margin-top: 30px;
   display: inline-block;
@@ -749,22 +753,22 @@ footer a {
   opacity: 0;
   transition: opacity .3s ease;
 }
-/* line 386, ../../sass/summit/index.scss */
+/* line 390, ../../sass/summit/index.scss */
 #five .activities-container .activity .title-wrapper .zh {
   font-weight: bold;
 }
-/* line 389, ../../sass/summit/index.scss */
+/* line 393, ../../sass/summit/index.scss */
 #five .activities-container .activity .title-wrapper .en {
   font-style: italic;
   font-weight: 100;
 }
-/* line 396, ../../sass/summit/index.scss */
+/* line 400, ../../sass/summit/index.scss */
 #five .descriptions-container {
   position: relative;
   height: 100px;
   margin-top: 50px;
 }
-/* line 401, ../../sass/summit/index.scss */
+/* line 405, ../../sass/summit/index.scss */
 #five .descriptions-container .description {
   position: absolute;
   width: 80%;
@@ -776,24 +780,28 @@ footer a {
   opacity: 0;
   transition: all .5s ease;
 }
-/* line 412, ../../sass/summit/index.scss */
+/* line 416, ../../sass/summit/index.scss */
 #five .descriptions-container .description.active {
   opacity: 1;
   right: 0;
 }
 
-/* line 420, ../../sass/summit/index.scss */
+/* line 424, ../../sass/summit/index.scss */
 #attend {
   padding: 50px 10vw;
   color: #fff;
 }
-/* line 424, ../../sass/summit/index.scss */
+/* line 428, ../../sass/summit/index.scss */
 #attend #schedule {
   text-align: center;
 }
-/* line 427, ../../sass/summit/index.scss */
+/* line 431, ../../sass/summit/index.scss */
+#attend #schedule .column {
+  padding: 0;
+}
+/* line 434, ../../sass/summit/index.scss */
 #attend #schedule .grid {
-  height: 120px;
+  height: 250px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -804,13 +812,55 @@ footer a {
   -ms-flex-pack: center;
   justify-content: center;
 }
-/* line 443, ../../sass/summit/index.scss */
+/* line 446, ../../sass/summit/index.scss */
+#attend #schedule .grid:not(:last-child) {
+  border-bottom: 1px solid #f2c640;
+}
+/* line 450, ../../sass/summit/index.scss */
+#attend #schedule .grid.time p {
+  color: #f2c640;
+  font-size: 24px;
+}
+/* line 454, ../../sass/summit/index.scss */
+#attend #schedule .grid.date {
+  height: 50px;
+  border-bottom: none;
+}
+/* line 457, ../../sass/summit/index.scss */
+#attend #schedule .grid.date p {
+  color: #f2c640;
+  font-family: 'Coves-Bold';
+  font-size: 30px;
+}
+/* line 461, ../../sass/summit/index.scss */
+#attend #schedule .grid.date p span {
+  font-size: 20px;
+}
+/* line 466, ../../sass/summit/index.scss */
+#attend #schedule .grid.content {
+  color: #999;
+}
+/* line 469, ../../sass/summit/index.scss */
+#attend #schedule .grid.content img {
+  width: 20%;
+  margin-bottom: 10px;
+}
+/* line 473, ../../sass/summit/index.scss */
+#attend #schedule .grid.content .en {
+  margin: 0;
+}
+/* line 476, ../../sass/summit/index.scss */
+#attend #schedule .grid.content .detail {
+  margin: 0;
+  color: #666;
+}
+/* line 484, ../../sass/summit/index.scss */
 #attend .map-container {
   position: relative;
   height: 0;
   padding-bottom: 75%;
 }
-/* line 448, ../../sass/summit/index.scss */
+/* line 489, ../../sass/summit/index.scss */
 #attend .map-container iframe {
   position: absolute;
   top: 0;
@@ -820,35 +870,35 @@ footer a {
   border: none;
 }
 
-/* line 460, ../../sass/summit/index.scss */
+/* line 501, ../../sass/summit/index.scss */
 #back {
   color: #fff;
   padding: 20px 10vw;
 }
-/* line 465, ../../sass/summit/index.scss */
+/* line 506, ../../sass/summit/index.scss */
 #back a {
   color: #fff;
 }
-/* line 467, ../../sass/summit/index.scss */
+/* line 508, ../../sass/summit/index.scss */
 #back a:hover {
-  color: #ffeb32;
+  color: #f2c640;
   text-decoration: none;
 }
-/* line 472, ../../sass/summit/index.scss */
+/* line 513, ../../sass/summit/index.scss */
 #back .content {
   text-align: right;
 }
-/* line 474, ../../sass/summit/index.scss */
+/* line 515, ../../sass/summit/index.scss */
 #back .content .logo {
   display: inline-block;
   vertical-align: top;
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  background-color: #ffeb32;
+  background-color: #f2c640;
   position: relative;
 }
-/* line 483, ../../sass/summit/index.scss */
+/* line 524, ../../sass/summit/index.scss */
 #back .content .logo img {
   width: 70%;
   margin: 0 auto;
@@ -859,7 +909,7 @@ footer a {
   bottom: 0;
   margin: auto;
 }
-/* line 494, ../../sass/summit/index.scss */
+/* line 535, ../../sass/summit/index.scss */
 #back .content .text {
   height: 60px;
   display: inline-block;

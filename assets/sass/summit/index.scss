@@ -1,4 +1,8 @@
 @import "general";
+@font-face{
+    font-family: Coves-Bold;
+    src: url('../../font/Coves Bold.otf');
+}
 
 $padding_horz: 10vw;
 #top{
@@ -424,8 +428,11 @@ $padding_horz: 10vw;
 	#schedule{
 		text-align: center;
 
+		.column{
+			padding: 0;
+		}
 		.grid{
-			height: 120px;
+			height: 250px;
 			display: -webkit-box;
 		    display: -ms-flexbox;
 		    display: flex;
@@ -436,7 +443,41 @@ $padding_horz: 10vw;
 		        -ms-flex-pack: center;
 		            justify-content: center;
 
-			// background-color: #333;
+		    &:not(:last-child){
+
+			    border-bottom: 1px solid $yellow;
+		    }
+		    &.time p{
+		    	color: $yellow;
+		    	font-size: 24px;
+		    }
+		    &.date{
+		    	height: 50px;
+		    	border-bottom: none;
+		    	p{
+		    		color: $yellow;
+		    		font-family: 'Coves-Bold';
+		    		font-size: 30px;
+		    		span{
+		    			font-size: 20px;
+		    		}
+			    }
+		    } 
+		    &.content{
+		    	color: #999;
+
+		    	img{
+		    		width: 20%;
+		    		margin-bottom: 10px;
+		    	}
+		    	.en{
+		    		margin: 0;
+		    	}
+		    	.detail{
+		    		margin: 0;
+		    		color: #666;
+		    	}
+		    }
 		}
 	}
 
