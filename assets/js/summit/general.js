@@ -32,3 +32,4 @@ var startSidenav = function(){
 };
 
 $('#sidenav').load('_sidenav.html', startSidenav);
+$('footer').load('_footer.html');

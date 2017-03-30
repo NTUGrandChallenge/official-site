@@ -97,6 +97,14 @@ a:hover{
 	}
 	#nav_menu{
 
+		.logo{
+			height: 80px;
+			width: $nav_width;
+			margin: 20px 50px 0;
+			img{
+				height: 100%;
+			}
+		}
 		.list{
 			position: fixed;
 			left: 0;
@@ -126,7 +134,7 @@ a:hover{
 			}
 			ul{
 				list-style-type: none;
-				padding: 50px 0 0;
+				padding: 20px 0 0;
 
 				li{
 					padding: 20px 40px;
@@ -164,6 +172,9 @@ a:hover{
 					left: 0;
 			}
 
+			ul{
+				padding-top: 120px;
+			}
 			.back_button{
 				position: absolute;
 				left: 10px;
