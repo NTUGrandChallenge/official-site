@@ -33,6 +33,11 @@ $padding_horz: 10vw;
 	    	animation-delay: 2s;
 	    	animation-fill-mode: forwards;
     	}
+    	.sign-button{
+    		animation: fadeIn 1s ease;
+	    	animation-delay: 2.5s;
+	    	animation-fill-mode: forwards;
+    	}
     }
 	%bg{
 		position: absolute;
@@ -42,26 +47,7 @@ $padding_horz: 10vw;
 		background-repeat: no-repeat;
 	    background-position: center bottom;
 	}
-    .stars{
-    	position: absolute;
-    	top: -50%;
-    	left: 0;
-		height: 200%;
-		width: 100%;
-		background-size: contain;
-		background-repeat: no-repeat;
-	    background-position: center;
-    	&.inside{
-	    	background-image: url('../../img/summit/index/stars_inside.png');
-	    	opacity: 0.4;
-	    	animation: spin 60s infinite linear;
-    	}
-    	&.outside{
-			background-image: url('../../img/summit/index/stars_outside.png');
-			opacity: 0.2;
-	    	animation: spin 40s infinite linear;
-    	}
-    }
+    
     @include keyframes(spin) {
     	from{
     		transform: rotateZ(0deg);
@@ -192,46 +178,114 @@ $padding_horz: 10vw;
 			}
 		}
     }
-
-    .sign-button{
-    	$button_width: 180px;
-    	$button_height: 60px;
-    	position: absolute;
-    	right: 0;
-    	top: 0;
-    	height: $button_height;
-    	width: $button_width;
-    	z-index: 50;
-
-		&:hover{
-			.trapezoid path{
-				fill: $yellow;
-			}
-		}
-    	.trapezoid{
-    		position: absolute;
-    	}
-    	.text{
-    		position: absolute;
-			right: 0;
-			top: 50%;
-		    transform: translateY(-50%);
-		    padding-right: 10px;
-			font-size: 20px;
-			text-align: right;
-
-    		.zh{
-    			font-weight: bold;
-    		}
-    	}
-    }
-
 	.fade-black{
         position: absolute;
         bottom: 0;
 		height: 50%;
 		width: 100%;
 		background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(58, 65, 104, 0.23), rgba(0, 0, 0, 0));
+	}
+}
+.stars{
+	position: absolute;
+	top: -50%;
+	left: 0;
+	height: 200%;
+	width: 100%;
+	background-size: contain;
+	background-repeat: no-repeat;
+    background-position: center;
+	&.inside{
+    	background-image: url('../../img/summit/index/stars_inside.png');
+    	opacity: 0.4;
+    	animation: spin 60s infinite linear;
+	}
+	&.outside{
+		background-image: url('../../img/summit/index/stars_outside.png');
+		opacity: 0.2;
+    	animation: spin 40s infinite linear;
+	}
+}
+.sign-button{
+	$button_width: 180px;
+	$button_height: 60px;
+	position: absolute;
+	right: 20%;
+	top: 50%;
+	height: $button_height;
+	width: $button_width;
+	z-index: 50;
+	color: #333;
+
+	opacity: 0;
+
+	&:hover{
+		.trapezoid path{
+			fill: $yellow;
+			color: #333;
+		}
+	}
+	.trapezoid{
+		position: absolute;
+	}
+	.text{
+		position: absolute;
+		right: 0;
+		top: 50%;
+	    transform: translateY(-50%);
+	    padding-right: 10px;
+		font-size: 20px;
+		text-align: right;
+
+		.zh{
+			font-weight: bold;
+		}
+	}
+}
+#top_mobile{
+	height: 100vh;
+	background-image: url('../../img/summit/index/background.png');
+	background-size: cover;
+	background-position: center;
+	position: relative;
+
+	%bg{
+		position: absolute;
+		height: 100%;
+		width: 100%;
+		background-size: 100%;
+		background-repeat: no-repeat;
+	}
+	.whiteN{
+		@extend %bg;
+		background-image: url('../../img/summit/index/summit_keyvis_mobile_N.png');
+	    background-position: center top;
+	}
+	.mountain{
+		@extend %bg;
+		background-image: url('../../img/summit/index/summit_keyvis_mobile_mountain.png');
+	    background-position: center bottom;
+	}
+	.title{
+		@extend %bg;
+		background-image: url('../../img/summit/index/summit_keyvis_mobile_text.png');
+		background-size: contain;
+		z-index: 10;
+		background-position: left bottom;
+	}
+	.sign-button{
+		top: 80%;
+		left: auto;
+		right: 10%;
+		opacity: 1;
+	}
+	.fade-black{
+		position: absolute;
+        bottom: 0;
+		height: 50%;
+		width: 100%;
+		background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(58, 65, 104, 0.23), rgba(0, 0, 0, 0));
+		z-index: 0;
 	}
 }
 
@@ -388,6 +442,7 @@ $padding_horz: 10vw;
 			}
 			.image-wrapper{
 				position: relative;
+				// height: 200px;
 
 				img{
 					width: 100%;
@@ -417,6 +472,7 @@ $padding_horz: 10vw;
 				.en{
 					font-style: italic;
 					font-weight: 100;
+					line-height: 22px;
 				}
 			}
 			@media screen and (max-width: 768px){
