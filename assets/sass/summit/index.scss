@@ -13,6 +13,27 @@ $padding_horz: 10vw;
     position: relative;
     overflow: hidden;
 
+
+    &.animation-start{
+    	.mountains-container{
+    		animation: walk 2s ease;
+		    animation-fill-mode: forwards;
+    	}
+    	.mountain{
+	    	animation-name: rise;
+	    	animation-timing-function: ease;
+    		animation-fill-mode: forwards;
+    	}
+    	.pulse{
+    		animation: pulse 2s infinite ease;
+			animation-delay: 2s;
+    	}
+    	.title{
+    		animation: fadeIn 1s ease;
+	    	animation-delay: 2s;
+	    	animation-fill-mode: forwards;
+    	}
+    }
 	%bg{
 		position: absolute;
 		height: 100%;
@@ -56,8 +77,6 @@ $padding_horz: 10vw;
     	left: 0;
 		height: 100%;
 		width: 100%;
-	    animation: walk 2s ease;
-	    animation-fill-mode: forwards;
 
 		@include keyframes(walk) {
 	    	from{
@@ -79,9 +98,6 @@ $padding_horz: 10vw;
 		    
 
     		top: 100%;
-	    	animation-name: rise;
-	    	animation-timing-function: ease;
-    		animation-fill-mode: forwards;
 
     		&.m1{
 		    	background-image: url('../../img/summit/index/mountain1.png');
@@ -125,8 +141,6 @@ $padding_horz: 10vw;
 		@extend %bg;
 
 		opacity: 0;
-		animation: pulse 2s infinite ease;
-		animation-delay: 2s;
 	}
 	@include keyframes(pulse) {
 		0%{
@@ -146,9 +160,6 @@ $padding_horz: 10vw;
 	    z-index: 50;
 
     	opacity: 0;
-    	animation: fadeIn 1s ease;
-    	animation-delay: 2s;
-    	animation-fill-mode: forwards;
     }
 	@include keyframes(fadeIn) {
 		from{
@@ -190,6 +201,7 @@ $padding_horz: 10vw;
     	top: 0;
     	height: $button_height;
     	width: $button_width;
+    	z-index: 50;
 
 		&:hover{
 			.trapezoid path{
@@ -231,6 +243,9 @@ $padding_horz: 10vw;
 	padding: 50px $padding_horz;
 	color: #fff;
 
+	@media screen and (max-width: 768px){
+		height: auto;
+	}
 	.background{
 		position: absolute;
 		top: 0;
@@ -254,6 +269,10 @@ $padding_horz: 10vw;
 		font-size: 40px;
 		font-style: italic;
 	}
+	p{
+		text-align: justify;
+		line-height: 30px;
+	}
 }
 
 #principle{
@@ -264,8 +283,7 @@ $padding_horz: 10vw;
 	background-size: 40%;
 	background-repeat: no-repeat;
 
-	.background-N{
-	}
+
 
 	.one-man{
 		margin-bottom: 50px;
@@ -304,6 +322,12 @@ $padding_horz: 10vw;
 				padding: 30px 50px;
 				font-size: 30px;
 				text-align: justify;
+			}
+			@media screen and (max-width: 768px){
+				p{
+					font-size: 24px;
+					padding: 10px 30px;
+				}
 			}
 		}
 	}
@@ -386,13 +410,27 @@ $padding_horz: 10vw;
 				font-size: 24px;
 				opacity: 0;
 				transition: opacity .3s ease;
-				
+
 				.zh{
 					font-weight: bold;
 				}
 				.en{
 					font-style: italic;
 					font-weight: 100;
+				}
+			}
+			@media screen and (max-width: 768px){
+				.image-wrapper{
+					height: 120px;
+					img{
+						height: 100px;
+						width: auto;
+					}
+				}
+				.title-wrapper{
+					opacity: 1;
+					font-size: 18px;
+					margin-bottom: 10px;
 				}
 			}
 		}
