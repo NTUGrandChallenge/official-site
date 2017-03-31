@@ -7,6 +7,9 @@
 
 * {
 	font-family: 'Futura-Medium', 'Noto Sans TC', Sans-Serif;
+}
+
+a, h1, h2, p, th, td, caption, button {
 	color: #fff;
 }
 
