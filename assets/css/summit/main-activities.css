@@ -260,10 +260,6 @@ header::after {
 		height: 200vh;
 	}
 
-	#topics-salon .desc {
-		height: 80vh;
-	}
-
 	.team {
 		width: 100%;
 		height: 10%;
@@ -327,7 +323,7 @@ header::after {
 	}
 
 	#topics-salon .desc {
-		height: 50vh;
+		height: 70vh;
 	}
 
 	#teams-pitch .desc {
