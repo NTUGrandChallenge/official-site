@@ -1,0 +1,406 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400);
+@import url(http://fonts.googleapis.com/earlyaccess/notosanstc.css);
+
+body {
+	background-color: #000;
+	margin: 0;
+	padding: 0;
+}
+
+a, h1, h2, h3, h4, h5, h6, p, span, button, table, caption {
+	font-family: "Noto Sans TC", "Open Sans", Sans-Serif;
+	color: #fff;
+}
+
+button {
+	background-color: transparent;
+	border: solid 1px #fff;
+	padding: 10px 14px;
+	font-size: 16px;
+}
+
+table {
+	text-align: center;
+	border-collapse: collapse;
+}
+
+th, td {
+	border: 1px solid #fff;
+	font-weight: normal;
+}
+
+.horizontal-middle {
+	text-align: center;
+}
+
+.vertical-middle {
+	/* Check if parent element's position is relative */
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+/* 活動簡介/領域嘉賓 */
+.container {
+	width: 100vw;
+}
+
+header.container {
+	background: url("../../img/summit/bg1.jpg") center center fixed;
+	background-size: cover;
+}
+
+header.container > div {
+	float: left;
+}
+
+header.container::after {
+	clear: left;
+}
+
+div.container {
+	background: url("../../img/summit/bg3.jpg") center center fixed;
+	background-size: cover;
+}
+
+.act-logo {
+	position: relative;
+}
+
+/* 五大活動發光大圖 */
+.act-logo img {
+	width: 80%;
+	margin-left: 10%;
+	height: auto;
+}
+
+
+.logo-highlight {
+	opacity: 0;
+	animation: shine 5s linear 1s infinite;
+}
+
+/* .logo-un-highlight {
+	animation: shine 4s linear infinite;
+} */
+
+@keyframes shine {
+	0% {
+		opacity: 0;
+	}
+	50% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+/* 介紹文字區塊 */
+.intro {
+	position: relative;
+	background-color: transparent;
+	line-height: 30px;
+}
+
+.desc {
+	position: relative;
+	width: 100vw;
+}
+
+/* 介紹文字 */
+.intro-text,
+.desc-text {
+	width: 80%;
+	margin-left: 10%;
+}
+
+/* 領域嘉賓區塊 */
+.guest {
+	width: 70%;
+	height: 100%;
+	margin-left: 15%;
+}
+
+/* 領域嘉賓們 */
+.expert {
+	margin: 0 20px;
+}
+
+.expert-photo {
+	width: 100%;
+	height: auto;
+}
+
+/* 領域嘉賓title */
+.expert-intro {
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.7);
+	text-align: center;
+}
+
+/* 選取主題論壇 */
+#talk-select {
+	width: 100vw;
+	height: 160px;
+	background-color: #333;
+}
+
+#talk-buttons {
+	height: 100%;
+
+	display: -webkit-flex;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.team {
+	position: relative;
+}
+
+.teamname {
+	margin-left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+/* 十強團隊 Pitch 團隊介紹 */
+#et68 {
+	background: url("../../img/20teams/et_68/cover.jpg") center center;
+	background-size: cover;
+}
+
+#et72 {
+	background: url("../../img/20teams/et_72/cover.jpg") center center;
+	background-size: cover;
+}
+
+#fa56 {
+	background: url("../../img/20teams/fa_56/cover.jpg") center center;
+	background-size: cover;
+}
+
+#fa64 {
+	background: url("../../img/20teams/fa_64/cover.jpg") center center;
+	background-size: cover;
+}
+
+#hc52 {
+	background: url("../../img/20teams/hc_52/cover.jpg") center center;
+	background-size: cover;
+}
+
+#hc62 {
+	background: url("../../img/20teams/hc_62/cover.jpg") center center;
+	background-size: cover;
+}
+
+#hc69 {
+	background: url("../../img/20teams/hc_69/cover.jpg") center center;
+	background-size: cover;
+}
+
+#sl05 {
+	background: url("../../img/20teams/sl_05/cover.jpg") center center;
+	background-size: cover;
+}
+
+#sl55 {
+	background: url("../../img/20teams/sl_55/cover.jpg") center center;
+	background-size: cover;
+}
+
+#sl66 {
+	background: url("../../img/20teams/sl_66/cover.jpg") center center;
+	background-size: cover;
+}
+
+/* RWD Design */
+@media( max-width: 767px ) {
+	header.container {
+		height: 110vh;
+	}
+
+	div.container {
+		padding: 30px 0;
+	}
+
+	.act-logo {
+		width: 100%;
+		height: 50%;
+	}
+
+	/* 介紹文字區塊 */
+	.intro {
+		width: 100%;
+		height: 40%;
+	}
+
+	.desc {
+		height: 120vh;
+	}
+
+	#night-schedule .desc {
+		height: 80vh;
+	}
+
+	#teams-pitch .desc {
+		height: 200vh;
+	}
+
+	.team {
+		width: 100%;
+		height: 10%;
+	}
+
+	.team::after {
+		content: '';
+		display: block;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, 0.4);
+	}
+
+	.title {
+		font-size: 32px;
+	}
+
+	/* 選取主題論壇的按鈕 */
+	#talk-buttons {
+		width: 100%;
+	}
+
+	#night-schedule table {
+		width: 80%;
+		margin-left: 10%;
+		font-size: 16px;
+	}
+
+	#night-schedule th, td {
+		padding: 10px 20px;
+	}
+}
+
+@media( min-width: 768px ) {
+	.container {
+		height: 100vh;
+	}
+
+	.act-logo {
+		width: 40%;
+		height: 100%;
+	}
+
+	/* 介紹文字區塊 */
+	.intro {
+		width: 60%;
+		height: 100%;
+	}
+
+	.desc {
+		height: 100vh;
+	}
+
+	#teams-pitch .desc {
+		height: 25vw;
+	}
+
+	#teams-pitch .desc::after {
+		clear: left;
+	}
+
+	.team {
+		width: 20%;
+		height: 50%;
+		float: left;
+	}
+
+	.team::after {
+		content: '';
+		display: block;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, 0.7);
+		opacity: 0;
+		-webkit-transition: all 1.5s;
+		-moz-transition: all 1.5s;
+		transition: all 1.5s;
+	}
+
+	.team:hover::after {
+		opacity: 1;
+	}
+
+	.teamname {
+		opacity: 0;
+		z-index: 1;
+		-webkit-transition: all 1.5s;
+		-moz-transition: all 1.5s;
+		transition: all 1.5s;
+	}
+
+	.team:hover .teamname {
+		opacity: 1;
+	}
+
+	.title {
+		font-size: 40px;
+	}
+
+	/* 領域嘉賓們 */
+	.guest {
+		display: -webkit-flex;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	/* 選取主題論壇的按鈕 */
+	#talk-buttons {
+		width: 60%;
+		margin-left: 20%;
+	}
+
+	#night-schedule table {
+		margin-left: 50%;
+		transform: translate(-50%, -50%);
+		font-size: 22px;
+	}
+
+	#night-schedule th, td {
+		padding: 20px;
+	}
+
+	.teamname {
+		font-size: 14px;
+	}
+}
+
+@media ( min-width: 980px ) {
+	.title {
+		font-size: 52px;
+	}
+
+	/* 選取主題論壇的按鈕 */
+	#talk-buttons {
+		width: 40%;
+		margin-left: 30%;
+	}
+
+	.expert {
+		position: relative;
+	}
+
+	.expert-intro {
+		position: absolute;
+		bottom: 0;
+	}
+
+	#night-schedule th, td {
+		padding: 30px 20px;
+	}
+
+	.teamname {
+		font-size: 16px;
+	}
+}
