@@ -41,8 +41,10 @@ th, td {
 }
 
 /* 活動簡介/領域嘉賓 */
-.container {
+section .container {
 	width: 100vw;
+	background: url("../../img/summit/bg3.jpg") center center fixed;
+	background-size: cover;
 }
 
 header.container {
@@ -56,11 +58,6 @@ header.container > div {
 
 header.container::after {
 	clear: left;
-}
-
-div.container {
-	background: url("../../img/summit/bg3.jpg") center center fixed;
-	background-size: cover;
 }
 
 .act-logo {
