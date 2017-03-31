@@ -1,5 +1,14 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400);
 @import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
+
+@font-face {
+	font-family: Futura-Medium;
+	src: url("../../font/Futura-Medium.ttf");
+}
+
+* {
+	font-family: 'Futura-Medium', 'Noto Sans TC', Sans-Serif;
+	color: #fff;
+}
 
 body {
 	background-color: #000;
@@ -7,9 +16,16 @@ body {
 	padding: 0;
 }
 
-a, h1, h2, h3, h4, h5, h6, p, span, button, table, caption {
-	font-family: "Noto Sans TC", "Open Sans", Sans-Serif;
-	color: #fff;
+p {
+	font-weight: 100;
+}
+
+.intro h1 {
+	margin: 0 auto;
+}
+
+.intro p {
+	margin-top: 20px;
 }
 
 h2 {
@@ -52,8 +68,33 @@ section .container {
 }
 
 header {
+	position: relative;
 	width: 100vw;
-	background: url("../../img/summit/bg1.jpg") center center fixed;
+	z-index: -2;
+}
+
+header#night {
+	background: url("../../img/summit/main_activities/header/challengers-night.jpg") center center fixed;
+	background-size: cover;
+}
+
+header#track {
+	background: url("../../img/summit/main_activities/header/main-tracks.jpg") center center fixed;
+	background-size: cover;
+}
+
+header#opening {
+	background: url("../../img/summit/main_activities/header/opening-keynote.jpg") center center fixed;
+	background-size: cover;
+}
+
+header#pitch {
+	background: url("../../img/summit/main_activities/header/team-pitch.jpg") center center fixed;
+	background-size: cover;
+}
+
+header#salon {
+	background: url("../../img/summit/main_activities/header/topics-salon.jpg") center center fixed;
 	background-size: cover;
 }
 
@@ -62,6 +103,14 @@ header > div {
 }
 
 header::after {
+	position: absolute;
+	top: 0;
+	content: '';
+	display: block;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.7);
+	z-index: -2;
 	clear: left;
 }
 
@@ -88,6 +137,10 @@ header::after {
 	100% {
 		opacity: 0;
 	}
+}
+
+.en-title {
+	font-style: italic;
 }
 
 /* 介紹文字區塊 */
