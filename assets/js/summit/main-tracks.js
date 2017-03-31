@@ -12,7 +12,7 @@ talk4.hide();
 // Apply function to show only the talk clicked
 function toggleTalk( index ) {
 	var talks_to_hide = talks.slice();
-	talks_to_hide[index - 1].toggle();
+	talks_to_hide[index - 1].show();
 	// Pop the talk to toggle, the remaining should be hidden
 	if( index > -1 ) {
 		talks_to_hide.splice( index - 1, 1 );
