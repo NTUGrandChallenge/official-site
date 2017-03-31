@@ -47,17 +47,17 @@ section .container {
 	background-size: cover;
 }
 
-header.container {
+header {
 	width: 100vw;
 	background: url("../../img/summit/bg1.jpg") center center fixed;
 	background-size: cover;
 }
 
-header.container > div {
+header > div {
 	float: left;
 }
 
-header.container::after {
+header::after {
 	clear: left;
 }
 
@@ -215,7 +215,7 @@ header.container::after {
 
 /* RWD Design */
 @media( max-width: 767px ) {
-	header.container {
+	header {
 		height: 110vh;
 	}
 
@@ -280,7 +280,7 @@ header.container::after {
 }
 
 @media( min-width: 768px ) {
-	header.container,
+	header,
 	section .container {
 		height: 100vh;
 	}
