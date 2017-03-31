@@ -39,6 +39,10 @@ button {
 	font-size: 16px;
 }
 
+button:focus {
+	outline: 0;
+}
+
 table {
 	text-align: center;
 	border-collapse: collapse;
@@ -63,8 +67,6 @@ th, td {
 /* 活動簡介/領域嘉賓 */
 section .container {
 	width: 100vw;
-	background: url("../../img/summit/bg3.jpg") center center fixed;
-	background-size: cover;
 }
 
 header {
@@ -123,10 +125,6 @@ header::after {
 	animation: shine 5s linear 1s infinite;
 }
 
-/* .logo-un-highlight {
-	animation: shine 4s linear infinite;
-} */
-
 @keyframes shine {
 	0% {
 		opacity: 0;
@@ -156,10 +154,19 @@ header::after {
 }
 
 /* 介紹文字 */
-.intro-text,
-.desc-text {
+.intro-text {
 	width: 80%;
 	margin-left: 10%;
+}
+
+.desc-text {
+	width: 60%;
+    margin-left: 20%;
+    text-align: justify;
+}
+
+.desc p {
+	margin-top: 20px;
 }
 
 #topics-salon .desc-text {
@@ -204,6 +211,26 @@ header::after {
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
+}
+
+#talk1 .container {
+	background: url("../../img/summit/main_activities/main-tracks/track_smart.jpg") center center fixed;
+	background-size: cover;
+}
+
+#talk2 .container {
+	background: url("../../img/summit/main_activities/main-tracks/track_health.jpg") center center fixed;
+	background-size: cover;
+}
+
+#talk3 .container {
+	background: url("../../img/summit/main_activities/main-tracks/track_environment.jpg") center center fixed;
+	background-size: cover;
+}
+
+#talk4 .container {
+	background: url("../../img/summit/main_activities/main-tracks/track_society.jpg") center center fixed;
+	background-size: cover;
 }
 
 /* 挑戰者之夜 表格 */
@@ -302,7 +329,7 @@ header::after {
 	}
 
 	.desc {
-		height: 120vh;
+		height: 170vh;
 	}
 
 	#night-schedule .desc {
