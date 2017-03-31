@@ -153,6 +153,14 @@ header::after {
 	align-items: center;
 }
 
+/* 挑戰者之夜 表格 */
+#night-schedule caption,
+#night-schedule th,
+#night-schedule td {
+	text-align: center;
+}
+
+/* 十強團隊 Pitch 團隊介紹 */
 .team {
 	position: relative;
 }
@@ -162,7 +170,6 @@ header::after {
 	transform: translate(-50%, -50%);
 }
 
-/* 十強團隊 Pitch 團隊介紹 */
 #et68 {
 	background: url("../../img/20teams/et_68/cover.jpg") center center;
 	background-size: cover;
@@ -285,7 +292,8 @@ header::after {
 		font-size: 16px;
 	}
 
-	#night-schedule th, td {
+	#night-schedule th,
+	#night-schedule td {
 		padding: 10px 20px;
 	}
 }
