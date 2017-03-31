@@ -264,6 +264,10 @@ header::after {
 		height: 160vh;
 	}
 
+	#opening-keynote .desc {
+		height: 180vh;
+	}
+
 	.team {
 		width: 100%;
 		height: 10%;
@@ -332,6 +336,10 @@ header::after {
 
 	#teams-pitch .desc {
 		height: 25vw;
+	}
+
+	#opening-keynote .desc {
+		height: 80vh;
 	}
 
 	#teams-pitch .desc::after {
