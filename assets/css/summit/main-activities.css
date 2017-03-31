@@ -260,6 +260,10 @@ header::after {
 		height: 200vh;
 	}
 
+	#topics-salon .desc {
+		height: 140vh;
+	}
+
 	.team {
 		width: 100%;
 		height: 10%;
