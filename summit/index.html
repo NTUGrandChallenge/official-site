@@ -4,219 +4,375 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    
+
     <link rel="shortcut icon" href="../assets/img/logo.ico">
     <link rel="stylesheet" href="../assets/plugins/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="../assets/plugins/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="../assets/plugins/sweetalert/dist/sweetalert.css">
-    <link rel="stylesheet" href="../assets/css/general.css">
     <link rel="stylesheet" href="../assets/css/summit/index.css">
 
     <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
     <script src="../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
     <script src="../assets/plugins/sweetalert/dist/sweetalert.min.js"></script>
-
-    <style>
-        /* line 6, ../../sass/summit/index.scss */
-        html * {
-          font-family: 'Futura-Medium', 'Noto Sans TC', sans-serif;
-        }
-
-        /* line 10, ../../sass/summit/index.scss */
-        body {
-          background-color: #000;
-        }
-
-        /* line 34, ../../sass/summit/index.scss */
-        #sidenav:hover #nav_button {
-          left: -50px;
-        }
-        /* line 37, ../../sass/summit/index.scss */
-        #sidenav #nav_button {
-          position: fixed;
-          left: 0;
-          top: 10vh;
-          color: #000;
-          z-index: 100;
-          cursor: pointer;
-          transition: all .5s;
-        }
-        /* line 48, ../../sass/summit/index.scss */
-        #sidenav #nav_button .icon-wrapper {
-          z-index: 100;
-          position: absolute;
-          height: 60px;
-          left: 5px;
-          top: 0;
-        }
-        /* line 55, ../../sass/summit/index.scss */
-        #sidenav #nav_button .icon-wrapper .fa {
-          position: relative;
-          line-height: 60px;
-        }
-        /* line 60, ../../sass/summit/index.scss */
-        #sidenav #nav_button .triangle {
-          content: "";
-          z-index: 99;
-          position: absolute;
-          left: 0;
-          top: 0;
-          width: 0;
-          height: 0;
-          border-top: 30px solid transparent;
-          border-bottom: 30px solid transparent;
-          border-left: 40px solid #fff;
-        }
-        /* line 76, ../../sass/summit/index.scss */
-        #sidenav #nav_menu .list {
-          position: fixed;
-          left: 0;
-          top: 0;
-          z-index: 100;
-          height: 100vh;
-          width: 0;
-          background-color: #eee;
-          overflow: hidden;
-          transition: width .4s ease-out;
-        }
-        /* line 88, ../../sass/summit/index.scss */
-        #sidenav #nav_menu .list.expanded {
-          width: 300px;
-        }
-        @media screen and (max-width: 768px) {
-          /* line 88, ../../sass/summit/index.scss */
-          #sidenav #nav_menu .list.expanded {
-            width: 100vw;
-          }
-        }
-        /* line 95, ../../sass/summit/index.scss */
-        #sidenav #nav_menu .list a, #sidenav #nav_menu .list a:hover {
-          text-decoration: none;
-          color: #333;
-        }
-        /* line 99, ../../sass/summit/index.scss */
-        #sidenav #nav_menu .list .close_button {
-          position: absolute;
-          right: 10px;
-          top: 10px;
-        }
-        /* line 104, ../../sass/summit/index.scss */
-        #sidenav #nav_menu .list ul {
-          list-style-type: none;
-          padding: 50px 0 0;
-        }
-        /* line 108, ../../sass/summit/index.scss */
-        #sidenav #nav_menu .list h2 {
-          padding: 20px 40px;
-          width: 300px;
-        }
-        @media screen and (max-width: 768px) {
-          /* line 108, ../../sass/summit/index.scss */
-          #sidenav #nav_menu .list h2 {
-            width: 100vw;
-          }
-        }
-        /* line 116, ../../sass/summit/index.scss */
-        #sidenav #nav_menu .list ul li:hover {
-          background-color: #ffeb32;
-        }
-        /* line 119, ../../sass/summit/index.scss */
-        #sidenav #nav_menu .list ul li .title-zh {
-          font-size: 28px;
-          font-weight: bold;
-        }
-        /* line 123, ../../sass/summit/index.scss */
-        #sidenav #nav_menu .list ul li .title-en {
-          font-size: 24px;
-          font-style: italic;
-        }
-        /* line 130, ../../sass/summit/index.scss */
-        #sidenav #nav_menu .list.sub {
-          left: 300px;
-          z-index: 99;
-          background-color: #ddd;
-        }
-        @media screen and (max-width: 768px) {
-          /* line 130, ../../sass/summit/index.scss */
-          #sidenav #nav_menu .list.sub {
-            left: 0;
-          }
-        }
-        /* line 138, ../../sass/summit/index.scss */
-        #sidenav #nav_menu .list.sub .back_button {
-          position: absolute;
-          left: 10px;
-          top: 10px;
-        }
-
-        .videoWrapper {
-            position: relative;
-            padding-bottom: 56.25%; /* 16:9 */
-            height: 0;
-        }
-        .videoWrapper iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-        }
-    </style>
 </head>
 <body>
     <div id="sidenav">
-        <span id="nav_button">
-            <span class="triangle"></span>
-            <span class="icon-wrapper">
-                <i class="fa fa-info fa-2x" aria-hidden="true"></i>
+
+    </div>
+
+    <div class="page-container">
+        <div id="top" class="visible-md visible-lg">
+            <div class="stars inside"></div>
+            <div class="stars outside"></div>
+
+            <div class="mountains-container">
+                <div class="mountain m1"></div>
+                <div class="mountain m2"></div>
+                <div class="mountain m3"></div>
+                <div class="mountain m4"></div>
+            </div>
+            <div class="pulse"></div>
+
+            <div class="title"></div>
+
+            <a href="http://www.accupass.com/go/ntuchallengesummit" target="_blank">
+            <span class="sign-button">
+                <svg class="trapezoid" viewbox="0 0 300 100" preserveAspectRatio="xMinYMin slice">
+                    <path d="M0,0
+                           L88,100
+                           L300,100
+                           L300,0z" fill="#fff">
+                    </path>
+                </svg>
+                <div class="text">
+                    <div class="zh">前往報名</div>
+                    <div class="en">SIGN UP!</div>
+                </div>
             </span>
-        </span>
-        <div id="nav_menu">
-            <nav class="list main">
-                <span class="close_button"><i class="fa fa-times fa-2x" aria-hidden="true"></i></span>
-                <h2>活動網站<br>Coming Soon!</h2>
-                <a href="https://ntuchallenge.com/">
-                    <h2 style="font-size: 20px;">回到首頁</h2>
-                </a>
-            </nav>
+            </a>
+
+            <div class="fade-black"></div>
         </div>
+        <div id="top_mobile" class="visible-xs visible-sm">
+            <div class="stars inside"></div>
+            <div class="stars outside"></div>
+
+            <div class="whiteN"></div>
+            <div class="mountain"></div>
+            <div class="title"></div>
+
+            <a href="http://www.accupass.com/go/ntuchallengesummit">
+            <span class="sign-button">
+                <svg class="trapezoid" viewbox="0 0 300 100" preserveAspectRatio="xMinYMin slice">
+                    <path d="M0,0
+                           L88,100
+                           L300,100
+                           L300,0z" fill="#fff">
+                    </path>
+                </svg>
+                <div class="text">
+                    <div class="zh">前往報名</div>
+                    <div class="en">SIGN UP!</div>
+                </div>
+            </span>
+            </a>
+
+            <div class="fade-black"></div>
+        </div>
+
+        <div id="about">
+            <!-- <div class="background" style="background-image: url('../assets/img/summit/about_background.png');"></div> -->
+            <div class="black-mask"></div>
+
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="title">
+                        <div style="font-size: 40px;">What is</div>
+                        <div style="font-size: 40px;">NTU Challenge</div>
+                        <div style="font-size: 40px;">SUMMIT 2O17</div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-8" style="padding: 0;">
+                        <br>
+                        <h3>每個挑戰，都潛藏著轉變的契機</h3>
+                        <p>人口超高齡化、經濟疲軟、環境污染、貧富差距擴大... 當代的我們面臨了許多複雜而困難的挑戰。然而，換個角度想，每一個挑戰的背後，其實都潛藏著改變的契機。我們是否能發揮創新思維，扭轉局勢，化危機為轉機？</p>
+                        <p>創創挑戰賽高峰會是一次面對挑戰、探索機會的盛會。來自全台各地的挑戰者(Challenger) 、行動者(Doer)、夢想家(Dreamer)、自造者 (Maker) 、未來家(Futurist)、改變者(Changemaker) 都將聚於此地，共同思索當前面臨的挑戰與契機，碰撞出跨界火花，並利用創新思維與創業家精神重新定義未來世界的科技、商業與文化。</p>
+                        <br>
+                        <h3>高峰會宗旨</h3>
+                        <p>「挑戰賽高峰會旨在鼓勵人們以創新思維與創業家精神，解決真實社會中複雜困難的挑戰，並推動最具潛力與影響力的新興團隊發展前進。」</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="principle">
+            <div class="container-fluid">
+                <div class="row one-man">
+                    <div class="col-sm-offset-2 col-sm-2">
+                        <img src="../assets/img/people/president.png" class="circular-img">
+                        <p class="title">國立臺灣大學 校長</p>
+                        <p class="name">楊泮池</p>
+                    </div>
+                    <div class="col-sm-offset-1 col-sm-7">
+                        <div class="text-container">
+                            <img src="../assets/img/summit/index/principle_quote1.png" class="quote start">
+                            <img src="../assets/img/summit/index/principle_quote2.png" class="quote end">
+                            <p>你要了解這些學習，是為了解決什麼問題。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row one-man">
+                    <div class="col-sm-offset-2 col-sm-2">
+                        <img src="../assets/img/people/kuo.png" class="circular-img">
+                        <p class="title">臺大創新設計學院 執行長</p>
+                        <p class="name">郭大維</p>
+                    </div>
+                    <div class="col-sm-offset-1 col-sm-7">
+                        <div class="text-container">
+                            <img src="../assets/img/summit/index/principle_quote1.png" class="quote start">
+                            <img src="../assets/img/summit/index/principle_quote2.png" class="quote end">
+                            <p>創新思維與創業家精神，是解決真實社會中困難挑戰的重要手段。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="five">
+            <div class="title">
+                <div style="font-size: 80px; line-height: 80px;">5</div>
+                <div style="font-size: 30px;">Main Activities</div>
+                <div style="font-size: 24px;">五大核心活動</div>
+            </div>
+
+            <div class="container-fluid">
+                <div class="row">
+                <div class="activities-container">
+                    <div class="col-sm-5ths col-xs-6 activity">
+                        <a href="#">
+                        <div class="image-wrapper">
+                            <img src="../assets/img/summit/index/V_opening.png">
+                            <img src="../assets/img/summit/index/V_opening_active.png" class="active">
+                        </div>
+                        </a>
+                        <div class="title-wrapper">
+                            <div class="zh">開場演說</div>
+                            <div class="en">Opening<br>Keynote</div>
+                        </div>
+                    </div>
+                    <div class="col-sm-5ths col-xs-6 activity">
+                        <a href="#">
+                        <div class="image-wrapper">
+                            <img src="../assets/img/summit/index/W_tracks.png">
+                            <img src="../assets/img/summit/index/W_tracks_active.png" class="active">
+                        </div>
+                        </a>
+                        <div class="title-wrapper">
+                            <div class="zh">四大主題論壇</div>
+                            <div class="en">Main Tracks</div>
+                        </div>
+                    </div>
+                    <div class="col-sm-5ths col-xs-6 activity">
+                        <a href="#">
+                        <div class="image-wrapper">
+                            <img src="../assets/img/summit/index/X_teampitch.png">
+                            <img src="../assets/img/summit/index/X_teampitch_active.png" class="active">
+                        </div>
+                        </a>
+                        <div class="title-wrapper">
+                            <div class="zh">十強團隊簡報</div>
+                            <div class="en">Top 10<br>Teams’ Pitch</div>
+                        </div>
+                    </div>
+                    <div class="col-sm-5ths col-xs-6 activity">
+                        <a href="#">
+                        <div class="image-wrapper">
+                            <img src="../assets/img/summit/index/Y_Salon.png">
+                            <img src="../assets/img/summit/index/Y_Salon_active.png" class="active">
+                        </div>
+                        </a>
+                        <div class="title-wrapper">
+                            <div class="zh">議題沙龍</div>
+                            <div class="en">Topics Salon</div>
+                        </div>
+                    </div>
+                    <div class="col-sm-offset-0 col-sm-5ths col-xs-offset-3 col-xs-6 activity">
+                        <a href="#">
+                        <div class="image-wrapper">
+                            <img src="../assets/img/summit/index/Z_CNight.png">
+                            <img src="../assets/img/summit/index/Z_CNight_active.png" class="active">
+                        </div>
+                        </a>
+                        <div class="title-wrapper">
+                            <div class="zh">挑戰者之夜</div>
+                            <div class="en">Challengers'<br>Night</div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="row">
+                    <div class="descriptions-container hidden-xs">
+                        <p class="description">
+                            創創挑戰賽高峰會匯集來自各領域的觀點、經驗、知識和價值主張，提供每一位挑戰者一個促進交流以迸發行動的可能。我們以開場演講作為挑戰賽高峰會的基地營，由勇敢面對挑戰的前輩們擔任嚮導，一階一層，為所有與會者鋪墊理解挑戰的知識高度、面對未來的視野和打造創新解決方案的基石。
+                        </p>
+                        <p class="description">
+                            高峰會精選了四大主題，邀請「領域議題專家」與「創新應用專家」針對主題進行深度的交互討論。領域議題專家，將引導現場的挑戰者進入主題的宏觀視野，並且系統性地拆解、釐清主題內的重大議題。創新應用專家，則分享該主題內的新科技、新機會、新創意，擘畫未來可能的生活樣態。論壇將透過多位專家一來一往的深入對話，探討該主題當前的挑戰與契機，挖掘潛在的創新與突破機會。
+                        </p>
+                        <p class="description">
+                            將邀請創創挑戰賽前十強的團隊，上台與現場來賓進行 10 分鐘之簡報，並選出數組優秀隊伍進行頒獎。現場亦設置十隊成果靜態展出。你也許會想幫助他們飛得更高，想知道他們是如何一步步站上高峰會的舞台，那你絕對不能錯過這次團隊現場簡報的機會，聽他們述說屬於他們的夢想與故事。
+                        </p>
+                        <p class="description">
+                            沙龍（salon）一詞，源自義大利文中的「客廳」，往往是由主人邀請其他客人參加，增加彼此交流的機會以提升素養。現在，邀請各位來到挑戰賽的客廳，不再單方面拋問題給專家。在這個任何人都可以提供觀點的地方，和我們一起重建問題的全貌吧。藉此，我們打開不同的窗口、探索更多可能，讓更多元的觀點融入議題。雖然起初彷彿幽暗，但願不久便能豁然開朗。
+                        </p>
+                        <p class="description">
+                            挑戰者之夜，是專屬於挑戰者的聚會。這裡的每個人都懷抱著夢想，勇於冒險不怕失敗。都樂於分享自己的點子，探索無限的可能性。都願意從自己開始做起，主動幫助身旁的人，直到改善所處的社會。你，正在尋找志同道合的夥伴嗎？我們邀請你參與這場挑戰者專屬的晚會，與全台各地的挑戰者一同共襄盛舉，聽聽創業路上學長姐的經驗，和其他夥伴彼此切磋、交流看法，度過自在暢快的一晚。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="attend">
+            <div class="title">
+                <div style="font-size: 40px;">Attend Info</div>
+                <div style="font-size: 24px;">與會資訊</div>
+            </div>
+
+            <div class="container-fluid">
+                <div class="row" id="schedule">
+                    <div class="col-md-2 col-xs-3 column">
+                        <div class="grid date">
+
+                        </div>
+                        <div class="grid time">
+                            <div>
+                                <p>上午場</p>
+                                <p>Morning</p>
+                            </div>
+                        </div>
+                        <div class="grid time">
+                            <div>
+                                <p>下午場</p>
+                                <p>Afternoon</p>
+                            </div>
+                        </div>
+                        <div class="grid time">
+                            <div>
+                                <p>晚間場</p>
+                                <p>Night</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-5 col-xs-9 column">
+                        <div class="grid date">
+                            <div>
+                                <p>04 . 29 <span>(Sat.)</span></p>
+                            </div>
+                        </div>
+                        <div class="grid content">
+                            <div>
+                                <img src="../assets/img/summit/index/V_opening_active.png">
+                                <p class="en">Opening Keynote</p>
+                                <p class="zh">開場演說</p>
+                            </div>
+                        </div>
+                        <div class="grid content">
+                            <div>
+                                <img src="../assets/img/summit/index/W_tracks_active.png">
+                                <p class="en">Main Tracks</p>
+                                <p class="zh">四大主題論壇</p>
+                                <p class="detail">【科技，始於人性 — 呼應真實需求的智慧生活】</p>
+                                <p class="detail">【樂活社會，健康國家】</p>
+                            </div>
+                        </div>
+                        <div class="grid content">
+                            <div>
+                                <img src="../assets/img/summit/index/Z_CNight_active.png">
+                                <p class="en">Challengers’ Night</p>
+                                <p class="zh">挑戰者之夜</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-xs-3 visible-sm visible-xs column">
+                        <div class="grid date">
+
+                        </div>
+                        <div class="grid time">
+                            <div>
+                                <p>上午場</p>
+                                <p>Morning</p>
+                            </div>
+                        </div>
+                        <div class="grid time">
+                            <div>
+                                <p>下午場</p>
+                                <p>Afternoon</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-5 col-xs-9 column">
+                        <div class="grid date">
+                            <div>
+                                <p>04 . 30 <span>(Sun.)</span></p>
+                            </div>
+                        </div>
+                        <div class="grid content">
+                            <div>
+                                <img src="../assets/img/summit/index/W_tracks_active.png">
+                                <p class="en">Main Tracks</p>
+                                <p class="zh">四大主題論壇</p>
+                                <p class="detail">【邁向永續：轉型、再生、新經濟】</p>
+                                <p class="detail">【當代創新創業者的人文關懷】</p>
+                            </div>
+                        </div>
+                        <div class="grid content">
+                            <div>
+                                <img src="../assets/img/summit/index/X_teampitch_active.png">
+                                <p class="en">Top 10 Teams’ Pitch</p>
+                                <p class="zh">十強團隊簡報</p>
+                            </div>
+                        </div>
+                        <div class="grid hidden-xs hidden-sm">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="map-container">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.493131092936!2d121.53003134900294!3d25.044960914758686!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a97b582d5a73%3A0x9b1e56ab48807d62!2z5LiJ5Ym155Sf5rS75ZyS5Y2A!5e0!3m2!1szh-TW!2stw!4v1490727875586" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <h3>三創生活園區11-12樓</h3>
+                        <p>台北市中正區市民大道三段2號</p>
+                        <a href="https://www.syntrend.com.tw/traffic" target="_blank" style="font-size: 18px; color: #fff;">
+                            <i class="fa fa-map-marker" aria-hidden="true"></i> 交通資訊
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="back">
+            <a href="https://ntuchallenge.com/">
+            <div class="content">
+                <span class="logo">
+                    <img src="../assets/img/logo_pic.png">
+                </span>
+                <span class="text">Back to Homepage</span>
+            </div>
+            </a>
+        </div>
+
     </div>
 
-    <div class="videoWrapper">
-        <iframe width="1280" height="720" src="https://www.youtube.com/embed/mFfumhBpcQA?autoplay=1&rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
-    </div>
-    
-    <script>
-        var nav_width = 300;
-        var nav_transition_time = 400;
+    <footer>
 
-        // sidenav expand control
-        $('#sidenav').hover(function(){
-            $(this).find('.list.main').addClass('expanded');
-        }, function(){
-            $(this).find('.list.main').delay(nav_transition_time).queue(function(next){
-                $(this).removeClass('expanded');
-                next();
-            });
-        });
-        $('#sidenav .list.main li.hasSub').hover(function(){
-            $(this).find('.list.sub').delay(nav_transition_time).queue(function(next){
-                $(this).addClass('expanded');
-                next();
-            });
-        }, function(){
-            $(this).find('.list.sub').clearQueue();
-            $(this).find('.list.sub').removeClass('expanded');
-        });
+    </footer>
 
-        // sidnav exit and back control on mobile
-        $('#sidenav .close_button').click(function(){
-            $('#sidenav .list').removeClass('expanded');
-            $('#sidenav').trigger('mouseleave');    //not work QQ
-        })
-        $('#sidenav .list.sub .back_button').click(function(){
-            $('#sidenav .list.sub').removeClass('expanded');
-})
-    </script>
+    <script type="text/javascript" src="../assets/js/summit/general.js"></script>
+    <script type="text/javascript" src="../assets/js/summit/index.js"></script>
 </body>
 </html>
