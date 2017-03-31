@@ -65,14 +65,6 @@ header::after {
 	position: relative;
 }
 
-/* 五大活動發光大圖 */
-.act-logo img {
-	width: 80%;
-	margin-left: 10%;
-	height: auto;
-}
-
-
 .logo-highlight {
 	opacity: 0;
 	animation: shine 5s linear 1s infinite;
@@ -228,6 +220,13 @@ header::after {
 		height: 50%;
 	}
 
+	/* 五大活動發光大圖 */
+	.act-logo img {
+		width: 60%;
+		margin-left: 20%;
+		height: auto;
+	}
+
 	/* 介紹文字區塊 */
 	.intro {
 		width: 100%;
@@ -288,6 +287,13 @@ header::after {
 	.act-logo {
 		width: 40%;
 		height: 100%;
+	}
+
+	/* 五大活動發光大圖 */
+	.act-logo img {
+		width: 80%;
+		margin-left: 10%;
+		height: auto;
 	}
 
 	/* 介紹文字區塊 */
