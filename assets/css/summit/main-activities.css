@@ -117,6 +117,7 @@ header::after {
 }
 
 .act-logo {
+	/* 活動大圖置中 */
 	position: relative;
 }
 
@@ -160,13 +161,20 @@ header::after {
 }
 
 .desc-text {
-	width: 60%;
-    margin-left: 20%;
+	width: 80%;
+    margin-left: 10%;
     text-align: justify;
+    line-height: 32px;
 }
 
 .desc p {
-	margin-top: 20px;
+	margin-top: 40px;
+	margin-bottom: 10px;
+}
+
+.talk .desc img {
+	width: 80%;
+	margin-left: 10%;
 }
 
 #topics-salon .desc-text {
@@ -206,11 +214,10 @@ header::after {
 
 #talk-buttons {
 	height: 100%;
+}
 
-	display: -webkit-flex;
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
+#talk-buttons button {
+	border: none;
 }
 
 #talk1 .container {
@@ -301,9 +308,9 @@ header::after {
 }
 
 /* RWD Design */
-@media( max-width: 767px ) {
+@media screen and ( max-width: 768px ) {
 	header {
-		height: 110vh;
+		height: 140vh;
 	}
 
 	div.container {
@@ -312,7 +319,7 @@ header::after {
 
 	.act-logo {
 		width: 100%;
-		height: 50%;
+		height: 30%;
 	}
 
 	/* 五大活動發光大圖 */
@@ -325,11 +332,12 @@ header::after {
 	/* 介紹文字區塊 */
 	.intro {
 		width: 100%;
-		height: 40%;
+		margin-top: -10%;
+		height: 70%;
 	}
 
-	.desc {
-		height: 170vh;
+	.desc-text {
+		padding: 20px;
 	}
 
 	#night-schedule .desc {
@@ -365,9 +373,22 @@ header::after {
 		font-size: 32px;
 	}
 
-	/* 選取主題論壇的按鈕 */
 	#talk-buttons {
 		width: 100%;
+	}
+
+	#talk-buttons button {
+		width: 50%;
+		height: 50%;
+		float: left;
+	}
+
+	#talk-buttons::after {
+		clear: both;
+	}
+
+	.talk-btn-icon {
+		display: none;
 	}
 
 	#night-schedule table {
@@ -382,7 +403,7 @@ header::after {
 	}
 }
 
-@media( min-width: 768px ) {
+@media screen and ( min-width: 769px ) {
 	header,
 	section .container {
 		height: 100vh;
@@ -407,7 +428,24 @@ header::after {
 	}
 
 	.desc {
-		height: 100vh;
+		height: 140vh;
+	}
+
+	.talk .desc img {
+		position: absolute;
+		opacity: 0.2;
+	}
+
+	.desc-text {
+		/* Check if parent element's position is relative */
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+
+	.desc-text p {
+		width: 66%;
+		margin-left: 17%;
 	}
 
 	#topics-salon .desc {
@@ -474,8 +512,27 @@ header::after {
 
 	/* 選取主題論壇的按鈕 */
 	#talk-buttons {
-		width: 60%;
-		margin-left: 20%;
+		width: 80%;
+		margin-left: 10%;
+
+		display: -webkit-flex;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+	}
+
+	#talk-buttons button {
+		width: 25%;
+		text-align: center;
+	}
+
+	.talk-btn-icon {
+		width: 40px;
+		height: 40px;
+	}
+
+	.talk-btn-text {
+		display: none;
 	}
 
 	#night-schedule table {
@@ -493,15 +550,9 @@ header::after {
 	}
 }
 
-@media ( min-width: 980px ) {
+@media screen and ( min-width: 980px ) {
 	.title {
 		font-size: 52px;
-	}
-
-	/* 選取主題論壇的按鈕 */
-	#talk-buttons {
-		width: 40%;
-		margin-left: 30%;
 	}
 
 	.expert {
