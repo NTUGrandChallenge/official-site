@@ -1092,3 +1092,8 @@ footer a {
   font-size: 30px;
   padding-top: 10px;
 }
+
+.sidenav-coming-soon {
+  font-size: 18px;
+  font-style: italic;
+}
