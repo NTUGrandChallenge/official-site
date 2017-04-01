@@ -64,6 +64,8 @@ th, td {
 	/* Check if parent element's position is relative */
 	position: absolute;
 	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
 	transform: translateY(-50%);
 }
 
@@ -280,6 +282,8 @@ header::after {
 
 .teamname {
 	margin-left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
 }
 
@@ -436,7 +440,8 @@ header::after {
 	}
 
 	.act-logo {
-		width: 40%;
+		width: 30%;
+		margin-left: 10%;
 		height: 100%;
 	}
 
@@ -466,6 +471,8 @@ header::after {
 		/* Check if parent element's position is relative */
 		position: absolute;
 		top: 50%;
+		-webkit-transform: translateY(-50%);
+		-moz-transform: translateY(-50%);
 		transform: translateY(-50%);
 	}
 
@@ -558,17 +565,68 @@ header::after {
 		text-align: center;
 	}
 
-	.talk-btn-text {
-		display: none;
-	}
-
 	.talk-btn-icon {
 		width: 40px;
 		height: 40px;
 	}
 
+	/* 選取主題按鈕hover */
+	#talk-buttons button:hover .talk-btn-icon {
+		animation: spin 2s linear infinite;
+	}
+
+	@-webkit-keyframes spin {
+		0% {
+			-webkit-transform: rotate(0deg);
+		}
+		100% {
+			-webkit-transform: rotate(359deg);
+		}
+	}
+
+	@-moz-keyframes spin {
+		0% {
+			-moz-transform: rotate(0deg);
+		}
+		100% {
+			-moz-transform: rotate(359deg);
+		}
+	}
+
+	@keyframes spin {
+		0% {
+			transform: rotate(0deg);
+		}
+		100% {
+			transform: rotate(359deg);
+		}
+	}
+
+	#talk-buttons button:hover::after {
+		color: #fff;
+		display: inline-block;
+	}
+
+	#btn-talk1:hover::after {
+		content: '智慧生活';
+	}
+
+	#btn-talk2:hover::after {
+		content: '健康樂活';
+	}
+
+	#btn-talk3:hover::after {
+		content: '永續經濟';
+	}
+
+	#btn-talk4:hover::after {
+		content: '社會創業';
+	}
+
 	#night-schedule table {
 		margin-left: 50%;
+		-webkit-transform: translate(-50%, -50%);
+		-moz-transform: translate(-50%, -50%);
 		transform: translate(-50%, -50%);
 		font-size: 22px;
 	}
