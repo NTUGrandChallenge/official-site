@@ -1,3 +1,12 @@
+/*
+ * 選取主題論壇按鈕hover效果
+ */
+
+
+/*
+ * 切換領域主題論壇版面
+ */
+
 var talk1 = $('#talk1');
 var talk2 = $('#talk2');
 var talk3 = $('#talk3');
