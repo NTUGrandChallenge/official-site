@@ -1,0 +1,244 @@
+@import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
+
+@font-face {
+	font-family: Futura-Medium;
+	src: url("../../font/Futura-Medium.ttf");
+}
+
+* {
+	font-family: 'Futura-Medium', 'Noto Sans TC', Sans-Serif;
+}
+
+a, h1, h2, p, th, td, caption, button {
+	color: #fff;
+}
+
+body {
+	background-color: #000;
+	margin: 0;
+	padding: 0;
+}
+
+p {
+	font-weight: 100;
+	white-space: pre-wrap;
+}
+
+.intro h1 {
+	margin: 0 auto;
+}
+
+.intro p {
+	margin-top: 20px;
+}
+
+h2 {
+	margin-bottom: 30px;
+}
+
+button {
+	background-color: transparent;
+	border: solid 1px #fff;
+	padding: 10px 14px;
+	font-size: 16px;
+}
+
+button:focus {
+	outline: 0;
+}
+
+table {
+	text-align: center;
+	border-collapse: collapse;
+}
+
+th, td {
+	border: 1px solid #fff;
+	font-weight: normal;
+}
+
+.horizontal-middle {
+	text-align: center;
+}
+
+.vertical-middle {
+	/* Check if parent element's position is relative */
+	position: absolute;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+section .container {
+	position: relative;
+	width: 100vw;
+	z-index: -2;
+}
+
+section .container::after {
+	position: absolute;
+	top: 0;
+	left: 0;
+	content: '';
+	display: block;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.7);
+	z-index: -2;
+}
+
+header {
+	position: relative;
+	width: 100vw;
+	z-index: -2;
+	background: url("../../img/summit/attend-info/attend_info_bg.jpg") center center fixed;
+	background-size: cover;
+}
+
+header > div {
+	float: left;
+}
+
+header::after {
+	position: absolute;
+	top: 0;
+	content: '';
+	display: block;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.7);
+	z-index: -2;
+	clear: left;
+}
+
+.en-title {
+	font-style: italic;
+}
+
+/* 介紹文字區塊 */
+.intro {
+	position: relative;
+	background-color: transparent;
+	line-height: 30px;
+}
+
+.desc {
+	position: relative;
+	width: 100vw;
+}
+
+/* 介紹文字 */
+.intro-text {
+	width: 80%;
+	margin-left: 10%;
+}
+
+.desc-text {
+	width: 80%;
+    margin-left: 10%;
+    text-align: justify;
+    line-height: 32px;
+}
+
+.desc p {
+	margin-top: 40px;
+	margin-bottom: 10px;
+}
+
+#schedule {
+	background: url("../../img/summit/attend-info/attend_info_bg2.jpg") center center fixed;
+	background-size: cover;
+}
+
+caption, th, td {
+	text-align: center;
+}
+
+/* RWD Design */
+@media screen and ( max-width: 768px ) {
+	header {
+		height: 140vh;
+	}
+
+	div.container {
+		padding: 30px 0;
+	}
+
+	/* 介紹文字區塊 */
+	.intro {
+		width: 100%;
+		margin-top: -10%;
+		height: 70%;
+	}
+
+	.desc-text {
+		padding: 20px;
+	}
+
+	.title {
+		font-size: 32px;
+	}
+
+	table {
+		width: 80%;
+		margin-left: 10%;
+		font-size: 16px;
+	}
+
+	th, td {
+		padding: 10px 20px;
+	}
+}
+
+@media screen and ( min-width: 769px ) {
+	header,
+	section .container {
+		height: 100vh;
+	}
+
+	/* 介紹文字區塊 */
+	.intro {
+		width: 60%;
+		height: 100%;
+	}
+
+	.desc {
+		height: 60vh;
+	}
+
+	.desc-text {
+		/* Check if parent element's position is relative */
+		position: absolute;
+		top: 50%;
+		-webkit-transform: translateY(-50%);
+		-moz-transform: translateY(-50%);
+		transform: translateY(-50%);
+	}
+
+	.title {
+		font-size: 40px;
+	}
+
+	table {
+		margin-left: 50%;
+		-webkit-transform: translate(-50%, -50%);
+		-moz-transform: translate(-50%, -50%);
+		transform: translate(-50%, -50%);
+		font-size: 22px;
+	}
+
+	th, td {
+		padding: 20px;
+	}
+}
+
+@media screen and ( min-width: 980px ) {
+	.title {
+		font-size: 52px;
+	}
+
+	th, td {
+		padding: 30px 20px;
+	}
+}
