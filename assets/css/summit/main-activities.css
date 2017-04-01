@@ -71,7 +71,21 @@ th, td {
 
 /* 活動簡介/領域嘉賓 */
 section .container {
+	position: relative;
 	width: 100vw;
+	z-index: -2;
+}
+
+section .container::after {
+	position: absolute;
+	top: 0;
+	left: 0;
+	content: '';
+	display: block;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.7);
+	z-index: -2;
 }
 
 header {
