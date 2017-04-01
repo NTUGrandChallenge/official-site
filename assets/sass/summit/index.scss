@@ -327,6 +327,15 @@ $padding_horz: 10vw;
 		text-align: justify;
 		line-height: 30px;
 	}
+	.slide-container{
+		padding-top: 20px;
+		position: relative;
+
+		.about-slide{
+			width: 100%;
+			position: absolute;
+		}
+	}
 }
 
 #principle{

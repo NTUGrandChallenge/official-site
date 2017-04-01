@@ -707,8 +707,18 @@ footer a {
   text-align: justify;
   line-height: 30px;
 }
+/* line 330, ../../sass/summit/index.scss */
+#about .slide-container {
+  padding-top: 20px;
+  position: relative;
+}
+/* line 334, ../../sass/summit/index.scss */
+#about .slide-container .about-slide {
+  width: 100%;
+  position: absolute;
+}
 
-/* line 332, ../../sass/summit/index.scss */
+/* line 341, ../../sass/summit/index.scss */
 #principle {
   padding: 50px 10vw;
   color: #fff;
@@ -717,45 +727,45 @@ footer a {
   background-size: 40%;
   background-repeat: no-repeat;
 }
-/* line 342, ../../sass/summit/index.scss */
+/* line 351, ../../sass/summit/index.scss */
 #principle .one-man {
   margin-bottom: 50px;
 }
-/* line 345, ../../sass/summit/index.scss */
+/* line 354, ../../sass/summit/index.scss */
 #principle .one-man .circular-img {
   width: 100%;
   border-radius: 50%;
 }
-/* line 350, ../../sass/summit/index.scss */
+/* line 359, ../../sass/summit/index.scss */
 #principle .one-man .title {
   margin-top: 20px;
   margin-bottom: 0;
 }
-/* line 354, ../../sass/summit/index.scss */
+/* line 363, ../../sass/summit/index.scss */
 #principle .one-man .name {
   font-size: 24px;
 }
-/* line 357, ../../sass/summit/index.scss */
+/* line 366, ../../sass/summit/index.scss */
 #principle .one-man .text-container {
   position: relative;
   margin-top: 50px;
 }
-/* line 361, ../../sass/summit/index.scss */
+/* line 370, ../../sass/summit/index.scss */
 #principle .one-man .text-container .quote {
   position: absolute;
   width: 5%;
 }
-/* line 365, ../../sass/summit/index.scss */
+/* line 374, ../../sass/summit/index.scss */
 #principle .one-man .text-container .quote.start {
   left: 0;
   top: 0;
 }
-/* line 369, ../../sass/summit/index.scss */
+/* line 378, ../../sass/summit/index.scss */
 #principle .one-man .text-container .quote.end {
   right: 0;
   bottom: 0;
 }
-/* line 374, ../../sass/summit/index.scss */
+/* line 383, ../../sass/summit/index.scss */
 #principle .one-man .text-container p {
   margin: 0;
   padding: 30px 50px;
@@ -763,7 +773,7 @@ footer a {
   text-align: justify;
 }
 @media screen and (max-width: 768px) {
-  /* line 381, ../../sass/summit/index.scss */
+  /* line 390, ../../sass/summit/index.scss */
   #principle .one-man .text-container p {
     font-size: 24px;
     padding: 10px 30px;
@@ -771,7 +781,7 @@ footer a {
 }
 
 /*full width five column*/
-/* line 391, ../../sass/summit/index.scss */
+/* line 400, ../../sass/summit/index.scss */
 .col-xs-5ths,
 .col-sm-5ths,
 .col-md-5ths,
@@ -782,66 +792,66 @@ footer a {
   padding-left: 10px;
 }
 
-/* line 400, ../../sass/summit/index.scss */
+/* line 409, ../../sass/summit/index.scss */
 .col-xs-5ths {
   width: 20%;
   float: left;
 }
 
 @media (min-width: 768px) {
-  /* line 405, ../../sass/summit/index.scss */
+  /* line 414, ../../sass/summit/index.scss */
   .col-sm-5ths {
     width: 20%;
     float: left;
   }
 }
 @media (min-width: 992px) {
-  /* line 411, ../../sass/summit/index.scss */
+  /* line 420, ../../sass/summit/index.scss */
   .col-md-5ths {
     width: 20%;
     float: left;
   }
 }
 @media (min-width: 1200px) {
-  /* line 417, ../../sass/summit/index.scss */
+  /* line 426, ../../sass/summit/index.scss */
   .col-lg-5ths {
     width: 20%;
     float: left;
   }
 }
-/* line 422, ../../sass/summit/index.scss */
+/* line 431, ../../sass/summit/index.scss */
 #five {
   padding: 50px 10vw;
 }
-/* line 425, ../../sass/summit/index.scss */
+/* line 434, ../../sass/summit/index.scss */
 #five .title {
   margin-bottom: 30px;
   color: #fff;
   font-style: italic;
 }
-/* line 431, ../../sass/summit/index.scss */
+/* line 440, ../../sass/summit/index.scss */
 #five .activities-container .activity {
   text-align: center;
   padding: 0 30px;
 }
-/* line 436, ../../sass/summit/index.scss */
+/* line 445, ../../sass/summit/index.scss */
 #five .activities-container .activity:hover .image-wrapper img.active {
   opacity: 1;
 }
-/* line 439, ../../sass/summit/index.scss */
+/* line 448, ../../sass/summit/index.scss */
 #five .activities-container .activity:hover .title-wrapper {
   opacity: 1;
 }
-/* line 443, ../../sass/summit/index.scss */
+/* line 452, ../../sass/summit/index.scss */
 #five .activities-container .activity .image-wrapper {
   position: relative;
 }
-/* line 447, ../../sass/summit/index.scss */
+/* line 456, ../../sass/summit/index.scss */
 #five .activities-container .activity .image-wrapper img {
   width: 100%;
   animation: zoom 2s ease infinite;
 }
-/* line 451, ../../sass/summit/index.scss */
+/* line 460, ../../sass/summit/index.scss */
 #five .activities-container .activity .image-wrapper img.active {
   position: absolute;
   left: 0;
@@ -893,7 +903,7 @@ footer a {
     transform: scale(0.9, 0.9);
   }
 }
-/* line 471, ../../sass/summit/index.scss */
+/* line 480, ../../sass/summit/index.scss */
 #five .activities-container .activity .title-wrapper {
   margin-top: 30px;
   display: inline-block;
@@ -903,27 +913,27 @@ footer a {
   opacity: 0;
   transition: opacity .3s ease;
 }
-/* line 480, ../../sass/summit/index.scss */
+/* line 489, ../../sass/summit/index.scss */
 #five .activities-container .activity .title-wrapper .zh {
   font-weight: bold;
 }
-/* line 483, ../../sass/summit/index.scss */
+/* line 492, ../../sass/summit/index.scss */
 #five .activities-container .activity .title-wrapper .en {
   font-style: italic;
   font-weight: 100;
   line-height: 22px;
 }
 @media screen and (max-width: 768px) {
-  /* line 490, ../../sass/summit/index.scss */
+  /* line 499, ../../sass/summit/index.scss */
   #five .activities-container .activity .image-wrapper {
     height: 120px;
   }
-  /* line 492, ../../sass/summit/index.scss */
+  /* line 501, ../../sass/summit/index.scss */
   #five .activities-container .activity .image-wrapper img {
     height: 100px;
     width: auto;
   }
-  /* line 497, ../../sass/summit/index.scss */
+  /* line 506, ../../sass/summit/index.scss */
   #five .activities-container .activity .title-wrapper {
     height: 80px;
     opacity: 1;
@@ -931,13 +941,13 @@ footer a {
     margin-bottom: 10px;
   }
 }
-/* line 506, ../../sass/summit/index.scss */
+/* line 515, ../../sass/summit/index.scss */
 #five .descriptions-container {
   position: relative;
   height: 100px;
   margin-top: 50px;
 }
-/* line 511, ../../sass/summit/index.scss */
+/* line 520, ../../sass/summit/index.scss */
 #five .descriptions-container .description {
   position: absolute;
   width: 80%;
@@ -949,32 +959,32 @@ footer a {
   opacity: 0;
   transition: all .5s ease;
 }
-/* line 522, ../../sass/summit/index.scss */
+/* line 531, ../../sass/summit/index.scss */
 #five .descriptions-container .description.active {
   opacity: 1;
   right: 0;
 }
 
-/* line 530, ../../sass/summit/index.scss */
+/* line 539, ../../sass/summit/index.scss */
 #attend {
   padding: 50px 10vw;
   color: #fff;
 }
-/* line 535, ../../sass/summit/index.scss */
+/* line 544, ../../sass/summit/index.scss */
 #attend .title {
   margin-bottom: 30px;
   color: #fff;
   font-style: italic;
 }
-/* line 540, ../../sass/summit/index.scss */
+/* line 549, ../../sass/summit/index.scss */
 #attend #schedule {
   text-align: center;
 }
-/* line 543, ../../sass/summit/index.scss */
+/* line 552, ../../sass/summit/index.scss */
 #attend #schedule .column {
   padding: 0;
 }
-/* line 546, ../../sass/summit/index.scss */
+/* line 555, ../../sass/summit/index.scss */
 #attend #schedule .grid {
   height: 250px;
   display: -webkit-box;
@@ -987,55 +997,55 @@ footer a {
   -ms-flex-pack: center;
   justify-content: center;
 }
-/* line 558, ../../sass/summit/index.scss */
+/* line 567, ../../sass/summit/index.scss */
 #attend #schedule .grid:not(:last-child) {
   border-bottom: 1px solid #f2c640;
 }
-/* line 562, ../../sass/summit/index.scss */
+/* line 571, ../../sass/summit/index.scss */
 #attend #schedule .grid.time p {
   color: #f2c640;
   font-size: 24px;
 }
-/* line 566, ../../sass/summit/index.scss */
+/* line 575, ../../sass/summit/index.scss */
 #attend #schedule .grid.date {
   height: 50px;
   border-bottom: none;
 }
-/* line 569, ../../sass/summit/index.scss */
+/* line 578, ../../sass/summit/index.scss */
 #attend #schedule .grid.date p {
   color: #f2c640;
   font-family: 'Coves-Bold';
   font-size: 30px;
 }
-/* line 573, ../../sass/summit/index.scss */
+/* line 582, ../../sass/summit/index.scss */
 #attend #schedule .grid.date p span {
   font-size: 20px;
 }
-/* line 578, ../../sass/summit/index.scss */
+/* line 587, ../../sass/summit/index.scss */
 #attend #schedule .grid.content {
   color: #999;
 }
-/* line 581, ../../sass/summit/index.scss */
+/* line 590, ../../sass/summit/index.scss */
 #attend #schedule .grid.content img {
   width: 20%;
   margin-bottom: 10px;
 }
-/* line 585, ../../sass/summit/index.scss */
+/* line 594, ../../sass/summit/index.scss */
 #attend #schedule .grid.content .en {
   margin: 0;
 }
-/* line 588, ../../sass/summit/index.scss */
+/* line 597, ../../sass/summit/index.scss */
 #attend #schedule .grid.content .detail {
   margin: 0;
   color: #666;
 }
-/* line 596, ../../sass/summit/index.scss */
+/* line 605, ../../sass/summit/index.scss */
 #attend .map-container {
   position: relative;
   height: 0;
   padding-bottom: 75%;
 }
-/* line 601, ../../sass/summit/index.scss */
+/* line 610, ../../sass/summit/index.scss */
 #attend .map-container iframe {
   position: absolute;
   top: 0;
@@ -1045,25 +1055,25 @@ footer a {
   border: none;
 }
 
-/* line 613, ../../sass/summit/index.scss */
+/* line 622, ../../sass/summit/index.scss */
 #back {
   color: #fff;
   padding: 20px 10vw;
 }
-/* line 618, ../../sass/summit/index.scss */
+/* line 627, ../../sass/summit/index.scss */
 #back a {
   color: #fff;
 }
-/* line 620, ../../sass/summit/index.scss */
+/* line 629, ../../sass/summit/index.scss */
 #back a:hover {
   color: #f2c640;
   text-decoration: none;
 }
-/* line 625, ../../sass/summit/index.scss */
+/* line 634, ../../sass/summit/index.scss */
 #back .content {
   text-align: right;
 }
-/* line 627, ../../sass/summit/index.scss */
+/* line 636, ../../sass/summit/index.scss */
 #back .content .logo {
   display: inline-block;
   vertical-align: top;
@@ -1073,7 +1083,7 @@ footer a {
   background-color: #f2c640;
   position: relative;
 }
-/* line 636, ../../sass/summit/index.scss */
+/* line 645, ../../sass/summit/index.scss */
 #back .content .logo img {
   width: 70%;
   margin: 0 auto;
@@ -1084,7 +1094,7 @@ footer a {
   bottom: 0;
   margin: auto;
 }
-/* line 647, ../../sass/summit/index.scss */
+/* line 656, ../../sass/summit/index.scss */
 #back .content .text {
   height: 60px;
   display: inline-block;
