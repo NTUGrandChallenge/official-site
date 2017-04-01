@@ -55,9 +55,9 @@ a:hover{
 #sidenav{
 	$nav_width: 300px;
 
-	&:hover #nav_button{
-		left: -50px;
-	}
+	// &:hover #nav_button{
+	// 	left: -50px;
+	// }
 	#nav_button{
 		position: fixed;
 		left: 0;
@@ -137,7 +137,7 @@ a:hover{
 				padding: 20px 0 0;
 
 				li{
-					padding: 20px 40px;
+					padding: 10px 40px;
 					width: $nav_width;
 					position: relative;
 
@@ -156,10 +156,16 @@ a:hover{
 					.title-zh{
 						font-size: 28px;
 						font-weight: bold;
+						@media screen and (max-width: 768px){
+							font-size: 24px;
+						}
 					}
 					.title-en{
 						font-size: 24px;
 						font-style: italic;
+						@media screen and (max-width: 768px){
+							font-size: 20px;
+						}
 					}
 				}
 			}
