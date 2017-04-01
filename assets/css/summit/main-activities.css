@@ -228,17 +228,10 @@ header::after {
 	height: auto;
 }
 
-.expert-type {
-	font-size: 12px;
-}
-
+.expert-type,
 .speech,
 .speaker-ident {
-	font-size: 16px;
-}
-
-.speaker-name {
-	font-weight: 400;
+	font-size: 12px;
 }
 
 /* 領域嘉賓title */
@@ -389,20 +382,8 @@ header::after {
 		padding: 20px;
 	}
 
-	#night-schedule .desc {
-		height: 80vh;
-	}
-
 	#teams-pitch .desc {
 		height: 200vh;
-	}
-
-	#topics-salon .desc {
-		height: 160vh;
-	}
-
-	#opening-keynote .desc {
-		height: 180vh;
 	}
 
 	.team {
