@@ -218,17 +218,31 @@ header::after {
 }
 
 /* 領域嘉賓們 */
-.expert {
+.speaker {
 	background-color: #000;
 }
 
-.expert-photo {
+.speaker-photo {
+	max-width: 100%;
 	width: 100%;
 	height: auto;
 }
 
+.expert-type {
+	font-size: 12px;
+}
+
+.speech,
+.speaker-ident {
+	font-size: 16px;
+}
+
+.speaker-name {
+	font-weight: 400;
+}
+
 /* 領域嘉賓title */
-.expert-intro {
+.speaker-intro {
 	width: 100%;
 	padding: 20px;
 }
@@ -265,6 +279,11 @@ header::after {
 
 #talk4 .container {
 	background: url("../../img/summit/main_activities/main-tracks/track_society.jpg") center center fixed;
+	background-size: cover;
+}
+
+#opening-keynote .container {
+	background: url("../../img/summit/main_activities/opening-keynote/speakers.jpg") center center fixed;
 	background-size: cover;
 }
 
@@ -421,6 +440,12 @@ header::after {
 		display: none;
 	}
 
+	.speakers-title {
+		position: relative;
+		text-align: center;
+		margin-bottom: 28px;
+	}
+
 	#night-schedule table {
 		width: 80%;
 		margin-left: 10%;
@@ -543,10 +568,10 @@ header::after {
 		align-items: flex-end;
 	}
 
-	.expert {
-		top: 30%;
+	.speaker {
+		width: 24%;
 		height: 70%;
-		margin: 0 2px;
+		margin: 0 3px;
 	}
 
 	/* 選取主題論壇的按鈕 */
@@ -563,6 +588,10 @@ header::after {
 	#talk-buttons button {
 		width: 25%;
 		text-align: center;
+	}
+
+	.talk-btn-text {
+		display: none;
 	}
 
 	.talk-btn-icon {
@@ -621,6 +650,12 @@ header::after {
 
 	#btn-talk4:hover::after {
 		content: '社會創業';
+	}
+
+	.speakers-title {
+		position: absolute;
+		left: 27%;
+		margin-top: 20px;
 	}
 
 	#night-schedule table {
