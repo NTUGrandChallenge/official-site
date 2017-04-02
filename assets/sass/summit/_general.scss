@@ -172,10 +172,13 @@ a:hover{
 		}
 		.list.sub{
 			left: $nav_width;
-			z-index: 99;
+			z-index: 100;
 			background-color: #ddd;
 			@media screen and (max-width: 768px){
-					left: 0;
+				left: 0;
+				overflow: scroll;
+				min-height: 100vh;
+				height: auto;
 			}
 
 			ul{
