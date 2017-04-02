@@ -23,6 +23,21 @@ p {
 	font-weight: 100;
 }
 
+/* Safari 6.1-10.0 (not 10.1) */
+@media screen and (min-color-index:0) and( -webkit-min-device-pixel-ratio: 0 ) { @media {
+    p {
+		font-weight: 400;
+    }
+}}
+
+/* Safari 10.1+ */
+@media not all and ( min-resolution: .001dpcm ) { @media {
+	p {
+		font-weight: 400;
+	}
+}}
+
+
 .intro h1 {
 	margin: 0 auto;
 }
