@@ -24,7 +24,7 @@ p {
 }
 
 /* Safari 6.1-10.0 (not 10.1) */
-@media screen and (min-color-index:0) and( -webkit-min-device-pixel-ratio: 0 ) { @media {
+@media screen and ( min-color-index: 0 ) and( -webkit-min-device-pixel-ratio: 0 ) { @media {
     p {
 		font-weight: 400;
     }
