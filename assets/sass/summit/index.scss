@@ -142,6 +142,7 @@ $padding_horz: 10vw;
 	.title{
 		background-image: url('../../img/summit/index/title.png');
 		@extend %bg;
+		background-size: auto 110%;
 		background-position: center;
 	    z-index: 50;
 
@@ -293,7 +294,7 @@ $padding_horz: 10vw;
 	position: relative;
 	$block_height: 100vh;
 	$block_width: 100vw;
-	height: $block_height;
+	// height: $block_height;
 	padding: 50px $padding_horz;
 	color: #fff;
 
