@@ -5,11 +5,13 @@ var startSidenav = function(){
 	// sidenav expand control
 	$('#sidenav').hover(function(){
 		$(this).find('.list.main').addClass('expanded');
+		$(this).find('.list.main').clearQueue();
 		$(this).find('.list.main').delay(nav_transition_time).queue(function(next){
 			$(this).css('overflow', 'visible');
 			next();
 		});
 	}, function(){
+		$(this).find('.list.main').clearQueue();
 		$(this).find('.list.main').delay(nav_transition_time).queue(function(next){
 			$(this).removeClass('expanded');
 			$(this).css('overflow', 'hidden');
