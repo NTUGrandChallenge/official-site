@@ -1,1 +1,95 @@
 @import "general";
+
+
+#speakers{
+	margin: 30px auto;
+}
+.one-man{
+	position: relative;
+	cursor: pointer;
+
+	.img-wrapper{
+		img{
+			width: 100%;
+			filter: contrast(80%);
+			transition: all .3s ease;
+		}
+	}
+	.info-wrapper{
+		position: absolute;
+		left: 10px;
+		bottom: 10px;
+		color: #fff;
+
+		.name{
+			font-size: 24px;
+			font-weight: bold;
+		}
+		.title{
+			font-size: 18px;
+		}
+	}
+	&:hover{
+		img{
+			filter: contrast(100%);
+			transform: scale(.98);
+		}
+	}
+}
+
+.modal{
+	text-align: center;
+	padding: 0!important;
+
+	$modal_height: 70vh;
+	&:before{
+		content: '';
+		display: inline-block;
+		height: (100vh-$modal_height)/2;
+		vertical-align: middle;
+		margin-right: -4px;
+	}
+
+	.modal-dialog{
+		width: 90vw;
+		// height: 80vh;
+	}
+	.modal-content{
+		border-radius: 0px;
+		position: relative;
+		text-align: left;
+		
+		.close-button{
+			position: absolute;
+			right: 20px;
+			top: 20px;
+			cursor: pointer;
+			color: #999;
+			z-index: 10;
+
+			&:hover{
+				color: #000;
+			}
+		}
+		.modal-body{
+			padding: 0;
+			height: $modal_height;
+
+			.img-wrapper{
+				height: $modal_height;
+				padding: 0;
+				background-color: #000;
+
+				img{
+					height: 100%;
+				}
+			}
+			.content{
+				padding: 30px 10px 0;
+				height: $modal_height;
+				overflow-y: auto;
+			}
+			
+		}
+	}
+}

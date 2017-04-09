@@ -215,3 +215,99 @@ footer {
 footer a {
   color: #fff;
 }
+
+/* line 4, ../../sass/summit/speakers.scss */
+#speakers {
+  margin: 30px auto;
+}
+
+/* line 7, ../../sass/summit/speakers.scss */
+.one-man {
+  position: relative;
+  cursor: pointer;
+}
+/* line 12, ../../sass/summit/speakers.scss */
+.one-man .img-wrapper img {
+  width: 100%;
+  filter: contrast(80%);
+  transition: all .3s ease;
+}
+/* line 18, ../../sass/summit/speakers.scss */
+.one-man .info-wrapper {
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+  color: #fff;
+}
+/* line 24, ../../sass/summit/speakers.scss */
+.one-man .info-wrapper .name {
+  font-size: 24px;
+  font-weight: bold;
+}
+/* line 28, ../../sass/summit/speakers.scss */
+.one-man .info-wrapper .title {
+  font-size: 18px;
+}
+/* line 33, ../../sass/summit/speakers.scss */
+.one-man:hover img {
+  filter: contrast(100%);
+  transform: scale(0.98);
+}
+
+/* line 40, ../../sass/summit/speakers.scss */
+.modal {
+  text-align: center;
+  padding: 0 !important;
+}
+/* line 45, ../../sass/summit/speakers.scss */
+.modal:before {
+  content: '';
+  display: inline-block;
+  height: 100vh- 70vh/2;
+  vertical-align: middle;
+  margin-right: -4px;
+}
+/* line 53, ../../sass/summit/speakers.scss */
+.modal .modal-dialog {
+  width: 90vw;
+}
+/* line 57, ../../sass/summit/speakers.scss */
+.modal .modal-content {
+  border-radius: 0px;
+  position: relative;
+  text-align: left;
+}
+/* line 62, ../../sass/summit/speakers.scss */
+.modal .modal-content .close-button {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  cursor: pointer;
+  color: #999;
+  z-index: 10;
+}
+/* line 70, ../../sass/summit/speakers.scss */
+.modal .modal-content .close-button:hover {
+  color: #000;
+}
+/* line 74, ../../sass/summit/speakers.scss */
+.modal .modal-content .modal-body {
+  padding: 0;
+  height: 70vh;
+}
+/* line 78, ../../sass/summit/speakers.scss */
+.modal .modal-content .modal-body .img-wrapper {
+  height: 70vh;
+  padding: 0;
+  background-color: #000;
+}
+/* line 83, ../../sass/summit/speakers.scss */
+.modal .modal-content .modal-body .img-wrapper img {
+  height: 100%;
+}
+/* line 87, ../../sass/summit/speakers.scss */
+.modal .modal-content .modal-body .content {
+  padding: 30px 10px 0;
+  height: 70vh;
+  overflow-y: auto;
+}
