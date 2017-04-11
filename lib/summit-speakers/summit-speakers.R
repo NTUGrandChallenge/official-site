@@ -5,14 +5,15 @@ slashNToBr <- function(str){
   return(result)
 }
 
-data = read.table("summit-speakers.csv", header=TRUE, sep=",")
+data = read.csv2("summit-speakers.csv", header=TRUE, sep=",")
 
 l = lapply(1:nrow(data), FUN=function(i){
   list(activity = data[i,]$activity,
        name = data[i,]$name,
        title = data[i,]$title,
        issue = data[i,]$issue,
-       introduction = slashNToBr(data[i,]$introduction)
+       introduction = slashNToBr(data[i,]$introduction),
+       img_path = data[i,]$img_path
   )
 })
 
