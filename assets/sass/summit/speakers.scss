@@ -7,11 +7,12 @@
 .one-man{
 	position: relative;
 	cursor: pointer;
+	margin-bottom: 30px;
 
 	.img-wrapper{
 		img{
 			width: 100%;
-			filter: contrast(80%);
+			filter: contrast(70%);
 			transition: all .3s ease;
 		}
 	}
@@ -85,9 +86,16 @@
 				}
 			}
 			.content{
-				padding: 30px 10px 0;
+				padding: 30px 20px 0;
 				height: $modal_height;
 				overflow-y: auto;
+				text-align: justify;
+				// background: linear-gradient(to right, #000 , #666);
+				// color: #fff;
+
+				.introduction{
+					line-height: 24px;
+				}
 			}
 			
 		}
