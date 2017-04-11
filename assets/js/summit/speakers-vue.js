@@ -1,22 +1,22 @@
-// $.ajaxSetup({ cache: false });
+$.ajaxSetup({ cache: false });
 
-// var judges = new Vue({
-//     el: '#judges',
-//     data: {
-//         judges: []
-//     },
-//     created: function(){
-//         this.fetchData();
-//     },
-//     methods: {
-//         fetchData: function(){
-//             var self = this;
-//             $.getJSON('judges.json', function(data){
-//                 self.judges = data;
-//             })
-//         }
-//     }
-// });
+var judges = new Vue({
+    el: '#speakers',
+    data: {
+        speakers: []
+    },
+    created: function(){
+        this.fetchData();
+    },
+    methods: {
+        fetchData: function(){
+            var self = this;
+            $.getJSON('summit-speakers.json', function(data){
+                self.speakers = data;
+            })
+        }
+    }
+});
 
 // Vue.component('one-judge', {
 //     template: `
