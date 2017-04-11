@@ -65,7 +65,7 @@ Vue.component('speaker-modal', {
                                         <h1 class="name">{{ speaker.name }}</h1>
                                         <p class="title">{{ speaker.title }}</p>
                                         <h2>{{ speaker.activity }} -- {{speaker.issue }}</h2>
-                                        <p v-html="speaker.introduction"></p>
+                                        <p class="introduction" v-html="speaker.introduction"></p>
                                         
                                     </div>
                                 </div>
