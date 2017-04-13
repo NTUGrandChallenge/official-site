@@ -263,6 +263,10 @@ header::after {
 	font-size: 12px;
 }
 
+.en-name {
+	font-size: 14px;
+}
+
 /* 領域嘉賓title */
 .speaker-intro {
 	width: 100%;
