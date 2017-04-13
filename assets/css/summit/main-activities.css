@@ -309,13 +309,6 @@ header::after {
 	background-size: cover;
 }
 
-/* 挑戰者之夜 表格 */
-#night-schedule caption,
-#night-schedule th,
-#night-schedule td {
-	text-align: center;
-}
-
 /* 十強團隊 Pitch 團隊介紹 */
 .team {
 	position: relative;
@@ -455,17 +448,6 @@ header::after {
 		text-align: center;
 		margin-bottom: 28px;
 	}
-
-	#night-schedule table {
-		width: 80%;
-		margin-left: 10%;
-		font-size: 16px;
-	}
-
-	#night-schedule th,
-	#night-schedule td {
-		padding: 10px 20px;
-	}
 }
 
 @media screen and ( min-width: 769px ) {
@@ -493,10 +475,6 @@ header::after {
 		height: 100%;
 	}
 
-	.desc {
-		height: 140vh;
-	}
-
 	.talk .desc img {
 		position: absolute;
 		opacity: 0.2;
@@ -516,6 +494,10 @@ header::after {
 		margin-left: 17%;
 	}
 
+	.desc {
+		height: 140vh;
+	}
+
 	#topics-salon .desc {
 		height: 70vh;
 	}
@@ -524,12 +506,16 @@ header::after {
 		height: 25vw;
 	}
 
+	#teams-pitch .desc::after {
+		clear: left;
+	}
+
 	#opening-keynote .desc {
 		height: 80vh;
 	}
 
-	#teams-pitch .desc::after {
-		clear: left;
+	#challengers-night .desc {
+		height: 70vh;
 	}
 
 	.team {
@@ -668,18 +654,6 @@ header::after {
 		margin-top: 20px;
 	}
 
-	#night-schedule table {
-		margin-left: 50%;
-		-webkit-transform: translate(-50%, -50%);
-		-moz-transform: translate(-50%, -50%);
-		transform: translate(-50%, -50%);
-		font-size: 22px;
-	}
-
-	#night-schedule th, td {
-		padding: 20px;
-	}
-
 	.teamname {
 		font-size: 14px;
 	}
@@ -688,10 +662,6 @@ header::after {
 @media screen and ( min-width: 980px ) {
 	.title {
 		font-size: 52px;
-	}
-
-	#night-schedule th, td {
-		padding: 30px 20px;
 	}
 
 	.teamname {
