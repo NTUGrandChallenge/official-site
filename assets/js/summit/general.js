@@ -39,5 +39,5 @@ var startSidenav = function(){
 	});
 };
 
-$('#sidenav').load('_sidenav.html', startSidenav);
+$('#sidenav').load('_sidenav.html?v=0417', startSidenav);
 $('footer').load('_footer.html');
