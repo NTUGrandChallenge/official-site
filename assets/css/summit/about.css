@@ -1,0 +1,317 @@
+@import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
+@font-face {
+  font-family: Futura-Medium;
+  src: url("../../font/Futura-Medium.ttf");
+}
+/* line 8, ../../sass/summit/_general.scss */
+html * {
+  font-family: 'Futura-Medium', 'Noto Sans TC', sans-serif;
+}
+
+/* line 12, ../../sass/summit/_general.scss */
+body {
+  background-color: #000;
+  overflow-x: hidden;
+}
+
+/* line 16, ../../sass/summit/_general.scss */
+p {
+  font-size: 18px;
+}
+
+/* line 19, ../../sass/summit/_general.scss */
+a:hover {
+  color: #f2c640;
+}
+
+/* line 23, ../../sass/summit/_general.scss */
+.full-height {
+  height: 100%;
+}
+
+/* line 26, ../../sass/summit/_general.scss */
+.flexbox-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 100%;
+}
+
+/* line 61, ../../sass/summit/_general.scss */
+#sidenav #nav_button {
+  position: fixed;
+  left: 0;
+  top: 10vh;
+  color: #000;
+  z-index: 100;
+  cursor: pointer;
+  transition: all .5s;
+}
+/* line 72, ../../sass/summit/_general.scss */
+#sidenav #nav_button .icon-wrapper {
+  z-index: 100;
+  position: absolute;
+  height: 60px;
+  left: 5px;
+  top: 0;
+}
+/* line 79, ../../sass/summit/_general.scss */
+#sidenav #nav_button .icon-wrapper .fa-bars {
+  position: relative;
+  line-height: 60px;
+}
+/* line 84, ../../sass/summit/_general.scss */
+#sidenav #nav_button .triangle {
+  content: "";
+  z-index: 99;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 0;
+  border-top: 30px solid transparent;
+  border-bottom: 30px solid transparent;
+  border-left: 40px solid #fff;
+}
+/* line 100, ../../sass/summit/_general.scss */
+#sidenav #nav_menu .logo {
+  height: 80px;
+  width: 300px;
+  margin: 20px 50px 0;
+}
+/* line 104, ../../sass/summit/_general.scss */
+#sidenav #nav_menu .logo img {
+  height: 100%;
+}
+/* line 108, ../../sass/summit/_general.scss */
+#sidenav #nav_menu .list {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  height: 100vh;
+  width: 0;
+  background-color: #eee;
+  overflow: hidden;
+  transition: width .4s ease-out;
+}
+/* line 119, ../../sass/summit/_general.scss */
+#sidenav #nav_menu .list.expanded {
+  width: 300px;
+}
+@media screen and (max-width: 768px) {
+  /* line 119, ../../sass/summit/_general.scss */
+  #sidenav #nav_menu .list.expanded {
+    width: 100vw;
+  }
+}
+/* line 126, ../../sass/summit/_general.scss */
+#sidenav #nav_menu .list a, #sidenav #nav_menu .list a:hover {
+  text-decoration: none;
+  color: #333;
+}
+/* line 130, ../../sass/summit/_general.scss */
+#sidenav #nav_menu .list .close_button {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+/* line 135, ../../sass/summit/_general.scss */
+#sidenav #nav_menu .list ul {
+  list-style-type: none;
+  padding: 20px 0 0;
+}
+/* line 139, ../../sass/summit/_general.scss */
+#sidenav #nav_menu .list ul li {
+  padding: 10px 40px;
+  width: 300px;
+  position: relative;
+}
+/* line 144, ../../sass/summit/_general.scss */
+#sidenav #nav_menu .list ul li .icon {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+@media screen and (max-width: 768px) {
+  /* line 139, ../../sass/summit/_general.scss */
+  #sidenav #nav_menu .list ul li {
+    width: 100vw;
+  }
+}
+/* line 153, ../../sass/summit/_general.scss */
+#sidenav #nav_menu .list ul li:hover {
+  background-color: #f2c640;
+}
+/* line 156, ../../sass/summit/_general.scss */
+#sidenav #nav_menu .list ul li .title-zh {
+  font-size: 24px;
+  font-weight: bold;
+}
+@media screen and (max-width: 768px) {
+  /* line 156, ../../sass/summit/_general.scss */
+  #sidenav #nav_menu .list ul li .title-zh {
+    font-size: 20px;
+  }
+}
+/* line 163, ../../sass/summit/_general.scss */
+#sidenav #nav_menu .list ul li .title-en {
+  font-size: 20px;
+  font-style: italic;
+}
+@media screen and (max-width: 768px) {
+  /* line 163, ../../sass/summit/_general.scss */
+  #sidenav #nav_menu .list ul li .title-en {
+    font-size: 16px;
+  }
+}
+/* line 173, ../../sass/summit/_general.scss */
+#sidenav #nav_menu .list.sub {
+  left: 300px;
+  z-index: 100;
+  background-color: #ddd;
+}
+@media screen and (max-width: 768px) {
+  /* line 173, ../../sass/summit/_general.scss */
+  #sidenav #nav_menu .list.sub {
+    left: 0;
+    overflow: scroll;
+    min-height: 100vh;
+    height: auto;
+  }
+}
+/* line 184, ../../sass/summit/_general.scss */
+#sidenav #nav_menu .list.sub ul {
+  padding-top: 120px;
+}
+@media screen and (max-width: 768px) {
+  /* line 184, ../../sass/summit/_general.scss */
+  #sidenav #nav_menu .list.sub ul {
+    padding-top: 50px;
+  }
+}
+/* line 190, ../../sass/summit/_general.scss */
+#sidenav #nav_menu .list.sub .back_button {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+
+/* line 199, ../../sass/summit/_general.scss */
+footer {
+  color: #fff;
+  text-align: center;
+  background-color: #333;
+  padding: 30px 0 20px;
+}
+/* line 205, ../../sass/summit/_general.scss */
+footer a {
+  color: #fff;
+}
+
+/* line 3, ../../sass/summit/about.scss */
+.title {
+  color: #fff;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+/* line 9, ../../sass/summit/about.scss */
+.title .en {
+  font-size: 34px;
+  margin-bottom: 5px;
+  font-style: italic;
+}
+/* line 14, ../../sass/summit/about.scss */
+.title .zh {
+  font-size: 24px;
+  margin: 0;
+  display: inline-block;
+}
+/* line 19, ../../sass/summit/about.scss */
+.title:after {
+  content: "/";
+  position: absolute;
+  right: -30px;
+  bottom: 0;
+  font-size: 45px;
+  color: #f2c640;
+}
+
+/* line 29, ../../sass/summit/about.scss */
+.partners-title {
+  color: #fff;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+/* line 34, ../../sass/summit/about.scss */
+.partners-title .en {
+  font-size: 28px;
+  font-style: italic;
+}
+
+/* line 40, ../../sass/summit/about.scss */
+.logo-block {
+  width: 100%;
+  background-color: #fff;
+  margin-bottom: 20px;
+}
+/* line 45, ../../sass/summit/about.scss */
+.logo-block img {
+  width: 100%;
+  filter: grayscale(70%);
+  transition: all .1s linear;
+}
+/* line 50, ../../sass/summit/about.scss */
+.logo-block img:hover {
+  filter: grayscale(0);
+}
+
+/* line 56, ../../sass/summit/about.scss */
+#introduction {
+  margin-top: 50px;
+  margin-bottom: 30px;
+  opacity: 0.8;
+}
+/* line 60, ../../sass/summit/about.scss */
+#introduction .text {
+  position: relative;
+  padding: 30px;
+  color: #fff;
+  font-size: 18px;
+}
+/* line 66, ../../sass/summit/about.scss */
+#introduction .text .quote {
+  position: absolute;
+  width: 20px;
+}
+/* line 70, ../../sass/summit/about.scss */
+#introduction .text .quote.start {
+  left: 0;
+  top: 0;
+}
+/* line 74, ../../sass/summit/about.scss */
+#introduction .text .quote.end {
+  right: 0;
+  bottom: 0;
+}
+
+/* line 83, ../../sass/summit/about.scss */
+#co_organizer h6 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+}
+/* line 88, ../../sass/summit/about.scss */
+#co_organizer p {
+  color: #ccc;
+  font-size: 16px;
+  text-align: justify;
+}

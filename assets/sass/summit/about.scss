@@ -1,0 +1,93 @@
+@import "general";
+
+.title{
+	color: #fff;
+	position: relative;
+	display: inline-block;
+	margin-bottom: 20px;
+	
+	.en{
+		font-size: 34px;
+		margin-bottom: 5px;
+		font-style: italic;
+	}
+	.zh{
+		font-size: 24px;
+		margin: 0;
+		display: inline-block;
+	}
+	&:after{
+		content: "/";
+		position: absolute;
+		right: -30px;
+		bottom: 0;
+		font-size: 45px;
+		color: $yellow;
+	}
+}
+
+.partners-title{
+	color: #fff;
+	font-size: 20px;
+	margin-bottom: 10px;
+
+	.en{
+		font-size: 28px;
+		font-style: italic;
+	}
+}
+
+.logo-block{
+	width: 100%;
+	background-color: #fff;
+	margin-bottom: 20px;
+
+	img{
+		width: 100%;
+		filter: grayscale(70%);
+		transition: all .1s linear;
+
+		&:hover{
+			filter: grayscale(0);
+		}
+	}
+}
+
+#introduction{
+	margin-top: 50px;
+	margin-bottom: 30px;
+	opacity: 0.8;
+	.text{
+		position: relative;
+		padding: 30px;
+		color: #fff;
+		font-size: 18px;
+
+		.quote{
+			position: absolute;
+			width: 20px;
+
+			&.start{
+				left: 0;
+				top: 0;
+			}
+			&.end{
+				right: 0;
+				bottom: 0;
+			}
+		}
+	}
+}
+
+#co_organizer{
+	h6{
+		color: #fff;
+		font-size: 20px;
+		font-weight: bold;
+	}
+	p{
+		color: #ccc;
+		font-size: 16px;
+		text-align: justify;
+	}
+}

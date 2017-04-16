@@ -1,0 +1,162 @@
+[
+  {
+    "type": 1,
+    "imgSrc": "../assets/img/logo/samsung.png",
+    "url": "http://www.samsung.com/tw/"
+  },
+  {
+    "type": 1,
+    "imgSrc": "../assets/img/logo/microsoft.png",
+    "url": "https://www.microsoft.com/zh-tw/"
+  },
+  {
+    "type": 1,
+    "imgSrc": "../assets/img/logo/acer.png",
+    "url": "http://www.acer.com/ac/zh/TW/content/byoc-home"
+  },
+  {
+    "type": 1,
+    "imgSrc": "../assets/img/logo/advantech.png",
+    "url": "http://www.advantech.tw/"
+  },
+  {
+    "type": 1,
+    "imgSrc": "../assets/img/logo/ibm.png",
+    "url": "https://www.ibm.com/tw-zh/"
+  },
+  {
+    "type": 1,
+    "imgSrc": "../assets/img/logo/intel.png",
+    "url": "http://www.intel.com.tw/content/www/tw/zh/homepage.html"
+  },
+  {
+    "type": 2,
+    "imgSrc": "../assets/img/logo/chengseng.png",
+    "url": "http://www.chengseng.com/"
+  },
+  {
+    "type": 2,
+    "imgSrc": "../assets/img/logo/custardcream.png",
+    "url": "http://www.custardcream.org/"
+  },
+  {
+    "type": 2,
+    "imgSrc": "../assets/img/logo/datavideo.png",
+    "url": "http://www.datavideo.com/tw/"
+  },
+  {
+    "type": 2,
+    "imgSrc": "../assets/img/logo/jandi.png",
+    "url": "https://www.jandi.com/landing/zh-tw"
+  },
+  {
+    "type": 2,
+    "imgSrc": "../assets/img/logo/klickklack.png",
+    "url": "https://www.facebook.com/KlickKlackTaiwan/"
+  },
+  {
+    "type": 2,
+    "imgSrc": "../assets/img/logo/sony.png",
+    "url": "https://www.sony.com.tw/zh"
+  },
+  {
+    "type": 2,
+    "imgSrc": "../assets/img/logo/starrocket.png",
+    "url": "http://starrocket.io/"
+  },
+  {
+    "type": 2,
+    "imgSrc": "../assets/img/logo/urbanprefer.png",
+    "url": "http://urbanprefer.com/tc/Index.aspx"
+  },
+  {
+    "type": 2,
+    "imgSrc": "../assets/img/logo/wildgain.png",
+    "url": "http://yegostudio.blogspot.tw/"
+  },
+  {
+    "type": 3,
+    "imgSrc": "../assets/img/logo/bnext.png",
+    "url": "http://www.bnext.com.tw/"
+  },
+  {
+    "type": 4,
+    "imgSrc": "../assets/img/logo/alpha.png",
+    "url": "https://www.alphacamp.co/"
+  },
+  {
+    "type": 4,
+    "imgSrc": "../assets/img/logo/angel.png",
+    "url": "http://www.angel-book.com.tw/"
+  },
+  {
+    "type": 4,
+    "imgSrc": "../assets/img/logo/appuniverz.png",
+    "url": "http://www.appuniverz.org/"
+  },
+  {
+    "type": 4,
+    "imgSrc": "../assets/img/logo/appworks.png",
+    "url": "https://appworks.tw/"
+  },
+  {
+    "type": 4,
+    "imgSrc": "../assets/img/logo/backerfounder.png",
+    "url": "http://www.backer-founder.com/"
+  },
+  {
+    "type": 4,
+    "imgSrc": "../assets/img/logo/biztaiwan.png",
+    "url": "http://biztaiwan.nxthosts.net/"
+  },
+  {
+    "type": 4,
+    "imgSrc": "../assets/img/logo/crosspoint.png",
+    "url": "http://crosspoint.tw/"
+  },
+  {
+    "type": 4,
+    "imgSrc": "../assets/img/logo/epoch.png",
+    "url": "http://www.epoch.org.tw/"
+  },
+  {
+    "type": 4,
+    "imgSrc": "../assets/img/logo/fiti.png",
+    "url": "https://fiti.stpi.narl.org.tw/"
+  },
+  {
+    "type": 4,
+    "imgSrc": "../assets/img/logo/garage.png",
+    "url": "http://www.garageplus.asia/"
+  },
+  {
+    "type": 4,
+    "imgSrc": "../assets/img/logo/meet.png",
+    "url": "http://meet.bnext.com.tw/"
+  },
+  {
+    "type": 4,
+    "imgSrc": "../assets/img/logo/ntuiic.png",
+    "url": "http://www.ntuiic.com/"
+  },
+  {
+    "type": 4,
+    "imgSrc": "../assets/img/logo/sei.png",
+    "url": "http://www.seinsights.asia/"
+  },
+  {
+    "type": 4,
+    "imgSrc": "../assets/img/logo/hub.png",
+    "url": "https://www.facebook.com/startuphub.tw/"
+  },
+  {
+    "type": 4,
+    "imgSrc": "../assets/img/logo/taiwantech.png",
+    "url": "http://www.taiwantechmakers.com/"
+  },
+  {
+    "type": 4,
+    "imgSrc": "../assets/img/logo/workface.png",
+    "url": "http://www.workface.tw/blog/"
+  }
+]
