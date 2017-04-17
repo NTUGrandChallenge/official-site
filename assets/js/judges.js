@@ -29,7 +29,7 @@ Vue.component('one-judge', {
                     <div class="col-sm-12">
                         <h3 class="teacher-name">{{ judge.name }} |<span><br class="visible-xs" />{{ judge.title }}</span></h3>
                     </div>
-                    <div class="col-sm-6">
+                    <div class="col-sm-6" v-if="judge.expertises != 'NA'">
                         <div class="content">
                             <h4>專長項目</h4>
                             <p v-for="expertise in judge.expertises">{{ expertise }}</p>
