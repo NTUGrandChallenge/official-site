@@ -266,12 +266,6 @@ footer a {
 /* line 45, ../../sass/summit/about.scss */
 .logo-block img {
   width: 100%;
-  filter: grayscale(70%);
-  transition: all .1s linear;
-}
-/* line 50, ../../sass/summit/about.scss */
-.logo-block img:hover {
-  filter: grayscale(0);
 }
 
 /* line 56, ../../sass/summit/about.scss */

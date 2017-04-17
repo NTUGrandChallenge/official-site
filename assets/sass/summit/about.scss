@@ -44,12 +44,12 @@
 
 	img{
 		width: 100%;
-		filter: grayscale(70%);
-		transition: all .1s linear;
+		// filter: grayscale(70%);
+		// transition: all .1s linear;
 
-		&:hover{
-			filter: grayscale(0);
-		}
+		// &:hover{
+		// 	filter: grayscale(0);
+		// }
 	}
 }
 
