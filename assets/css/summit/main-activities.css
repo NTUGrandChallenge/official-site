@@ -484,13 +484,18 @@ header::after {
 		opacity: 0.2;
 	}
 
-	.desc-text {
-		/* Check if parent element's position is relative */
-		position: absolute;
-		top: 50%;
-		-webkit-transform: translateY(-50%);
-		-moz-transform: translateY(-50%);
-		transform: translateY(-50%);
+	.desc {
+		padding-top: 12vh;
+		padding-bottom: 12vh;
+	}
+
+	#teams-pitch .desc {
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+
+	.talk .desc {
+		min-height: calc(50vw + 24vh);	/* width:height - 8:5 img / 80% container + padding */
 	}
 
 	.desc-text p {
@@ -498,28 +503,8 @@ header::after {
 		margin-left: 17%;
 	}
 
-	.desc {
-		height: 140vh;
-	}
-
-	#topics-salon .desc {
-		height: 70vh;
-	}
-
 	#teams-pitch .desc {
 		height: 25vw;
-	}
-
-	#teams-pitch .desc::after {
-		clear: left;
-	}
-
-	#opening-keynote .desc {
-		height: 80vh;
-	}
-
-	#challengers-night .desc {
-		height: 70vh;
 	}
 
 	.team {
