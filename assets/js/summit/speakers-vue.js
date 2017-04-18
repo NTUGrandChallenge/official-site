@@ -53,24 +53,22 @@ Vue.component('speaker-modal', {
                 <div class="modal-content">
                     <div class="modal-body">
                         <div class="close-button" data-dismiss="modal"><i class="fa fa-times fa-2x" aria-hidden="true"></i></div>
-                        <div class="container-fluid">
-                            <div class="row">
-                                <div class="col-md-4" style="padding: 0;">
-                                     <div class="img-wrapper">
-                                        <img :src="speaker.img_path" alt="">
-                                     </div>
-                                </div>
-                                <div class="col-md-8" style="padding: 0;">
-                                    <div class="content">
-                                        <h1 class="name">{{ speaker.name }}</h1>
-                                        <p class="title">{{ speaker.title }}</p>
-                                        <h2>{{ speaker.activity }} -- {{speaker.issue }}</h2>
-                                        <p class="introduction" v-html="speaker.introduction"></p>
-                                        
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <article>
+                            <section class="left">
+                                <figure>
+                                    <img :src="speaker.img_path" alt="">
+                                </figure>
+                            </section>
+                            <section class="right">
+                                <section class="content">
+                                    <h1 class="name">{{ speaker.name }}</h1>
+                                    <h3 class="title">{{ speaker.title }}</h3>
+                                    <hr />
+                                    <p class="introduction" v-html="speaker.introduction"></p>
+                                    <h3>演講主題：<br />{{speaker.issue }} @ {{ speaker.activity }}</h3>
+                                </section>
+                            </section>
+                        </article>
                     </div>
                 </div>
             </div>

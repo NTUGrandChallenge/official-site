@@ -270,15 +270,21 @@ footer a {
 }
 /* line 54, ../../sass/summit/speakers.scss */
 .modal .modal-dialog {
-  width: 90vw;
+  width: 80vw;
 }
-/* line 58, ../../sass/summit/speakers.scss */
+@media screen and (max-width: 768px) {
+  /* line 54, ../../sass/summit/speakers.scss */
+  .modal .modal-dialog {
+    width: auto;
+  }
+}
+/* line 60, ../../sass/summit/speakers.scss */
 .modal .modal-content {
   border-radius: 0px;
   position: relative;
   text-align: left;
 }
-/* line 63, ../../sass/summit/speakers.scss */
+/* line 65, ../../sass/summit/speakers.scss */
 .modal .modal-content .close-button {
   position: absolute;
   right: 20px;
@@ -287,33 +293,59 @@ footer a {
   color: #999;
   z-index: 10;
 }
-/* line 71, ../../sass/summit/speakers.scss */
+/* line 73, ../../sass/summit/speakers.scss */
 .modal .modal-content .close-button:hover {
   color: #000;
 }
-/* line 75, ../../sass/summit/speakers.scss */
+/* line 77, ../../sass/summit/speakers.scss */
 .modal .modal-content .modal-body {
   padding: 0;
-  height: 70vh;
+  position: relative;
 }
-/* line 79, ../../sass/summit/speakers.scss */
-.modal .modal-content .modal-body .img-wrapper {
-  height: 70vh;
-  padding: 0;
+/* line 81, ../../sass/summit/speakers.scss */
+.modal .modal-content .modal-body .left {
+  width: 30%;
+  position: absolute;
+  left: 0;
+  top: 0;
   background-color: #000;
 }
-/* line 84, ../../sass/summit/speakers.scss */
-.modal .modal-content .modal-body .img-wrapper img {
-  height: 100%;
+/* line 89, ../../sass/summit/speakers.scss */
+.modal .modal-content .modal-body .left img {
+  width: 100%;
 }
-/* line 88, ../../sass/summit/speakers.scss */
-.modal .modal-content .modal-body .content {
-  padding: 30px 20px 0;
+/* line 94, ../../sass/summit/speakers.scss */
+.modal .modal-content .modal-body .right {
+  width: 73%;
   height: 70vh;
-  overflow-y: auto;
+  position: absolute;
+  right: 0;
+  top: 50px;
+  background-color: #fff;
+  overflow: auto;
+  box-shadow: 0 0 5px 2px #999;
+  padding: 30px 50px;
+}
+/* line 106, ../../sass/summit/speakers.scss */
+.modal .modal-content .modal-body .right .content .title {
+  color: #999;
+}
+/* line 109, ../../sass/summit/speakers.scss */
+.modal .modal-content .modal-body .right .content .introduction {
   text-align: justify;
 }
-/* line 96, ../../sass/summit/speakers.scss */
-.modal .modal-content .modal-body .content .introduction {
-  line-height: 24px;
+@media screen and (max-width: 768px) {
+  /* line 115, ../../sass/summit/speakers.scss */
+  .modal .modal-content .modal-body .left {
+    width: 100%;
+    position: relative;
+  }
+  /* line 119, ../../sass/summit/speakers.scss */
+  .modal .modal-content .modal-body .right {
+    width: 100%;
+    position: relative;
+    box-shadow: none;
+    height: auto;
+    padding: 20px;
+  }
 }
