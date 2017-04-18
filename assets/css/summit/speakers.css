@@ -238,29 +238,40 @@ footer a {
   position: absolute;
   left: 10px;
   bottom: 10px;
-  color: #fff;
 }
-/* line 25, ../../sass/summit/speakers.scss */
+/* line 24, ../../sass/summit/speakers.scss */
 .one-man .info-wrapper .name {
+  color: #fff;
   font-size: 24px;
   font-weight: bold;
 }
 /* line 29, ../../sass/summit/speakers.scss */
 .one-man .info-wrapper .title {
+  color: #eee;
   font-size: 18px;
 }
-/* line 34, ../../sass/summit/speakers.scss */
+/* line 35, ../../sass/summit/speakers.scss */
 .one-man:hover img {
   filter: contrast(100%);
   transform: scale(0.98);
 }
+@media screen and (max-width: 768px) {
+  /* line 42, ../../sass/summit/speakers.scss */
+  .one-man .info-wrapper .name {
+    font-size: 14px;
+  }
+  /* line 45, ../../sass/summit/speakers.scss */
+  .one-man .info-wrapper .title {
+    font-size: 12px;
+  }
+}
 
-/* line 41, ../../sass/summit/speakers.scss */
+/* line 52, ../../sass/summit/speakers.scss */
 .modal {
   text-align: center;
   padding: 0 !important;
 }
-/* line 46, ../../sass/summit/speakers.scss */
+/* line 57, ../../sass/summit/speakers.scss */
 .modal:before {
   content: '';
   display: inline-block;
@@ -268,34 +279,21 @@ footer a {
   vertical-align: middle;
   margin-right: -4px;
 }
-/* line 54, ../../sass/summit/speakers.scss */
+/* line 65, ../../sass/summit/speakers.scss */
 .modal .modal-dialog {
   width: 80vw;
 }
 @media screen and (max-width: 768px) {
-  /* line 54, ../../sass/summit/speakers.scss */
+  /* line 65, ../../sass/summit/speakers.scss */
   .modal .modal-dialog {
     width: auto;
   }
 }
-/* line 60, ../../sass/summit/speakers.scss */
+/* line 71, ../../sass/summit/speakers.scss */
 .modal .modal-content {
   border-radius: 0px;
   position: relative;
   text-align: left;
-}
-/* line 65, ../../sass/summit/speakers.scss */
-.modal .modal-content .close-button {
-  position: absolute;
-  right: 20px;
-  top: 20px;
-  cursor: pointer;
-  color: #999;
-  z-index: 10;
-}
-/* line 73, ../../sass/summit/speakers.scss */
-.modal .modal-content .close-button:hover {
-  color: #000;
 }
 /* line 77, ../../sass/summit/speakers.scss */
 .modal .modal-content .modal-body {
@@ -303,6 +301,19 @@ footer a {
   position: relative;
 }
 /* line 81, ../../sass/summit/speakers.scss */
+.modal .modal-content .modal-body .close-button {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  cursor: pointer;
+  color: #999;
+  z-index: 10;
+}
+/* line 89, ../../sass/summit/speakers.scss */
+.modal .modal-content .modal-body .close-button:hover {
+  color: #000;
+}
+/* line 93, ../../sass/summit/speakers.scss */
 .modal .modal-content .modal-body .left {
   width: 30%;
   position: absolute;
@@ -310,11 +321,11 @@ footer a {
   top: 0;
   background-color: #000;
 }
-/* line 89, ../../sass/summit/speakers.scss */
+/* line 101, ../../sass/summit/speakers.scss */
 .modal .modal-content .modal-body .left img {
   width: 100%;
 }
-/* line 94, ../../sass/summit/speakers.scss */
+/* line 106, ../../sass/summit/speakers.scss */
 .modal .modal-content .modal-body .right {
   width: 73%;
   height: 70vh;
@@ -326,21 +337,21 @@ footer a {
   box-shadow: 0 0 5px 2px #999;
   padding: 30px 50px;
 }
-/* line 106, ../../sass/summit/speakers.scss */
+/* line 118, ../../sass/summit/speakers.scss */
 .modal .modal-content .modal-body .right .content .title {
   color: #999;
 }
-/* line 109, ../../sass/summit/speakers.scss */
+/* line 121, ../../sass/summit/speakers.scss */
 .modal .modal-content .modal-body .right .content .introduction {
   text-align: justify;
 }
 @media screen and (max-width: 768px) {
-  /* line 115, ../../sass/summit/speakers.scss */
+  /* line 127, ../../sass/summit/speakers.scss */
   .modal .modal-content .modal-body .left {
     width: 100%;
     position: relative;
   }
-  /* line 119, ../../sass/summit/speakers.scss */
+  /* line 131, ../../sass/summit/speakers.scss */
   .modal .modal-content .modal-body .right {
     width: 100%;
     position: relative;

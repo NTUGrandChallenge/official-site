@@ -25,7 +25,9 @@
         <div class="row">
             <one-speaker v-for="speaker in speakers" :speaker="speaker"></one-speaker>
         </div>
-        <speaker-modal v-for="speaker in speakers" :speaker="speaker"></speaker-modal>
+        <div class="modal-container">
+            <speaker-modal v-for="speaker in speakers" :speaker="speaker"></speaker-modal>
+        </div>
         
     </div>
 
