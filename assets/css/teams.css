@@ -117,8 +117,32 @@ body{
 	font-family: 'Jaapokki-Regular', 'Noto Sans TC';
 	margin: 40px 0;
 }
+#single_team .members-container{
+	display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+	width: 80vw;
+	margin: 0 auto;
+}
+@media screen and (max-width: 768px){
+	#single_team .members-container{
+		flex-wrap: wrap;
+	}
+	#single_team .one-member{
+		width: 30vw;
+	}
+	#single_team .one-member p{
+		font-size: 14px;
+	}
+}
 #single_team .one-member{
-	width: 15%;
+	width: 15vw;
 	margin: 0 10px;
 }
 #single_team .one-member img{
@@ -154,6 +178,35 @@ body{
 	#single_team #self_answer{
 		width: 100%;
 	}
+}
+#single_team .panel-container{
+	width: 80vw;
+	margin-bottom: 70px;
+}
+#single_team .panel{
+	border-radius: 0;
+	background: transparent;
+	border: 0;
+	border-bottom: solid #333 2px;
+	margin: 0;
+}
+#single_team .panel .panel-heading{
+	border-radius: 0;
+	background-color: #666;
+	color: #fff;
+}
+#single_team .panel .panel-heading .panel-title{
+	font-size: 24px;
+}
+#single_team .panel a:hover{
+	text-decoration: none;
+}
+#single_team .panel .panel-body{
+	background-color: #ffeb32;
+}
+#single_team .panel a[aria-expanded="true"] .panel-heading{
+	background-color: #ffeb32;
+	color: #333;
 }
 #single_team .one-link{
 	color: #ffeb32;

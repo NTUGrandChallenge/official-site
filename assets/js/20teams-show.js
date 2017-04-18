@@ -13,4 +13,8 @@ if( !/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navig
             $.fn.fullpage.reBuild();
         },
     });
+    
+    $('.panel a').click(function(){
+        $.fn.fullpage.reBuild();
+    });
 }
