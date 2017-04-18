@@ -20,13 +20,14 @@
 		position: absolute;
 		left: 10px;
 		bottom: 10px;
-		color: #fff;
 
 		.name{
+			color: #fff;
 			font-size: 24px;
 			font-weight: bold;
 		}
 		.title{
+			color: #eee;
 			font-size: 18px;
 		}
 	}
@@ -34,6 +35,16 @@
 		img{
 			filter: contrast(100%);
 			transform: scale(.98);
+		}
+	}
+	@media screen and (max-width: 768px){
+		.info-wrapper{
+			.name{
+				font-size: 14px;
+			}
+			.title{
+				font-size: 12px;
+			}
 		}
 	}
 }
@@ -62,22 +73,23 @@
 		position: relative;
 		text-align: left;
 		
-		.close-button{
-			position: absolute;
-			right: 20px;
-			top: 20px;
-			cursor: pointer;
-			color: #999;
-			z-index: 10;
-
-			&:hover{
-				color: #000;
-			}
-		}
+		
 		.modal-body{
 			padding: 0;
 			position: relative;
 			
+			.close-button{
+				position: absolute;
+				right: 20px;
+				top: 20px;
+				cursor: pointer;
+				color: #999;
+				z-index: 10;
+
+				&:hover{
+					color: #000;
+				}
+			}
 			.left{
 				width: 30%;
 				position: absolute;
@@ -122,6 +134,7 @@
 					box-shadow: none;
 					height: auto;
 					padding: 20px;
+
 				}
 			}
 		}

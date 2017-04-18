@@ -52,7 +52,7 @@ Vue.component('speaker-modal', {
                 <!-- Modal content-->
                 <div class="modal-content">
                     <div class="modal-body">
-                        <div class="close-button" data-dismiss="modal"><i class="fa fa-times fa-2x" aria-hidden="true"></i></div>
+                        <div class="close-button visible-xs" data-dismiss="modal"><i class="fa fa-times fa-2x" aria-hidden="true"></i></div>
                         <article>
                             <section class="left">
                                 <figure>
@@ -65,8 +65,9 @@ Vue.component('speaker-modal', {
                                     <h3 class="title">{{ speaker.title }}</h3>
                                     <hr />
                                     <p class="introduction" v-html="speaker.introduction"></p>
-                                    <h3>演講主題：<br />{{speaker.issue }} @ {{ speaker.activity }}</h3>
+                                    <h3>{{ speaker.activity }} <span><img src="../assets/img/summit/bullhorn.png" alt="" style="height: 24px;" /></span>{{speaker.issue }}</h3>
                                 </section>
+                                <div class="close-button hidden-xs" data-dismiss="modal"><i class="fa fa-times fa-2x" aria-hidden="true"></i></div>
                             </section>
                         </article>
                     </div>
