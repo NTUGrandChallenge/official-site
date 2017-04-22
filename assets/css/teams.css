@@ -8,7 +8,7 @@ body{
 }
 #single_team .row-custom{
 	position: relative;
-	/*height: 100vh;*/
+	height: 100vh;
 }
 #single_team .blur-background{
 	position: absolute;
@@ -110,7 +110,33 @@ body{
 	line-height: 30px;
 }
 
-#single_team .team-title{
+#single_team .trapezoid-wrapper{
+	position: relative;
+	z-index: 0;
+}
+#single_team .trapezoid{
+	position: absolute;
+	z-index: 0;
+}
+#single_team .qa-title{
+	/* writing-mode: vertical-lr; */
+	font-size: 50px;
+	z-index:  50;
+	z-index: 1;
+	/* position: absolute; */
+}
+#single_team .qa-block{
+	height: 90%;
+}
+#single_team .qa{
+	padding: 0 30px;
+}
+#single_team .qa .question{
+	color: #ffeb32;
+	font-size: 28px;
+}
+
+#single_team .qa .team-title{
 	text-align: center;
 	font-size: 50px;
 	color: #ffeb32;

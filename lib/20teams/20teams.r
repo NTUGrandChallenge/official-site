@@ -68,6 +68,30 @@ getMembers <- function(i){
   return(members)
 }
 
+getQas <- function(i){
+  qas = list()
+  if(data[i,]$q1 != ''){
+    tmp = list()
+    tmp[["question"]] = slashNToBr(data[i,]$q1)
+    tmp[["answer"]] = slashNToBr(data[i,]$a1)
+    qas[[1]] = tmp
+  }
+  if(data[i,]$q2 != ''){
+    tmp = list()
+    tmp[["question"]] = slashNToBr(data[i,]$q2)
+    tmp[["answer"]] = slashNToBr(data[i,]$a2)
+    qas[[1]] = tmp
+  }
+  if(data[i,]$q1 != ''){
+    tmp = list()
+    tmp[["question"]] = slashNToBr(data[i,]$q3)
+    tmp[["answer"]] = slashNToBr(data[i,]$a3)
+    qas[[1]] = tmp
+  }
+  #q4 and a4
+  return(qas)
+}
+
 data = read.table("data.csv", header=TRUE, sep=",")
 
 l = lapply(1:nrow(data), FUN=function(i){
@@ -83,7 +107,8 @@ l = lapply(1:nrow(data), FUN=function(i){
        self_answer = slashNToBr(data[i,]$self_answer),
        links = getLinks(i),
        agree = getAgree(i),
-       members = getMembers(i)
+       members = getMembers(i),
+       qas = getQas(i)
        )
 })
 
