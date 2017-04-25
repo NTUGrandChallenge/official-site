@@ -2,10 +2,10 @@
  * 切換挑戰賽嘉年華版面
  */
 
-var act1 = $('#act1');
-var act2 = $('#act2');
-var act3 = $('#act3');
-var act4 = $('#act4');
+var act1 = $('#fest-act1');
+var act2 = $('#fest-act2');
+var act3 = $('#fest-act3');
+var act4 = $('#fest-act4');
 var acts = [act1, act2, act3, act4];
 
 // Initialize view when enter the page
