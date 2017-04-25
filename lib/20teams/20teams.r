@@ -68,6 +68,15 @@ getMembers <- function(i){
   return(members)
 }
 
+getIsTen <- function(i){
+  if(data[i,]$isTen == 1){
+    return(TRUE)
+  }
+  else{
+    return(FALSE)
+  }
+}
+
 getQas <- function(i){
   qas = list()
   if(data[i,]$q1 != ''){
@@ -80,15 +89,20 @@ getQas <- function(i){
     tmp = list()
     tmp[["question"]] = slashNToBr(data[i,]$q2)
     tmp[["answer"]] = slashNToBr(data[i,]$a2)
-    qas[[1]] = tmp
+    qas[[2]] = tmp
   }
-  if(data[i,]$q1 != ''){
+  if(data[i,]$q3 != ''){
     tmp = list()
     tmp[["question"]] = slashNToBr(data[i,]$q3)
     tmp[["answer"]] = slashNToBr(data[i,]$a3)
-    qas[[1]] = tmp
+    qas[[3]] = tmp
   }
-  #q4 and a4
+  if(data[i,]$q4 != ''){
+    tmp = list()
+    tmp[["question"]] = slashNToBr(data[i,]$q4)
+    tmp[["answer"]] = slashNToBr(data[i,]$a4)
+    qas[[4]] = tmp
+  }
   return(qas)
 }
 
@@ -108,6 +122,7 @@ l = lapply(1:nrow(data), FUN=function(i){
        links = getLinks(i),
        agree = getAgree(i),
        members = getMembers(i),
+       isTen = getIsTen(i),
        qas = getQas(i)
        )
 })

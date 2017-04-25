@@ -80,39 +80,22 @@
             </div>
         </div>
     
-        <div class="section container-fluid" style="background-color: #333;">
-            <div class="row row-custom flexbox-center">
-               <!--  <div class="col-md-2">
-                    <div class="trapezoid-wrapper">
-                        <svg class="trapezoid" height="400" viewbox="0 0 20 100" preserveAspectRatio="xMinYMax slice">
-                            <path d="M0 0
-                                L0 100
-                                L20 72
-                                L20 0" fill="#ffeb32"></path>
-                        </svg>
-                    </div>
-                    <h2 class="qa-title">團隊採訪</h2>
-                </div> -->
-                <div class="col-md-6 qa-block" style="border-right: solid #ffeb32 1px;">
-                    <article class="qa">
-                        <h4 class="question">Why 創業解決問題？以前想過創業嗎？</h4>
-                        <p class="answer">要有決心，想清楚：可能會沒飯吃，生活可能都在工作，跟上班很不同。最好能在新創or 公司實習過，先知道上班是怎麼回事。<br>
-以前的講法是沒有上班過十年不要來創業，但現在環境活活絡，還是需要兩三年的工作經驗。<br>
-學生團隊創業像在玩社團，易解散就是因沒有決心，也比較沒制度。社團不需思考這些，但創業的話沒辦法用隨便的心態。<br>
-覺得要更像個商人，創業是要賺錢，賺錢跟理想偶爾是會衝突的，要取得平衡。學生創業可能太理想，雖然depend on 產業類別，但長大之後會要愈來愈務實，要取得兩者的平衡。理想跟現實是拉鋸的，易取得平衡。但大家都還在摸索，很多都也還在嘗試。<br>
-建議找出他的專長，把某個技術練到熟一點在出來會比較有幫助，至少可以在業界上班的程度，業界等級的技術能讓他比較容易成功。
-</p>
+        <div class="section container-fluid" style="background-color: #333;" v-if="current_team.isTen">
+            <div class="row row-custom">
+                <div class="col-md-6 qa-block left">
+                    <article class="qa" v-for="qa in qaLeft">
+                        <h4 class="question" v-html="qa.question">   </h4>
+                        <p class="answer" v-html="qa.answer">
+                            
+                        </p>
                     </article>
                 </div>
-                <div class="col-md-6 qa-block" style="border-right: solid #ffeb32 1px;">
-                    <article class="qa">
-                        <h4 class="question">Why 創業解決問題？以前想過創業嗎？</h4>
-                        <p class="answer">要有決心，想清楚：可能會沒飯吃，生活可能都在工作，跟上班很不同。最好能在新創or 公司實習過，先知道上班是怎麼回事。<br>
-以前的講法是沒有上班過十年不要來創業，但現在環境活活絡，還是需要兩三年的工作經驗。<br>
-學生團隊創業像在玩社團，易解散就是因沒有決心，也比較沒制度。社團不需思考這些，但創業的話沒辦法用隨便的心態。<br>
-覺得要更像個商人，創業是要賺錢，賺錢跟理想偶爾是會衝突的，要取得平衡。學生創業可能太理想，雖然depend on 產業類別，但長大之後會要愈來愈務實，要取得兩者的平衡。理想跟現實是拉鋸的，易取得平衡。但大家都還在摸索，很多都也還在嘗試。<br>
-建議找出他的專長，把某個技術練到熟一點在出來會比較有幫助，至少可以在業界上班的程度，業界等級的技術能讓他比較容易成功。
-</p>
+                <div class="col-md-6 qa-block right">
+                    <article class="qa" v-for="qa in qaRight">
+                        <h4 class="question" v-html="qa.question">   </h4>
+                        <p class="answer" v-html="qa.answer">
+                            
+                        </p>
                     </article>
                 </div>
             </div>
@@ -136,7 +119,7 @@
                 <p id="team_introduction" v-html="current_team.team_introduction"></p>
             </div>
 
-            <div class="row">
+            <div class="row" v-if="!current_team.isTen">
                 <h3 id="self_question">{{ current_team.self_question }}</h3>
                 <article id="self_answer" v-html="current_team.self_answer">
                     

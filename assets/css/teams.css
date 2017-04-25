@@ -8,7 +8,7 @@ body{
 }
 #single_team .row-custom{
 	position: relative;
-	height: 100vh;
+	/* height: 100vh; */
 }
 #single_team .blur-background{
 	position: absolute;
@@ -126,9 +126,31 @@ body{
 	/* position: absolute; */
 }
 #single_team .qa-block{
-	height: 90%;
+	height: 86vh;
+	margin-top: 7vh;
+}
+#single_team .qa-block.left{
+	padding-left: 50px;
+	border-right: solid #ffeb32 1px;
+}
+#single_team .qa-block.right{
+	padding-right: 50px;
+}
+@media screen and (max-width: 768px){
+	#single_team .qa-block{
+		height: auto;
+		margin-top: 50px;
+	}
+	#single_team .qa-block.left{
+		padding: 0;
+		border-right: none;
+	}
+	#single_team .qa-block.right{
+		padding: 0;
+	}
 }
 #single_team .qa{
+	margin-bottom: 50px;
 	padding: 0 30px;
 }
 #single_team .qa .question{
@@ -136,7 +158,7 @@ body{
 	font-size: 28px;
 }
 
-#single_team .qa .team-title{
+#single_team .team-title{
 	text-align: center;
 	font-size: 50px;
 	color: #ffeb32;
@@ -189,6 +211,7 @@ body{
 	margin: 50px auto 100px;
 }
 #single_team #self_question{
+	padding: 0 30px;
 	text-align: center;
 	font-size: 40px;
 	color: #ffeb32;
