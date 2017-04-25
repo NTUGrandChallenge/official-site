@@ -319,6 +319,11 @@ header::after {
 	background-size: cover;
 }
 
+#fest-act2 .container {
+	background: url("../../img/summit/main_activities/challenge-festival/nightguest.jpg") center center fixed;
+	background-size: cover;
+}
+
 /* 十強團隊 Pitch 團隊介紹 */
 .team {
 	position: relative;
