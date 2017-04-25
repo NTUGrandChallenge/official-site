@@ -98,6 +98,9 @@ var team = new Vue({
     created: function(){
         this.fetchData();
     },
+    updated: function(){
+        this.startFullpage();
+    },
     methods: {
         fetchData: function(){
             var self = this;
@@ -127,6 +130,34 @@ var team = new Vue({
             self.$set(self.current_team, 'recordImgSrc', imgBasePath + 'record.jpg');
             self.$set(self.current_team, 'productImgSrc', imgBasePath + 'product.jpg');
             self.$set(self.current_team, 'fieldImgSrc', '../assets/img/20teams/' + self.current_team.field + '.png');
+        },
+        startFullpage: function(){
+            if( !/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+
+                // fullpage only active on desktop
+                $('#single_team').fullpage({
+                    anchors: ['header', 'issue', 'product', 'qa', 'team'],
+                    scrollOverflow: true,
+                    verticalCentered: false,
+                    afterResize: function(){
+                        $.fn.fullpage.reBuild();
+                    },
+                });
+                
+                // $('.panel a').click(function(){
+                //     $.fn.fullpage.reBuild();
+                // });
+            }
+        }
+    },
+    computed: {
+        qaLeft: function(){
+            var self = this;
+            return self.current_team.qas.slice(0, 2);
+        },
+        qaRight: function(){
+            var self = this;
+            return self.current_team.qas.slice(2);
         }
     }
 });
