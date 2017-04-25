@@ -109,8 +109,8 @@ header {
 	z-index: -2;
 }
 
-header#night {
-	background: url("../../img/summit/main_activities/header/challengers-night.jpg") center center fixed;
+header#festival {
+	background: url("../../img/summit/main_activities/header/challenge-festival.jpg") center center fixed;
 	background-size: cover;
 }
 
@@ -274,17 +274,23 @@ header::after {
 }
 
 /* 選取主題論壇 */
-#talk-select {
+#talk-select,
+#act-select {
 	width: 100vw;
-	height: 160px;
 	background-color: #333;
 }
 
-#talk-buttons {
+#talk-select {
+	height: 160px;
+}
+
+#talk-buttons,
+#act-buttons {
 	height: 100%;
 }
 
-#talk-buttons button {
+#talk-buttons button,
+#act-buttons button {
 	border: none;
 }
 
@@ -429,17 +435,24 @@ header::after {
 		font-size: 32px;
 	}
 
-	#talk-buttons {
+	#act-select {
+		height: 300px;
+	}
+
+	#talk-buttons,
+	#act-buttons {
 		width: 100%;
 	}
 
-	#talk-buttons button {
+	#talk-buttons button,
+	#act-buttons button {
 		width: 50%;
 		height: 50%;
 		float: left;
 	}
 
-	#talk-buttons::after {
+	#talk-buttons::after,
+	#act-buttons::after {
 		clear: both;
 	}
 
@@ -560,7 +573,13 @@ header::after {
 	}
 
 	/* 選取主題論壇的按鈕 */
-	#talk-buttons {
+
+	#act-select {
+		height: 160px;
+	}
+
+	#talk-buttons,
+	#act-buttons {
 		width: 80%;
 		margin-left: 10%;
 
@@ -570,7 +589,8 @@ header::after {
 		align-items: center;
 	}
 
-	#talk-buttons button {
+	#talk-buttons button,
+	#act-buttons button {
 		width: 25%;
 		text-align: center;
 	}
