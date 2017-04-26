@@ -34,6 +34,11 @@ body{
 	background-color: rgba(0, 0, 0, 0.7);
 	position: relative;
 }
+@media screen and (max-width: 768px){
+	#single_team .sidebar{
+		height: auto;
+	}
+}
 
 #single_team #top #logo{
 	width: 50%;

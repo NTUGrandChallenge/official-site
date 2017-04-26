@@ -143,10 +143,6 @@ var team = new Vue({
                         $.fn.fullpage.reBuild();
                     },
                 });
-                
-                // $('.panel a').click(function(){
-                //     $.fn.fullpage.reBuild();
-                // });
             }
         }
     },
