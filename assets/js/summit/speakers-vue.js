@@ -35,7 +35,7 @@ Vue.component('one-speaker', {
                 </div>
                 <div class="info-wrapper">
                     <div class="name">{{ speaker.name }}</div>
-                    <div class="title">{{ speaker.title }}</div>
+                    <div class="title" v-html="speaker.title">  </div>
                 </div>
             </div>
         </div>
@@ -61,8 +61,8 @@ Vue.component('speaker-modal', {
                             </section>
                             <section class="right">
                                 <section class="content">
-                                    <h1 class="name">{{ speaker.name }}</h1>
-                                    <h3 class="title">{{ speaker.title }}</h3>
+                                    <h1 class="name">{{ speaker.name }} / {{ speaker.name_en }}</h1>
+                                    <h3 class="title" v-html="speaker.title">   </h3>
                                     <hr />
                                     <p class="introduction" v-html="speaker.introduction"></p>
                                     <h3>{{ speaker.activity }} <span><img src="../assets/img/summit/bullhorn.png" alt="" style="height: 24px;" /></span>{{speaker.issue }}</h3>
