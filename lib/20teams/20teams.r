@@ -106,7 +106,7 @@ getQas <- function(i){
   return(qas)
 }
 
-data = read.table("data.csv", header=TRUE, sep=",")
+data = read.table("20teams.csv", header=TRUE, sep=",")
 
 l = lapply(1:nrow(data), FUN=function(i){
   list(team_name = slashNToBr(data[i,]$team_name),

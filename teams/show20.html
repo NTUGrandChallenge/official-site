@@ -29,7 +29,7 @@
         <div class="section container-fluid">
             <div class="row row-custom" id="top">
                 <img :src="current_team.coverImgSrc" alt="cover image" class="blur-background hidden-xs hidden-sm">
-                <div class="col-md-4 sidebar">
+                <div class="col-md-4 sidebar" style="height: 100vh;">
                     <div style="height: 40%;">
                         <img v-bind:src="current_team.logoImgSrc" alt="LOGO" id="logo">
                     </div>
@@ -145,6 +145,5 @@
     
     <script type="text/javascript" src="../assets/js/general.js"></script>
     <script type="text/javascript" src="../assets/js/20teams-vue.js"></script>
-    <script type="text/javascript" src="../assets/js/20teams-show.js"></script>        
 </body>
 </html>

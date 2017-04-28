@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>講者介紹</title>
+    <meta property="og:image:secure_url" content="../assets/img/summit/cover.png">
+    <link rel="shortcut icon" href="../assets/img/logo.ico">
+    <link rel="stylesheet" href="../assets/plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/plugins/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../assets/plugins/sweetalert/dist/sweetalert.css">
+    <link rel="stylesheet" href="../assets/css/summit/speakers.css">
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/vue/dist/vue.min.js"></script>
+    <script src="../assets/plugins/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<body>
+    <div id="sidenav">
+
+    </div>
+    
+    <div class="container" id="speakers">
+        <div class="row">
+            <one-speaker v-for="speaker in speakers" :speaker="speaker"></one-speaker>
+        </div>
+        <div class="modal-container">
+            <speaker-modal v-for="speaker in speakers" :speaker="speaker"></speaker-modal>
+        </div>
+        
+    </div>
+
+    <footer>
+
+    </footer>
+
+    <script type="text/javascript" src="../assets/js/summit/general.js"></script>
+    <script type="text/javascript" src="../assets/js/summit/speakers-vue.js"></script>
+</body>
+</html>
