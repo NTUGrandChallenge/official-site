@@ -1,8 +1,8 @@
 //load template
 $.ajaxSetup({ cache: false });
-$('#navbar').load('/_navbar.html?v=2');
-$('footer').load('/_footer.html?v=2');
-$('#messenger').load('/_messenger.html');
+$('#navbar').load('/official-site/_navbar.html?v=2');
+$('footer').load('/official-site/_footer.html?v=2');
+$('#messenger').load('/official-site/_messenger.html');
 if($('footer .toggle-collapse').is(':visible')){
     $('footer .collapse').removeClass('in');
 }
